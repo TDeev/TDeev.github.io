@@ -947,6 +947,7 @@ body {
 
 .projects .projects-items-item {
   position: relative;
+  max-width: 370px;
   min-height: 337px;
   background: #fbfaf8;
   margin: 10px;
@@ -1336,6 +1337,7 @@ body {
 
 .postst-items-item {
   position: relative;
+  max-width: 370px;
   min-height: 395px;
   border: 1px solid #f8f8f8;
   -webkit-box-sizing: border-box;
