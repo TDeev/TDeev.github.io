@@ -803,6 +803,7 @@ body {
   background-image: url(../img/browser-center.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .ideas-item-img:nth-child(3) {
