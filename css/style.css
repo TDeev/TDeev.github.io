@@ -669,6 +669,15 @@ body {
 }
 
 .capability-item-svg-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 50px;
   height: 50px;
   margin: 0 0 29px 0;
@@ -677,8 +686,6 @@ body {
 .capability-item-svg-inner .capability-item-svg {
   display: block;
   fill: #555555;
-  width: 50px;
-  height: 50px;
 }
 
 .capability-item:hover .capability-item-svg {
@@ -2018,7 +2025,13 @@ body {
     padding: 50px 0 30px 0;
   }
   .capability-item {
-    margin: 10px;
+    margin: 15px 10px;
+  }
+  .capability-item-svg-inner {
+    margin: 0 0 15px 0;
+  }
+  .capability-item-txt {
+    margin: 0 0 25px 0;
   }
   .advertising {
     display: none;
@@ -2062,7 +2075,14 @@ body {
     padding: 0 0 0 250px;
   }
   .statistic-item {
-    margin: 10px;
+    margin: 15px 10px;
+    min-height: 150px;
+  }
+  .statistic-item-img {
+    margin: 0px 0 15px 0;
+  }
+  .statistic-item-title {
+    margin: 0 0 25px 0;
   }
   .partners-partner {
     margin: 25px;
@@ -2097,6 +2117,9 @@ body {
 }
 
 @media (max-width: 480px) {
+  .ideas-item-img:nth-child(2) {
+    height: 235px;
+  }
   .mobile {
     padding: 50px 0 40px 0;
   }
@@ -2104,8 +2127,5 @@ body {
     padding: 0;
     background-image: none;
     height: auto;
-  }
-  .statistic-item {
-    margin: 5px;
   }
 }
