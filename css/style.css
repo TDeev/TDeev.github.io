@@ -947,14 +947,17 @@ body {
 
 .projects .projects-items-item {
   position: relative;
-  width: 370px;
-  height: 337px;
+  min-height: 337px;
   background: #fbfaf8;
   margin: 10px;
 }
 
 .projects .projects-items-item-img {
   display: block;
+  max-width: 370px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .projects .projects-items-item-content {
@@ -1333,8 +1336,7 @@ body {
 
 .postst-items-item {
   position: relative;
-  width: 370px;
-  height: 395px;
+  min-height: 395px;
   border: 1px solid #f8f8f8;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1343,6 +1345,10 @@ body {
 
 .postst-items-item-img {
   display: block;
+  max-width: 370px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .postst-items-item-calendar {
