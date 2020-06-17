@@ -103,7 +103,6 @@ body {
     height: 135px;
     display: flex;
     align-items: center;
-    //!доделать
     transition: 0.2s linear;
     .wrap {
       display: flex;
@@ -328,15 +327,16 @@ body {
         background: #ffffff;
         height: 2px;
         width: 24px;
-        transition: background 0.01s linear;
+        // transition: background 0.01s linear;
         &::before,
         &::after {
           content: "";
           position: absolute;
-          background: currentColor;
+          // background: currentColor;
+          background: #ffffff;
           height: 2px;
           width: 24px;
-          transition: background 0.01s linear, transform 0.2s ease-in-out;
+          // transition: background 0.01s linear, transform 0.2s ease-in-out;
         }
         &::before {
           top: -10px;
@@ -1423,6 +1423,10 @@ body {
 
 .bc-color {
   background: #272727;
+  &::before,
+  &::after {
+    background: #272727;
+  }
 }
 
 .br-color {
