@@ -328,7 +328,7 @@ body {
         background: #ffffff;
         height: 2px;
         width: 24px;
-        transition: background 0.2s ease-in-out;
+        transition: background 0.01s linear;
         &::before,
         &::after {
           content: "";
@@ -336,7 +336,7 @@ body {
           background: currentColor;
           height: 2px;
           width: 24px;
-          transition: background 0.2s ease-in-out, transform 0.2s ease-in-out;
+          transition: background 0.01s linear, transform 0.2s ease-in-out;
         }
         &::before {
           top: -10px;
@@ -576,6 +576,7 @@ body {
         background-image: url(../img/browser-center.png);
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
       }
       &:nth-child(3) {
         position: absolute;
@@ -674,7 +675,7 @@ body {
       }
     }
   }
-  .projects-items {
+  &-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -731,10 +732,10 @@ body {
         top: 105px;
         display: none;
         &:nth-child(3) {
-          left: 150px;
+          left: 40%;
         }
         &:nth-child(4) {
-          right: 150px;
+          right: 40%;
         }
         &-svg {
           fill: white;
@@ -1086,7 +1087,9 @@ body {
           &::before {
             position: absolute;
             left: 85px;
-            top: 2px;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
             content: "";
             display: block;
             width: 0;
@@ -1405,6 +1408,8 @@ body {
     }
   }
 }
+
+/*----Для JS----*/
 .scroll {
   background: #fff;
   color: #333;
@@ -1430,7 +1435,3 @@ body {
 }
 
 @import "_media.scss";
-
-// div {
-//   border: 1px solid black;
-// }
