@@ -1152,6 +1152,8 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   background-color: transparent;
   border-bottom: 1px solid;
   border-color: #1c4252;
