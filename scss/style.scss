@@ -284,11 +284,11 @@ body {
     align-items: center;
     justify-content: space-between;
     flex: 0 0 auto;
-    padding: 0 16px;
+    padding: 0 16px 0 20px;
     box-sizing: border-box;
 
     &-logo {
-      height: 53px;
+      // height: 53px;
     }
     &-btn {
       fill: #005574;
