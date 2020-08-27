@@ -1147,16 +1147,17 @@ body {
   width: 60px;
 }
 
-.navbar-close .navbar .navbar-head {
+.navbar-close .navbar-head {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0;
   background-color: transparent;
   border-bottom: 1px solid;
-  border-color: rgba(0, 0, 0, 0.2);
+  border-color: #1c4252;
 }
 
-.navbar-close .navbar .navbar-head-btn {
+.navbar-close .navbar-head-btn {
   fill: #ffffff;
 }
 
