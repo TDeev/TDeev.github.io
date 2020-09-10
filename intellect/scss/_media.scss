@@ -4,6 +4,9 @@
 
 // Средние девайсы («таблетки», >= 768px)
 @media (max-width: 768px) {
+  .content-employee-main-photo {
+    display: none;
+  }
 }
 
 // Большие девайсы (десктопы, >= 992px)
@@ -12,4 +15,40 @@
 
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)
 @media (max-width: 1200px) {
+  .content-employee-main-fields-left .content-employee-main-fields-field-label {
+    width: 125px;
+  }
+}
+
+// Экстрабольшие девайсы (большие десктопы, >= 1200px)
+@media (max-width: 1600px) {
+  .content-employee-documents-table-header-col {
+    &:first-child {
+      width: 80px;
+    }
+    &:nth-child(2) {
+      min-width: 145px;
+    }
+    &:nth-child(3) {
+      width: 160px;
+    }
+    &:nth-child(4) {
+      width: 100px;
+    }
+    &:nth-child(5) {
+      width: 100px;
+      .content-employee-documents-table-header-col-item-title {
+        width: 60px;
+      }
+    }
+    &:nth-child(6) {
+      width: 160px;
+      .content-employee-documents-table-header-col-item-title {
+        width: 82px;
+      }
+    }
+    &:last-child {
+      width: 90px;
+    }
+  }
 }
