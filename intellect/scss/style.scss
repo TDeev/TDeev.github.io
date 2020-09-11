@@ -602,7 +602,6 @@ $input-color: #cccccc;
           justify-content: flex-start;
           align-items: center;
           margin: 15px 0 0 0;
-          min-width: 520px;
 
           &-label {
             flex: 0 0 auto;
@@ -622,6 +621,7 @@ $input-color: #cccccc;
             border: 1px solid $input-color;
             box-sizing: border-box;
             border-radius: 20px;
+            min-width: 391px;
             &::-webkit-input-placeholder {
               color: #bdbdbd;
             }
