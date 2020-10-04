@@ -4,7 +4,7 @@
 
 // Средние девайсы («таблетки», >= 768px)
 @media (max-width: 768px) {
-  .content-employee-main-photo {
+  .employee-main-photo {
     display: none;
   }
 }
@@ -15,14 +15,14 @@
 
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)
 @media (max-width: 1200px) {
-  .content-employee-main-fields-left .content-employee-main-fields-field-label {
+  .employee-main-fields-left .employee-main-fields-field-label {
     width: 125px;
   }
 }
 
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)
 @media (max-width: 1600px) {
-  .content-employee-documents-table-header-col {
+  .employee-documents-table-header-col {
     &:first-child {
       width: 80px;
     }
