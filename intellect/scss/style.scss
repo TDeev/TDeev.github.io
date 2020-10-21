@@ -76,6 +76,7 @@ $input-color: #cccccc;
   }
   &-text {
     width: 100%;
+    min-width: 160px;
     height: 40px;
     outline: none;
     padding: 9px 10px 9px 18px;
@@ -1040,6 +1041,63 @@ $input-color: #cccccc;
     justify-content: space-between;
     padding: 0 20px 0 20px;
     height: 80px;
+  }
+
+  //Требования ЧС
+  &-emergency {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 0 20px 0 20px;
+    background-color: #fdeeee;
+    border-radius: 10px;
+    padding: 24px 20px;
+    &-svg {
+      flex: 0 0 auto;
+      fill: #fe4513;
+      width: 50px;
+      height: 37px;
+      margin: 0 20px 0 0;
+    }
+    &-content {
+      flex: 1 1;
+      display: flex;
+      flex-flow: row wrap;
+    }
+    &-main {
+      flex: 2 1;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+    }
+    &-child {
+      flex: 3 1;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      &-iner {
+        display: flex;
+      }
+    }
+    &-title {
+      font-weight: bold;
+      color: $font-title-color;
+      margin: 0 25px 0 0;
+      padding: 2px 0;
+      min-width: 120px;
+    }
+    &-date {
+      display: flex;
+      align-items: center;
+      padding: 2px 0;
+      &-svg {
+        margin: 0 7px 0 0;
+        flex: 0 0 auto;
+      }
+      &-txt {
+        min-width: 140px;
+      }
+    }
   }
   // Основной контент сотрудника
   &-main {
