@@ -12,20 +12,20 @@ for (let i = 0; i < navParent.length; i++) {
 //============ФИЛЬТР============
 
 //блок фильтра
-let filter = document.querySelector('.content-filter');
+// let filter = document.querySelector('.content-filter');
 
 //кнопка фильтра
-let filterButton = document.querySelector('.content-controls-actions-filter');
+// let filterButton = document.querySelector('.content-controls-actions-filter');
 
 //иконка закрытия фильтра
-let filterClose = document.querySelector('.content-filter-header-close');
+// let filterClose = document.querySelector('.content-filter-header-close');
 
-// //Открытие и закрытие фильтра
+//Открытие и закрытие фильтра
 // filterButton.onclick = function () {
 //   filter.classList.toggle('open');
 // }
 
-// //Закрытие фильтра
+//Закрытие фильтра
 // filterClose.onclick = function () {
 //   filter.classList.remove('open');
 // }

@@ -61,9 +61,93 @@ $input-color: #cccccc;
   margin: 0 10px 0 0;
 }
 
-//*===============Поля фильтра===============
-
 //*===============Поля форм==================
+.field {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 0 15px 0;
+  &-label {
+    flex: 0 0 auto;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0 10px 0 0;
+  }
+  &-text {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    padding: 9px 10px 9px 18px;
+    background: #f2f2f2;
+    color: $font-content-color;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 20px;
+    cursor: default;
+    &::-webkit-input-placeholder {
+      color: #bdbdbd;
+    }
+    &::-moz-placeholder {
+      color: #bdbdbd;
+    }
+    &.edit {
+      border: 1px solid $input-color;
+      background: #ffffff;
+      cursor: initial;
+    }
+  }
+  &-textarea {
+    width: 100%;
+    height: 69px;
+    outline: none;
+    padding: 9px 10px 9px 18px;
+    background: #f2f2f2;
+    color: $font-content-color;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 20px;
+    overflow: hidden;
+    resize: none;
+    cursor: default;
+    &::-webkit-input-placeholder {
+      color: #bdbdbd;
+    }
+    &::-moz-placeholder {
+      color: #bdbdbd;
+    }
+    &.edit {
+      border: 1px solid $input-color;
+      background: #ffffff;
+      cursor: initial;
+    }
+  }
+  &-date {
+    width: 160px;
+    height: 40px;
+    outline: none;
+    padding: 9px 10px 9px 18px;
+    background: #f2f2f2;
+    color: $font-content-color;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 20px;
+    cursor: default;
+    &::-webkit-input-placeholder {
+      color: #bdbdbd;
+    }
+    &::-moz-placeholder {
+      color: #bdbdbd;
+    }
+    &.edit {
+      border: 1px solid $input-color;
+      background: #ffffff;
+      cursor: initial;
+    }
+  }
+  &-dropdown {
+  }
+}
 
 //*===============Кнопки=====================
 .btn {
@@ -102,6 +186,7 @@ $input-color: #cccccc;
     color: #ffffff;
     height: 32px;
     padding: 8px 18px 8px 18px;
+    text-decoration: none;
   }
 }
 
@@ -138,10 +223,229 @@ $input-color: #cccccc;
   }
 }
 
+//*===============Фильтр========================
+// вспомогательный элемент для раскрытия списка
+.filter-open {
+  display: none;
+  &:checked {
+    & + .filter {
+      display: block;
+    }
+  }
+}
+// блок с фильтром
+.filter {
+  display: none;
+  border-bottom: 1px solid #cccccc;
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 18px 0 21px;
+    height: 50px;
+  }
+  &-close {
+    cursor: pointer;
+    &-svg {
+      fill: $svg-content-color;
+    }
+  }
+  &-fields {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    &-iner {
+      padding: 0 21px 0 21px;
+      flex: 1 1 auto;
+    }
+  }
+  &-field {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 15px 0 0 0;
+    &-label {
+      flex: 0 0 auto;
+      width: 125px;
+      font-weight: 600;
+      margin: 0 4px 0 0;
+    }
+
+    &-text {
+      flex: 1 1 auto;
+      height: 40px;
+      outline: none;
+      padding: 9px 10px 9px 18px;
+      background: #ffffff;
+      color: $font-content-color;
+      border: 1px solid $input-color;
+      box-sizing: border-box;
+      border-radius: 20px;
+      min-width: 391px;
+      &::-webkit-input-placeholder {
+        color: #bdbdbd;
+      }
+      &::-moz-placeholder {
+        color: #bdbdbd;
+      }
+    }
+
+    &-date {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+
+      &-label {
+        flex: 0 0 auto;
+        font-weight: 600;
+        font-size: 14px;
+        margin: 0 15px 0 0px;
+        &:last-of-type {
+          margin: 0 15px 0 15px;
+        }
+      }
+      &-input {
+        width: 158px;
+        height: 40px;
+        outline: none;
+        padding: 9px 15px 9px 18px;
+        background: #ffffff;
+        color: $font-content-color;
+        border: 1px solid $input-color;
+        box-sizing: border-box;
+        border-radius: 20px;
+        &::-webkit-datetime-edit-month-field,
+        &::-webkit-datetime-edit-day-field,
+        &::-webkit-datetime-edit-year-field {
+          color: #bdbdbd;
+        }
+      }
+    }
+  }
+  &-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 18px 0 21px;
+    height: 70px;
+
+    .btn-reset {
+      margin: 0 20px 0 0;
+    }
+  }
+}
+
+//*===============Постраничная навигация========================
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  // min-height: 59px;
+  padding: 10px 22px 10px 18px;
+  box-sizing: border-box;
+  &-group {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    &-title {
+      flex: 0 0 auto;
+      margin: 5px 60px 5px 0;
+    }
+    &-value {
+      flex: 0 0 auto;
+      margin: 5px 60px 5px 0;
+      &-label {
+        margin: 0px 19px 0px 0;
+      }
+      &-list {
+        width: 61px;
+        height: 28px;
+        padding: 0 0 0 13px;
+        border: 1px solid #cccccc;
+        box-sizing: border-box;
+        border-radius: 5px;
+        outline: none;
+        color: #4f4f4f;
+      }
+    }
+  }
+  &-pagination {
+    margin: 5px 0 5px 0;
+    &-list {
+      display: flex;
+      flex-flow: row nowrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      &-item {
+        margin: 0px 20px 0px 0;
+        &:last-child {
+          margin: 0;
+        }
+        &.active .navigation-pagination-list-item-url {
+          color: #ffffff;
+          background: #009bcd;
+        }
+        &-url {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 28px;
+          height: 28px;
+          border-radius: 5px;
+          box-sizing: border-box;
+          text-decoration: none;
+          color: #4f4f4f;
+          &:hover {
+            background: #f2f2f2;
+          }
+          &-svg {
+            fill: #666666;
+          }
+        }
+      }
+    }
+  }
+}
+
+//*===============Общие элементы========================
+.main {
+  margin: 60px 0 0 225px;
+  padding: 20px;
+}
+// Рабочая область
+.content {
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+  //?Заголовок страниц
+  &-header {
+    display: flex;
+    align-items: center;
+    min-height: 70px;
+    padding: 0 18px 0 18px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #cccccc;
+    &-arrow {
+      width: 12px;
+      height: 21px;
+      margin: 0 20px 0 0;
+      &-svg {
+        fill: #666666;
+      }
+    }
+  }
+}
+
 //! Шапка
 .header {
   position: fixed;
-  z-index: 1;
+  z-index: 100;
   top: 0;
   left: 0;
   right: 0;
@@ -213,7 +517,8 @@ $input-color: #cccccc;
       width: 40px;
       height: 40px;
       border-radius: 50%;
-      object-fit: none;
+      object-fit: cover;
+      object-position: center;
     }
 
     &-menu {
@@ -230,7 +535,7 @@ $input-color: #cccccc;
     &-list {
       display: none;
       position: absolute;
-      left: -17px;
+      right: -13px;
       top: 45px;
       padding: 0;
       margin: 0;
@@ -284,9 +589,9 @@ $input-color: #cccccc;
           text-decoration: none;
           color: #333333;
         }
-      }
-      :last-child {
-        border: none;
+        &:last-child {
+          border: none;
+        }
       }
     }
   }
@@ -295,7 +600,7 @@ $input-color: #cccccc;
 //! Навигация
 .navbar {
   position: fixed;
-  z-index: 2;
+  z-index: 101;
   left: 0;
   top: 0;
   bottom: 0;
@@ -479,28 +784,15 @@ $input-color: #cccccc;
 }
 
 //! Основной контент
-
-//?Базовые компоненты
-.main {
-  margin: 60px 0 0 225px;
-  padding: 20px;
-}
-.content {
-  background: #ffffff;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-
-  &-header {
-    display: flex;
-    align-items: center;
-    min-height: 70px;
-    padding: 0 18px 0 18px;
-    box-sizing: border-box;
-  }
-}
-
 //?Главная страница
-
+// Заголовок без нижней черты
+.home-header {
+  display: flex;
+  align-items: center;
+  min-height: 70px;
+  padding: 0 18px 0 18px;
+  box-sizing: border-box;
+}
 // Панель с табами и кнопками
 .home-controls {
   display: flex;
@@ -535,120 +827,6 @@ $input-color: #cccccc;
     }
     &-filter {
       cursor: pointer;
-    }
-  }
-}
-// Фильтр
-.filter_open {
-  display: none;
-  &:checked {
-    & + .home-filter {
-      display: block;
-    }
-  }
-}
-.home-filter {
-  display: none;
-  border-bottom: 1px solid #cccccc;
-  &-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 18px 0 21px;
-    height: 50px;
-    &-close {
-      cursor: pointer;
-      &-svg {
-        fill: $svg-content-color;
-      }
-    }
-  }
-  &-fields {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    &-wrp {
-      padding: 0 21px 0 21px;
-      flex: 1 1 auto;
-
-      .field {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        align-items: center;
-        margin: 15px 0 0 0;
-
-        &-label {
-          flex: 0 0 auto;
-          width: 125px;
-          font-weight: 600;
-          margin: 0 4px 0 0;
-        }
-
-        &-txt {
-          flex: 1 1 auto;
-          height: 40px;
-          outline: none;
-          padding: 9px 10px 9px 18px;
-          background: #ffffff;
-          color: $font-content-color;
-          border: 1px solid $input-color;
-          box-sizing: border-box;
-          border-radius: 20px;
-          min-width: 391px;
-          &::-webkit-input-placeholder {
-            color: #bdbdbd;
-          }
-          &::-moz-placeholder {
-            color: #bdbdbd;
-          }
-        }
-
-        &-date {
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: space-between;
-          align-items: center;
-
-          &-label {
-            flex: 0 0 auto;
-            font-weight: 600;
-            font-size: 14px;
-            margin: 0 15px 0 0px;
-            &:last-of-type {
-              margin: 0 15px 0 15px;
-            }
-          }
-          &-input {
-            width: 158px;
-            height: 40px;
-            outline: none;
-            padding: 9px 15px 9px 18px;
-            background: #ffffff;
-            color: $font-content-color;
-            border: 1px solid $input-color;
-            box-sizing: border-box;
-            border-radius: 20px;
-            &::-webkit-datetime-edit-month-field,
-            &::-webkit-datetime-edit-day-field,
-            &::-webkit-datetime-edit-year-field {
-              color: #bdbdbd;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  &-buttons {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 18px 0 21px;
-    height: 70px;
-
-    .btn-reset {
-      margin: 0 20px 0 0;
     }
   }
 }
@@ -717,7 +895,7 @@ $input-color: #cccccc;
           }
         }
       }
-      &:nth-child(1) .home-table-header-col-item-sort-svg {
+      &:nth-child(2) .home-table-header-col-item-sort-svg {
         fill: #07a6d7;
       }
     }
@@ -725,19 +903,18 @@ $input-color: #cccccc;
   // Контент таблицы
   &-content {
     &-line {
-      // &:nth-child(4n + 2)
+      &:nth-child(4n + 2),
       &:nth-child(4n + 1) {
         background-color: #f5f5f5;
       }
       &.alert {
         background-color: #ffeaeb;
-        // & + .content-table-content-line > .content-table-content-col {
-        //   background-color: #ffeaeb;
-        //   color: #ff0000;
-        //   padding: 0 18px 0 10px;
-        //   text-align: right;
-        //   line-height: 40px;
-        // }
+        & + .home-table-content-line > .home-table-content-col {
+          background-color: #ffeaeb;
+          color: #ff0000;
+          padding: 0 18px 10px 10px;
+          text-align: right;
+        }
       }
     }
     &-col {
@@ -750,120 +927,105 @@ $input-color: #cccccc;
       }
       &:last-child {
         padding: 15px 18px 15px 5px;
+        position: relative;
       }
-      &-person {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-
-        &-photo {
-          display: block;
-          margin: 0 10px 0 0;
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          object-fit: contain;
-        }
-
-        &-content {
-          &-name {
-            display: block;
-            font-weight: bold;
-            color: $font-content-color;
-          }
-          &-date {
-            display: block;
-          }
-          &-position {
-            display: block;
-          }
-        }
-      }
-      &-menu {
-        &-svg {
-          fill: #666666;
-        }
-      }
-    }
-    &-col_alert {
-      color: #ff0000;
-      background-color: #ffeaeb;
-      padding: 0 18px 0 5px;
-      text-align: right;
-      line-height: 40px;
     }
   }
-}
-.home-navigation {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-  // min-height: 59px;
-  padding: 10px 22px 10px 18px;
-  box-sizing: border-box;
-  &-group {
+  &-person {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-    align-items: center;
-    &-title {
-      flex: 0 0 auto;
-      margin: 5px 60px 5px 0;
+    align-items: flex-start;
+
+    &-photo {
+      display: block;
+      margin: 0 10px 0 0;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
     }
-    &-value {
-      flex: 0 0 auto;
-      margin: 5px 60px 5px 0;
-      &-label {
-        margin: 0px 19px 0px 0;
+
+    &-content {
+      &-name {
+        display: block;
+        font-weight: bold;
+        color: $font-content-color;
       }
-      &-list {
-        width: 61px;
-        height: 28px;
-        padding: 0 0 0 13px;
-        border: 1px solid #cccccc;
-        box-sizing: border-box;
-        border-radius: 5px;
-        outline: none;
-        color: #4f4f4f;
+      &-date {
+        display: block;
+      }
+      &-position {
+        display: block;
       }
     }
   }
-  &-pagination {
-    margin: 5px 0 5px 0;
-    &-list {
-      display: flex;
-      flex-flow: row nowrap;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      &-item {
-        margin: 0px 20px 0px 0;
-        &:last-child {
-          margin: 0;
-        }
-        &.active .home-navigation-pagination-list-item-url {
+  &-menu {
+    &-svg {
+      fill: #666666;
+    }
+    &:focus {
+      & ~ .home-table-list {
+        display: block;
+      }
+    }
+  }
+  &-list {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    right: 13px;
+    top: 45px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-width: 180px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #ebe9e9;
+    &::before {
+      position: absolute;
+      right: 10px;
+      top: -9px;
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      border-bottom: 9px solid #ebe9e9;
+    }
+    &::after {
+      position: absolute;
+      right: 11px;
+      top: -8px;
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      border-bottom: 8px solid #ffffff;
+    }
+    &-item {
+      border-bottom: 1px solid #ebe9e9;
+      &:hover {
+        background-color: #009bcd;
+        .home-table-list-item-url {
           color: #ffffff;
-          background: #009bcd;
         }
-        &-url {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 28px;
-          height: 28px;
-          border-radius: 5px;
-          box-sizing: border-box;
-          text-decoration: none;
-          color: #4f4f4f;
-          &:hover {
-            background: #f2f2f2;
-          }
-          &-svg {
-            fill: #666666;
-          }
-        }
+      }
+      &-url {
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        height: 45px;
+        text-decoration: none;
+        color: #333333;
+      }
+      &:last-child {
+        border: none;
       }
     }
   }
@@ -871,22 +1033,22 @@ $input-color: #cccccc;
 
 //?Карточка сотруника
 .employee {
+  // Подзаголовок страницы
   &-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px 0 20px;
     height: 80px;
-    border-top: 1px solid #cccccc;
-    margin: 0 0 25px 0;
   }
+  // Основной контент сотрудника
   &-main {
     display: flex;
     flex-flow: row nowrap;
     padding: 0 0 0 20px;
-    margin: 0 0 25px 0;
+    margin: 25px 0 25px 0;
     &-photo {
-      flex: 0 0 auto;
+      flex: 0 0;
       margin: 0 68px 0 0;
       &-img {
         width: 155px;
@@ -903,56 +1065,36 @@ $input-color: #cccccc;
       }
     }
     &-fields {
-      flex: 1 1 auto;
+      flex: 1 1;
       display: flex;
       flex-flow: row wrap;
-      &-left {
-        flex: 1 1 auto;
+      &-iner {
         margin: 0 20px 0 20px;
-        .employee-main-fields-field-label {
+      }
+      &-iner:nth-child(1) {
+        flex: 1 1;
+        .field-label {
           width: 80px;
         }
       }
-      &-right {
-        flex: 2 1 auto;
-        margin: 0 20px 0 20px;
-        .employee-main-fields-field-label {
+      &-iner:nth-child(2) {
+        flex: 2 1;
+        .field-label {
           width: 125px;
         }
       }
-      &-field {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        align-items: center;
-        margin: 0 0 15px 0;
-        &-label {
-          flex: 0 0 auto;
-          font-weight: 600;
-          font-size: 14px;
-          margin: 0 10px 0 0;
-        }
-        &-txt {
-          flex: 1 1 auto;
-          height: 40px;
-          outline: none;
-          padding: 9px 10px 9px 18px;
-          background: #ffffff;
-          color: $font-content-color;
-          border: 1px solid $input-color;
-          box-sizing: border-box;
-          border-radius: 20px;
-          cursor: default;
-          &::-webkit-input-placeholder {
-            color: #bdbdbd;
-          }
-          &::-moz-placeholder {
-            color: #bdbdbd;
-          }
-        }
+    }
+    &-position {
+      padding: 10px 15px 10px 15px;
+      border-radius: 10px;
+      background: #f5f5f5;
+
+      &-link {
+        color: #07a6d7;
       }
     }
   }
+  // Паспортные данные
   &-passport {
     margin: 0 20px 25px 20px;
     padding: 20px 0 20px 0;
@@ -969,58 +1111,81 @@ $input-color: #cccccc;
     &-fields {
       display: flex;
       flex-flow: row wrap;
-      &-wrp {
-        flex: 1 1 auto;
+      &-iner {
+        flex: 1 1;
         margin: 0 20px 0 20px;
         &:nth-child(2) {
-          .employee-passport-fields-field:nth-child(2) {
+          .field:nth-child(2) {
             align-items: baseline;
           }
         }
         &:nth-child(3) {
+          flex: 1 1 100%;
+        }
+        .field-label {
+          width: 100px;
+          &.passport {
+            width: 30px;
+            margin: 0 10px 0 100px;
+          }
+        }
+        .field-text.passport {
+          max-width: 160px;
+          min-width: 80px;
           width: 100%;
         }
-      }
-      &-field {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-start;
-        align-items: center;
-        margin: 0 0 15px 0;
-        &-label {
-          flex: 0 0 auto;
-          font-weight: 600;
-          font-size: 14px;
-          width: 100px;
-          margin: 0 10px 0 0;
-        }
-        &-txt,
-        &-txtarea {
-          flex: 1 1 auto;
-          height: 40px;
-          outline: none;
-          padding: 9px 10px 9px 18px;
-          background: #ffffff;
-          color: $font-content-color;
-          border: 1px solid $input-color;
-          box-sizing: border-box;
-          border-radius: 20px;
-          overflow: hidden;
-          cursor: default;
-          &::-webkit-input-placeholder {
-            color: #bdbdbd;
-          }
-          &::-moz-placeholder {
-            color: #bdbdbd;
+
+        .field-text,
+        .field-date,
+        .field-textarea {
+          background: #ebebeb;
+          &.edit {
+            background: #ffffff;
           }
         }
-        &-txtarea {
-          resize: none;
-          height: 69px;
-        }
       }
+      // &-field {
+      //   display: flex;
+      //   flex-flow: row nowrap;
+      //   justify-content: flex-start;
+      //   align-items: center;
+      //   margin: 0 0 15px 0;
+      //   &-label {
+      //     flex: 0 0 auto;
+      //     font-weight: 600;
+      //     font-size: 14px;
+      //     width: 100px;
+      //     margin: 0 10px 0 0;
+      //   }
+      //   &-txt,
+      //   &-txtarea {
+      //     // flex: 1 1 auto;
+      //     width: 100%;
+      //     height: 40px;
+      //     outline: none;
+      //     padding: 9px 10px 9px 18px;
+      //     background: #ffffff;
+      //     color: $font-content-color;
+      //     border: 1px solid $input-color;
+      //     box-sizing: border-box;
+      //     border-radius: 20px;
+      //     overflow: hidden;
+      //     cursor: default;
+      //     &::-webkit-input-placeholder {
+      //       color: #bdbdbd;
+      //     }
+      //     &::-moz-placeholder {
+      //       color: #bdbdbd;
+      //     }
+      //   }
+      //   &-txtarea {
+      //     resize: none;
+      //     height: 69px;
+      //   }
+      // }
     }
   }
+  // Блок с документами
   &-documents {
     padding: 0 20px 27px 20px;
     width: 100%;

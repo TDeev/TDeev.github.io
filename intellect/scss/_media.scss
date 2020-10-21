@@ -1,47 +1,65 @@
-// Малые девайсы («ландшафтные телефоны», >= 576px)
+// Малые девайсы («ландшафтные телефоны», <= 576px)
 @media (max-width: 576px) {
 }
 
-// Средние девайсы («таблетки», >= 768px)
+// Средние девайсы («таблетки», <= 768px)
 @media (max-width: 768px) {
   .employee-main-photo {
     display: none;
   }
 }
 
-// Большие девайсы (десктопы, >= 992px)
+// Большие девайсы (десктопы, <= 992px)
 @media (max-width: 992px) {
 }
 
-// Экстрабольшие девайсы (большие десктопы, >= 1200px)
+// Экстрабольшие девайсы (большие десктопы, <= 1200px)
 @media (max-width: 1200px) {
-  .employee-main-fields-left .employee-main-fields-field-label {
-    width: 125px;
+  .employee-main-fields-iner:nth-child(1) {
+    .field-label {
+      width: 125px;
+    }
+  }
+  .employee-passport-fields-iner {
+    .field-label {
+      &.passport {
+        width: 50px;
+        margin: 0 10px 0 40px;
+      }
+    }
   }
 }
 
-// Экстрабольшие девайсы (большие десктопы, >= 1200px)
+// Экстрабольшие девайсы (большие десктопы, <= 1600px)
 @media (max-width: 1600px) {
+  .employee-passport-fields-iner {
+    .field-label {
+      &.passport {
+        width: 30px;
+        margin: 0 10px 0 40px;
+      }
+    }
+  }
   .employee-documents-table-header-col {
-    &:first-child {
+    &:nth-child(2) {
       width: 80px;
     }
-    &:nth-child(2) {
+    &:nth-child(3) {
       min-width: 145px;
     }
-    &:nth-child(3) {
+    &:nth-child(4) {
       width: 160px;
     }
-    &:nth-child(4) {
+    &:nth-child(5) {
       width: 100px;
     }
-    &:nth-child(5) {
+    &:nth-child(6) {
       width: 100px;
       .content-employee-documents-table-header-col-item-title {
         width: 60px;
       }
     }
-    &:nth-child(6) {
+    &:nth-child(7) {
       width: 160px;
       .content-employee-documents-table-header-col-item-title {
         width: 82px;

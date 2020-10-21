@@ -252,7 +252,7 @@
           </ul>
         </li>
         <li class="navbar-menu-list-item">
-          <a href="#" class="navbar-menu-list-item-content">
+          <a href="#" class="navbar-menu-list-item-content open">
             <div class="navbar-menu-list-item-content-icon">
               <svg width="23" height="19" xmlns="http://www.w3.org/2000/svg"
                 class="navbar-menu-list-item-content-icon-svg">
@@ -271,7 +271,7 @@
           </a>
           <ul class="navbar-menu-list list-child">
             <li class="navbar-menu-list-item">
-              <a href="#" class="navbar-menu-list-item-content">
+              <a href="#" class="navbar-menu-list-item-content open">
                 <div class="navbar-menu-list-item-content-icon">
                   <svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"
                     class="navbar-menu-list-item-content-icon-svg">
@@ -369,7 +369,7 @@
           </a>
         </li>
         <li class="navbar-menu-list-item">
-          <a href="#" class="navbar-menu-list-item-content">
+          <a href="#" class="navbar-menu-list-item-content ">
             <div class="navbar-menu-list-item-content-icon">
               <svg width="18" height="21" xmlns="http://www.w3.org/2000/svg"
                 class="navbar-menu-list-item-content-icon-svg">
@@ -401,7 +401,7 @@
               </a>
             </li>
             <li class="navbar-menu-list-item">
-              <a href="#" class="navbar-menu-list-item-content">
+              <a href="#" class="navbar-menu-list-item-content ">
                 <div class="navbar-menu-list-item-content-icon">
                   <svg width="17" height="12" xmlns="http://www.w3.org/2000/svg"
                     class="navbar-menu-list-item-content-icon-svg">
@@ -488,7 +488,7 @@
   </div>
   <main class="main">
     <section class="content">
-      <div class="content-header">
+      <div class="home-header">
         <span class="h1-like">Сотрудники</span>
       </div>
       <div class="home-controls">
@@ -513,7 +513,7 @@
                 d="M17.4 2.8H12.6V0.7C12.6 0.7 12.6 0.7 12.6 0.6C12.6 0.3 12.3 0 12 0H6.4C6.1 0 5.8 0.3 5.8 0.6V2.8H0.6C0.3 2.8 0 3.1 0 3.4V12.2C0 12.5 0.3 12.8 0.6 12.8H5.3V17.3C5.3 17.6 5.6 17.9 5.9 17.9H8.4C8.6 17.9 8.7 17.8 8.8 17.7L12.7 13.9C12.8 13.8 12.9 13.6 12.9 13.5V12.8H17.3C17.6 12.8 17.9 12.5 17.9 12.2V3.4C18 3.1 17.7 2.8 17.4 2.8ZM7.1 1.3H11.3V2.8H7.1V1.3ZM9.1 15.9V14.2H10.8L9.1 15.9ZM11.7 12.9H8.5C8.2 12.9 7.9 13.2 7.9 13.5V16.7H6.6V9.2H11.7V12.9ZM16.7 11.6H13V9.2H14.3C14.6 9.2 14.9 8.9 14.9 8.6C14.9 8.3 14.6 8 14.3 8H3.1C2.7 8 2.4 8.2 2.4 8.6C2.4 8.9 2.7 9.2 3 9.2H5.2V11.6H1.2V4.1H16.7V11.6ZM3.1 6.6H4.4C4.7 6.6 5 6.3 5 6C5 5.7 4.7 5.4 4.4 5.4H3.1C2.8 5.3 2.5 5.6 2.5 6C2.5 6.3 2.8 6.6 3.1 6.6Z" />
             </svg>
           </a>
-          <label for="filter_open" class="home-controls-actions-filter">
+          <label for="filter-open" class="home-controls-actions-filter">
             <svg width="18" height="16" xmlns="http://www.w3.org/2000/svg" class="home-controls-actions-filter-svg">
               <path
                 d="M2.82251 9.99999L2.85425 15.3502C2.85425 15.5225 2.9226 15.6877 3.04417 15.8095C3.16574 15.9313 3.33053 15.9998 3.50246 15.9998C3.67439 15.9998 3.83929 15.9313 3.96087 15.8095C4.08244 15.6877 4.15079 15.5225 4.15079 15.3502C4.15079 14.7895 4.15079 11.1518 4.12755 9.99998C4.12691 9.96862 4.10231 9.83021 4.06973 9.7514C4.03715 9.67259 3.98932 9.60098 3.92913 9.54066C3.86893 9.48034 3.79756 9.43248 3.7189 9.39983C3.64025 9.36719 3.55585 9.35039 3.47072 9.35039C3.38559 9.35039 3.3013 9.36719 3.22265 9.39983C3.144 9.43248 3.07263 9.48034 3.01243 9.54066C2.95223 9.60098 2.9044 9.67259 2.87183 9.7514C2.83925 9.83021 2.82251 9.91469 2.82251 9.99999Z" />
@@ -539,52 +539,46 @@
           </a> -->
         </div>
       </div>
-      <input type="checkbox" name="filter_open" id="filter_open" class="filter_open">
-      <div class="home-filter">
+      <input type="checkbox" name="filter-open" id="filter-open" class="filter-open">
+      <div class="filter">
         <form action="#">
-          <div class="home-filter-header">
-            <span class="h2">Фильтр</span>
-            <label for="filter_open" class="home-filter-header-close">
-              <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg" class="home-filter-header-close-svg">
+          <div class="filter-header">
+            <span class="h2-like">Фильтр</span>
+            <label for="filter-open" class="filter-close">
+              <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg" class="filter-close-svg">
                 <path d="M1.259 0L13.1672 12.1212L11.9082 13.4082L0 1.28699L1.259 0Z" />
                 <path d="M1.25906 13.4143L13.1673 1.29306L11.9083 0.00607514L6.10914e-05 12.1273L1.25906 13.4143Z" />
               </svg>
             </label>
-            <!-- <a href="#" class="home-filter-header-close">
-              <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg" class="home-filter-header-close-svg">
-                <path d="M1.259 0L13.1672 12.1212L11.9082 13.4082L0 1.28699L1.259 0Z" />
-                <path d="M1.25906 13.4143L13.1673 1.29306L11.9083 0.00607514L6.10914e-05 12.1273L1.25906 13.4143Z" />
-              </svg>
-            </a> -->
           </div>
-          <div class="home-filter-fields">
-            <div class="home-filter-fields-wrp">
-              <div class="field">
-                <label for="#" class="field-label">Организация</label>
-                <input type="text" placeholder="Не выбрано" list="organization" class="field-txt">
+          <div class="filter-fields">
+            <div class="filter-fields-iner">
+              <div class="filter-field">
+                <label for="#" class="filter-field-label">Организация</label>
+                <input type="text" placeholder="Не выбрано" list="organization" class="filter-field-text">
                 <datalist id="organization">
                   <option value="ООО НВДС">
                   <option value="Филиал АО ССК Управление цементировании">
                   <option value="АО ССК">
               </div>
-              <div class="field">
-                <label for="#" class="field-label">Номер заявки</label>
-                <input type="text" placeholder="ХХХ ХХХ ХХХ" class="field-txt">
+              <div class="filter-field">
+                <label for="#" class="filter-field-label">Номер заявки</label>
+                <input type="text" placeholder="ХХХ ХХХ ХХХ" class="filter-field-text">
               </div>
-              <div class="field">
-                <label for="#" class="field-label">Дата окончания</label>
-                <div class="field-date">
-                  <label for="#" class="field-date-label">c</label>
-                  <input type="date" class="field-date-input">
-                  <label for="#" class="field-date-label">по</label>
-                  <input type="date" class="field-date-input">
+              <div class="filter-field">
+                <label for="#" class="filter-field-label">Дата окончания</label>
+                <div class="filter-field-date">
+                  <label for="#" class="filter-field-date-label">c</label>
+                  <input type="date" class="filter-field-date-input">
+                  <label for="#" class="filter-field-date-label">по</label>
+                  <input type="date" class="filter-field-date-input">
                 </div>
               </div>
             </div>
-            <div class="home-filter-fields-wrp">
-              <div class="field">
-                <label for="#" class="field-label">Должность</label>
-                <input type="text" placeholder="Не выбрано" list="position" class="field-txt">
+            <div class="filter-fields-iner">
+              <div class="filter-field">
+                <label for="#" class="filter-field-label">Должность</label>
+                <input type="text" placeholder="Не выбрано" list="position" class="filter-field-text">
                 <datalist id="position">
                   <option value="Строитель">
                   <option value="Уборщик">
@@ -592,24 +586,24 @@
                   <option value="Водитель">
                 </datalist>
               </div>
-              <div class="field">
-                <label for="#" class="field-label">ФИО</label>
-                <input type="text" placeholder="Введите" class="field-txt">
+              <div class="filter-field">
+                <label for="#" class="filter-field-label">ФИО</label>
+                <input type="text" placeholder="Введите" class="filter-field-text">
               </div>
-              <div class="field">
-                <label for="#" class="field-label">Дата рождения</label>
-                <div class="field-date">
-                  <label for="#" class="field-date-label">c</label>
-                  <input type="date" class="field-date-input">
-                  <label for="#" class="field-date-label">по</label>
-                  <input type="date" class="field-date-input">
+              <div class="filter-field">
+                <label for="#" class="filter-field-label">Дата рождения</label>
+                <div class="filter-field-date">
+                  <label for="#" class="filter-field-date-label">c</label>
+                  <input type="date" class="filter-field-date-input">
+                  <label for="#" class="filter-field-date-label">по</label>
+                  <input type="date" class="filter-field-date-input">
                 </div>
               </div>
             </div>
           </div>
-          <div class="home-filter-buttons">
+          <div class="filter-buttons">
             <button class="btn-reset">Сбросить</button>
-            <input type="submit" name="home-filter-buttons-submit" id="home-filter-buttons-submit" value="Применить"
+            <input type="submit" name="filter-buttons-submit" id="filter-buttons-submit" value="Применить"
               class="btn-submit">
           </div>
         </form>
@@ -618,6 +612,28 @@
         <table class="home-table">
           <thead class="home-table-header">
             <tr class="home-table-header-line">
+              <th class="home-table-header-col">
+                <div class="home-table-header-col-item">
+                  <span class="home-table-header-col-item-title">Код</span>
+                  <a href="#" class="home-table-header-col-item-sort">
+                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg"
+                      class="home-table-header-col-item-sort-svg">
+                      <path
+                        d="M4.28033 10.5C4.28033 10.7761 4.05647 11 3.78033 11C3.50419 11 3.28033 10.7761 3.28033 10.5L3.28033 1.44977C3.28033 1.17363 3.50419 0.949768 3.78033 0.949768C4.05647 0.949768 4.28033 1.17363 4.28033 1.44977L4.28033 10.5Z" />
+                      <path
+                        d="M10.7803 0.5C10.7803 0.223857 11.0042 -4.82822e-08 11.2803 0C11.5565 4.82823e-08 11.7803 0.223858 11.7803 0.5L11.7803 10.0502C11.7803 10.3264 11.5565 10.5502 11.2803 10.5502C11.0042 10.5502 10.7803 10.3264 10.7803 10.0502L10.7803 0.5Z" />
+                      <path
+                        d="M0.905327 4.375C0.698221 4.58211 0.362436 4.58211 0.15533 4.375C-0.0517767 4.16789 -0.0517765 3.83211 0.15533 3.625L3.40532 0.375015C3.61243 0.167909 3.94821 0.167908 4.15532 0.375015C4.36242 0.582121 4.36242 0.917907 4.15532 1.12501L0.905327 4.375Z" />
+                      <path
+                        d="M14.1553 7.125C14.3624 6.91789 14.6982 6.91789 14.9053 7.125C15.1124 7.33211 15.1124 7.66789 14.9053 7.875L11.6553 11.125C11.4482 11.3321 11.1124 11.3321 10.9053 11.125C10.6982 10.9179 10.6982 10.5821 10.9053 10.375L14.1553 7.125Z" />
+                      <path
+                        d="M3.40533 1.125C3.19822 0.917893 3.19821 0.582121 3.40532 0.375015C3.61243 0.167909 3.94821 0.167908 4.15532 0.375015L7.40533 3.625C7.61244 3.83211 7.61244 4.16789 7.40533 4.375C7.19823 4.58211 6.86244 4.58211 6.65533 4.375L3.40533 1.125Z" />
+                      <path
+                        d="M11.6553 10.375C11.8624 10.5821 11.8624 10.9179 11.6553 11.125C11.4482 11.3321 11.1124 11.3321 10.9053 11.125L7.65533 7.875C7.44822 7.66789 7.44822 7.33211 7.65533 7.125C7.86244 6.91789 8.19822 6.91789 8.40533 7.125L11.6553 10.375Z" />
+                    </svg>
+                  </a>
+                </div>
+              </th>
               <th class="home-table-header-col">
                 <div class="home-table-header-col-item">
                   <span class="home-table-header-col-item-title">Сотрудник</span>
@@ -776,28 +792,6 @@
               </th>
               <th class="home-table-header-col">
                 <div class="home-table-header-col-item">
-                  <span class="home-table-header-col-item-title">Код</span>
-                  <a href="#" class="home-table-header-col-item-sort">
-                    <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg"
-                      class="home-table-header-col-item-sort-svg">
-                      <path
-                        d="M4.28033 10.5C4.28033 10.7761 4.05647 11 3.78033 11C3.50419 11 3.28033 10.7761 3.28033 10.5L3.28033 1.44977C3.28033 1.17363 3.50419 0.949768 3.78033 0.949768C4.05647 0.949768 4.28033 1.17363 4.28033 1.44977L4.28033 10.5Z" />
-                      <path
-                        d="M10.7803 0.5C10.7803 0.223857 11.0042 -4.82822e-08 11.2803 0C11.5565 4.82823e-08 11.7803 0.223858 11.7803 0.5L11.7803 10.0502C11.7803 10.3264 11.5565 10.5502 11.2803 10.5502C11.0042 10.5502 10.7803 10.3264 10.7803 10.0502L10.7803 0.5Z" />
-                      <path
-                        d="M0.905327 4.375C0.698221 4.58211 0.362436 4.58211 0.15533 4.375C-0.0517767 4.16789 -0.0517765 3.83211 0.15533 3.625L3.40532 0.375015C3.61243 0.167909 3.94821 0.167908 4.15532 0.375015C4.36242 0.582121 4.36242 0.917907 4.15532 1.12501L0.905327 4.375Z" />
-                      <path
-                        d="M14.1553 7.125C14.3624 6.91789 14.6982 6.91789 14.9053 7.125C15.1124 7.33211 15.1124 7.66789 14.9053 7.875L11.6553 11.125C11.4482 11.3321 11.1124 11.3321 10.9053 11.125C10.6982 10.9179 10.6982 10.5821 10.9053 10.375L14.1553 7.125Z" />
-                      <path
-                        d="M3.40533 1.125C3.19822 0.917893 3.19821 0.582121 3.40532 0.375015C3.61243 0.167909 3.94821 0.167908 4.15532 0.375015L7.40533 3.625C7.61244 3.83211 7.61244 4.16789 7.40533 4.375C7.19823 4.58211 6.86244 4.58211 6.65533 4.375L3.40533 1.125Z" />
-                      <path
-                        d="M11.6553 10.375C11.8624 10.5821 11.8624 10.9179 11.6553 11.125C11.4482 11.3321 11.1124 11.3321 10.9053 11.125L7.65533 7.875C7.44822 7.66789 7.44822 7.33211 7.65533 7.125C7.86244 6.91789 8.19822 6.91789 8.40533 7.125L11.6553 10.375Z" />
-                    </svg>
-                  </a>
-                </div>
-              </th>
-              <th class="home-table-header-col">
-                <div class="home-table-header-col-item">
                   <span class="home-table-header-col-item-title"></span>
                   <a href="#" class="home-table-header-col-item-sort">
                   </a>
@@ -807,14 +801,18 @@
           </thead>
           <tbody class="home-table-content">
             <tr class="home-table-content-line">
+              <td class="home-table-content-col" rowspan="2">14</td>
               <td class="home-table-content-col" rowspan="2">
-                <div class="home-table-content-col-person">
-                  <img src="./img/user_1.png" alt="Фотография сотрудника" class="home-table-content-col-person-photo">
-                  <div class="home-table-content-col-person-content">
-                    <a href="./employee_card.html" class="home-table-content-col-person-content-name">Алехин Алексей
+                <div class="home-table-person">
+                  <img src="./img/user_1.png" alt="Фотография сотрудника" height="40" width="40"
+                    class="home-table-person-photo">
+                  <div class="home-table-person-content">
+                    <a href="./employee_card.html" class="home-table-person-content-name">Алехин Алексей
                       Владимирович</a>
-                    <spam class="home-table-content-col-person-content-date">23.02.1963</spam>
-                    <span class="home-table-content-col-person-content-position">Водитель автомобиля (всех
+                    <!-- <span class="home-table-person-content-name">Алехин Алексей
+                      Владимирович</span> -->
+                    <spam class="home-table-person-content-date">23.02.1963</spam>
+                    <span class="home-table-person-content-position">Водитель автомобиля (всех
                       категорий)</span>
                   </div>
                 </div>
@@ -825,28 +823,40 @@
               <td class="home-table-content-col">09.10.2018</td>
               <td class="home-table-content-col">03.03.2018</td>
               <td class="home-table-content-col">448</td>
-              <td class="home-table-content-col">1998</td>
               <td class="home-table-content-col">
-                <a href="#" class="home-table-content-col-menu">
-                  <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg" class="home-table-content-col-menu-svg">
+                <a href="#" class="home-table-menu">
+                  <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg" class="home-table-menu-svg">
                     <path
                       d="M3.01019 1.59399C2.99186 1.88596 2.88852 2.1662 2.71295 2.40021C2.53739 2.63421 2.29722 2.81176 2.02203 2.91101C1.74684 3.01027 1.44864 3.02689 1.16412 2.95883C0.879609 2.89077 0.621197 2.741 0.420715 2.52795C0.220234 2.31491 0.0864912 2.04789 0.0358276 1.75977C-0.0148361 1.47164 0.0197807 1.175 0.135559 0.906342C0.251337 0.637685 0.443209 0.408747 0.687439 0.247711C0.931669 0.0866749 1.21765 0.000575023 1.51019 0C1.71338 0.00607916 1.91332 0.0521447 2.09869 0.135559C2.28407 0.218973 2.45121 0.338109 2.59052 0.486145C2.72982 0.634181 2.83858 0.808197 2.91058 0.998291C2.98259 1.18839 3.01646 1.39082 3.01019 1.59399ZM3.01019 8.422C2.99494 8.71486 2.89421 8.99683 2.7204 9.23303C2.54658 9.46923 2.30724 9.64931 2.03217 9.75098C1.75709 9.85264 1.45832 9.87144 1.17267 9.80505C0.887018 9.73867 0.627036 9.59 0.424988 9.37744C0.222939 9.16489 0.0876626 8.89778 0.0358276 8.60913C-0.0160075 8.32049 0.0178939 8.02296 0.133362 7.75339C0.24883 7.48381 0.440783 7.25401 0.685486 7.09238C0.930189 6.93075 1.21693 6.84439 1.51019 6.84399C1.91832 6.85447 2.30558 7.02658 2.58685 7.32248C2.86813 7.61838 3.0204 8.01387 3.01019 8.422ZM3.01019 15.406C2.99186 15.698 2.88852 15.9782 2.71295 16.2122C2.53739 16.4462 2.29722 16.6238 2.02203 16.723C1.74684 16.8223 1.44864 16.8389 1.16412 16.7708C0.879609 16.7028 0.621197 16.553 0.420715 16.34C0.220234 16.1269 0.0864912 15.8599 0.0358276 15.5718C-0.0148361 15.2837 0.0197807 14.987 0.135559 14.7184C0.251337 14.4497 0.443209 14.2208 0.687439 14.0597C0.931669 13.8987 1.21765 13.8126 1.51019 13.812C1.92046 13.8246 2.30898 13.9995 2.59027 14.2984C2.87156 14.5973 3.02258 14.9957 3.01019 15.406Z" />
                   </svg>
                 </a>
+                <ul class="home-table-list">
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Просмотреть пропуск</a>
+                  </li>
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Изменить пропуск</a>
+                  </li>
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Аннулировать пропуск</a>
+                  </li>
+                </ul>
+
               </td>
             </tr>
             <tr class="home-table-content-line">
-              <td class="home-table-content-col_alert" colspan="7"></td>
+              <td class="home-table-content-col" colspan="6"></td>
             </tr>
             <tr class="home-table-content-line">
+              <td class="home-table-content-col" rowspan="2">31</td>
               <td class="home-table-content-col" rowspan="2">
-                <div class="home-table-content-col-person">
+                <div class="home-table-person">
                   <img src="./img/user_icon.svg" alt="Фотография сотрудника" height="40" width="40"
-                    class="home-table-content-col-person-photo">
-                  <div class="home-table-content-col-person-content">
-                    <span class="home-table-content-col-person-content-name">Нургалиев Руслан Фаатович</span>
-                    <spam class="home-table-content-col-person-content-date">06.08.1980</spam>
-                    <span class="home-table-content-col-person-content-position">Прочее</span>
+                    class="home-table-person-photo">
+                  <div class="home-table-person-content">
+                    <span class="home-table-person-content-name">Нургалиев Руслан Фаатович</span>
+                    <spam class="home-table-person-content-date">06.08.1980</spam>
+                    <span class="home-table-person-content-position">Прочее</span>
                   </div>
                 </div>
               </td>
@@ -856,28 +866,39 @@
               <td class="home-table-content-col">09.10.2018</td>
               <td class="home-table-content-col">03.03.2018</td>
               <td class="home-table-content-col">448</td>
-              <td class="home-table-content-col">1998</td>
               <td class="home-table-content-col">
-                <a href="#" class="home-table-content-col-menu">
-                  <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg" class="home-table-content-col-menu-svg">
+                <a href="#" class="home-table-menu">
+                  <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg" class="home-table-menu-svg">
                     <path
                       d="M3.01019 1.59399C2.99186 1.88596 2.88852 2.1662 2.71295 2.40021C2.53739 2.63421 2.29722 2.81176 2.02203 2.91101C1.74684 3.01027 1.44864 3.02689 1.16412 2.95883C0.879609 2.89077 0.621197 2.741 0.420715 2.52795C0.220234 2.31491 0.0864912 2.04789 0.0358276 1.75977C-0.0148361 1.47164 0.0197807 1.175 0.135559 0.906342C0.251337 0.637685 0.443209 0.408747 0.687439 0.247711C0.931669 0.0866749 1.21765 0.000575023 1.51019 0C1.71338 0.00607916 1.91332 0.0521447 2.09869 0.135559C2.28407 0.218973 2.45121 0.338109 2.59052 0.486145C2.72982 0.634181 2.83858 0.808197 2.91058 0.998291C2.98259 1.18839 3.01646 1.39082 3.01019 1.59399ZM3.01019 8.422C2.99494 8.71486 2.89421 8.99683 2.7204 9.23303C2.54658 9.46923 2.30724 9.64931 2.03217 9.75098C1.75709 9.85264 1.45832 9.87144 1.17267 9.80505C0.887018 9.73867 0.627036 9.59 0.424988 9.37744C0.222939 9.16489 0.0876626 8.89778 0.0358276 8.60913C-0.0160075 8.32049 0.0178939 8.02296 0.133362 7.75339C0.24883 7.48381 0.440783 7.25401 0.685486 7.09238C0.930189 6.93075 1.21693 6.84439 1.51019 6.84399C1.91832 6.85447 2.30558 7.02658 2.58685 7.32248C2.86813 7.61838 3.0204 8.01387 3.01019 8.422ZM3.01019 15.406C2.99186 15.698 2.88852 15.9782 2.71295 16.2122C2.53739 16.4462 2.29722 16.6238 2.02203 16.723C1.74684 16.8223 1.44864 16.8389 1.16412 16.7708C0.879609 16.7028 0.621197 16.553 0.420715 16.34C0.220234 16.1269 0.0864912 15.8599 0.0358276 15.5718C-0.0148361 15.2837 0.0197807 14.987 0.135559 14.7184C0.251337 14.4497 0.443209 14.2208 0.687439 14.0597C0.931669 13.8987 1.21765 13.8126 1.51019 13.812C1.92046 13.8246 2.30898 13.9995 2.59027 14.2984C2.87156 14.5973 3.02258 14.9957 3.01019 15.406Z" />
                   </svg>
                 </a>
+                <ul class="home-table-list">
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Просмотреть пропуск</a>
+                  </li>
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Изменить пропуск</a>
+                  </li>
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Аннулировать пропуск</a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr class="home-table-content-line">
-              <td class="home-table-content-col_alert" colspan="7"></td>
+              <td class="home-table-content-col" colspan="6"></td>
             </tr>
             <tr class="home-table-content-line alert">
+              <td class="home-table-content-col" rowspan="2">198</td>
               <td class="home-table-content-col" rowspan="2">
-                <div class="home-table-content-col-person">
+                <div class="home-table-person">
                   <img src="./img/user_2.png" alt="Фотография сотрудника" height="40" width="40"
-                    class="home-table-content-col-person-photo">
-                  <div class="home-table-content-col-person-content">
-                    <span class="home-table-content-col-person-content-name">Иванов Сергей Анатольевич</span>
-                    <spam class="home-table-content-col-person-content-date">13.05.1963</spam>
-                    <span class="home-table-content-col-person-content-position">Тракторист</span>
+                    class="home-table-person-photo">
+                  <div class="home-table-person-content">
+                    <span class="home-table-person-content-name">Иванов Сергей Анатольевич</span>
+                    <spam class="home-table-person-content-date">13.05.1963</spam>
+                    <span class="home-table-person-content-position">Тракторист</span>
                   </div>
                 </div>
               </td>
@@ -887,28 +908,40 @@
               <td class="home-table-content-col">09.10.2018</td>
               <td class="home-table-content-col">03.03.2018</td>
               <td class="home-table-content-col">448</td>
-              <td class="home-table-content-col">1998</td>
               <td class="home-table-content-col">
-                <a href="#" class="home-table-content-col-menu">
-                  <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg" class="home-table-content-col-menu-svg">
+                <a href="#" class="home-table-menu">
+                  <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg" class="home-table-menu-svg">
                     <path
                       d="M3.01019 1.59399C2.99186 1.88596 2.88852 2.1662 2.71295 2.40021C2.53739 2.63421 2.29722 2.81176 2.02203 2.91101C1.74684 3.01027 1.44864 3.02689 1.16412 2.95883C0.879609 2.89077 0.621197 2.741 0.420715 2.52795C0.220234 2.31491 0.0864912 2.04789 0.0358276 1.75977C-0.0148361 1.47164 0.0197807 1.175 0.135559 0.906342C0.251337 0.637685 0.443209 0.408747 0.687439 0.247711C0.931669 0.0866749 1.21765 0.000575023 1.51019 0C1.71338 0.00607916 1.91332 0.0521447 2.09869 0.135559C2.28407 0.218973 2.45121 0.338109 2.59052 0.486145C2.72982 0.634181 2.83858 0.808197 2.91058 0.998291C2.98259 1.18839 3.01646 1.39082 3.01019 1.59399ZM3.01019 8.422C2.99494 8.71486 2.89421 8.99683 2.7204 9.23303C2.54658 9.46923 2.30724 9.64931 2.03217 9.75098C1.75709 9.85264 1.45832 9.87144 1.17267 9.80505C0.887018 9.73867 0.627036 9.59 0.424988 9.37744C0.222939 9.16489 0.0876626 8.89778 0.0358276 8.60913C-0.0160075 8.32049 0.0178939 8.02296 0.133362 7.75339C0.24883 7.48381 0.440783 7.25401 0.685486 7.09238C0.930189 6.93075 1.21693 6.84439 1.51019 6.84399C1.91832 6.85447 2.30558 7.02658 2.58685 7.32248C2.86813 7.61838 3.0204 8.01387 3.01019 8.422ZM3.01019 15.406C2.99186 15.698 2.88852 15.9782 2.71295 16.2122C2.53739 16.4462 2.29722 16.6238 2.02203 16.723C1.74684 16.8223 1.44864 16.8389 1.16412 16.7708C0.879609 16.7028 0.621197 16.553 0.420715 16.34C0.220234 16.1269 0.0864912 15.8599 0.0358276 15.5718C-0.0148361 15.2837 0.0197807 14.987 0.135559 14.7184C0.251337 14.4497 0.443209 14.2208 0.687439 14.0597C0.931669 13.8987 1.21765 13.8126 1.51019 13.812C1.92046 13.8246 2.30898 13.9995 2.59027 14.2984C2.87156 14.5973 3.02258 14.9957 3.01019 15.406Z" />
                   </svg>
                 </a>
+                <ul class="home-table-list">
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Просмотреть пропуск</a>
+                  </li>
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Изменить пропуск</a>
+                  </li>
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Аннулировать пропуск</a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr class="home-table-content-line">
-              <td class="home-table-content-col_alert" colspan="7">13.06.2018, Удален по заявке № 25844</td>
+              <td class="home-table-content-col" colspan="6">21.10.2020, Пропуск был заблокирован по причине применения
+                чрезвычайных требований</td>
             </tr>
             <tr class="home-table-content-line">
+              <td class="home-table-content-col" rowspan="2">98</td>
               <td class="home-table-content-col" rowspan="2">
-                <div class="home-table-content-col-person">
+                <div class="home-table-person">
                   <img src="./img/user_icon.svg" alt="Фотография сотрудника" height="40" width="40"
-                    class="home-table-content-col-person-photo">
-                  <div class="home-table-content-col-person-content">
-                    <span class="home-table-content-col-person-content-name">Галочкин Сергей Владимирович</span>
-                    <spam class="home-table-content-col-person-content-date">10.12.2017</spam>
-                    <span class="home-table-content-col-person-content-position">Прочее</span>
+                    class="home-table-person-photo">
+                  <div class="home-table-person-content">
+                    <span class="home-table-person-content-name">Галочкин Сергей Владимирович</span>
+                    <spam class="home-table-person-content-date">10.12.2017</spam>
+                    <span class="home-table-person-content-position">Прочее</span>
                   </div>
                 </div>
               </td>
@@ -918,28 +951,39 @@
               <td class="home-table-content-col">09.10.2018</td>
               <td class="home-table-content-col">03.03.2018</td>
               <td class="home-table-content-col">448</td>
-              <td class="home-table-content-col">1998</td>
               <td class="home-table-content-col">
-                <a href="#" class="home-table-content-col-menu">
-                  <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg" class="home-table-content-col-menu-svg">
+                <a href="#" class="home-table-menu">
+                  <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg" class="home-table-menu-svg">
                     <path
                       d="M3.01019 1.59399C2.99186 1.88596 2.88852 2.1662 2.71295 2.40021C2.53739 2.63421 2.29722 2.81176 2.02203 2.91101C1.74684 3.01027 1.44864 3.02689 1.16412 2.95883C0.879609 2.89077 0.621197 2.741 0.420715 2.52795C0.220234 2.31491 0.0864912 2.04789 0.0358276 1.75977C-0.0148361 1.47164 0.0197807 1.175 0.135559 0.906342C0.251337 0.637685 0.443209 0.408747 0.687439 0.247711C0.931669 0.0866749 1.21765 0.000575023 1.51019 0C1.71338 0.00607916 1.91332 0.0521447 2.09869 0.135559C2.28407 0.218973 2.45121 0.338109 2.59052 0.486145C2.72982 0.634181 2.83858 0.808197 2.91058 0.998291C2.98259 1.18839 3.01646 1.39082 3.01019 1.59399ZM3.01019 8.422C2.99494 8.71486 2.89421 8.99683 2.7204 9.23303C2.54658 9.46923 2.30724 9.64931 2.03217 9.75098C1.75709 9.85264 1.45832 9.87144 1.17267 9.80505C0.887018 9.73867 0.627036 9.59 0.424988 9.37744C0.222939 9.16489 0.0876626 8.89778 0.0358276 8.60913C-0.0160075 8.32049 0.0178939 8.02296 0.133362 7.75339C0.24883 7.48381 0.440783 7.25401 0.685486 7.09238C0.930189 6.93075 1.21693 6.84439 1.51019 6.84399C1.91832 6.85447 2.30558 7.02658 2.58685 7.32248C2.86813 7.61838 3.0204 8.01387 3.01019 8.422ZM3.01019 15.406C2.99186 15.698 2.88852 15.9782 2.71295 16.2122C2.53739 16.4462 2.29722 16.6238 2.02203 16.723C1.74684 16.8223 1.44864 16.8389 1.16412 16.7708C0.879609 16.7028 0.621197 16.553 0.420715 16.34C0.220234 16.1269 0.0864912 15.8599 0.0358276 15.5718C-0.0148361 15.2837 0.0197807 14.987 0.135559 14.7184C0.251337 14.4497 0.443209 14.2208 0.687439 14.0597C0.931669 13.8987 1.21765 13.8126 1.51019 13.812C1.92046 13.8246 2.30898 13.9995 2.59027 14.2984C2.87156 14.5973 3.02258 14.9957 3.01019 15.406Z" />
                   </svg>
                 </a>
+                <ul class="home-table-list">
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Просмотреть пропуск</a>
+                  </li>
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Изменить пропуск</a>
+                  </li>
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Аннулировать пропуск</a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr class="home-table-content-line">
-              <td class="home-table-content-col_alert" colspan="7"></td>
+              <td class="home-table-content-col" colspan="6"></td>
             </tr>
             <tr class="home-table-content-line">
+              <td class="home-table-content-col" rowspan="2">214</td>
               <td class="home-table-content-col" rowspan="2">
-                <div class="home-table-content-col-person">
+                <div class="home-table-person">
                   <img src="./img/user_2.png" alt="Фотография сотрудника" height="40" width="40"
-                    class="home-table-content-col-person-photo">
-                  <div class="home-table-content-col-person-content">
-                    <span class="home-table-content-col-person-content-name">Иванов Сергей Анатольевич</span>
-                    <spam class="home-table-content-col-person-content-date">13.05.1963</spam>
-                    <span class="home-table-content-col-person-content-position">Тракторист</span>
+                    class="home-table-person-photo">
+                  <div class="home-table-person-content">
+                    <span class="home-table-person-content-name">Иванов Сергей Анатольевич</span>
+                    <spam class="home-table-person-content-date">13.05.1963</spam>
+                    <span class="home-table-person-content-position">Тракторист</span>
                   </div>
                 </div>
               </td>
@@ -949,28 +993,40 @@
               <td class="home-table-content-col">09.10.2018</td>
               <td class="home-table-content-col">03.03.2018</td>
               <td class="home-table-content-col">448</td>
-              <td class="home-table-content-col">1998</td>
               <td class="home-table-content-col">
-                <a href="#" class="home-table-content-col-menu">
-                  <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg" class="home-table-content-col-menu-svg">
+                <a href="#" class="home-table-menu">
+                  <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg" class="home-table-menu-svg">
                     <path
                       d="M3.01019 1.59399C2.99186 1.88596 2.88852 2.1662 2.71295 2.40021C2.53739 2.63421 2.29722 2.81176 2.02203 2.91101C1.74684 3.01027 1.44864 3.02689 1.16412 2.95883C0.879609 2.89077 0.621197 2.741 0.420715 2.52795C0.220234 2.31491 0.0864912 2.04789 0.0358276 1.75977C-0.0148361 1.47164 0.0197807 1.175 0.135559 0.906342C0.251337 0.637685 0.443209 0.408747 0.687439 0.247711C0.931669 0.0866749 1.21765 0.000575023 1.51019 0C1.71338 0.00607916 1.91332 0.0521447 2.09869 0.135559C2.28407 0.218973 2.45121 0.338109 2.59052 0.486145C2.72982 0.634181 2.83858 0.808197 2.91058 0.998291C2.98259 1.18839 3.01646 1.39082 3.01019 1.59399ZM3.01019 8.422C2.99494 8.71486 2.89421 8.99683 2.7204 9.23303C2.54658 9.46923 2.30724 9.64931 2.03217 9.75098C1.75709 9.85264 1.45832 9.87144 1.17267 9.80505C0.887018 9.73867 0.627036 9.59 0.424988 9.37744C0.222939 9.16489 0.0876626 8.89778 0.0358276 8.60913C-0.0160075 8.32049 0.0178939 8.02296 0.133362 7.75339C0.24883 7.48381 0.440783 7.25401 0.685486 7.09238C0.930189 6.93075 1.21693 6.84439 1.51019 6.84399C1.91832 6.85447 2.30558 7.02658 2.58685 7.32248C2.86813 7.61838 3.0204 8.01387 3.01019 8.422ZM3.01019 15.406C2.99186 15.698 2.88852 15.9782 2.71295 16.2122C2.53739 16.4462 2.29722 16.6238 2.02203 16.723C1.74684 16.8223 1.44864 16.8389 1.16412 16.7708C0.879609 16.7028 0.621197 16.553 0.420715 16.34C0.220234 16.1269 0.0864912 15.8599 0.0358276 15.5718C-0.0148361 15.2837 0.0197807 14.987 0.135559 14.7184C0.251337 14.4497 0.443209 14.2208 0.687439 14.0597C0.931669 13.8987 1.21765 13.8126 1.51019 13.812C1.92046 13.8246 2.30898 13.9995 2.59027 14.2984C2.87156 14.5973 3.02258 14.9957 3.01019 15.406Z" />
                   </svg>
                 </a>
+                <ul class="home-table-list">
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Просмотреть пропуск</a>
+                  </li>
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Изменить пропуск</a>
+                  </li>
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Аннулировать пропуск</a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr class="home-table-content-line">
-              <td class="home-table-content-col_alert" colspan="7"></td>
+              <td class="home-table-content-col" colspan="6"></td>
             </tr>
             <tr class="home-table-content-line">
+              <td class="home-table-content-col" rowspan="2">274</td>
               <td class="home-table-content-col" rowspan="2">
-                <div class="home-table-content-col-person">
-                  <img src="./img/user_1.png" alt="Фотография сотрудника" class="home-table-content-col-person-photo">
-                  <div class="home-table-content-col-person-content">
-                    <span class="home-table-content-col-person-content-name">Алехин Алексей
+                <div class="home-table-person">
+                  <img src="./img/user_1.png" alt="Фотография сотрудника" height="40" width="40"
+                    class="home-table-person-photo">
+                  <div class="home-table-person-content">
+                    <span class="home-table-person-content-name">Алехин Алексей
                       Владимирович</span>
-                    <spam class="home-table-content-col-person-content-date">23.02.1963</spam>
-                    <span class="home-table-content-col-person-content-position">Водитель автомобиля (всех
+                    <spam class="home-table-person-content-date">23.02.1963</spam>
+                    <span class="home-table-person-content-position">Водитель автомобиля (всех
                       категорий)</span>
                   </div>
                 </div>
@@ -981,59 +1037,81 @@
               <td class="home-table-content-col">09.10.2018</td>
               <td class="home-table-content-col">03.03.2018</td>
               <td class="home-table-content-col">448</td>
-              <td class="home-table-content-col">1998</td>
               <td class="home-table-content-col">
-                <a href="#" class="home-table-content-col-menu">
-                  <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg" class="home-table-content-col-menu-svg">
+                <a href="#" class="home-table-menu">
+                  <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg" class="home-table-menu-svg">
                     <path
                       d="M3.01019 1.59399C2.99186 1.88596 2.88852 2.1662 2.71295 2.40021C2.53739 2.63421 2.29722 2.81176 2.02203 2.91101C1.74684 3.01027 1.44864 3.02689 1.16412 2.95883C0.879609 2.89077 0.621197 2.741 0.420715 2.52795C0.220234 2.31491 0.0864912 2.04789 0.0358276 1.75977C-0.0148361 1.47164 0.0197807 1.175 0.135559 0.906342C0.251337 0.637685 0.443209 0.408747 0.687439 0.247711C0.931669 0.0866749 1.21765 0.000575023 1.51019 0C1.71338 0.00607916 1.91332 0.0521447 2.09869 0.135559C2.28407 0.218973 2.45121 0.338109 2.59052 0.486145C2.72982 0.634181 2.83858 0.808197 2.91058 0.998291C2.98259 1.18839 3.01646 1.39082 3.01019 1.59399ZM3.01019 8.422C2.99494 8.71486 2.89421 8.99683 2.7204 9.23303C2.54658 9.46923 2.30724 9.64931 2.03217 9.75098C1.75709 9.85264 1.45832 9.87144 1.17267 9.80505C0.887018 9.73867 0.627036 9.59 0.424988 9.37744C0.222939 9.16489 0.0876626 8.89778 0.0358276 8.60913C-0.0160075 8.32049 0.0178939 8.02296 0.133362 7.75339C0.24883 7.48381 0.440783 7.25401 0.685486 7.09238C0.930189 6.93075 1.21693 6.84439 1.51019 6.84399C1.91832 6.85447 2.30558 7.02658 2.58685 7.32248C2.86813 7.61838 3.0204 8.01387 3.01019 8.422ZM3.01019 15.406C2.99186 15.698 2.88852 15.9782 2.71295 16.2122C2.53739 16.4462 2.29722 16.6238 2.02203 16.723C1.74684 16.8223 1.44864 16.8389 1.16412 16.7708C0.879609 16.7028 0.621197 16.553 0.420715 16.34C0.220234 16.1269 0.0864912 15.8599 0.0358276 15.5718C-0.0148361 15.2837 0.0197807 14.987 0.135559 14.7184C0.251337 14.4497 0.443209 14.2208 0.687439 14.0597C0.931669 13.8987 1.21765 13.8126 1.51019 13.812C1.92046 13.8246 2.30898 13.9995 2.59027 14.2984C2.87156 14.5973 3.02258 14.9957 3.01019 15.406Z" />
                   </svg>
                 </a>
+                <ul class="home-table-list">
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Просмотреть пропуск</a>
+                  </li>
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Изменить пропуск</a>
+                  </li>
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Аннулировать пропуск</a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr class="home-table-content-line">
-              <td class="home-table-content-col_alert" colspan="7"></td>
+              <td class="home-table-content-col" colspan="6"></td>
+            </tr>
+            <tr class="home-table-content-line">
+              <td class="home-table-content-col" rowspan="2">1998</td>
+              <td class="home-table-content-col" rowspan="2">
+                <div class="home-table-person">
+                  <img src="./img/user_icon.svg" alt="Фотография сотрудника" height="40" width="40"
+                    class="home-table-person-photo">
+                  <div class="home-table-person-content">
+                    <span class="home-table-person-content-name">Нургалиев Руслан Фаатович</span>
+                    <spam class="home-table-person-content-date">06.08.1980</spam>
+                    <span class="home-table-person-content-position">Прочее</span>
+                  </div>
+                </div>
+              </td>
+              <td class="home-table-content-col" rowspan="2">Филиал АО "ССК" Управление цементировании АО "ССК"</td>
+              <td class="home-table-content-col">7000001C</td>
+              <td class="home-table-content-col">23.12.2017</td>
+              <td class="home-table-content-col">09.10.2018</td>
+              <td class="home-table-content-col">03.03.2018</td>
+              <td class="home-table-content-col">448</td>
+              <td class="home-table-content-col">
+                <a href="#" class="home-table-menu">
+                  <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg" class="home-table-menu-svg">
+                    <path
+                      d="M3.01019 1.59399C2.99186 1.88596 2.88852 2.1662 2.71295 2.40021C2.53739 2.63421 2.29722 2.81176 2.02203 2.91101C1.74684 3.01027 1.44864 3.02689 1.16412 2.95883C0.879609 2.89077 0.621197 2.741 0.420715 2.52795C0.220234 2.31491 0.0864912 2.04789 0.0358276 1.75977C-0.0148361 1.47164 0.0197807 1.175 0.135559 0.906342C0.251337 0.637685 0.443209 0.408747 0.687439 0.247711C0.931669 0.0866749 1.21765 0.000575023 1.51019 0C1.71338 0.00607916 1.91332 0.0521447 2.09869 0.135559C2.28407 0.218973 2.45121 0.338109 2.59052 0.486145C2.72982 0.634181 2.83858 0.808197 2.91058 0.998291C2.98259 1.18839 3.01646 1.39082 3.01019 1.59399ZM3.01019 8.422C2.99494 8.71486 2.89421 8.99683 2.7204 9.23303C2.54658 9.46923 2.30724 9.64931 2.03217 9.75098C1.75709 9.85264 1.45832 9.87144 1.17267 9.80505C0.887018 9.73867 0.627036 9.59 0.424988 9.37744C0.222939 9.16489 0.0876626 8.89778 0.0358276 8.60913C-0.0160075 8.32049 0.0178939 8.02296 0.133362 7.75339C0.24883 7.48381 0.440783 7.25401 0.685486 7.09238C0.930189 6.93075 1.21693 6.84439 1.51019 6.84399C1.91832 6.85447 2.30558 7.02658 2.58685 7.32248C2.86813 7.61838 3.0204 8.01387 3.01019 8.422ZM3.01019 15.406C2.99186 15.698 2.88852 15.9782 2.71295 16.2122C2.53739 16.4462 2.29722 16.6238 2.02203 16.723C1.74684 16.8223 1.44864 16.8389 1.16412 16.7708C0.879609 16.7028 0.621197 16.553 0.420715 16.34C0.220234 16.1269 0.0864912 15.8599 0.0358276 15.5718C-0.0148361 15.2837 0.0197807 14.987 0.135559 14.7184C0.251337 14.4497 0.443209 14.2208 0.687439 14.0597C0.931669 13.8987 1.21765 13.8126 1.51019 13.812C1.92046 13.8246 2.30898 13.9995 2.59027 14.2984C2.87156 14.5973 3.02258 14.9957 3.01019 15.406Z" />
+                  </svg>
+                </a>
+                <ul class="home-table-list">
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Просмотреть пропуск</a>
+                  </li>
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Изменить пропуск</a>
+                  </li>
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Аннулировать пропуск</a>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+            <tr class="home-table-content-line">
+              <td class="home-table-content-col" colspan="6"></td>
             </tr>
             <tr class="home-table-content-line alert">
+              <td class="home-table-content-col" rowspan="2">934</td>
               <td class="home-table-content-col" rowspan="2">
-                <div class="home-table-content-col-person">
-                  <img src="./img/user_icon.svg" alt="Фотография сотрудника" height="40" width="40"
-                    class="home-table-content-col-person-photo">
-                  <div class="home-table-content-col-person-content">
-                    <span class="home-table-content-col-person-content-name">Нургалиев Руслан Фаатович</span>
-                    <spam class="home-table-content-col-person-content-date">06.08.1980</spam>
-                    <span class="home-table-content-col-person-content-position">Прочее</span>
-                  </div>
-                </div>
-              </td>
-              <td class="home-table-content-col" rowspan="2">Филиал АО "ССК" Управление цементировании АО "ССК"</td>
-              <td class="home-table-content-col">7000001C</td>
-              <td class="home-table-content-col">23.12.2017</td>
-              <td class="home-table-content-col">09.10.2018</td>
-              <td class="home-table-content-col">03.03.2018</td>
-              <td class="home-table-content-col">448</td>
-              <td class="home-table-content-col">1998</td>
-              <td class="home-table-content-col">
-                <a href="#" class="home-table-content-col-menu">
-                  <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg" class="home-table-content-col-menu-svg">
-                    <path
-                      d="M3.01019 1.59399C2.99186 1.88596 2.88852 2.1662 2.71295 2.40021C2.53739 2.63421 2.29722 2.81176 2.02203 2.91101C1.74684 3.01027 1.44864 3.02689 1.16412 2.95883C0.879609 2.89077 0.621197 2.741 0.420715 2.52795C0.220234 2.31491 0.0864912 2.04789 0.0358276 1.75977C-0.0148361 1.47164 0.0197807 1.175 0.135559 0.906342C0.251337 0.637685 0.443209 0.408747 0.687439 0.247711C0.931669 0.0866749 1.21765 0.000575023 1.51019 0C1.71338 0.00607916 1.91332 0.0521447 2.09869 0.135559C2.28407 0.218973 2.45121 0.338109 2.59052 0.486145C2.72982 0.634181 2.83858 0.808197 2.91058 0.998291C2.98259 1.18839 3.01646 1.39082 3.01019 1.59399ZM3.01019 8.422C2.99494 8.71486 2.89421 8.99683 2.7204 9.23303C2.54658 9.46923 2.30724 9.64931 2.03217 9.75098C1.75709 9.85264 1.45832 9.87144 1.17267 9.80505C0.887018 9.73867 0.627036 9.59 0.424988 9.37744C0.222939 9.16489 0.0876626 8.89778 0.0358276 8.60913C-0.0160075 8.32049 0.0178939 8.02296 0.133362 7.75339C0.24883 7.48381 0.440783 7.25401 0.685486 7.09238C0.930189 6.93075 1.21693 6.84439 1.51019 6.84399C1.91832 6.85447 2.30558 7.02658 2.58685 7.32248C2.86813 7.61838 3.0204 8.01387 3.01019 8.422ZM3.01019 15.406C2.99186 15.698 2.88852 15.9782 2.71295 16.2122C2.53739 16.4462 2.29722 16.6238 2.02203 16.723C1.74684 16.8223 1.44864 16.8389 1.16412 16.7708C0.879609 16.7028 0.621197 16.553 0.420715 16.34C0.220234 16.1269 0.0864912 15.8599 0.0358276 15.5718C-0.0148361 15.2837 0.0197807 14.987 0.135559 14.7184C0.251337 14.4497 0.443209 14.2208 0.687439 14.0597C0.931669 13.8987 1.21765 13.8126 1.51019 13.812C1.92046 13.8246 2.30898 13.9995 2.59027 14.2984C2.87156 14.5973 3.02258 14.9957 3.01019 15.406Z" />
-                  </svg>
-                </a>
-              </td>
-            </tr>
-            <tr class="home-table-content-line">
-              <td class="home-table-content-col_alert" colspan="7">13.06.2018, Удален по заявке № 25844</td>
-            </tr>
-            <tr class="home-table-content-line">
-              <td class="home-table-content-col" rowspan="2">
-                <div class="home-table-content-col-person">
+                <div class="home-table-person">
                   <img src="./img/user_2.png" alt="Фотография сотрудника" height="40" width="40"
-                    class="home-table-content-col-person-photo">
-                  <div class="home-table-content-col-person-content">
-                    <span class="home-table-content-col-person-content-name">Иванов Сергей Анатольевич</span>
-                    <spam class="home-table-content-col-person-content-date">13.05.1963</spam>
-                    <span class="home-table-content-col-person-content-position">Тракторист</span>
+                    class="home-table-person-photo">
+                  <div class="home-table-person-content">
+                    <span class="home-table-person-content-name">Иванов Сергей Анатольевич</span>
+                    <spam class="home-table-person-content-date">13.05.1963</spam>
+                    <span class="home-table-person-content-position">Тракторист</span>
                   </div>
                 </div>
               </td>
@@ -1043,28 +1121,39 @@
               <td class="home-table-content-col">09.10.2018</td>
               <td class="home-table-content-col">03.03.2018</td>
               <td class="home-table-content-col">448</td>
-              <td class="home-table-content-col">1998</td>
               <td class="home-table-content-col">
-                <a href="#" class="home-table-content-col-menu">
-                  <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg" class="home-table-content-col-menu-svg">
+                <a href="#" class="home-table-menu">
+                  <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg" class="home-table-menu-svg">
                     <path
                       d="M3.01019 1.59399C2.99186 1.88596 2.88852 2.1662 2.71295 2.40021C2.53739 2.63421 2.29722 2.81176 2.02203 2.91101C1.74684 3.01027 1.44864 3.02689 1.16412 2.95883C0.879609 2.89077 0.621197 2.741 0.420715 2.52795C0.220234 2.31491 0.0864912 2.04789 0.0358276 1.75977C-0.0148361 1.47164 0.0197807 1.175 0.135559 0.906342C0.251337 0.637685 0.443209 0.408747 0.687439 0.247711C0.931669 0.0866749 1.21765 0.000575023 1.51019 0C1.71338 0.00607916 1.91332 0.0521447 2.09869 0.135559C2.28407 0.218973 2.45121 0.338109 2.59052 0.486145C2.72982 0.634181 2.83858 0.808197 2.91058 0.998291C2.98259 1.18839 3.01646 1.39082 3.01019 1.59399ZM3.01019 8.422C2.99494 8.71486 2.89421 8.99683 2.7204 9.23303C2.54658 9.46923 2.30724 9.64931 2.03217 9.75098C1.75709 9.85264 1.45832 9.87144 1.17267 9.80505C0.887018 9.73867 0.627036 9.59 0.424988 9.37744C0.222939 9.16489 0.0876626 8.89778 0.0358276 8.60913C-0.0160075 8.32049 0.0178939 8.02296 0.133362 7.75339C0.24883 7.48381 0.440783 7.25401 0.685486 7.09238C0.930189 6.93075 1.21693 6.84439 1.51019 6.84399C1.91832 6.85447 2.30558 7.02658 2.58685 7.32248C2.86813 7.61838 3.0204 8.01387 3.01019 8.422ZM3.01019 15.406C2.99186 15.698 2.88852 15.9782 2.71295 16.2122C2.53739 16.4462 2.29722 16.6238 2.02203 16.723C1.74684 16.8223 1.44864 16.8389 1.16412 16.7708C0.879609 16.7028 0.621197 16.553 0.420715 16.34C0.220234 16.1269 0.0864912 15.8599 0.0358276 15.5718C-0.0148361 15.2837 0.0197807 14.987 0.135559 14.7184C0.251337 14.4497 0.443209 14.2208 0.687439 14.0597C0.931669 13.8987 1.21765 13.8126 1.51019 13.812C1.92046 13.8246 2.30898 13.9995 2.59027 14.2984C2.87156 14.5973 3.02258 14.9957 3.01019 15.406Z" />
                   </svg>
                 </a>
+                <ul class="home-table-list">
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Просмотреть пропуск</a>
+                  </li>
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Изменить пропуск</a>
+                  </li>
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Аннулировать пропуск</a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr class="home-table-content-line">
-              <td class="home-table-content-col_alert" colspan="7"></td>
+              <td class="home-table-content-col" colspan="6">17.09.2020, Удален по заявке № 17941</td>
             </tr>
             <tr class="home-table-content-line">
+              <td class="home-table-content-col" rowspan="2">483</td>
               <td class="home-table-content-col" rowspan="2">
-                <div class="home-table-content-col-person">
+                <div class="home-table-person">
                   <img src="./img/user_icon.svg" alt="Фотография сотрудника" height="40" width="40"
-                    class="home-table-content-col-person-photo">
-                  <div class="home-table-content-col-person-content">
-                    <span class="home-table-content-col-person-content-name">Нургалиев Руслан Фаатович</span>
-                    <spam class="home-table-content-col-person-content-date">06.08.1980</spam>
-                    <span class="home-table-content-col-person-content-position">Прочее</span>
+                    class="home-table-person-photo">
+                  <div class="home-table-person-content">
+                    <span class="home-table-person-content-name">Нургалиев Руслан Фаатович</span>
+                    <spam class="home-table-person-content-date">06.08.1980</spam>
+                    <span class="home-table-person-content-position">Прочее</span>
                   </div>
                 </div>
               </td>
@@ -1074,28 +1163,40 @@
               <td class="home-table-content-col">09.10.2018</td>
               <td class="home-table-content-col">03.03.2018</td>
               <td class="home-table-content-col">448</td>
-              <td class="home-table-content-col">1998</td>
               <td class="home-table-content-col">
-                <a href="#" class="home-table-content-col-menu">
-                  <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg" class="home-table-content-col-menu-svg">
+                <a href="#" class="home-table-menu">
+                  <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg" class="home-table-menu-svg">
                     <path
                       d="M3.01019 1.59399C2.99186 1.88596 2.88852 2.1662 2.71295 2.40021C2.53739 2.63421 2.29722 2.81176 2.02203 2.91101C1.74684 3.01027 1.44864 3.02689 1.16412 2.95883C0.879609 2.89077 0.621197 2.741 0.420715 2.52795C0.220234 2.31491 0.0864912 2.04789 0.0358276 1.75977C-0.0148361 1.47164 0.0197807 1.175 0.135559 0.906342C0.251337 0.637685 0.443209 0.408747 0.687439 0.247711C0.931669 0.0866749 1.21765 0.000575023 1.51019 0C1.71338 0.00607916 1.91332 0.0521447 2.09869 0.135559C2.28407 0.218973 2.45121 0.338109 2.59052 0.486145C2.72982 0.634181 2.83858 0.808197 2.91058 0.998291C2.98259 1.18839 3.01646 1.39082 3.01019 1.59399ZM3.01019 8.422C2.99494 8.71486 2.89421 8.99683 2.7204 9.23303C2.54658 9.46923 2.30724 9.64931 2.03217 9.75098C1.75709 9.85264 1.45832 9.87144 1.17267 9.80505C0.887018 9.73867 0.627036 9.59 0.424988 9.37744C0.222939 9.16489 0.0876626 8.89778 0.0358276 8.60913C-0.0160075 8.32049 0.0178939 8.02296 0.133362 7.75339C0.24883 7.48381 0.440783 7.25401 0.685486 7.09238C0.930189 6.93075 1.21693 6.84439 1.51019 6.84399C1.91832 6.85447 2.30558 7.02658 2.58685 7.32248C2.86813 7.61838 3.0204 8.01387 3.01019 8.422ZM3.01019 15.406C2.99186 15.698 2.88852 15.9782 2.71295 16.2122C2.53739 16.4462 2.29722 16.6238 2.02203 16.723C1.74684 16.8223 1.44864 16.8389 1.16412 16.7708C0.879609 16.7028 0.621197 16.553 0.420715 16.34C0.220234 16.1269 0.0864912 15.8599 0.0358276 15.5718C-0.0148361 15.2837 0.0197807 14.987 0.135559 14.7184C0.251337 14.4497 0.443209 14.2208 0.687439 14.0597C0.931669 13.8987 1.21765 13.8126 1.51019 13.812C1.92046 13.8246 2.30898 13.9995 2.59027 14.2984C2.87156 14.5973 3.02258 14.9957 3.01019 15.406Z" />
                   </svg>
                 </a>
+                <ul class="home-table-list">
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Просмотреть пропуск</a>
+                  </li>
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Изменить пропуск</a>
+                  </li>
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Аннулировать пропуск</a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr class="home-table-content-line">
-              <td class="home-table-content-col_alert" colspan="7"></td>
+              <td class="home-table-content-col" colspan="6"></td>
             </tr>
             <tr class="home-table-content-line">
+              <td class="home-table-content-col" rowspan="2">16</td>
               <td class="home-table-content-col" rowspan="2">
-                <div class="home-table-content-col-person">
-                  <img src="./img/user_1.png" alt="Фотография сотрудника" class="home-table-content-col-person-photo">
-                  <div class="home-table-content-col-person-content">
-                    <span class="home-table-content-col-person-content-name">Алехин Алексей
+                <div class="home-table-person">
+                  <img src="./img/user_1.png" alt="Фотография сотрудника" height="40" width="40"
+                    class="home-table-person-photo">
+                  <div class="home-table-person-content">
+                    <span class="home-table-person-content-name">Алехин Алексей
                       Владимирович</span>
-                    <spam class="home-table-content-col-person-content-date">23.02.1963</spam>
-                    <span class="home-table-content-col-person-content-position">Водитель автомобиля (всех
+                    <spam class="home-table-person-content-date">23.02.1963</spam>
+                    <span class="home-table-person-content-position">Водитель автомобиля (всех
                       категорий)</span>
                   </div>
                 </div>
@@ -1106,28 +1207,38 @@
               <td class="home-table-content-col">09.10.2018</td>
               <td class="home-table-content-col">03.03.2018</td>
               <td class="home-table-content-col">448</td>
-              <td class="home-table-content-col">1998</td>
               <td class="home-table-content-col">
-                <a href="#" class="home-table-content-col-menu">
-                  <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg" class="home-table-content-col-menu-svg">
+                <a href="#" class="home-table-menu">
+                  <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg" class="home-table-menu-svg">
                     <path
                       d="M3.01019 1.59399C2.99186 1.88596 2.88852 2.1662 2.71295 2.40021C2.53739 2.63421 2.29722 2.81176 2.02203 2.91101C1.74684 3.01027 1.44864 3.02689 1.16412 2.95883C0.879609 2.89077 0.621197 2.741 0.420715 2.52795C0.220234 2.31491 0.0864912 2.04789 0.0358276 1.75977C-0.0148361 1.47164 0.0197807 1.175 0.135559 0.906342C0.251337 0.637685 0.443209 0.408747 0.687439 0.247711C0.931669 0.0866749 1.21765 0.000575023 1.51019 0C1.71338 0.00607916 1.91332 0.0521447 2.09869 0.135559C2.28407 0.218973 2.45121 0.338109 2.59052 0.486145C2.72982 0.634181 2.83858 0.808197 2.91058 0.998291C2.98259 1.18839 3.01646 1.39082 3.01019 1.59399ZM3.01019 8.422C2.99494 8.71486 2.89421 8.99683 2.7204 9.23303C2.54658 9.46923 2.30724 9.64931 2.03217 9.75098C1.75709 9.85264 1.45832 9.87144 1.17267 9.80505C0.887018 9.73867 0.627036 9.59 0.424988 9.37744C0.222939 9.16489 0.0876626 8.89778 0.0358276 8.60913C-0.0160075 8.32049 0.0178939 8.02296 0.133362 7.75339C0.24883 7.48381 0.440783 7.25401 0.685486 7.09238C0.930189 6.93075 1.21693 6.84439 1.51019 6.84399C1.91832 6.85447 2.30558 7.02658 2.58685 7.32248C2.86813 7.61838 3.0204 8.01387 3.01019 8.422ZM3.01019 15.406C2.99186 15.698 2.88852 15.9782 2.71295 16.2122C2.53739 16.4462 2.29722 16.6238 2.02203 16.723C1.74684 16.8223 1.44864 16.8389 1.16412 16.7708C0.879609 16.7028 0.621197 16.553 0.420715 16.34C0.220234 16.1269 0.0864912 15.8599 0.0358276 15.5718C-0.0148361 15.2837 0.0197807 14.987 0.135559 14.7184C0.251337 14.4497 0.443209 14.2208 0.687439 14.0597C0.931669 13.8987 1.21765 13.8126 1.51019 13.812C1.92046 13.8246 2.30898 13.9995 2.59027 14.2984C2.87156 14.5973 3.02258 14.9957 3.01019 15.406Z" />
                   </svg>
                 </a>
+                <ul class="home-table-list">
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Просмотреть пропуск</a>
+                  </li>
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Изменить пропуск</a>
+                  </li>
+                  <li class="home-table-list-item">
+                    <a href="#" class="home-table-list-item-url">Аннулировать пропуск</a>
+                  </li>
+                </ul>
               </td>
             </tr>
             <tr class="home-table-content-line">
-              <td class="home-table-content-col_alert" colspan="7"></td>
+              <td class="home-table-content-col" colspan="6"></td>
             </tr>
           </tbody>
         </table>
       </div>
-      <div class="home-navigation">
-        <div class="home-navigation-group">
-          <span class="home-navigation-group-title">Показано 5 из 2214</span>
-          <div class="home-navigation-group-value">
-            <label for="" class="home-navigation-group-value-label">Показать по:</label>
-            <select name="navigation-group-value-list" id="" class="home-navigation-group-value-list">
+      <div class="navigation">
+        <div class="navigation-group">
+          <span class="navigation-group-title">Показано 5 из 2214</span>
+          <div class="navigation-group-value">
+            <label for="" class="navigation-group-value-label">Показать по:</label>
+            <select name="navigation-group-value-list" id="" class="navigation-group-value-list">
               <option value="10">10</option>
               <option value="25">25</option>
               <option value="50">50</option>
@@ -1135,12 +1246,12 @@
             </select>
           </div>
         </div>
-        <div class="home-navigation-pagination">
-          <ul class="home-navigation-pagination-list">
-            <li class="home-navigation-pagination-list-item">
-              <a href="#" class="home-navigation-pagination-list-item-url">
+        <div class="navigation-pagination">
+          <ul class="navigation-pagination-list">
+            <li class="navigation-pagination-list-item">
+              <a href="#" class="navigation-pagination-list-item-url">
                 <svg width="5" height="9" xmlns="http://www.w3.org/2000/svg"
-                  class="home-navigation-pagination-list-item-url-svg">
+                  class="navigation-pagination-list-item-url-svg">
                   <path
                     d="M1.24894 4.9872L4.56948 1.3503C4.63895 1.27566 4.69403 1.18667 4.73146 1.08849C4.7689 0.990321 4.78794 0.884992 4.78747 0.778682C4.785 0.564666 4.70693 0.359843 4.56948 0.206943L4.59209 0.23654C4.45271 0.0850482 4.26388 -3.2177e-08 4.06701 -4.07823e-08C3.87014 -4.93876e-08 3.68131 0.0850481 3.54193 0.23654L0.217775 3.86369C0.148746 3.93868 0.0939754 4.02776 0.0566052 4.12586C0.0192349 4.22396 -1.89231e-07 4.3291 -1.93874e-07 4.43531C-1.98516e-07 4.54153 0.0192349 4.64667 0.0566051 4.74476C0.0939753 4.84286 0.148746 4.93194 0.217775 5.00693L0.195161 4.9872C0.264245 5.0628 0.346355 5.12289 0.436773 5.16382C0.527191 5.20476 0.624139 5.22579 0.722051 5.22579C0.819963 5.22579 0.916911 5.20476 1.00733 5.16382C1.09775 5.12289 1.17986 5.06281 1.24894 4.9872Z" />
                   <path
@@ -1148,25 +1259,25 @@
                 </svg>
               </a>
             </li>
-            <li class="home-navigation-pagination-list-item">
-              <a href="#" class="home-navigation-pagination-list-item-url">1</a>
+            <li class="navigation-pagination-list-item">
+              <a href="#" class="navigation-pagination-list-item-url">1</a>
             </li>
-            <li class="home-navigation-pagination-list-item active">
-              <a href="#" class="home-navigation-pagination-list-item-url">2</a>
+            <li class="navigation-pagination-list-item active">
+              <a href="#" class="navigation-pagination-list-item-url">2</a>
             </li>
-            <li class="home-navigation-pagination-list-item">
-              <a href="#" class="home-navigation-pagination-list-item-url">3</a>
+            <li class="navigation-pagination-list-item">
+              <a href="#" class="navigation-pagination-list-item-url">3</a>
             </li>
-            <li class="home-navigation-pagination-list-item">
-              <a href="#" class="home-navigation-pagination-list-item-url">...</a>
+            <li class="navigation-pagination-list-item">
+              <a href="#" class="navigation-pagination-list-item-url">...</a>
             </li>
-            <li class="home-navigation-pagination-list-item">
-              <a href="#" class="home-navigation-pagination-list-item-url">12</a>
+            <li class="navigation-pagination-list-item">
+              <a href="#" class="navigation-pagination-list-item-url">12</a>
             </li>
-            <li class="home-navigation-pagination-list-item">
-              <a href="#" class="home-navigation-pagination-list-item-url">
+            <li class="navigation-pagination-list-item">
+              <a href="#" class="navigation-pagination-list-item-url">
                 <svg width="5" height="9" xmlns="http://www.w3.org/2000/svg"
-                  class="home-navigation-pagination-list-item-url-svg">
+                  class="navigation-pagination-list-item-url-svg">
                   <path
                     d="M3.75106 4.0128L0.430523 7.6497C0.361048 7.72434 0.305973 7.81333 0.268537 7.91151C0.2311 8.00968 0.212059 8.11501 0.212531 8.22132C0.214998 8.43533 0.293073 8.64016 0.430523 8.79306L0.40791 8.76346C0.547293 8.91495 0.736124 9 0.93299 9C1.12986 9 1.31869 8.91495 1.45807 8.76346L4.78222 5.13631C4.85125 5.06132 4.90602 4.97224 4.94339 4.87414C4.98076 4.77604 5 4.6709 5 4.56469C5 4.45847 4.98076 4.35333 4.94339 4.25524C4.90602 4.15714 4.85125 4.06806 4.78222 3.99307L4.80484 4.0128C4.73575 3.93719 4.65364 3.87711 4.56323 3.83618C4.47281 3.79524 4.37586 3.77421 4.27795 3.77421C4.18004 3.77421 4.08309 3.79524 3.99267 3.83618C3.90225 3.87711 3.82014 3.93719 3.75106 4.0128Z" />
                   <path
@@ -1178,8 +1289,9 @@
         </div>
       </div>
     </section>
-    <script src="./js/script.js">
-    </script>
+  </main>
+  <script src="./js/script.js">
+  </script>
 </body>
 
 

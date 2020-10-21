@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/all.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="shortcut icon" type="image/png" href="/img/favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
   <title>Алехин Алексей Владимирович | АСЗОП - Автоматизированная система заказа и оформления пропусков</title>
 </head>
 
@@ -17,7 +17,7 @@
       <span class="header-title-child">Алехин Алексей Владимирович</span>
     </span>
     <div class="header-controls">
-      <form action="#" class="header-controls-search">
+      <!-- <form action="#" class="header-controls-search">
         <input type="search" value="" id="search" placeholder="Введите текст поиска и нажмите ENTER"
           class="header-controls-search-inp">
         <label for="search" class="header-controls-search-label">
@@ -28,7 +28,7 @@
               d="M18.032 16.916L12.932 11.827C12.8559 11.7507 12.7655 11.6901 12.666 11.6488C12.5665 11.6075 12.4598 11.5862 12.352 11.5862C12.2443 11.5862 12.1376 11.6075 12.0381 11.6488C11.9385 11.6901 11.848 11.7507 11.772 11.827L11.802 11.802C11.7232 11.8767 11.6604 11.9668 11.6175 12.0666C11.5746 12.1664 11.5525 12.2739 11.5525 12.3825C11.5525 12.4911 11.5746 12.5986 11.6175 12.6984C11.6604 12.7982 11.7232 12.8883 11.802 12.963L16.8919 18.052C17.0471 18.204 17.2549 18.2903 17.472 18.293C17.5799 18.2935 17.6868 18.2725 17.7864 18.2311C17.886 18.1897 17.9763 18.1288 18.052 18.052L18.032 18.077C18.1857 17.9229 18.2721 17.7141 18.2721 17.4965C18.2721 17.2789 18.1857 17.0701 18.032 16.916Z" />
           </svg>
         </label>
-      </form>
+      </form> -->
       <img src="./img/user.png" alt="Изображение пользователя" class="header-controls-photo" height="40" width="40">
       <a href="#header-controls-menu" class="header-controls-menu" id="header-controls-menu">
         <svg width="9" height="5" viewBox="0 0 9 5" xmlns="http://www.w3.org/2000/svg">
@@ -489,11 +489,20 @@
   <main class="main">
     <section class="content">
       <div class="content-header">
+        <a href="./index.html" class="content-header-arrow">
+          <svg width="12" height="21" xmlns="http://www.w3.org/2000/svg" class="content-header-arrow-svg">
+            <path
+              d="M0 10.494L10.707 0L11.994 1.259L1.28699 11.753L0 10.494ZM1.28497 9.235L11.994 19.729L10.709 20.988L0 10.494L1.28497 9.235Z" />
+            <path d="M1.28497 9.235L11.994 19.729L10.709 20.988L0 10.494L1.28497 9.235Z" />
+          </svg>
+        </a>
         <span class="h1-like">Алехин Алексей Владимирович</span>
       </div>
       <div class="employee-header">
         <span class="h2-like">Просмотр данных сотрудника</span>
-        <button class="btn-edit">Редактировать</button>
+        <form action="./employee_card_edit.html">
+          <button class="btn-edit">Редактировать</button>
+        </form>
       </div>
       <div class="employee-main">
         <div class="employee-main-photo">
@@ -502,37 +511,36 @@
           <span class="employee-main-photo-title">26-12-2018-18:11 изменил gipns-cds@gazpromneft.ru</span>
         </div>
         <div class="employee-main-fields">
-          <div class="employee-main-fields-left">
-            <div class="employee-main-fields-field">
-              <label for="#" class="employee-main-fields-field-label">Фамилия</label>
-              <input type="text" value="Алехин" class="employee-main-fields-field-txt" readonly>
+          <div class="employee-main-fields-iner">
+            <div class="field">
+              <label for="#" class="field-label">Фамилия</label>
+              <input type="text" value="Алехин" class="field-text" readonly>
             </div>
-            <div class="employee-main-fields-field">
-              <label for="#" class="employee-main-fields-field-label">Имя</label>
-              <input type="text" value="Алексей" class="employee-main-fields-field-txt" readonly>
+            <div class="field">
+              <label for="#" class="field-label">Имя</label>
+              <input type="text" value="Алексей" class="field-text" readonly>
             </div>
-            <div class="employee-main-fields-field">
-              <label for="#" class="employee-main-fields-field-label">Отчество</label>
-              <input type="text" value="Владимирович" class="employee-main-fields-field-txt" readonly>
+            <div class="field">
+              <label for="#" class="field-label">Отчество</label>
+              <input type="text" value="Владимирович" class="field-text" readonly>
             </div>
-            <div class="employee-main-fields-field">
-              <label for="#" class="employee-main-fields-field-label">Дата рождения</label>
-              <input type="text" value="29.11.1988" class="employee-main-fields-field-txt" readonly>
+            <div class="field">
+              <label for="#" class="field-label">Дата рождения</label>
+              <input type="date" value="1988-07-22" class="field-date" readonly>
             </div>
           </div>
-          <div class="employee-main-fields-right">
-            <div class="employee-main-fields-field">
-              <label for="#" class="employee-main-fields-field-label">Субподрядчик</label>
-              <input type="text" value="ООО НПФ АМК ГОРИЗОНТ" list="organization" class="employee-main-fields-field-txt"
-                readonly>
+          <div class="employee-main-fields-iner">
+            <div class="field">
+              <label for="#" class="field-label">Субподрядчик</label>
+              <input type="text" value="ООО НПФ АМК ГОРИЗОНТ" list="organization" class="field-text" readonly>
               <datalist id="organization">
                 <option value="ООО НВДС">
                 <option value="Филиал АО ССК Управление цементировании">
                 <option value="АО ССК">
             </div>
-            <div class="employee-main-fields-field">
-              <label for="#" class="employee-main-fields-field-label">Должность</label>
-              <input type="text" value="Стропальщик" list="position" class="employee-main-fields-field-txt" readonly>
+            <div class="field">
+              <label for="#" class="field-label">Должность</label>
+              <input type="text" value="Стропальщик" list="position" class="field-text" readonly>
               <datalist id="position">
                 <option value="Строитель">
                 <option value="Уборщик">
@@ -540,9 +548,9 @@
                 <option value="Водитель">
               </datalist>
             </div>
-            <div class="employee-main-fields-field">
-              <label for="#" class="employee-main-fields-field-label" readonly>Должность дополнительная</label>
-              <input type="text" placeholder="Введите значение" class="employee-main-fields-field-txt" readonly>
+            <div class="field">
+              <label for="#" class="field-label" readonly>Должность дополнительная</label>
+              <input type="text" placeholder="Введите значение" class="field-text" readonly>
             </div>
           </div>
         </div>
@@ -550,32 +558,34 @@
       <div class="employee-passport">
         <span class="employee-passport-title">Паспортные данные</span>
         <div class="employee-passport-fields">
-          <div class="employee-passport-fields-wrp">
-            <div class="employee-passport-fields-field">
-              <label for="#" class="employee-passport-fields-field-label">Гражданство</label>
-              <input type="text" value="РФ" class="employee-passport-fields-field-txt" readonly>
+          <div class="employee-passport-fields-iner">
+            <div class="field">
+              <label for="#" class="field-label">Гражданство</label>
+              <input type="text" value="РФ" class="field-text" readonly>
             </div>
-            <div class="employee-passport-fields-field">
-              <label for="#" class="employee-passport-fields-field-label">Дата рождения</label>
-              <input type="text" value="24.11.2017" class="employee-main-fields-field-txt" readonly>
+            <div class="field">
+              <label for="#" class="field-label">Дата рождения</label>
+              <input type="date" value="24.11.2017" class="field-date" readonly>
             </div>
           </div>
-          <div class="employee-passport-fields-wrp">
-            <div class="employee-passport-fields-field">
-              <label for="#" class="employee-passport-fields-field-label">Серия</label>
-              <input type="text" value="5687" class="employee-passport-fields-field-txt" readonly>
+          <div class="employee-passport-fields-iner">
+            <div class="field">
+              <label for="#" class="field-label">Серия</label>
+              <input type="text" value="AA" class="field-text passport" readonly>
+              <label for="#" class="field-label passport">№</label>
+              <input type="text" value="5687" class="field-text passport" readonly>
             </div>
-            <div class="employee-passport-fields-field">
-              <label for="#" class="employee-passport-fields-field-label">Кем выдан</label>
+            <div class="field">
+              <label for="#" class="field-label">Кем выдан</label>
               <textarea name="" id="" rows="10" readonly
-                class="employee-passport-fields-field-txtarea">ОУФМС России по респ. Дагестан в Бабаюртовском р-не</textarea>
+                class="field-textarea">ОУФМС России по респ. Дагестан в Бабаюртовском р-не</textarea>
             </div>
           </div>
-          <div class="employee-passport-fields-wrp">
-            <div class="employee-passport-fields-field">
-              <label for="#" class="employee-passport-fields-field-label">Адрес регистрации</label>
-              <input type="text" value="Респ. Дагестан, Бабаюртовский р-он, С. Адиль Янгиюрт"
-                class="employee-passport-fields-field-txt" readonly>
+          <div class="employee-passport-fields-iner">
+            <div class="field">
+              <label for="#" class="field-label">Адрес регистрации</label>
+              <input type="text" value="Респ. Дагестан, Бабаюртовский р-он, С. Адиль Янгиюрт" class="field-text"
+                readonly>
             </div>
           </div>
         </div>
