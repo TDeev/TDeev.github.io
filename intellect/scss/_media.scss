@@ -7,6 +7,12 @@
   .employee-main-photo {
     display: none;
   }
+  .employee-emergency-main {
+    flex: 2 1 100%;
+  }
+  .employee-emergency-child-inner {
+    flex-flow: row wrap;
+  }
 }
 
 // Большие девайсы (десктопы, <= 992px)
@@ -15,12 +21,15 @@
 
 // Экстрабольшие девайсы (большие десктопы, <= 1200px)
 @media (max-width: 1200px) {
-  .employee-main-fields-iner:nth-child(1) {
+  .employee-emergency-child {
+    flex: 4 1;
+  }
+  .employee-main-fields-inner:nth-child(1) {
     .field-label {
       width: 125px;
     }
   }
-  .employee-passport-fields-iner {
+  .employee-passport-fields-inner {
     .field-label {
       &.passport {
         width: 50px;
@@ -32,7 +41,18 @@
 
 // Экстрабольшие девайсы (большие десктопы, <= 1600px)
 @media (max-width: 1600px) {
-  .employee-passport-fields-iner {
+  .home-table-header-col {
+    &:nth-child(6) {
+      width: 120px;
+    }
+    &:nth-child(7) {
+      width: 130px;
+      .home-table-title {
+        width: 110px;
+      }
+    }
+  }
+  .employee-passport-fields-inner {
     .field-label {
       &.passport {
         width: 30px;
@@ -40,28 +60,28 @@
       }
     }
   }
-  .employee-documents-table-header-col {
-    &:nth-child(2) {
+  .employee-table-header-col {
+    &:first-child {
       width: 80px;
     }
-    &:nth-child(3) {
+    &:nth-child(2) {
       min-width: 145px;
     }
-    &:nth-child(4) {
+    &:nth-child(3) {
       width: 160px;
+    }
+    &:nth-child(4) {
+      width: 100px;
     }
     &:nth-child(5) {
       width: 100px;
-    }
-    &:nth-child(6) {
-      width: 100px;
-      .content-employee-documents-table-header-col-item-title {
+      .employee-table-title {
         width: 60px;
       }
     }
-    &:nth-child(7) {
+    &:nth-child(6) {
       width: 160px;
-      .content-employee-documents-table-header-col-item-title {
+      .employee-table-title {
         width: 82px;
       }
     }

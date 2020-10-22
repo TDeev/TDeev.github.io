@@ -1,7 +1,7 @@
 //============ЛЕВОЕ МЕНЮ============
 
 //элемент левой меню
-let navParent = document.querySelectorAll('.navbar-menu-list-item-content');
+let navParent = document.querySelectorAll('.navbar-list-link');
 
 for (let i = 0; i < navParent.length; i++) {
   navParent[i].onclick = function () {
