@@ -152,30 +152,7 @@ $input-color: #cccccc;
 
 //*===============Кнопки=====================
 .btn {
-  &-reset {
-    outline: none;
-    cursor: pointer;
-    background: #f5f5f5;
-    border: 1px solid #cccccc;
-    box-sizing: border-box;
-    border-radius: 20px;
-    font-size: 12px;
-    color: #4f4f4f;
-    height: 32px;
-    padding: 8px 18px 8px 18px;
-  }
-  &-submit {
-    outline: none;
-    cursor: pointer;
-    background: $active-color;
-    border: 1px solid $active-color;
-    box-sizing: border-box;
-    border-radius: 20px;
-    font-size: 12px;
-    color: #ffffff;
-    height: 32px;
-    padding: 8px 18px 8px 18px;
-  }
+  &-submit,
   &-edit {
     outline: none;
     cursor: pointer;
@@ -187,7 +164,44 @@ $input-color: #cccccc;
     color: #ffffff;
     height: 32px;
     padding: 8px 18px 8px 18px;
-    text-decoration: none;
+    margin: 0 0 0 20px;
+    &:hover {
+      background: #0685ac;
+      border-color: #0685ac;
+    }
+  }
+  &-add {
+    outline: none;
+    cursor: pointer;
+    background: #78c941;
+    border: 1px solid #78c941;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #ffffff;
+    height: 32px;
+    padding: 8px 18px 8px 18px;
+    margin: 0 0 0 20px;
+    &:hover {
+      background: #60a134;
+      border-color: #60a134;
+    }
+  }
+  &-reset {
+    outline: none;
+    cursor: pointer;
+    background: #f5f5f5;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #4f4f4f;
+    height: 32px;
+    padding: 8px 18px 8px 18px;
+    &:hover {
+      background: #dddddd;
+      border-color: #b8b8b8;
+    }
   }
 }
 
@@ -331,10 +345,6 @@ $input-color: #cccccc;
     align-items: center;
     padding: 0 18px 0 21px;
     height: 70px;
-
-    .btn-reset {
-      margin: 0 20px 0 0;
-    }
   }
 }
 
@@ -660,9 +670,9 @@ $input-color: #cccccc;
       }
       &:focus {
         background: rgba(196, 196, 196, 0.2);
-        .navbar-list-icon {
-          fill: #ffffff;
-        }
+        // .navbar-list-icon {
+        //   fill: #ffffff;
+        // }
       }
       &.open {
         .navbar-list-arrow {
@@ -1460,7 +1470,6 @@ $input-color: #cccccc;
       display: none;
     }
   }
-
   .main {
     margin: 60px 0 0 60px;
   }
