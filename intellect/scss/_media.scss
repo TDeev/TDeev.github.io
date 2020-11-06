@@ -75,7 +75,7 @@
     }
     &:nth-child(5) {
       width: 100px;
-      .employee-table-title {
+      span {
         width: 60px;
       }
     }
@@ -104,13 +104,13 @@
     }
     &:nth-child(5) {
       width: 100px;
-      .vehicle-table-title {
+      span {
         width: 60px;
       }
     }
     &:nth-child(6) {
       width: 140px;
-      .vehicle-table-title {
+      span {
         width: 82px;
       }
     }

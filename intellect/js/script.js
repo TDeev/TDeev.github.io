@@ -5,7 +5,7 @@ let navParent = document.querySelectorAll('.navbar-list-link');
 
 for (let i = 0; i < navParent.length; i++) {
   navParent[i].onclick = function () {
-    navParent[i].classList.toggle('open');
+    navParent[i].classList.toggle('navbar-list--open');
   }
 }
 
@@ -40,7 +40,7 @@ let navButton = document.querySelector('.navbar-head-btn');
 //нажатие на кнопку навигации
 
 navButton.onclick = function () {
-  body.classList.toggle('navbar-close');
+  body.classList.toggle('navbar--close');
   // console.log('Салам!');
 }
 
@@ -48,7 +48,7 @@ navButton.onclick = function () {
 
 //определение размера экрана
 if (innerWidth <= 992) {
-  body.classList.add('navbar-close');
+  body.classList.add('navbar--close');
 }
 
 //отслеживание изменения размера окна браузера
@@ -56,10 +56,10 @@ window.onresize = function () {
   // alert('Размер окна был изменен!');
 
   if (window.innerWidth <= 992) {
-    body.classList.add('navbar-close');
+    body.classList.add('navbar--close');
   }
   else {
-    body.classList.remove('navbar-close');
+    body.classList.remove('navbar--close');
   }
 }
 
