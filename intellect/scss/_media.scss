@@ -21,6 +21,11 @@
 
 // Экстрабольшие девайсы (большие десктопы, <= 1200px)
 @media (max-width: 1200px) {
+  .employees-list {
+    .main-table-header-col:nth-child(6) {
+      width: 140px;
+    }
+  }
   .employee-emergency-child {
     flex: 4 1;
   }
@@ -37,85 +42,100 @@
       }
     }
   }
+  .employees-list {
+    .main-table-header-col:nth-child(6) {
+      span {
+        width: 115px;
+      }
+    }
+  }
 }
 
 // Экстрабольшие девайсы (большие десктопы, <= 1600px)
 @media (max-width: 1600px) {
-  .home-table-header-col {
-    &:nth-child(6) {
-      width: 120px;
-    }
-    &:nth-child(7) {
-      width: 130px;
-      .home-table-title {
-        width: 110px;
+  .passes-list {
+    .main-table-header-col {
+      &:nth-child(6) {
+        width: 120px;
+      }
+      &:nth-child(7) {
+        width: 130px;
+        .main-table-title {
+          width: 110px;
+        }
       }
     }
   }
-  .employee-passport-fields-inner {
-    .field-label {
-      &.passport {
-        width: 30px;
-        margin: 0 10px 0 40px;
-      }
+  .employees-list {
+    .main-table-header-col:nth-child(3),
+    .main-table-header-col:nth-child(4) {
+      width: 15%;
     }
   }
-  .employee-table-header-col {
-    &:first-child {
-      width: 80px;
-    }
-    &:nth-child(2) {
-      min-width: 145px;
-    }
-    &:nth-child(3) {
-      width: 160px;
-    }
-    &:nth-child(4) {
-      width: 100px;
-    }
-    &:nth-child(5) {
-      width: 100px;
-      span {
-        width: 60px;
-      }
-    }
-    &:nth-child(6) {
-      width: 140px;
-      .employee-table-title {
-        width: 82px;
-      }
-    }
-    &:last-child {
-      width: 90px;
+}
+.employee-passport-fields-inner {
+  .field-label {
+    &.passport {
+      width: 30px;
+      margin: 0 10px 0 40px;
     }
   }
-  .vehicle-table-header-col {
-    &:first-child {
-      width: 80px;
+}
+.employee-table-header-col {
+  &:first-child {
+    width: 80px;
+  }
+  &:nth-child(2) {
+    min-width: 145px;
+  }
+  &:nth-child(3) {
+    width: 160px;
+  }
+  &:nth-child(4) {
+    width: 100px;
+  }
+  &:nth-child(5) {
+    width: 100px;
+    span {
+      width: 60px;
     }
-    &:nth-child(2) {
-      min-width: 145px;
+  }
+  &:nth-child(6) {
+    width: 140px;
+    .employee-table-title {
+      width: 82px;
     }
-    &:nth-child(3) {
-      width: 100px;
+  }
+  &:last-child {
+    width: 90px;
+  }
+}
+.vehicle-table-header-col {
+  &:first-child {
+    width: 80px;
+  }
+  &:nth-child(2) {
+    min-width: 145px;
+  }
+  &:nth-child(3) {
+    width: 100px;
+  }
+  &:nth-child(4) {
+    // width: 100px;
+  }
+  &:nth-child(5) {
+    width: 100px;
+    span {
+      width: 60px;
     }
-    &:nth-child(4) {
-      // width: 100px;
+  }
+  &:nth-child(6) {
+    width: 140px;
+    span {
+      width: 82px;
     }
-    &:nth-child(5) {
-      width: 100px;
-      span {
-        width: 60px;
-      }
-    }
-    &:nth-child(6) {
-      width: 140px;
-      span {
-        width: 82px;
-      }
-    }
-    &:last-child {
-      width: 90px;
-    }
+  }
+  &:last-child {
+    width: 90px;
   }
 }
