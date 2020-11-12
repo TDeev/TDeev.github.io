@@ -304,23 +304,23 @@ body {
 }
 
 .btn.btn--submit, .btn.btn--edit {
-  background: #07a6d7;
-  border: 1px solid #07a6d7;
-}
-
-.btn.btn--submit:hover, .btn.btn--edit:hover {
-  background: #0685ac;
-  border-color: #0685ac;
-}
-
-.btn.btn--add {
   background: #78c941;
   border: 1px solid #78c941;
 }
 
-.btn.btn--add:hover {
+.btn.btn--submit:hover, .btn.btn--edit:hover {
   background: #60a134;
   border-color: #60a134;
+}
+
+.btn.btn--add {
+  background: #07a6d7;
+  border: 1px solid #07a6d7;
+}
+
+.btn.btn--add:hover {
+  background: #0685ac;
+  border-color: #0685ac;
 }
 
 .btn.btn--reset {
