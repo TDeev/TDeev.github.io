@@ -218,55 +218,37 @@ $input-color: #cccccc;
 
 //*===============Кнопки=====================
 .btn {
-  &-submit,
-  &-edit {
-    outline: none;
-    cursor: pointer;
+  outline: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #ffffff;
+  height: 32px;
+  // padding: 9px 18px 9px 18px;
+  padding: 0 18px 0 18px;
+  margin: 0 0 0 20px;
+  &.btn--submit,
+  &.btn--edit {
     background: $active-color;
     border: 1px solid $active-color;
-    box-sizing: border-box;
-    border-radius: 20px;
-    font-size: 12px;
-    color: #ffffff;
-    // height: 32px;
-    padding: 9px 18px 9px 18px;
-    // padding: 0 18px 0 18px;
-    margin: 0 0 0 20px;
     &:hover {
       background: #0685ac;
       border-color: #0685ac;
     }
   }
-  &-add {
-    outline: none;
-    cursor: pointer;
+  &.btn--add {
     background: #78c941;
     border: 1px solid #78c941;
-    box-sizing: border-box;
-    border-radius: 20px;
-    font-size: 12px;
-    color: #ffffff;
-    // height: 32px;
-    padding: 9px 18px 9px 18px;
-    // padding: 0 18px 0 18px;
-    margin: 0 0 0 20px;
     &:hover {
       background: #60a134;
       border-color: #60a134;
     }
   }
-  &-reset {
-    outline: none;
-    cursor: pointer;
+  &.btn--reset {
     background: #f5f5f5;
     border: 1px solid #cccccc;
-    box-sizing: border-box;
-    border-radius: 20px;
-    font-size: 12px;
     color: #4f4f4f;
-    // height: 32px;
-    padding: 9px 18px 9px 18px;
-    // padding: 0 18px 0 18px;
     &:hover {
       background: #dddddd;
       border-color: #b8b8b8;
@@ -594,7 +576,7 @@ $input-color: #cccccc;
   background: #ffffff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  //Заголовок страниц с контентом
+  //?Заголовок страниц с контентом
   &-header {
     display: flex;
     flex-flow: row nowrap;
@@ -612,7 +594,7 @@ $input-color: #cccccc;
       }
     }
   }
-  //Заголовок страниц со списком
+  //?Заголовок страниц со списком
   &-header-list {
     display: flex;
     align-items: center;
@@ -625,14 +607,14 @@ $input-color: #cccccc;
     .h1-like {
       margin: 0 auto 0 0;
     }
-    .btn-add {
+    .btn {
       margin-right: 20px;
     }
     .tabs {
       margin: 0 auto 0 -18px;
     }
   }
-  //Кнопки фильтра и выгрузки данных
+  //?Кнопки фильтра и выгрузки данных
   &-actions {
     display: flex;
     flex-flow: row wrap;
@@ -660,7 +642,7 @@ $input-color: #cccccc;
     }
   }
 }
-//Табы
+//?Табы
 .tabs {
   display: flex;
   flex-flow: row nowrap;
@@ -692,7 +674,7 @@ $input-color: #cccccc;
     }
   }
 }
-//Фильтр
+//?Фильтр
 .filter-open {
   display: none;
   &:checked {
@@ -742,7 +724,8 @@ $input-color: #cccccc;
       flex: 1 1 auto;
       height: 36px;
       outline: none;
-      padding: 8px 10px 9px 18px;
+      // padding: 8px 10px 9px 18px;
+      padding: 0 10px 0 18px;
       background: #ffffff;
       color: $font-content-color;
       border: 1px solid $input-color;
@@ -774,7 +757,8 @@ $input-color: #cccccc;
         width: 158px;
         height: 36px;
         outline: none;
-        padding: 9px 15px 9px 18px;
+        // padding: 9px 15px 9px 18px;
+        padding: 0 10px 0 18px;
         background: #ffffff;
         color: $font-content-color;
         border: 1px solid $input-color;
@@ -796,7 +780,7 @@ $input-color: #cccccc;
     height: 70px;
   }
 }
-// Таблица
+//?Таблица
 .main-table {
   border-collapse: collapse;
   width: 100%;
@@ -985,7 +969,7 @@ $input-color: #cccccc;
     }
   }
 }
-//Постраничная навигация (пагинация)
+//?Постраничная навигация (пагинация)
 .navigation {
   display: flex;
   flex-flow: row wrap;
@@ -1064,7 +1048,7 @@ $input-color: #cccccc;
 
 //!Страницы сайта
 
-//?Список пропусков
+//*===============Список пропусков===============
 .passes {
   // Список
   &-list {
@@ -1115,7 +1099,7 @@ $input-color: #cccccc;
   }
 }
 
-//?Список сотрудников
+//*===============Список сотрудников===============
 .employees {
   // Список
   &-list {
@@ -1168,7 +1152,7 @@ $input-color: #cccccc;
   }
 }
 
-//?Карточка сотруника
+//*===============Карточка сотруника===============
 .employee {
   // Подзаголовок страницы
   &-header {
@@ -1576,7 +1560,7 @@ $input-color: #cccccc;
   }
 }
 
-//?Карточка транспортного средства
+//*==========Карточка транспортного средства===========
 .vehicle {
   // Подзаголовок страницы
   &-header {
