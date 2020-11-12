@@ -228,8 +228,9 @@ $input-color: #cccccc;
   // padding: 9px 18px 9px 18px;
   padding: 0 18px 0 18px;
   margin: 0 0 0 20px;
-  &.btn--submit,
-  &.btn--edit {
+  &.btn--add,
+  &.btn--edit,
+  &.btn--submit {
     background: $active-color;
     border: 1px solid $active-color;
     &:hover {
@@ -237,12 +238,20 @@ $input-color: #cccccc;
       border-color: #0685ac;
     }
   }
-  &.btn--add {
+  &.btn--save {
     background: #78c941;
     border: 1px solid #78c941;
     &:hover {
       background: #60a134;
       border-color: #60a134;
+    }
+  }
+  &.btn--delete {
+    background: #eb5554;
+    border: 1px solid #eb5554;
+    &:hover {
+      background: #d34c4c;
+      border-color: #d34c4c;
     }
   }
   &.btn--reset {

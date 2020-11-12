@@ -303,24 +303,34 @@ body {
   margin: 0 0 0 20px;
 }
 
-.btn.btn--submit, .btn.btn--edit {
-  background: #78c941;
-  border: 1px solid #78c941;
-}
-
-.btn.btn--submit:hover, .btn.btn--edit:hover {
-  background: #60a134;
-  border-color: #60a134;
-}
-
-.btn.btn--add {
+.btn.btn--add, .btn.btn--edit, .btn.btn--submit {
   background: #07a6d7;
   border: 1px solid #07a6d7;
 }
 
-.btn.btn--add:hover {
+.btn.btn--add:hover, .btn.btn--edit:hover, .btn.btn--submit:hover {
   background: #0685ac;
   border-color: #0685ac;
+}
+
+.btn.btn--save {
+  background: #78c941;
+  border: 1px solid #78c941;
+}
+
+.btn.btn--save:hover {
+  background: #60a134;
+  border-color: #60a134;
+}
+
+.btn.btn--delete {
+  background: #eb5554;
+  border: 1px solid #eb5554;
+}
+
+.btn.btn--delete:hover {
+  background: #d34c4c;
+  border-color: #d34c4c;
 }
 
 .btn.btn--reset {
