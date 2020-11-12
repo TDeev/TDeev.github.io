@@ -300,7 +300,8 @@ body {
   border-radius: 20px;
   font-size: 12px;
   color: #ffffff;
-  padding: 9px 18px 9px 18px;
+  height: 32px;
+  padding: 0 18px 0 18px;
   margin: 0 0 0 20px;
 }
 
@@ -319,7 +320,8 @@ body {
   border-radius: 20px;
   font-size: 12px;
   color: #ffffff;
-  padding: 9px 18px 9px 18px;
+  height: 32px;
+  padding: 0 18px 0 18px;
   margin: 0 0 0 20px;
 }
 
@@ -338,7 +340,8 @@ body {
   border-radius: 20px;
   font-size: 12px;
   color: #4f4f4f;
-  padding: 9px 18px 9px 18px;
+  height: 32px;
+  padding: 0 18px 0 18px;
 }
 
 .btn-reset:hover {
@@ -1011,7 +1014,7 @@ body {
           flex: 1 1 auto;
   height: 36px;
   outline: none;
-  padding: 8px 10px 9px 18px;
+  padding: 0 10px 0 18px;
   background: #ffffff;
   color: #4f4f4f;
   border: 1px solid #cccccc;
@@ -1062,7 +1065,7 @@ body {
   width: 158px;
   height: 36px;
   outline: none;
-  padding: 9px 15px 9px 18px;
+  padding: 0 10px 0 18px;
   background: #ffffff;
   color: #4f4f4f;
   border: 1px solid #cccccc;
