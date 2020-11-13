@@ -75,8 +75,8 @@ $input-color: #cccccc;
   //Наименование
   &-label {
     flex: 0 0 auto;
+    // white-space: nowrap;
     font-weight: 600;
-    font-size: 14px;
     margin: 0 10px 0 0;
   }
   //Текст
@@ -590,34 +590,20 @@ $input-color: #cccccc;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    min-height: 70px;
+    min-height: 50px;
     padding: 0 18px 0 18px;
     box-sizing: border-box;
     border-bottom: 1px solid #cccccc;
+    //Стрелка назад
     &-arrow {
-      width: 12px;
-      height: 21px;
+      display: flex;
       margin: 0 20px 0 0;
       &-svg {
         fill: #666666;
       }
     }
-  }
-  //?Заголовок страниц со списком
-  &-header-list {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-flow: row nowrap;
-    min-height: 50px;
-    padding: 0 10px 0 18px;
-    border-bottom: 1px solid #cccccc;
-    box-sizing: border-box;
     .h1-like {
       margin: 0 auto 0 0;
-    }
-    .btn {
-      margin-right: 20px;
     }
     .tabs {
       margin: 0 auto 0 -18px;
@@ -629,6 +615,7 @@ $input-color: #cccccc;
     flex-flow: row wrap;
     // justify-content: flex-end;
     align-items: center;
+    margin: 0 0 0 20px;
     &-file,
     &-print,
     &-filter {
@@ -649,6 +636,15 @@ $input-color: #cccccc;
     &-filter {
       cursor: pointer;
     }
+  }
+  //?Кнопки "сохранить" и "отмена"
+  &-edit {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px 0;
+    margin: 0 20px;
+    border-top: 1px solid #cccccc;
   }
 }
 //?Табы
@@ -701,6 +697,7 @@ $input-color: #cccccc;
     align-items: center;
     padding: 0 18px 0 21px;
     height: 50px;
+    margin: 0 0 15px 0;
   }
   &-close {
     cursor: pointer;
@@ -717,67 +714,11 @@ $input-color: #cccccc;
       flex: 1 1 auto;
     }
   }
-  &-field {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 15px 0 0 0;
+  .field {
     &-label {
-      flex: 0 0 auto;
       width: 125px;
-      font-weight: 600;
-      margin: 0 4px 0 0;
-    }
-    &-text {
-      flex: 1 1 auto;
-      height: 36px;
-      outline: none;
-      // padding: 8px 10px 9px 18px;
-      padding: 0 10px 0 18px;
-      background: #ffffff;
-      color: $font-content-color;
-      border: 1px solid $input-color;
-      box-sizing: border-box;
-      border-radius: 20px;
-      min-width: 391px;
-      &::-webkit-input-placeholder {
-        color: #bdbdbd;
-      }
-      &::-moz-placeholder {
-        color: #bdbdbd;
-      }
-    }
-    &-date {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      align-items: center;
-      &-label {
-        flex: 0 0 auto;
-        font-weight: 600;
-        font-size: 14px;
-        margin: 0 15px 0 0px;
-        &:last-of-type {
-          margin: 0 15px 0 15px;
-        }
-      }
-      &-input {
-        width: 158px;
-        height: 36px;
-        outline: none;
-        // padding: 9px 15px 9px 18px;
-        padding: 0 10px 0 18px;
-        background: #ffffff;
-        color: $font-content-color;
-        border: 1px solid $input-color;
-        box-sizing: border-box;
-        border-radius: 20px;
-        &::-webkit-datetime-edit-month-field,
-        &::-webkit-datetime-edit-day-field,
-        &::-webkit-datetime-edit-year-field {
-          color: #bdbdbd;
-        }
+      &:nth-child(3) {
+        margin: 0 10px 0 10px;
       }
     }
   }
@@ -786,7 +727,7 @@ $input-color: #cccccc;
     justify-content: flex-end;
     align-items: center;
     padding: 0 18px 0 21px;
-    height: 70px;
+    margin: 5px 0 20px 0;
   }
 }
 //?Таблица
@@ -923,7 +864,7 @@ $input-color: #cccccc;
     display: none;
     position: absolute;
     z-index: 1;
-    left: -155px;
+    left: -146px;
     top: 45px;
     padding: 0;
     margin: 0;
@@ -1163,20 +1104,12 @@ $input-color: #cccccc;
 
 //*===============Карточка сотруника===============
 .employee {
-  // Подзаголовок страницы
-  &-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px 0 20px;
-    height: 80px;
-  }
   //Требования ЧС
   &-emergency {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    margin: 0 20px 0 20px;
+    margin: 20px 20px 0 20px;
     background-color: #fdeeee;
     border-radius: 10px;
     padding: 24px 20px;
@@ -1232,7 +1165,7 @@ $input-color: #cccccc;
     display: flex;
     flex-flow: row nowrap;
     padding: 0 0 0 20px;
-    margin: 25px 0 25px 0;
+    margin: 20px 0 25px 0;
     &-photo {
       position: relative;
       flex: 0 0;
@@ -1261,16 +1194,16 @@ $input-color: #cccccc;
       flex: 1 1;
       display: flex;
       flex-flow: row wrap;
-      &-inner {
-        margin: 0 20px 0 20px;
-      }
-      &-inner:nth-child(1) {
+    }
+    &-inner {
+      margin: 0 20px 0 20px;
+      &:nth-child(1) {
         flex: 1 1;
         .field-label {
           width: 80px;
         }
       }
-      &-inner:nth-child(2) {
+      &:nth-child(2) {
         flex: 2 1;
         .field-label {
           width: 125px;
@@ -1379,21 +1312,17 @@ $input-color: #cccccc;
   }
   // Блок с документами
   &-documents {
-    padding: 0 20px 27px 20px;
+    padding: 0 20px 0 20px;
     width: 100%;
     box-sizing: border-box;
-    // Табы
-    &-controls {
-      border-bottom: 1px solid #cccccc;
-      box-sizing: border-box;
-    }
+    border-bottom: 1px solid transparent;
     // Заголоок списка
     &-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       height: 61px;
-      border-bottom: 1px solid #cccccc;
+      border-top: 1px solid #cccccc;
     }
     &-title {
     }
@@ -1433,6 +1362,7 @@ $input-color: #cccccc;
     //Обертка списка
     &-list {
       overflow: auto;
+      margin: 0 0 20px 0;
     }
   }
   //Список
@@ -1583,6 +1513,7 @@ $input-color: #cccccc;
   &-main {
     display: flex;
     flex-flow: row wrap;
+    margin: 20px 0 0 0;
     &-inner {
       flex: 1 1;
       margin: 0 20px 0 20px;
@@ -1600,21 +1531,17 @@ $input-color: #cccccc;
     }
   }
   &-documents {
-    padding: 0 20px 27px 20px;
+    padding: 0 20px 0 20px;
     width: 100%;
     box-sizing: border-box;
-    // Табы
-    &-controls {
-      border-bottom: 1px solid #cccccc;
-      box-sizing: border-box;
-    }
+    border-bottom: 1px solid transparent;
     // Заголоок списка
     &-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       height: 61px;
-      border-bottom: 1px solid #cccccc;
+      border-top: 1px solid #cccccc;
     }
     &-title {
     }
@@ -1654,6 +1581,7 @@ $input-color: #cccccc;
     //Обертка списка
     &-list {
       overflow: auto;
+      margin: 0 0 20px 0;
     }
   }
   //Список
