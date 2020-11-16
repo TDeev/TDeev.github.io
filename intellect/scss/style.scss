@@ -227,7 +227,7 @@ $input-color: #cccccc;
   height: 32px;
   // padding: 9px 18px 9px 18px;
   padding: 0 18px 0 18px;
-  margin: 0 0 0 20px;
+  margin: 0 0 0 10px;
   &.btn--add,
   &.btn--edit,
   &.btn--submit {
@@ -585,7 +585,7 @@ $input-color: #cccccc;
   background: #ffffff;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  //?Заголовок страниц с контентом
+  //?Заголовок страниц
   &-header {
     display: flex;
     flex-flow: row nowrap;
@@ -730,8 +730,8 @@ $input-color: #cccccc;
     margin: 5px 0 20px 0;
   }
 }
-//?Таблица
-.main-table {
+//?Таблица со списком
+.table {
   border-collapse: collapse;
   width: 100%;
   padding: 0 15px 0 15px;
@@ -745,28 +745,6 @@ $input-color: #cccccc;
       padding: 15px 5px 15px 5px;
       box-sizing: border-box;
       text-align: left;
-      // //==============Ширина колонок====================
-      // &:first-child {
-      //   padding: 15px 5px 15px 18px;
-      // }
-      // &:nth-child(6) {
-      //   width: 130px;
-      // }
-      // &:nth-child(7) {
-      //   width: 180px;
-      // }
-      // &:nth-child(8) {
-      //   width: 80px;
-      // }
-      // &:last-child {
-      //   width: 35px;
-      //   padding: 15px 18px 15px 5px;
-      //   // width: 38px;
-      // }
-      // //==================================
-      // &:nth-child(2) .main-table-sort {
-      //   fill: #07a6d7;
-      // }
     }
   }
   &-title {
@@ -785,21 +763,14 @@ $input-color: #cccccc;
   }
   // Контент таблицы
   &-body {
-    // &-line {
-    //   &:nth-child(4n + 2),
-    //   &:nth-child(4n + 1) {
-    //     background-color: #f5f5f5;
-    //   }
-    //   &.alert {
-    //     background-color: #ffeaeb;
-    //     & + .main-table-body-line > .main-table-body-col {
-    //       background-color: #ffeaeb;
-    //       color: #ff0000;
-    //       padding: 0 18px 10px 10px;
-    //       text-align: right;
-    //     }
-    //   }
-    // }
+    &-line {
+      &:nth-child(2n + 1) {
+        background-color: #f5f5f5;
+      }
+      &.alert {
+        background-color: #ffeaeb;
+      }
+    }
     &-col {
       height: 100%;
       padding: 15px 5px 15px 5px;
@@ -834,13 +805,12 @@ $input-color: #cccccc;
     font-weight: bold;
     color: $font-content-color;
   }
-  &-date {
+  &-date,
+  &-position,
+  &-txt {
     display: block;
   }
-  &-position {
-    display: block;
-  }
-  &-document {
+  &-amount {
     display: inline-flex;
     padding: 1px 4px;
     border-radius: 2px;
@@ -850,12 +820,50 @@ $input-color: #cccccc;
     // text-align: center;
     background-color: #eb6437;
   }
+  &-file,
+  &-link {
+    display: block;
+    color: #26b1dc;
+  }
+  &-temp {
+    display: block;
+    color: #999999;
+  }
+  &-good {
+    display: flex;
+    align-items: center;
+    fill: #78c941;
+    font-size: 12px;
+    color: #78c941;
+    white-space: nowrap;
+  }
+  &-negative {
+    display: flex;
+    align-items: center;
+    fill: #eb5554;
+    font-size: 12px;
+    color: #eb5554;
+    white-space: nowrap;
+  }
+  &-status {
+    margin: 0 0 0 3px;
+  }
+  &-action {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &-lock {
+    display: flex;
+    fill: #666666;
+    margin: 0 24px 0 0;
+  }
   &-btn {
     display: flex;
     justify-content: flex-end;
     fill: #666666;
     &:focus {
-      & ~ .main-table-menu {
+      & ~ .table-menu {
         display: block;
       }
     }
@@ -901,7 +909,7 @@ $input-color: #cccccc;
       border-bottom: 1px solid #ebe9e9;
       &:hover {
         background-color: #009bcd;
-        .main-table-menu-link {
+        .table-menu-link {
           color: #ffffff;
         }
       }
@@ -1003,7 +1011,7 @@ $input-color: #cccccc;
   // Список
   &-list {
     overflow: auto;
-    .main-table-header-col {
+    .table-header-col {
       padding: 15px 5px 15px 5px;
       box-sizing: border-box;
       text-align: left;
@@ -1027,18 +1035,21 @@ $input-color: #cccccc;
         // width: 38px;
       }
       //==================================
-      &:nth-child(2) .main-table-sort {
+      &:nth-child(2) .table-sort {
         fill: #07a6d7;
       }
     }
-    .main-table-body-line {
+    .table-body-line {
+      &:nth-child(2n + 1) {
+        background-color: initial;
+      }
       &:nth-child(4n + 2),
       &:nth-child(4n + 1) {
         background-color: #f5f5f5;
       }
       &.alert {
         background-color: #ffeaeb;
-        & + .main-table-body-line > .main-table-body-col {
+        & + .table-body-line > .table-body-col {
           background-color: #ffeaeb;
           color: #ff0000;
           padding: 0 18px 10px 10px;
@@ -1054,10 +1065,7 @@ $input-color: #cccccc;
   // Список
   &-list {
     overflow: auto;
-    .main-table-header-col {
-      padding: 15px 5px 15px 5px;
-      box-sizing: border-box;
-      text-align: left;
+    .table-header-col {
       //==============Ширина колонок====================
       &:first-child {
         width: 80px;
@@ -1081,17 +1089,17 @@ $input-color: #cccccc;
         padding: 15px 18px 15px 5px;
       }
       //==================================
-      &:nth-child(2) .main-table-sort {
+      &:nth-child(2) .table-sort {
         fill: #07a6d7;
       }
     }
-    .main-table-body-line {
+    .table-body-line {
       &:nth-child(2n + 1) {
         background-color: #f5f5f5;
       }
       &.alert {
         background-color: #ffeaeb;
-        & + .main-table-body-line > .main-table-body-col {
+        & + .table-body-line > .table-body-col {
           background-color: #ffeaeb;
           color: #ff0000;
           padding: 0 18px 10px 10px;
@@ -1225,89 +1233,47 @@ $input-color: #cccccc;
     padding: 20px 0 20px 0;
     background: #f5f5f5;
     border-radius: 10px;
-
     &-title {
       display: block;
       font-size: 16px;
       padding: 0 20px 0 20px;
       margin: 0 0 25px 0;
     }
-
     &-fields {
       display: flex;
       flex-flow: row wrap;
-      &-inner {
-        flex: 1 1;
-        margin: 0 20px 0 20px;
-        &:nth-child(2) {
-          .field:nth-child(2) {
-            align-items: baseline;
-          }
-        }
-        &:nth-child(3) {
-          flex: 1 1 100%;
-        }
-        .field-label {
-          width: 100px;
-          &.passport {
-            width: 30px;
-            margin: 0 10px 0 100px;
-          }
-        }
-        .field-text.passport {
-          max-width: 160px;
-          min-width: 80px;
-          width: 100%;
-        }
-
-        .field-text,
-        .field-date,
-        .field-textarea {
-          background: #ebebeb;
-          &.field--edit {
-            background: #ffffff;
-          }
+    }
+    &-inner {
+      flex: 1 1;
+      margin: 0 20px 0 20px;
+      &:nth-child(2) {
+        .field:nth-child(2) {
+          align-items: baseline;
         }
       }
-      // &-field {
-      //   display: flex;
-      //   flex-flow: row nowrap;
-      //   justify-content: flex-start;
-      //   align-items: center;
-      //   margin: 0 0 15px 0;
-      //   &-label {
-      //     flex: 0 0 auto;
-      //     font-weight: 600;
-      //     font-size: 14px;
-      //     width: 100px;
-      //     margin: 0 10px 0 0;
-      //   }
-      //   &-txt,
-      //   &-txtarea {
-      //     // flex: 1 1 auto;
-      //     width: 100%;
-      //     height: 40px;
-      //     outline: none;
-      //     padding: 8px 10px 9px 18px;
-      //     background: #ffffff;
-      //     color: $font-content-color;
-      //     border: 1px solid $input-color;
-      //     box-sizing: border-box;
-      //     border-radius: 20px;
-      //     overflow: hidden;
-      //     cursor: default;
-      //     &::-webkit-input-placeholder {
-      //       color: #bdbdbd;
-      //     }
-      //     &::-moz-placeholder {
-      //       color: #bdbdbd;
-      //     }
-      //   }
-      //   &-txtarea {
-      //     resize: none;
-      //     height: 69px;
-      //   }
-      // }
+      &:nth-child(3) {
+        flex: 1 1 100%;
+      }
+      .field-label {
+        width: 100px;
+        &.passport {
+          width: 30px;
+          margin: 0 10px 0 100px;
+        }
+      }
+      .field-text.passport {
+        max-width: 160px;
+        min-width: 80px;
+        width: 100%;
+      }
+      .field-text,
+      .field-date,
+      .field-textarea {
+        background: #ebebeb;
+        &.field--edit {
+          background: #ffffff;
+        }
+      }
     }
   }
   // Блок с документами
@@ -1359,31 +1325,16 @@ $input-color: #cccccc;
         }
       }
     }
-    //Обертка списка
+    //Список
     &-list {
       overflow: auto;
       margin: 0 0 20px 0;
-    }
-  }
-  //Список
-  &-table {
-    border-collapse: collapse;
-    width: 100%;
-    color: #4f4f4f;
-    // Заголовок таблицы
-    &-header {
-      &-line {
-        height: 70px;
-      }
-      &-col {
-        padding: 15px 5px 15px 5px;
-        box-sizing: border-box;
-        text-align: left;
+      .table-header-col {
         //==============Ширина колонок====================
         &:first-child {
           padding: 15px 5px 15px 15px;
           width: 80px;
-          .employee-table-sort {
+          .table-sort {
             fill: #07a6d7;
           }
         }
@@ -1407,108 +1358,32 @@ $input-color: #cccccc;
           width: 90px;
         }
       }
-    }
-    &-title {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-    }
-    &-sort {
-      flex: 0 0 auto;
-      display: flex;
-      margin: 0 0 0 3px;
-      fill: #c4c4c4;
-      &:hover {
-        fill: #07a6d7;
-      }
-    }
-    // Контент таблицы
-    &-body {
-      &-line {
-        &:nth-child(2n + 1) {
-          background-color: #f5f5f5;
-        }
-        &.alert {
-          background-color: #ffeaeb;
+      .table-body {
+        // &-line {
+        //   &:nth-child(2n + 1) {
+        //     background-color: #f5f5f5;
+        //   }
+        //   &.alert {
+        //     background-color: #ffeaeb;
+        //   }
+        // }
+        &-col {
+          &:first-child {
+            padding: 15px 5px 15px 15px;
+            border-radius: 10px 0px 0px 10px;
+          }
+          &:last-child {
+            padding: 15px 15px 15px 5px;
+            border-radius: 0px 10px 10px 0px;
+          }
         }
       }
-      &-col {
-        padding: 15px 5px 15px 5px;
-        box-sizing: border-box;
-        vertical-align: top;
-        &:first-child {
-          padding: 15px 5px 15px 15px;
-          border-radius: 10px 0px 0px 10px;
-        }
-        &:last-child {
-          padding: 15px 15px 15px 5px;
-          border-radius: 0px 10px 10px 0px;
-        }
-      }
-    }
-    &-inner {
-      display: flex;
-      flex-flow: column nowrap;
-    }
-    &-txt {
-    }
-    &-file,
-    &-link {
-      color: #26b1dc;
-    }
-    &-temp {
-      color: #999999;
-    }
-    &-link {
-      color: $active-color;
-    }
-    &-good {
-      display: flex;
-      align-items: center;
-      fill: #78c941;
-      font-size: 12px;
-      color: #78c941;
-      white-space: nowrap;
-    }
-    &-negative {
-      display: flex;
-      align-items: center;
-      fill: #eb5554;
-      font-size: 12px;
-      color: #eb5554;
-      white-space: nowrap;
-    }
-    &-status {
-      margin: 0 0 0 3px;
-    }
-    &-action {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-    }
-    &-lock {
-      display: flex;
-      fill: #666666;
-    }
-    &-menu {
-      width: 3px;
-      height: 17px;
-      margin: 0 0 0 24px;
-      fill: #666666;
     }
   }
 }
 
 //*==========Карточка транспортного средства===========
 .vehicle {
-  // Подзаголовок страницы
-  &-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px 0 20px;
-    height: 80px;
-  }
   //Основной контент ТС
   &-main {
     display: flex;
@@ -1578,10 +1453,59 @@ $input-color: #cccccc;
         }
       }
     }
-    //Обертка списка
+    //Список
     &-list {
       overflow: auto;
       margin: 0 0 20px 0;
+      .table-header-col {
+        //==============Ширина колонок====================
+        &:first-child {
+          padding: 15px 5px 15px 15px;
+          width: 80px;
+          .vehicle-table-sort {
+            fill: #07a6d7;
+          }
+        }
+        &:nth-child(2) {
+          // width: 35%;
+        }
+        &:nth-child(3) {
+          width: 120px;
+        }
+        &:nth-child(4) {
+          width: 160px;
+        }
+        &:nth-child(5) {
+          width: 160px;
+        }
+        &:nth-child(6) {
+          width: 180px;
+        }
+        &:last-child {
+          padding: 15px 15px 15px 5px;
+          width: 90px;
+        }
+      }
+      .table-body {
+        // &-line {
+        //   &:nth-child(2n + 1) {
+        //     background-color: #f5f5f5;
+        //   }
+        //   &.alert {
+        //     background-color: #ffeaeb;
+        //   }
+        // }
+        &-col {
+          &:first-child {
+            padding: 15px 5px 15px 15px;
+            border-radius: 10px 0px 0px 10px;
+          }
+          &:last-child {
+            padding: 15px 15px 15px 5px;
+            border-radius: 0px 10px 10px 0px;
+          }
+        }
+      }
     }
   }
   //Список

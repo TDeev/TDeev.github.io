@@ -22,8 +22,11 @@
 // Экстрабольшие девайсы (большие десктопы, <= 1200px)
 @media (max-width: 1200px) {
   .employees-list {
-    .main-table-header-col:nth-child(6) {
+    .table-header-col:nth-child(6) {
       width: 140px;
+      span {
+        width: 115px;
+      }
     }
   }
   .employee-emergency-child {
@@ -42,10 +45,10 @@
       }
     }
   }
-  .employees-list {
-    .main-table-header-col:nth-child(6) {
-      span {
-        width: 115px;
+  .vehicle-documents-list {
+    .table-header-col {
+      &:nth-child(4) {
+        width: 120px;
       }
     }
   }
@@ -54,21 +57,21 @@
 // Экстрабольшие девайсы (большие десктопы, <= 1600px)
 @media (max-width: 1600px) {
   .passes-list {
-    .main-table-header-col {
+    .table-header-col {
       &:nth-child(6) {
         width: 120px;
       }
       &:nth-child(7) {
         width: 130px;
-        .main-table-title {
+        .table-title {
           width: 110px;
         }
       }
     }
   }
   .employees-list {
-    .main-table-header-col:nth-child(3),
-    .main-table-header-col:nth-child(4) {
+    .table-header-col:nth-child(3),
+    .table-header-col:nth-child(4) {
       width: 15%;
     }
   }
@@ -81,61 +84,65 @@
     }
   }
 }
-.employee-table-header-col {
-  &:first-child {
-    width: 80px;
-  }
-  &:nth-child(2) {
-    min-width: 145px;
-  }
-  &:nth-child(3) {
-    width: 160px;
-  }
-  &:nth-child(4) {
-    width: 100px;
-  }
-  &:nth-child(5) {
-    width: 100px;
-    span {
-      width: 60px;
+.employee-documents-list {
+  .table-header-col {
+    &:first-child {
+      width: 80px;
     }
-  }
-  &:nth-child(6) {
-    width: 140px;
-    .employee-table-title {
-      width: 82px;
+    &:nth-child(2) {
+      min-width: 145px;
     }
-  }
-  &:last-child {
-    width: 90px;
+    &:nth-child(3) {
+      width: 160px;
+    }
+    &:nth-child(4) {
+      width: 100px;
+    }
+    &:nth-child(5) {
+      width: 100px;
+      span {
+        width: 60px;
+      }
+    }
+    &:nth-child(6) {
+      width: 140px;
+      span {
+        width: 82px;
+      }
+    }
+    &:last-child {
+      width: 90px;
+    }
   }
 }
-.vehicle-table-header-col {
-  &:first-child {
-    width: 80px;
-  }
-  &:nth-child(2) {
-    min-width: 145px;
-  }
-  &:nth-child(3) {
-    width: 100px;
-  }
-  &:nth-child(4) {
-    // width: 100px;
-  }
-  &:nth-child(5) {
-    width: 100px;
-    span {
-      width: 60px;
+.vehicle-documents-list {
+  .table-header-col {
+    &:first-child {
+      width: 80px;
     }
-  }
-  &:nth-child(6) {
-    width: 140px;
-    span {
-      width: 82px;
+    &:nth-child(2) {
+      min-width: 145px;
     }
-  }
-  &:last-child {
-    width: 90px;
+    &:nth-child(3) {
+      width: 100px;
+    }
+    &:nth-child(4) {
+      // width: 100px;
+    }
+    &:nth-child(5) {
+      width: 100px;
+      span {
+        width: 60px;
+      }
+    }
+    &:nth-child(6) {
+      width: 140px;
+      span {
+        width: 82px;
+      }
+    }
+    &:last-child {
+      width: 90px;
+    }
   }
 }
