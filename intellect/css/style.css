@@ -2375,7 +2375,7 @@ body {
     background-repeat: no-repeat;
     padding: 30px 30px 50px 30px;
     background-position: 100% 0;
-    margin: 0 auto 25% auto;
+    margin: 0 auto 15% auto;
   }
   .goodbye__img {
     display: none;
@@ -2389,7 +2389,7 @@ body {
         -ms-flex-flow: column;
             flex-flow: column;
     padding: 15px 30px;
-    margin: 0 auto 40% auto;
+    margin: 0 auto 30% auto;
   }
   .warning__img {
     width: 40px;
