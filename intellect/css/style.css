@@ -2371,6 +2371,9 @@ body {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
   }
+  .goodbye {
+    padding: 5% 15px 15px 15px;
+  }
   .goodbye-container {
     background-image: url(../img/goodbye-bg.png);
     background-repeat: no-repeat;
