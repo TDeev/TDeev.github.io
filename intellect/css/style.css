@@ -2231,6 +2231,11 @@ body {
   margin: 60px 0 0 60px;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .goodbye {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2242,7 +2247,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  height: 100%;
   background-image: url(../img/goodbye.png);
   background-size: cover;
   background-position: center;
@@ -2308,7 +2313,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  height: 100%;
   background-image: url(../img/warning.png);
   background-size: cover;
   background-position: center;
