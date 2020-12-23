@@ -2283,6 +2283,10 @@ body {
   margin: 0 0 25px 0;
 }
 
+.goodbye__txt .sign {
+  text-align: right;
+}
+
 .goodbye-list {
   padding: 0 0 0 15px;
   margin: 0;
