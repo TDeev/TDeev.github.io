@@ -2377,6 +2377,7 @@ body {
   }
   .goodbye {
     padding: 15% 15px 15px 15px;
+    background-position: 0;
   }
   .goodbye-container {
     background-image: url(../img/goodbye-bg.png);
@@ -2389,6 +2390,9 @@ body {
   }
   .goodbye-logo {
     margin: 0 0 15px 0;
+  }
+  .warning {
+    background-position: 0;
   }
   .warning-container {
     -webkit-box-orient: vertical;
