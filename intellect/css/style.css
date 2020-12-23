@@ -2372,7 +2372,7 @@ body {
             flex-flow: row wrap;
   }
   .goodbye {
-    padding: 10% 15px 15px 15px;
+    padding: 15% 15px 15px 15px;
   }
   .goodbye-container {
     background-image: url(../img/goodbye-bg.png);
