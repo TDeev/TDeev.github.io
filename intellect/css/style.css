@@ -2239,15 +2239,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
   background-image: url(../img/goodbye.png);
   background-size: cover;
   background-position: center;
-  padding: 0 15px;
+  padding: 130px 15px 15px 15px;
 }
 
 .goodbye-container {
@@ -2372,12 +2371,14 @@ body {
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
   }
+  .goodbye {
+    padding: 120px 15px 15px 15px;
+  }
   .goodbye-container {
     background-image: url(../img/goodbye-bg.png);
     background-repeat: no-repeat;
     padding: 30px;
     background-position: 100% 0;
-    margin: 0 auto 25% auto;
   }
   .goodbye__img {
     display: none;
