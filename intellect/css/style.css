@@ -2246,7 +2246,7 @@ body {
   background-image: url(../img/goodbye.png);
   background-size: cover;
   background-position: center;
-  padding: 130px 15px 15px 15px;
+  padding: 10% 15px 15px 15px;
 }
 
 .goodbye-container {
@@ -2370,9 +2370,6 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-flow: row wrap;
             flex-flow: row wrap;
-  }
-  .goodbye {
-    padding: 120px 15px 15px 15px;
   }
   .goodbye-container {
     background-image: url(../img/goodbye-bg.png);
