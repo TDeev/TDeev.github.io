@@ -4,6 +4,7 @@
 
 // Средние девайсы («таблетки», <= 768px)
 @media (max-width: 768px) {
+  //!Карточка сотруника
   .employee-main-photo {
     display: none;
   }
@@ -13,14 +14,67 @@
   .employee-emergency-child-inner {
     flex-flow: row wrap;
   }
+  //!Прощальная страница (goodbye)
+  .goodbye {
+    padding: 15% 15px 15px 15px;
+    // background-position: 0;
+    &-container {
+      background-image: url(../img/goodbye-bg.png);
+      background-repeat: no-repeat;
+      padding: 30px;
+      background-position: 100% 0;
+    }
+    &__img {
+      display: none;
+    }
+    &__txt {
+    }
+    &-list {
+    }
+    &-logo {
+      margin: 0 0 15px 0;
+    }
+  }
+  //!Страница заглушка (warning)
+  .warning {
+    // background-position: 0;
+    &-container {
+      flex-flow: column;
+      padding: 15px 30px;
+      margin: 0 auto 40% auto;
+    }
+    &__img {
+      & > svg {
+        &:last-child {
+          display: initial;
+          margin: 0 0 20px 0;
+        }
+        &:first-child {
+          display: none;
+        }
+      }
+    }
+    &__txt {
+      .h1-like {
+      }
+    }
+    &-list {
+      & > li {
+      }
+    }
+  }
 }
 
 // Большие девайсы (десктопы, <= 992px)
 @media (max-width: 992px) {
+  .main {
+    padding: 10px;
+  }
 }
 
 // Экстрабольшие девайсы (большие десктопы, <= 1200px)
 @media (max-width: 1200px) {
+  //!Карточка сотрудника
   .employees-list {
     .table-header-col:nth-child(6) {
       width: 140px;
@@ -45,6 +99,7 @@
       }
     }
   }
+  //!Карточка ТС
   .vehicle-documents-list {
     .table-header-col {
       &:nth-child(4) {
@@ -56,6 +111,7 @@
 
 // Экстрабольшие девайсы (большие десктопы, <= 1600px)
 @media (max-width: 1600px) {
+  //!Готовые пропуска - Сотрудники
   .passes-list {
     .table-header-col {
       &:nth-child(6) {
@@ -69,6 +125,7 @@
       }
     }
   }
+  //!Справочники - Сотрудники
   .employees-list {
     .table-header-col:nth-child(3),
     .table-header-col:nth-child(4) {
@@ -76,73 +133,74 @@
     }
   }
 }
-.employee-passport-fields-inner {
-  .field-label {
-    &.passport {
-      width: 30px;
-      margin: 0 10px 0 40px;
-    }
-  }
-}
-.employee-documents-list {
-  .table-header-col {
-    &:first-child {
-      width: 80px;
-    }
-    &:nth-child(2) {
-      min-width: 145px;
-    }
-    &:nth-child(3) {
-      width: 160px;
-    }
-    &:nth-child(4) {
-      width: 100px;
-    }
-    &:nth-child(5) {
-      width: 100px;
-      span {
-        width: 60px;
-      }
-    }
-    &:nth-child(6) {
-      width: 140px;
-      span {
-        width: 82px;
-      }
-    }
-    &:last-child {
-      width: 90px;
-    }
-  }
-}
-.vehicle-documents-list {
-  .table-header-col {
-    &:first-child {
-      width: 80px;
-    }
-    &:nth-child(2) {
-      min-width: 145px;
-    }
-    &:nth-child(3) {
-      width: 100px;
-    }
-    &:nth-child(4) {
-      // width: 100px;
-    }
-    &:nth-child(5) {
-      width: 100px;
-      span {
-        width: 60px;
-      }
-    }
-    &:nth-child(6) {
-      width: 140px;
-      span {
-        width: 82px;
-      }
-    }
-    &:last-child {
-      width: 90px;
-    }
-  }
-}
+
+// .employee-passport-fields-inner {
+//   .field-label {
+//     &.passport {
+//       width: 30px;
+//       margin: 0 10px 0 40px;
+//     }
+//   }
+// }
+// .employee-documents-list {
+//   .table-header-col {
+//     &:first-child {
+//       width: 80px;
+//     }
+//     &:nth-child(2) {
+//       min-width: 145px;
+//     }
+//     &:nth-child(3) {
+//       width: 160px;
+//     }
+//     &:nth-child(4) {
+//       width: 100px;
+//     }
+//     &:nth-child(5) {
+//       width: 100px;
+//       span {
+//         width: 60px;
+//       }
+//     }
+//     &:nth-child(6) {
+//       width: 140px;
+//       span {
+//         width: 82px;
+//       }
+//     }
+//     &:last-child {
+//       width: 90px;
+//     }
+//   }
+// }
+// .vehicle-documents-list {
+//   .table-header-col {
+//     &:first-child {
+//       width: 80px;
+//     }
+//     &:nth-child(2) {
+//       min-width: 145px;
+//     }
+//     &:nth-child(3) {
+//       width: 100px;
+//     }
+//     &:nth-child(4) {
+//       // width: 100px;
+//     }
+//     &:nth-child(5) {
+//       width: 100px;
+//       span {
+//         width: 60px;
+//       }
+//     }
+//     &:nth-child(6) {
+//       width: 140px;
+//       span {
+//         width: 82px;
+//       }
+//     }
+//     &:last-child {
+//       width: 90px;
+//     }
+//   }
+// }

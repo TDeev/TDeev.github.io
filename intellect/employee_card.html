@@ -253,7 +253,7 @@
           </a>
           <ul class="navbar-list child">
             <li class="navbar-list-item">
-              <a href="./index.html" class="navbar-list-link">
+              <a href="./passes_employee.html" class="navbar-list-link">
                 <div class="navbar-list-icon">
                   <svg width="17" height="12" xmlns="http://www.w3.org/2000/svg" class="navbar-list-icon-svg">
                     <path
@@ -465,7 +465,10 @@
           </svg>
         </a>
         <span class="h1-like">Алехин Алексей Владимирович</span>
-        <form action="./employee_card_edit.html">
+        <form action="#modal">
+          <button class="btn btn--delete">Удалить</button>
+        </form>
+        <form action="./employee_card.html">
           <button class="btn btn--edit">Редактировать</button>
         </form>
       </div>
@@ -1479,6 +1482,21 @@
       </div>
     </section>
   </main>
+  <div id="modal" class="employee modal-background">
+    <div class="modal">
+      <span class="modal-title">Вы хотите удалить сотрудника?</span>
+      <div class="modal-content">
+        <img src="./img/user.png" alt="Изображение пользователя" class="modal-photo" height="40" width="40">
+        <span class="h1-like">Алехин Алексей Владимирович</span>
+      </div>
+      <div class="modal-buttons">
+        <form action="./employee_card.html">
+          <button class="btn btn--reset">Нет</button>
+          <button class="btn btn--delete">Да</button>
+        </form>
+      </div>
+    </div>
+  </div>
 
   <script src="./js/script.js">
   </script>

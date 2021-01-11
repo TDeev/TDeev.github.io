@@ -1,22 +1,24 @@
 // расширения
 // %border {
 //   border: 1px solid;
-//   box-sizing: border-box;
+//
 // }
 // @extend %border;
 
 // миксины
 // @mixin bordercol($col) {
 //   border: 1px solid $col;
-//   box-sizing: border-box;
+//
 // }
 // @include bordercol(black);
 
 @import "_fonts.scss";
-// @import "_normalize.scss";
 
+html,
 :root {
   box-sizing: border-box;
+  font-size: 14px;
+  //! тут вставить цвета
 }
 *,
 ::before,
@@ -30,9 +32,9 @@ body {
   font-family: "Open Sans", "arial", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 14px;
-  line-height: 22px;
-  color: #4f4f4f;
+  line-height: 1.6;
+  // line-height: 22px;
+  // color: #4f4f4f;
   background-color: #f6f9fd;
 }
 
@@ -47,23 +49,27 @@ $svg-content-color: #666666;
 $svg-disable-color: #c4c4c4;
 $input-color: #cccccc;
 
-//*================Заголовки==================
+//*================Текст==================
+//Заголовки
 .h1-like {
   display: block;
-  font-size: 18px;
+  // font-size: 18px;
+  font-size: 1.28rem;
   font-weight: 600;
-  line-height: 25px;
-  color: $font-title-color;
+  line-height: 1.4;
+  // line-height: 25px;
+  color: #333333;
   margin: 0 10px 0 0;
 }
-
 .h2-like {
   display: block;
   font-weight: bold;
   font-size: 16px;
+  font-size: 1.14rem;
   color: #4f4f4f;
   margin: 0 10px 0 0;
 }
+//Ссылки
 
 //*===============Поля форм==================
 .field {
@@ -88,9 +94,9 @@ $input-color: #cccccc;
     // padding: 12px 10px 12px 18px;
     padding: 0 10px 0 18px;
     background: #f2f2f2;
-    color: $font-content-color;
+    color: #4f4f4f;
     border: none;
-    box-sizing: border-box;
+
     border-radius: 20px;
     cursor: default;
     &::-webkit-input-placeholder {
@@ -99,10 +105,10 @@ $input-color: #cccccc;
     &::-moz-placeholder {
       color: #bdbdbd;
     }
-    &.field--edit {
+    &.is-edit {
       height: 36px;
       // padding: 8px 10px 8px 18px;
-      border: 1px solid $input-color;
+      border: 1px solid #cccccc;
       background: #ffffff;
       cursor: initial;
     }
@@ -115,9 +121,9 @@ $input-color: #cccccc;
     line-height: 20px;
     padding: 8px 10px 8px 18px;
     background: #f2f2f2;
-    color: $font-content-color;
+    color: #4f4f4f;
     border: none;
-    box-sizing: border-box;
+
     border-radius: 20px;
     overflow: hidden;
     resize: none;
@@ -128,8 +134,8 @@ $input-color: #cccccc;
     &::-moz-placeholder {
       color: #bdbdbd;
     }
-    &.field--edit {
-      border: 1px solid $input-color;
+    &.is-edit {
+      border: 1px solid #cccccc;
       background: #ffffff;
       cursor: initial;
     }
@@ -142,9 +148,9 @@ $input-color: #cccccc;
     padding: 0 10px 0 18px;
     // padding: 12px 10px 12px 18px;
     background: #f2f2f2;
-    color: $font-content-color;
+    color: #4f4f4f;
     border: none;
-    box-sizing: border-box;
+
     border-radius: 20px;
     cursor: default;
     &::-webkit-input-placeholder {
@@ -153,10 +159,10 @@ $input-color: #cccccc;
     &::-moz-placeholder {
       color: #bdbdbd;
     }
-    &.field--edit {
+    &.is-edit {
       height: 36px;
       // padding: 8px 10px 8px 18px;
-      border: 1px solid $input-color;
+      border: 1px solid #cccccc;
       background: #ffffff;
       cursor: initial;
     }
@@ -167,7 +173,7 @@ $input-color: #cccccc;
     width: 18px;
     border: #bdbdbd;
     display: none;
-    &.field--edit {
+    &.is-edit {
       & + .field-radio-style-wrp {
         .field-radio-style {
           border-color: #bdbdbd;
@@ -220,19 +226,20 @@ $input-color: #cccccc;
 .btn {
   outline: none;
   cursor: pointer;
-  box-sizing: border-box;
+  text-decoration: none;
   border-radius: 20px;
-  font-size: 12px;
+  // font-size: 12px;
+  font-size: 0.85rem;
   color: #ffffff;
   height: 32px;
-  // padding: 9px 18px 9px 18px;
-  padding: 0 18px 0 18px;
+  padding: 6px 18px 6px 18px;
+  // padding: 0 18px 0 18px;
   margin: 0 0 0 10px;
   &.btn--add,
   &.btn--edit,
   &.btn--submit {
-    background: $active-color;
-    border: 1px solid $active-color;
+    background: #07a6d7;
+    border: 1px solid #07a6d7;
     &:hover {
       background: #0685ac;
       border-color: #0685ac;
@@ -469,7 +476,7 @@ $input-color: #cccccc;
       text-decoration: none;
       min-height: 60px;
       padding: 10px 18px 10px 20px;
-      box-sizing: border-box;
+
       outline: none;
       &:hover {
         background: rgba(196, 196, 196, 0.2);
@@ -514,6 +521,7 @@ $input-color: #cccccc;
       padding: 1px 2px;
       border-radius: 2px;
       font-size: 12px;
+      font-size: 0.85rem;
       line-height: initial;
       text-align: center;
       background-color: #eb6437;
@@ -536,6 +544,7 @@ $input-color: #cccccc;
       }
       .navbar-list-title {
         font-size: 12px;
+        font-size: 0.85rem;
         line-height: 16px;
       }
       .navbar-list--open {
@@ -555,6 +564,7 @@ $input-color: #cccccc;
     align-items: center;
     padding: 10px 0 15px 0;
     font-size: 12px;
+    font-size: 0.85rem;
     &::after {
       position: absolute;
       top: 0;
@@ -592,7 +602,6 @@ $input-color: #cccccc;
     align-items: center;
     min-height: 50px;
     padding: 0 18px 0 18px;
-    box-sizing: border-box;
     border-bottom: 1px solid #cccccc;
     //Стрелка назад
     &-arrow {
@@ -602,9 +611,11 @@ $input-color: #cccccc;
         fill: #666666;
       }
     }
+    //Заголовок страницы
     .h1-like {
       margin: 0 auto 0 0;
     }
+    //Табы в фильтре
     .tabs {
       margin: 0 auto 0 -18px;
     }
@@ -661,7 +672,8 @@ $input-color: #cccccc;
     text-decoration: none;
     color: inherit;
     padding: 10px 21px 10px 21px;
-    font-size: 16px;
+    // font-size: 16px;
+    font-size: 1.14rem;
     font-weight: bold;
     color: #4f4f4f;
 
@@ -702,7 +714,7 @@ $input-color: #cccccc;
   &-close {
     cursor: pointer;
     &-svg {
-      fill: $svg-content-color;
+      fill: #666666;
     }
   }
   &-fields {
@@ -743,7 +755,7 @@ $input-color: #cccccc;
     }
     &-col {
       padding: 15px 5px 15px 5px;
-      box-sizing: border-box;
+
       text-align: left;
     }
   }
@@ -774,7 +786,7 @@ $input-color: #cccccc;
     &-col {
       height: 100%;
       padding: 15px 5px 15px 5px;
-      box-sizing: border-box;
+
       vertical-align: top;
       &:first-child {
         padding: 15px 5px 15px 18px;
@@ -803,7 +815,12 @@ $input-color: #cccccc;
   &-name {
     display: block;
     font-weight: bold;
-    color: $font-content-color;
+    color: #4f4f4f;
+  }
+  &-url {
+    display: block;
+    // font-weight: bold;
+    color: #07a6d7;
   }
   &-date,
   &-position,
@@ -815,7 +832,8 @@ $input-color: #cccccc;
     padding: 1px 4px;
     border-radius: 2px;
     color: white;
-    font-size: 12px;
+    // font-size: 12px;
+    font-size: 0.85rem;
     line-height: initial;
     // text-align: center;
     background-color: #eb6437;
@@ -833,7 +851,8 @@ $input-color: #cccccc;
     display: flex;
     align-items: center;
     fill: #78c941;
-    font-size: 12px;
+    // font-size: 12px;
+    font-size: 0.85rem;
     color: #78c941;
     white-space: nowrap;
   }
@@ -841,7 +860,8 @@ $input-color: #cccccc;
     display: flex;
     align-items: center;
     fill: #eb5554;
-    font-size: 12px;
+    // font-size: 12px;
+    font-size: 0.85rem;
     color: #eb5554;
     white-space: nowrap;
   }
@@ -872,7 +892,7 @@ $input-color: #cccccc;
     display: none;
     position: absolute;
     z-index: 1;
-    left: -146px;
+    right: 2px;
     top: 45px;
     padding: 0;
     margin: 0;
@@ -936,7 +956,7 @@ $input-color: #cccccc;
   // min-height: 59px;
   padding: 10px 22px 10px 18px;
   margin: 5px 0 0 0;
-  box-sizing: border-box;
+
   border-top: 1px solid #cccccc;
   &-group {
     display: flex;
@@ -958,7 +978,7 @@ $input-color: #cccccc;
         height: 28px;
         padding: 0 0 0 13px;
         border: 1px solid #cccccc;
-        box-sizing: border-box;
+
         border-radius: 5px;
         outline: none;
         color: #4f4f4f;
@@ -989,7 +1009,7 @@ $input-color: #cccccc;
           width: 28px;
           height: 28px;
           border-radius: 5px;
-          box-sizing: border-box;
+
           text-decoration: none;
           color: #4f4f4f;
           &:hover {
@@ -1003,6 +1023,47 @@ $input-color: #cccccc;
     }
   }
 }
+//?Модальное окно
+.modal {
+  padding: 30px 30px 30px 30px;
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  box-shadow: 0px 10px 20px rgba(0, 85, 116, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  &-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 102;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15% 10px 10px 10px;
+  }
+  &-title {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 20px 0;
+    display: block;
+    text-align: center;
+  }
+  &-content {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 0 0 25px 0;
+  }
+  &-photo {
+    display: block;
+    margin: 0 0 15px 0;
+  }
+}
 
 //!Страницы сайта
 
@@ -1013,7 +1074,7 @@ $input-color: #cccccc;
     overflow: auto;
     .table-header-col {
       padding: 15px 5px 15px 5px;
-      box-sizing: border-box;
+
       text-align: left;
       //==============Ширина колонок====================
       &:first-child {
@@ -1041,6 +1102,7 @@ $input-color: #cccccc;
     }
     .table-body-line {
       &:nth-child(2n + 1) {
+        // background-color: revert;
         background-color: initial;
       }
       &:nth-child(4n + 2),
@@ -1150,7 +1212,7 @@ $input-color: #cccccc;
     }
     &-title {
       font-weight: bold;
-      color: $font-title-color;
+      color: #333333;
       margin: 0 25px 0 0;
       padding: 2px 0;
       min-width: 120px;
@@ -1187,8 +1249,15 @@ $input-color: #cccccc;
       }
       &-edit {
         position: absolute;
-        top: 123px;
-        left: 14px;
+        content: "";
+        display: block;
+        width: 127px;
+        height: 33px;
+        top: 122px;
+        left: 13px;
+        background-image: url(/img/user_icon_edit.svg);
+        background-repeat: no-repeat;
+        background-position-x: center;
         cursor: pointer;
       }
       &-title {
@@ -1235,7 +1304,8 @@ $input-color: #cccccc;
     border-radius: 10px;
     &-title {
       display: block;
-      font-size: 16px;
+      // font-size: 16px;
+      font-size: 1.14rem;
       padding: 0 20px 0 20px;
       margin: 0 0 25px 0;
     }
@@ -1270,7 +1340,7 @@ $input-color: #cccccc;
       .field-date,
       .field-textarea {
         background: #ebebeb;
-        &.field--edit {
+        &.is-edit {
           background: #ffffff;
         }
       }
@@ -1280,7 +1350,7 @@ $input-color: #cccccc;
   &-documents {
     padding: 0 20px 0 20px;
     width: 100%;
-    box-sizing: border-box;
+
     border-bottom: 1px solid transparent;
     // Заголоок списка
     &-header {
@@ -1305,7 +1375,8 @@ $input-color: #cccccc;
         content: "-";
         color: #ffffff;
         font-size: 32px;
-        top: -4px;
+        line-height: 16px;
+        top: -1px;
         left: 5px;
       }
     }
@@ -1316,7 +1387,7 @@ $input-color: #cccccc;
           &::before {
             content: "+";
             font-size: 21px;
-            top: -1px;
+            top: 1px;
             left: 4px;
           }
         }
@@ -1380,6 +1451,22 @@ $input-color: #cccccc;
       }
     }
   }
+  // Модальное окно
+  &.modal-background {
+    &:target {
+      display: flex;
+    }
+    display: none;
+    .h1-like {
+      text-align: center;
+    }
+    .btn {
+      min-width: 67px;
+      &--delete {
+        margin: 0 0 0 20px;
+      }
+    }
+  }
 }
 
 //*==========Карточка транспортного средства===========
@@ -1408,7 +1495,7 @@ $input-color: #cccccc;
   &-documents {
     padding: 0 20px 0 20px;
     width: 100%;
-    box-sizing: border-box;
+
     border-bottom: 1px solid transparent;
     // Заголоок списка
     &-header {
@@ -1433,7 +1520,8 @@ $input-color: #cccccc;
         content: "-";
         color: #ffffff;
         font-size: 32px;
-        top: -4px;
+        line-height: 16px;
+        top: -1px;
         left: 5px;
       }
     }
@@ -1444,7 +1532,7 @@ $input-color: #cccccc;
           &::before {
             content: "+";
             font-size: 21px;
-            top: -1px;
+            top: 1px;
             left: 4px;
           }
         }
@@ -1520,7 +1608,7 @@ $input-color: #cccccc;
       }
       &-col {
         padding: 15px 5px 15px 5px;
-        box-sizing: border-box;
+
         text-align: left;
         //==============Ширина колонок====================
         &:first-child {
@@ -1577,7 +1665,7 @@ $input-color: #cccccc;
       }
       &-col {
         padding: 15px 5px 15px 5px;
-        box-sizing: border-box;
+
         vertical-align: top;
         &:first-child {
           padding: 15px 5px 15px 15px;
@@ -1603,13 +1691,14 @@ $input-color: #cccccc;
       color: #999999;
     }
     &-link {
-      color: $active-color;
+      color: #07a6d7;
     }
     &-good {
       display: flex;
       align-items: center;
       fill: #78c941;
-      font-size: 12px;
+      // font-size: 12px;
+      font-size: 0.85rem;
       color: #78c941;
       white-space: nowrap;
     }
@@ -1617,7 +1706,8 @@ $input-color: #cccccc;
       display: flex;
       align-items: center;
       fill: #eb5554;
-      font-size: 12px;
+      // font-size: 12px;
+      font-size: 0.85rem;
       color: #eb5554;
       white-space: nowrap;
     }
@@ -1638,6 +1728,98 @@ $input-color: #cccccc;
       height: 17px;
       margin: 0 0 0 24px;
       fill: #666666;
+    }
+  }
+}
+
+//*============Прощальная страница (goodbye)============
+.goodbye {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  height: 100vh;
+  background-image: url(../img/goodbye.png);
+  background-size: cover;
+  background-position: 0 top;
+  padding: 10% 15px 15px 15px;
+  &-container {
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 850px;
+    width: 100%;
+    min-height: 250px;
+    margin: 0 auto 5% auto;
+    padding: 30px 30px 50px 0;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  &__img {
+    fill: #009bcd;
+    margin: 0 75px 0 0;
+    flex: 0 0 auto;
+  }
+  &__txt {
+    flex: 1 1 auto;
+    .h1-like {
+      margin: 0 0 25px 0;
+    }
+    .sign {
+      text-align: right;
+    }
+  }
+  &-list {
+    padding: 0 0 0 15px;
+    margin: 0;
+    margin: 20px 0 0 0;
+    & > li {
+      padding: 0 0 10px 10px;
+    }
+  }
+  &-logo {
+    margin: 0 0 30px 0;
+  }
+}
+
+//*============Страница заглушка (warning)============
+.warning {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: flex-start;
+  height: 100vh;
+  background-image: url(../img/warning.png);
+  background-size: cover;
+  background-position: center;
+  padding: 15% 15px 15px 15px;
+  &-container {
+    display: flex;
+    flex-flow: row nowrap;
+    max-width: 700px;
+    min-height: 250px;
+    margin: 0 auto 5% auto;
+  }
+  &__img {
+    fill: #d1dae5;
+    margin: 0 75px 0 0;
+    & > svg {
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+  &__txt {
+    color: white;
+    .h1-like {
+      color: inherit;
+      margin: 0 0 25px 0;
+    }
+  }
+  &-list {
+    padding: 0 0 0 15px;
+    margin: 0;
+    margin: 20px 0 0 0;
+    & > li {
+      padding: 0 0 10px 10px;
     }
   }
 }

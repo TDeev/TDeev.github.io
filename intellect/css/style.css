@@ -1193,7 +1193,7 @@ body {
   display: none;
   position: absolute;
   z-index: 1;
-  left: -146px;
+  right: 2px;
   top: 45px;
   padding: 0;
   margin: 0;
@@ -1375,6 +1375,72 @@ body {
 
 .navigation-pagination-list-item-url-svg {
   fill: #666666;
+}
+
+.modal {
+  padding: 30px 30px 30px 30px;
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 85, 116, 0.1);
+          box-shadow: 0px 10px 20px rgba(0, 85, 116, 0.1);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 102;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 15% 10px 10px 10px;
+}
+
+.modal-title {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 20px 0;
+  display: block;
+  text-align: center;
+}
+
+.modal-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 25px 0;
+}
+
+.modal-photo {
+  display: block;
+  margin: 0 0 15px 0;
 }
 
 .passes-list {
@@ -1854,6 +1920,28 @@ body {
   border-radius: 0px 10px 10px 0px;
 }
 
+.employee.modal-background {
+  display: none;
+}
+
+.employee.modal-background:target {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.employee.modal-background .h1-like {
+  text-align: center;
+}
+
+.employee.modal-background .btn {
+  min-width: 67px;
+}
+
+.employee.modal-background .btn--delete {
+  margin: 0 0 0 20px;
+}
+
 .vehicle-main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2159,78 +2247,6 @@ body {
   fill: #666666;
 }
 
-.navbar--close .header {
-  margin: 0 0 0 60px;
-}
-
-.navbar--close .navbar {
-  width: 60px;
-}
-
-.navbar--close .navbar-head {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
-  background-color: transparent;
-  border-bottom: 1px solid;
-  border-color: #1c4252;
-}
-
-.navbar--close .navbar-head-btn {
-  fill: #ffffff;
-}
-
-.navbar--close .navbar .navbar-list--open,
-.navbar--close .navbar .navbar-list--open ~ .child {
-  background: rgba(196, 196, 196, 0.2);
-}
-
-.navbar--close .navbar .child .navbar-list--open {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.navbar--close .navbar .navbar-list-link {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0;
-}
-
-.navbar--close .navbar .child .navbar-list-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0px 0 3px 0;
-}
-
-.navbar--close .navbar .child .navbar-list-item .navbar-list-link {
-  border-radius: 10px;
-  width: 48px;
-  height: 48px;
-}
-
-.navbar--close .navbar .child .navbar-list-item .navbar-list-link:hover, .navbar--close .navbar .child .navbar-list-item .navbar-list-link:focus {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.navbar--close .navbar .navbar-head-logo,
-.navbar--close .navbar .navbar-list-title,
-.navbar--close .navbar .navbar-list-amount,
-.navbar--close .navbar .navbar-list-arrow,
-.navbar--close .navbar .navbar-footer {
-  display: none;
-}
-
-.navbar--close .main {
-  margin: 60px 0 0 60px;
-}
-
 .goodbye {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2258,25 +2274,27 @@ body {
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
   max-width: 850px;
+  width: 100%;
   min-height: 250px;
   margin: 0 auto 5% auto;
   padding: 30px 30px 50px 0;
   background-color: white;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .goodbye__img {
   fill: #009bcd;
   margin: 0 75px 0 0;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0;
-          flex: 0 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
 }
 
 .goodbye__txt {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1;
-          flex: 1 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .goodbye__txt .h1-like {
@@ -2358,6 +2376,78 @@ body {
 
 .warning-list > li {
   padding: 0 0 10px 10px;
+}
+
+.navbar--close .header {
+  margin: 0 0 0 60px;
+}
+
+.navbar--close .navbar {
+  width: 60px;
+}
+
+.navbar--close .navbar-head {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  background-color: transparent;
+  border-bottom: 1px solid;
+  border-color: #1c4252;
+}
+
+.navbar--close .navbar-head-btn {
+  fill: #ffffff;
+}
+
+.navbar--close .navbar .navbar-list--open,
+.navbar--close .navbar .navbar-list--open ~ .child {
+  background: rgba(196, 196, 196, 0.2);
+}
+
+.navbar--close .navbar .child .navbar-list--open {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.navbar--close .navbar .navbar-list-link {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+}
+
+.navbar--close .navbar .child .navbar-list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 0 3px 0;
+}
+
+.navbar--close .navbar .child .navbar-list-item .navbar-list-link {
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+}
+
+.navbar--close .navbar .child .navbar-list-item .navbar-list-link:hover, .navbar--close .navbar .child .navbar-list-item .navbar-list-link:focus {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.navbar--close .navbar .navbar-head-logo,
+.navbar--close .navbar .navbar-list-title,
+.navbar--close .navbar .navbar-list-amount,
+.navbar--close .navbar .navbar-list-arrow,
+.navbar--close .navbar .navbar-footer {
+  display: none;
+}
+
+.navbar--close .main {
+  margin: 60px 0 0 60px;
 }
 
 @media (max-width: 768px) {
@@ -2451,77 +2541,4 @@ body {
   .employees-list .table-header-col:nth-child(4) {
     width: 15%;
   }
-}
-
-.employee-passport-fields-inner .field-label.passport {
-  width: 30px;
-  margin: 0 10px 0 40px;
-}
-
-.employee-documents-list .table-header-col:first-child {
-  width: 80px;
-}
-
-.employee-documents-list .table-header-col:nth-child(2) {
-  min-width: 145px;
-}
-
-.employee-documents-list .table-header-col:nth-child(3) {
-  width: 160px;
-}
-
-.employee-documents-list .table-header-col:nth-child(4) {
-  width: 100px;
-}
-
-.employee-documents-list .table-header-col:nth-child(5) {
-  width: 100px;
-}
-
-.employee-documents-list .table-header-col:nth-child(5) span {
-  width: 60px;
-}
-
-.employee-documents-list .table-header-col:nth-child(6) {
-  width: 140px;
-}
-
-.employee-documents-list .table-header-col:nth-child(6) span {
-  width: 82px;
-}
-
-.employee-documents-list .table-header-col:last-child {
-  width: 90px;
-}
-
-.vehicle-documents-list .table-header-col:first-child {
-  width: 80px;
-}
-
-.vehicle-documents-list .table-header-col:nth-child(2) {
-  min-width: 145px;
-}
-
-.vehicle-documents-list .table-header-col:nth-child(3) {
-  width: 100px;
-}
-
-.vehicle-documents-list .table-header-col:nth-child(5) {
-  width: 100px;
-}
-
-.vehicle-documents-list .table-header-col:nth-child(5) span {
-  width: 60px;
-}
-
-.vehicle-documents-list .table-header-col:nth-child(6) {
-  width: 140px;
-}
-
-.vehicle-documents-list .table-header-col:nth-child(6) span {
-  width: 82px;
-}
-
-.vehicle-documents-list .table-header-col:last-child {
-  width: 90px;
 }
