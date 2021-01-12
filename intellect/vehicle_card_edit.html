@@ -538,13 +538,13 @@
           <label class="vehicle-documents-action" for="chs_1"></label>
         </div>
         <div class="vehicle-documents-list">
-          <table class="vehicle-table">
-            <thead class="vehicle-table-header">
-              <tr class="vehicle-table-header-line">
-                <th class="vehicle-table-header-col">
-                  <div class="vehicle-table-title">
+          <table class="table">
+            <thead class="table-header">
+              <tr class="table-header-line">
+                <th class="table-header-col">
+                  <div class="table-title">
                     <span>Код</span>
-                    <a href="#" class="vehicle-table-sort">
+                    <a href="#" class="table-sort">
                       <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M3.28033 0.5C3.28033 0.223857 3.50419 -4.82822e-08 3.78033 0C4.05647 4.82823e-08 4.28033 0.223858 4.28033 0.5L4.28033 10.0502C4.28033 10.3264 4.05647 10.5502 3.78033 10.5502C3.50419 10.5502 3.28033 10.3264 3.28033 10.0502L3.28033 0.5Z">
@@ -571,10 +571,10 @@
                     </a>
                   </div>
                 </th>
-                <th class="vehicle-table-header-col">
-                  <div class="vehicle-table-title">
+                <th class="table-header-col">
+                  <div class="table-title">
                     <span>Тип документа</span>
-                    <!-- <a href="#" class="vehicle-table-sort">
+                    <!-- <a href="#" class="table-sort">
                       <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg"
                         class="content-table-header-col-item-sort-svg">
                         <path
@@ -599,10 +599,10 @@
                     </a> -->
                   </div>
                 </th>
-                <th class="vehicle-table-header-col">
-                  <div class="vehicle-table-title">
+                <th class="table-header-col">
+                  <div class="table-title">
                     <span>Код ТС</span>
-                    <!-- <a href="#" class="vehicle-table-sort">
+                    <!-- <a href="#" class="table-sort">
                       <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg"
                         class="content-table-header-col-item-sort-svg">
                         <path
@@ -627,10 +627,10 @@
                     </a> -->
                   </div>
                 </th>
-                <th class="vehicle-table-header-col">
-                  <div class="vehicle-table-title">
+                <th class="table-header-col">
+                  <div class="table-title">
                     <span>Номер</span>
-                    <a href="#" class="vehicle-table-sort">
+                    <a href="#" class="table-sort">
                       <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg"
                         class="content-table-header-col-item-sort-svg">
                         <path
@@ -655,10 +655,10 @@
                     </a>
                   </div>
                 </th>
-                <th class="vehicle-table-header-col">
-                  <div class="vehicle-table-title">
+                <th class="table-header-col">
+                  <div class="table-title">
                     <span>Дата выдачи</span>
-                    <a href="#" class="vehicle-table-sort">
+                    <a href="#" class="table-sort">
                       <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg"
                         class="content-table-header-col-item-sort-svg">
                         <path
@@ -683,10 +683,10 @@
                     </a>
                   </div>
                 </th>
-                <th class="vehicle-table-header-col">
-                  <div class="vehicle-table-title">
+                <th class="table-header-col">
+                  <div class="table-title">
                     <span>Дата окончания</span>
-                    <a href="#" class="vehicle-table-sort">
+                    <a href="#" class="table-sort">
                       <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg"
                         class="content-table-header-col-item-sort-svg">
                         <path
@@ -711,180 +711,257 @@
                     </a>
                   </div>
                 </th>
-                <th class="vehicle-table-header-col">
-                  <div class="vehicle-table-title">
+                <th class="table-header-col">
+                  <div class="table-title">
                     <span>Действия</span>
                   </div>
                 </th>
               </tr>
             </thead>
-            <tbody class="vehicle-table-body">
-              <tr class="vehicle-table-body-line">
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-inner">
-                    <span class="vehicle-table-temp">Диагностическая карта технического осмотра</span>
-                    <a href="#" class="vehicle-table-link">Добавить</a>
+            <tbody class="table-body">
+              <tr class="table-body-line">
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">
+                  <div>
+                    <span class="table-temp">Диагностическая карта технического осмотра</span>
+                    <a href="#" class="table-link">Добавить</a>
                   </div>
                 </td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-action">
-                    <a href="#" class="vehicle-table-menu">
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">
+                  <div class="table-action">
+                    <a href="#table-btn" class="table-btn">
                       <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M3.01019 1.59399C2.99186 1.88596 2.88852 2.1662 2.71295 2.40021C2.53739 2.63421 2.29722 2.81176 2.02203 2.91101C1.74684 3.01027 1.44864 3.02689 1.16412 2.95883C0.879609 2.89077 0.621197 2.741 0.420715 2.52795C0.220234 2.31491 0.0864912 2.04789 0.0358276 1.75977C-0.0148361 1.47164 0.0197807 1.175 0.135559 0.906342C0.251337 0.637685 0.443209 0.408747 0.687439 0.247711C0.931669 0.0866749 1.21765 0.000575023 1.51019 0C1.71338 0.00607916 1.91332 0.0521447 2.09869 0.135559C2.28407 0.218973 2.45121 0.338109 2.59052 0.486145C2.72982 0.634181 2.83858 0.808197 2.91058 0.998291C2.98259 1.18839 3.01646 1.39082 3.01019 1.59399ZM3.01019 8.422C2.99494 8.71486 2.89421 8.99683 2.7204 9.23303C2.54658 9.46923 2.30724 9.64931 2.03217 9.75098C1.75709 9.85264 1.45832 9.87144 1.17267 9.80505C0.887018 9.73867 0.627036 9.59 0.424988 9.37744C0.222939 9.16489 0.0876626 8.89778 0.0358276 8.60913C-0.0160075 8.32049 0.0178939 8.02296 0.133362 7.75339C0.24883 7.48381 0.440783 7.25401 0.685486 7.09238C0.930189 6.93075 1.21693 6.84439 1.51019 6.84399C1.91832 6.85447 2.30558 7.02658 2.58685 7.32248C2.86813 7.61838 3.0204 8.01387 3.01019 8.422ZM3.01019 15.406C2.99186 15.698 2.88852 15.9782 2.71295 16.2122C2.53739 16.4462 2.29722 16.6238 2.02203 16.723C1.74684 16.8223 1.44864 16.8389 1.16412 16.7708C0.879609 16.7028 0.621197 16.553 0.420715 16.34C0.220234 16.1269 0.0864912 15.8599 0.0358276 15.5718C-0.0148361 15.2837 0.0197807 14.987 0.135559 14.7184C0.251337 14.4497 0.443209 14.2208 0.687439 14.0597C0.931669 13.8987 1.21765 13.8126 1.51019 13.812C1.92046 13.8246 2.30898 13.9995 2.59027 14.2984C2.87156 14.5973 3.02258 14.9957 3.01019 15.406Z">
                         </path>
                       </svg>
                     </a>
+                    <ul class="table-menu">
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Просмотреть</a>
+                      </li>
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Изменить</a>
+                      </li>
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Добавить в нарушители</a>
+                      </li>
+                    </ul>
                   </div>
                 </td>
               </tr>
-              <tr class="vehicle-table-body-line">
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-inner">
-                    <span class="vehicle-table-temp">Доступ к БСМТС (для категорий B.C.D.S.W)</span>
-                    <a href="#" class="vehicle-table-link">Добавить</a>
+              <tr class="table-body-line">
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">
+                  <div>
+                    <span class="table-temp">Доступ к БСМТС (для категорий B.C.D.S.W)</span>
+                    <a href="#" class="table-link">Добавить</a>
                   </div>
                 </td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-action">
-                    <a href="#" class="vehicle-table-menu">
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">
+                  <div class="table-action">
+                    <a href="#table-btn" class="table-btn">
                       <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M3.01019 1.59399C2.99186 1.88596 2.88852 2.1662 2.71295 2.40021C2.53739 2.63421 2.29722 2.81176 2.02203 2.91101C1.74684 3.01027 1.44864 3.02689 1.16412 2.95883C0.879609 2.89077 0.621197 2.741 0.420715 2.52795C0.220234 2.31491 0.0864912 2.04789 0.0358276 1.75977C-0.0148361 1.47164 0.0197807 1.175 0.135559 0.906342C0.251337 0.637685 0.443209 0.408747 0.687439 0.247711C0.931669 0.0866749 1.21765 0.000575023 1.51019 0C1.71338 0.00607916 1.91332 0.0521447 2.09869 0.135559C2.28407 0.218973 2.45121 0.338109 2.59052 0.486145C2.72982 0.634181 2.83858 0.808197 2.91058 0.998291C2.98259 1.18839 3.01646 1.39082 3.01019 1.59399ZM3.01019 8.422C2.99494 8.71486 2.89421 8.99683 2.7204 9.23303C2.54658 9.46923 2.30724 9.64931 2.03217 9.75098C1.75709 9.85264 1.45832 9.87144 1.17267 9.80505C0.887018 9.73867 0.627036 9.59 0.424988 9.37744C0.222939 9.16489 0.0876626 8.89778 0.0358276 8.60913C-0.0160075 8.32049 0.0178939 8.02296 0.133362 7.75339C0.24883 7.48381 0.440783 7.25401 0.685486 7.09238C0.930189 6.93075 1.21693 6.84439 1.51019 6.84399C1.91832 6.85447 2.30558 7.02658 2.58685 7.32248C2.86813 7.61838 3.0204 8.01387 3.01019 8.422ZM3.01019 15.406C2.99186 15.698 2.88852 15.9782 2.71295 16.2122C2.53739 16.4462 2.29722 16.6238 2.02203 16.723C1.74684 16.8223 1.44864 16.8389 1.16412 16.7708C0.879609 16.7028 0.621197 16.553 0.420715 16.34C0.220234 16.1269 0.0864912 15.8599 0.0358276 15.5718C-0.0148361 15.2837 0.0197807 14.987 0.135559 14.7184C0.251337 14.4497 0.443209 14.2208 0.687439 14.0597C0.931669 13.8987 1.21765 13.8126 1.51019 13.812C1.92046 13.8246 2.30898 13.9995 2.59027 14.2984C2.87156 14.5973 3.02258 14.9957 3.01019 15.406Z">
                         </path>
                       </svg>
                     </a>
+                    <ul class="table-menu">
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Просмотреть</a>
+                      </li>
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Изменить</a>
+                      </li>
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Добавить в нарушители</a>
+                      </li>
+                    </ul>
                   </div>
                 </td>
               </tr>
-              <tr class="vehicle-table-body-line">
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-inner">
-                    <span class="vehicle-table-temp">Копия договора контрагента с АО “Мессояханефтегаз”</span>
-                    <a href="#" class="vehicle-table-link">Добавить</a>
+              <tr class="table-body-line">
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">
+                  <div>
+                    <span class="table-temp">Копия договора контрагента с АО “Мессояханефтегаз”</span>
+                    <a href="#" class="table-link">Добавить</a>
                   </div>
                 </td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-action">
-                    <a href="#" class="vehicle-table-menu">
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">
+                  <div class="table-action">
+                    <a href="#table-btn" class="table-btn">
                       <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M3.01019 1.59399C2.99186 1.88596 2.88852 2.1662 2.71295 2.40021C2.53739 2.63421 2.29722 2.81176 2.02203 2.91101C1.74684 3.01027 1.44864 3.02689 1.16412 2.95883C0.879609 2.89077 0.621197 2.741 0.420715 2.52795C0.220234 2.31491 0.0864912 2.04789 0.0358276 1.75977C-0.0148361 1.47164 0.0197807 1.175 0.135559 0.906342C0.251337 0.637685 0.443209 0.408747 0.687439 0.247711C0.931669 0.0866749 1.21765 0.000575023 1.51019 0C1.71338 0.00607916 1.91332 0.0521447 2.09869 0.135559C2.28407 0.218973 2.45121 0.338109 2.59052 0.486145C2.72982 0.634181 2.83858 0.808197 2.91058 0.998291C2.98259 1.18839 3.01646 1.39082 3.01019 1.59399ZM3.01019 8.422C2.99494 8.71486 2.89421 8.99683 2.7204 9.23303C2.54658 9.46923 2.30724 9.64931 2.03217 9.75098C1.75709 9.85264 1.45832 9.87144 1.17267 9.80505C0.887018 9.73867 0.627036 9.59 0.424988 9.37744C0.222939 9.16489 0.0876626 8.89778 0.0358276 8.60913C-0.0160075 8.32049 0.0178939 8.02296 0.133362 7.75339C0.24883 7.48381 0.440783 7.25401 0.685486 7.09238C0.930189 6.93075 1.21693 6.84439 1.51019 6.84399C1.91832 6.85447 2.30558 7.02658 2.58685 7.32248C2.86813 7.61838 3.0204 8.01387 3.01019 8.422ZM3.01019 15.406C2.99186 15.698 2.88852 15.9782 2.71295 16.2122C2.53739 16.4462 2.29722 16.6238 2.02203 16.723C1.74684 16.8223 1.44864 16.8389 1.16412 16.7708C0.879609 16.7028 0.621197 16.553 0.420715 16.34C0.220234 16.1269 0.0864912 15.8599 0.0358276 15.5718C-0.0148361 15.2837 0.0197807 14.987 0.135559 14.7184C0.251337 14.4497 0.443209 14.2208 0.687439 14.0597C0.931669 13.8987 1.21765 13.8126 1.51019 13.812C1.92046 13.8246 2.30898 13.9995 2.59027 14.2984C2.87156 14.5973 3.02258 14.9957 3.01019 15.406Z">
                         </path>
                       </svg>
                     </a>
+                    <ul class="table-menu">
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Просмотреть</a>
+                      </li>
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Изменить</a>
+                      </li>
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Добавить в нарушители</a>
+                      </li>
+                    </ul>
                   </div>
                 </td>
               </tr>
-              <tr class="vehicle-table-body-line">
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-inner">
-                    <span class="vehicle-table-temp">ОСАГО (спец. обучающей организацией)</span>
-                    <a href="#" class="vehicle-table-link">Добавить</a>
+              <tr class="table-body-line">
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">
+                  <div>
+                    <span class="table-temp">ОСАГО (спец. обучающей организацией)</span>
+                    <a href="#" class="table-link">Добавить</a>
                   </div>
                 </td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-action">
-                    <a href="#" class="vehicle-table-menu">
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">
+                  <div class="table-action">
+                    <a href="#table-btn" class="table-btn">
                       <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M3.01019 1.59399C2.99186 1.88596 2.88852 2.1662 2.71295 2.40021C2.53739 2.63421 2.29722 2.81176 2.02203 2.91101C1.74684 3.01027 1.44864 3.02689 1.16412 2.95883C0.879609 2.89077 0.621197 2.741 0.420715 2.52795C0.220234 2.31491 0.0864912 2.04789 0.0358276 1.75977C-0.0148361 1.47164 0.0197807 1.175 0.135559 0.906342C0.251337 0.637685 0.443209 0.408747 0.687439 0.247711C0.931669 0.0866749 1.21765 0.000575023 1.51019 0C1.71338 0.00607916 1.91332 0.0521447 2.09869 0.135559C2.28407 0.218973 2.45121 0.338109 2.59052 0.486145C2.72982 0.634181 2.83858 0.808197 2.91058 0.998291C2.98259 1.18839 3.01646 1.39082 3.01019 1.59399ZM3.01019 8.422C2.99494 8.71486 2.89421 8.99683 2.7204 9.23303C2.54658 9.46923 2.30724 9.64931 2.03217 9.75098C1.75709 9.85264 1.45832 9.87144 1.17267 9.80505C0.887018 9.73867 0.627036 9.59 0.424988 9.37744C0.222939 9.16489 0.0876626 8.89778 0.0358276 8.60913C-0.0160075 8.32049 0.0178939 8.02296 0.133362 7.75339C0.24883 7.48381 0.440783 7.25401 0.685486 7.09238C0.930189 6.93075 1.21693 6.84439 1.51019 6.84399C1.91832 6.85447 2.30558 7.02658 2.58685 7.32248C2.86813 7.61838 3.0204 8.01387 3.01019 8.422ZM3.01019 15.406C2.99186 15.698 2.88852 15.9782 2.71295 16.2122C2.53739 16.4462 2.29722 16.6238 2.02203 16.723C1.74684 16.8223 1.44864 16.8389 1.16412 16.7708C0.879609 16.7028 0.621197 16.553 0.420715 16.34C0.220234 16.1269 0.0864912 15.8599 0.0358276 15.5718C-0.0148361 15.2837 0.0197807 14.987 0.135559 14.7184C0.251337 14.4497 0.443209 14.2208 0.687439 14.0597C0.931669 13.8987 1.21765 13.8126 1.51019 13.812C1.92046 13.8246 2.30898 13.9995 2.59027 14.2984C2.87156 14.5973 3.02258 14.9957 3.01019 15.406Z">
                         </path>
                       </svg>
                     </a>
+                    <ul class="table-menu">
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Просмотреть</a>
+                      </li>
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Изменить</a>
+                      </li>
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Добавить в нарушители</a>
+                      </li>
+                    </ul>
                   </div>
                 </td>
               </tr>
-              <tr class="vehicle-table-body-line">
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-inner">
-                    <span class="vehicle-table-temp">ПТС (спец. обучающей организацией)</span>
-                    <a href="#" class="vehicle-table-link">Добавить</a>
+              <tr class="table-body-line">
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">
+                  <div>
+                    <span class="table-temp">ПТС (спец. обучающей организацией)</span>
+                    <a href="#" class="table-link">Добавить</a>
                   </div>
                 </td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-action">
-                    <a href="#" class="vehicle-table-menu">
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">
+                  <div class="table-action">
+                    <a href="#table-btn" class="table-btn">
                       <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M3.01019 1.59399C2.99186 1.88596 2.88852 2.1662 2.71295 2.40021C2.53739 2.63421 2.29722 2.81176 2.02203 2.91101C1.74684 3.01027 1.44864 3.02689 1.16412 2.95883C0.879609 2.89077 0.621197 2.741 0.420715 2.52795C0.220234 2.31491 0.0864912 2.04789 0.0358276 1.75977C-0.0148361 1.47164 0.0197807 1.175 0.135559 0.906342C0.251337 0.637685 0.443209 0.408747 0.687439 0.247711C0.931669 0.0866749 1.21765 0.000575023 1.51019 0C1.71338 0.00607916 1.91332 0.0521447 2.09869 0.135559C2.28407 0.218973 2.45121 0.338109 2.59052 0.486145C2.72982 0.634181 2.83858 0.808197 2.91058 0.998291C2.98259 1.18839 3.01646 1.39082 3.01019 1.59399ZM3.01019 8.422C2.99494 8.71486 2.89421 8.99683 2.7204 9.23303C2.54658 9.46923 2.30724 9.64931 2.03217 9.75098C1.75709 9.85264 1.45832 9.87144 1.17267 9.80505C0.887018 9.73867 0.627036 9.59 0.424988 9.37744C0.222939 9.16489 0.0876626 8.89778 0.0358276 8.60913C-0.0160075 8.32049 0.0178939 8.02296 0.133362 7.75339C0.24883 7.48381 0.440783 7.25401 0.685486 7.09238C0.930189 6.93075 1.21693 6.84439 1.51019 6.84399C1.91832 6.85447 2.30558 7.02658 2.58685 7.32248C2.86813 7.61838 3.0204 8.01387 3.01019 8.422ZM3.01019 15.406C2.99186 15.698 2.88852 15.9782 2.71295 16.2122C2.53739 16.4462 2.29722 16.6238 2.02203 16.723C1.74684 16.8223 1.44864 16.8389 1.16412 16.7708C0.879609 16.7028 0.621197 16.553 0.420715 16.34C0.220234 16.1269 0.0864912 15.8599 0.0358276 15.5718C-0.0148361 15.2837 0.0197807 14.987 0.135559 14.7184C0.251337 14.4497 0.443209 14.2208 0.687439 14.0597C0.931669 13.8987 1.21765 13.8126 1.51019 13.812C1.92046 13.8246 2.30898 13.9995 2.59027 14.2984C2.87156 14.5973 3.02258 14.9957 3.01019 15.406Z">
                         </path>
                       </svg>
                     </a>
+                    <ul class="table-menu">
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Просмотреть</a>
+                      </li>
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Изменить</a>
+                      </li>
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Добавить в нарушители</a>
+                      </li>
+                    </ul>
                   </div>
                 </td>
               </tr>
-              <tr class="vehicle-table-body-line">
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-inner">
-                    <span class="vehicle-table-temp">Свидетельство о регистрации ТС (спец. обучающей
+              <tr class="table-body-line">
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">
+                  <div>
+                    <span class="table-temp">Свидетельство о регистрации ТС (спец. обучающей
                       организацией)</span>
-                    <a href="#" class="vehicle-table-link">Добавить</a>
+                    <a href="#" class="table-link">Добавить</a>
                   </div>
                 </td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-action">
-                    <a href="#" class="vehicle-table-menu">
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">
+                  <div class="table-action">
+                    <a href="#table-btn" class="table-btn">
                       <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M3.01019 1.59399C2.99186 1.88596 2.88852 2.1662 2.71295 2.40021C2.53739 2.63421 2.29722 2.81176 2.02203 2.91101C1.74684 3.01027 1.44864 3.02689 1.16412 2.95883C0.879609 2.89077 0.621197 2.741 0.420715 2.52795C0.220234 2.31491 0.0864912 2.04789 0.0358276 1.75977C-0.0148361 1.47164 0.0197807 1.175 0.135559 0.906342C0.251337 0.637685 0.443209 0.408747 0.687439 0.247711C0.931669 0.0866749 1.21765 0.000575023 1.51019 0C1.71338 0.00607916 1.91332 0.0521447 2.09869 0.135559C2.28407 0.218973 2.45121 0.338109 2.59052 0.486145C2.72982 0.634181 2.83858 0.808197 2.91058 0.998291C2.98259 1.18839 3.01646 1.39082 3.01019 1.59399ZM3.01019 8.422C2.99494 8.71486 2.89421 8.99683 2.7204 9.23303C2.54658 9.46923 2.30724 9.64931 2.03217 9.75098C1.75709 9.85264 1.45832 9.87144 1.17267 9.80505C0.887018 9.73867 0.627036 9.59 0.424988 9.37744C0.222939 9.16489 0.0876626 8.89778 0.0358276 8.60913C-0.0160075 8.32049 0.0178939 8.02296 0.133362 7.75339C0.24883 7.48381 0.440783 7.25401 0.685486 7.09238C0.930189 6.93075 1.21693 6.84439 1.51019 6.84399C1.91832 6.85447 2.30558 7.02658 2.58685 7.32248C2.86813 7.61838 3.0204 8.01387 3.01019 8.422ZM3.01019 15.406C2.99186 15.698 2.88852 15.9782 2.71295 16.2122C2.53739 16.4462 2.29722 16.6238 2.02203 16.723C1.74684 16.8223 1.44864 16.8389 1.16412 16.7708C0.879609 16.7028 0.621197 16.553 0.420715 16.34C0.220234 16.1269 0.0864912 15.8599 0.0358276 15.5718C-0.0148361 15.2837 0.0197807 14.987 0.135559 14.7184C0.251337 14.4497 0.443209 14.2208 0.687439 14.0597C0.931669 13.8987 1.21765 13.8126 1.51019 13.812C1.92046 13.8246 2.30898 13.9995 2.59027 14.2984C2.87156 14.5973 3.02258 14.9957 3.01019 15.406Z">
                         </path>
                       </svg>
                     </a>
+                    <ul class="table-menu">
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Просмотреть</a>
+                      </li>
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Изменить</a>
+                      </li>
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Добавить в нарушители</a>
+                      </li>
+                    </ul>
                   </div>
                 </td>
               </tr>
-              <tr class="vehicle-table-body-line">
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-inner">
-                    <span class="vehicle-table-temp">Чек-лист проверки ТС (эксплуатирующейи организацией)</span>
-                    <a href="#" class="vehicle-table-link">Добавить</a>
+              <tr class="table-body-line">
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">
+                  <div>
+                    <span class="table-temp">Чек-лист проверки ТС (эксплуатирующейи организацией)</span>
+                    <a href="#" class="table-link">Добавить</a>
                   </div>
                 </td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-action">
-                    <a href="#" class="vehicle-table-menu">
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">
+                  <div class="table-action">
+                    <a href="#table-btn" class="table-btn">
                       <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M3.01019 1.59399C2.99186 1.88596 2.88852 2.1662 2.71295 2.40021C2.53739 2.63421 2.29722 2.81176 2.02203 2.91101C1.74684 3.01027 1.44864 3.02689 1.16412 2.95883C0.879609 2.89077 0.621197 2.741 0.420715 2.52795C0.220234 2.31491 0.0864912 2.04789 0.0358276 1.75977C-0.0148361 1.47164 0.0197807 1.175 0.135559 0.906342C0.251337 0.637685 0.443209 0.408747 0.687439 0.247711C0.931669 0.0866749 1.21765 0.000575023 1.51019 0C1.71338 0.00607916 1.91332 0.0521447 2.09869 0.135559C2.28407 0.218973 2.45121 0.338109 2.59052 0.486145C2.72982 0.634181 2.83858 0.808197 2.91058 0.998291C2.98259 1.18839 3.01646 1.39082 3.01019 1.59399ZM3.01019 8.422C2.99494 8.71486 2.89421 8.99683 2.7204 9.23303C2.54658 9.46923 2.30724 9.64931 2.03217 9.75098C1.75709 9.85264 1.45832 9.87144 1.17267 9.80505C0.887018 9.73867 0.627036 9.59 0.424988 9.37744C0.222939 9.16489 0.0876626 8.89778 0.0358276 8.60913C-0.0160075 8.32049 0.0178939 8.02296 0.133362 7.75339C0.24883 7.48381 0.440783 7.25401 0.685486 7.09238C0.930189 6.93075 1.21693 6.84439 1.51019 6.84399C1.91832 6.85447 2.30558 7.02658 2.58685 7.32248C2.86813 7.61838 3.0204 8.01387 3.01019 8.422ZM3.01019 15.406C2.99186 15.698 2.88852 15.9782 2.71295 16.2122C2.53739 16.4462 2.29722 16.6238 2.02203 16.723C1.74684 16.8223 1.44864 16.8389 1.16412 16.7708C0.879609 16.7028 0.621197 16.553 0.420715 16.34C0.220234 16.1269 0.0864912 15.8599 0.0358276 15.5718C-0.0148361 15.2837 0.0197807 14.987 0.135559 14.7184C0.251337 14.4497 0.443209 14.2208 0.687439 14.0597C0.931669 13.8987 1.21765 13.8126 1.51019 13.812C1.92046 13.8246 2.30898 13.9995 2.59027 14.2984C2.87156 14.5973 3.02258 14.9957 3.01019 15.406Z">
                         </path>
                       </svg>
                     </a>
+                    <ul class="table-menu">
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Просмотреть</a>
+                      </li>
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Изменить</a>
+                      </li>
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Добавить в нарушители</a>
+                      </li>
+                    </ul>
                   </div>
                 </td>
               </tr>
@@ -898,13 +975,13 @@
           <label class="vehicle-documents-action" for="chs_2"></label>
         </div>
         <div class="vehicle-documents-list">
-          <table class="vehicle-table">
-            <thead class="vehicle-table-header">
-              <tr class="vehicle-table-header-line">
-                <th class="vehicle-table-header-col">
-                  <div class="vehicle-table-title">
+          <table class="table">
+            <thead class="table-header">
+              <tr class="table-header-line">
+                <th class="table-header-col">
+                  <div class="table-title">
                     <span>Код</span>
-                    <a href="#" class="vehicle-table-sort">
+                    <a href="#" class="table-sort">
                       <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M3.28033 0.5C3.28033 0.223857 3.50419 -4.82822e-08 3.78033 0C4.05647 4.82823e-08 4.28033 0.223858 4.28033 0.5L4.28033 10.0502C4.28033 10.3264 4.05647 10.5502 3.78033 10.5502C3.50419 10.5502 3.28033 10.3264 3.28033 10.0502L3.28033 0.5Z">
@@ -931,10 +1008,10 @@
                     </a>
                   </div>
                 </th>
-                <th class="vehicle-table-header-col">
-                  <div class="vehicle-table-title">
+                <th class="table-header-col">
+                  <div class="table-title">
                     <span>Тип документа</span>
-                    <!-- <a href="#" class="vehicle-table-sort">
+                    <!-- <a href="#" class="table-sort">
                       <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg"
                         class="content-table-header-col-item-sort-svg">
                         <path
@@ -959,10 +1036,10 @@
                     </a> -->
                   </div>
                 </th>
-                <th class="vehicle-table-header-col">
-                  <div class="vehicle-table-title">
+                <th class="table-header-col">
+                  <div class="table-title">
                     <span>Код ТС</span>
-                    <!-- <a href="#" class="vehicle-table-sort">
+                    <!-- <a href="#" class="table-sort">
                       <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg"
                         class="content-table-header-col-item-sort-svg">
                         <path
@@ -987,10 +1064,10 @@
                     </a> -->
                   </div>
                 </th>
-                <th class="vehicle-table-header-col">
-                  <div class="vehicle-table-title">
+                <th class="table-header-col">
+                  <div class="table-title">
                     <span>Номер</span>
-                    <a href="#" class="vehicle-table-sort">
+                    <a href="#" class="table-sort">
                       <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg"
                         class="content-table-header-col-item-sort-svg">
                         <path
@@ -1015,10 +1092,10 @@
                     </a>
                   </div>
                 </th>
-                <th class="vehicle-table-header-col">
-                  <div class="vehicle-table-title">
+                <th class="table-header-col">
+                  <div class="table-title">
                     <span>Дата выдачи</span>
-                    <a href="#" class="vehicle-table-sort">
+                    <a href="#" class="table-sort">
                       <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg"
                         class="content-table-header-col-item-sort-svg">
                         <path
@@ -1043,10 +1120,10 @@
                     </a>
                   </div>
                 </th>
-                <th class="vehicle-table-header-col">
-                  <div class="vehicle-table-title">
+                <th class="table-header-col">
+                  <div class="table-title">
                     <span>Дата окончания</span>
-                    <a href="#" class="vehicle-table-sort">
+                    <a href="#" class="table-sort">
                       <svg width="16" height="12" xmlns="http://www.w3.org/2000/svg"
                         class="content-table-header-col-item-sort-svg">
                         <path
@@ -1071,38 +1148,38 @@
                     </a>
                   </div>
                 </th>
-                <th class="vehicle-table-header-col">
-                  <div class="vehicle-table-title">
+                <th class="table-header-col">
+                  <div class="table-title">
                     <span>Действия</span>
                   </div>
                 </th>
               </tr>
             </thead>
-            <tbody class="vehicle-table-body">
-              <tr class="vehicle-table-body-line">
-                <td class="vehicle-table-body-col">157438</td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-inner">
-                    <a href="#" class="vehicle-table-file">Водительское удостоверение (удостоверение
+            <tbody class="table-body">
+              <tr class="table-body-line">
+                <td class="table-body-col">157438</td>
+                <td class="table-body-col">
+                  <div>
+                    <a href="#" class="table-file">Водительское удостоверение (удостоверение
                       тракториста-машиниста) соответствующих категорий ТС (ГИБДД (Гостехнадзор)).pdf</a>
-                    <div class="vehicle-table-good">
+                    <div class="table-good">
                       <svg width="14" height="10" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M13.5095 2.5177L6.72946 8.58765C6.41329 8.86337 6.00798 9.01538 5.58847 9.01538C5.16896 9.01538 4.76362 8.86337 4.44745 8.58765C4.299 8.45701 4.18009 8.29628 4.09863 8.11609C4.01717 7.9359 3.97504 7.74047 3.97504 7.54272C3.97504 7.34498 4.01717 7.14943 4.09863 6.96924C4.18009 6.78905 4.299 6.62832 4.44745 6.49768L11.2274 0.427734C11.5436 0.152008 11.949 0 12.3685 0C12.788 0 13.1933 0.152008 13.5095 0.427734C13.6579 0.55837 13.7768 0.719103 13.8583 0.899292C13.9397 1.07948 13.9819 1.27491 13.9819 1.47266C13.9819 1.6704 13.9397 1.86595 13.8583 2.04614C13.7768 2.22633 13.6579 2.38706 13.5095 2.5177ZM6.72946 8.58765C6.41329 8.86337 6.00798 9.01538 5.58847 9.01538C5.16896 9.01538 4.76362 8.86337 4.44745 8.58765L0.47345 5.1377C0.32471 5.00724 0.205548 4.84647 0.123901 4.66626C0.042255 4.48605 0 4.2905 0 4.09265C0 3.89481 0.042255 3.69926 0.123901 3.51904C0.205548 3.33883 0.32471 3.17819 0.47345 3.04773C0.787487 2.76758 1.19361 2.61267 1.61444 2.61267C2.03528 2.61267 2.44143 2.76758 2.75546 3.04773L6.72946 6.49768C6.87791 6.62832 6.99682 6.78905 7.07828 6.96924C7.15974 7.14943 7.20187 7.34498 7.20187 7.54272C7.20187 7.74047 7.15974 7.9359 7.07828 8.11609C6.99682 8.29628 6.87791 8.45701 6.72946 8.58765Z" />
                         <path
                           d="M13.5095 2.5177L6.72946 8.58765C6.41329 8.86337 6.00798 9.01538 5.58847 9.01538C5.16896 9.01538 4.76362 8.86337 4.44745 8.58765C4.299 8.45701 4.18009 8.29628 4.09863 8.11609C4.01717 7.9359 3.97504 7.74047 3.97504 7.54272C3.97504 7.34498 4.01717 7.14943 4.09863 6.96924C4.18009 6.78905 4.299 6.62832 4.44745 6.49768L11.2274 0.427734C11.5436 0.152008 11.949 0 12.3685 0C12.788 0 13.1933 0.152008 13.5095 0.427734C13.6579 0.55837 13.7768 0.719103 13.8583 0.899292C13.9397 1.07948 13.9819 1.27491 13.9819 1.47266C13.9819 1.6704 13.9397 1.86595 13.8583 2.04614C13.7768 2.22633 13.6579 2.38706 13.5095 2.5177Z" />
                       </svg>
-                      <span class="vehicle-table-status">Документ добавлен</span>
+                      <span class="table-status">Документ добавлен</span>
                     </div>
                   </div>
                 </td>
-                <td class="vehicle-table-body-col">14</td>
-                <td class="vehicle-table-body-col">1020393489204828</td>
-                <td class="vehicle-table-body-col">09.10.2018</td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-inner">
-                    <span class="vehicle-table-txt">03.03.2018</span>
-                    <div class="vehicle-table-negative">
+                <td class="table-body-col">14</td>
+                <td class="table-body-col">1020393489204828</td>
+                <td class="table-body-col">09.10.2018</td>
+                <td class="table-body-col">
+                  <div>
+                    <span class="table-txt">03.03.2018</span>
+                    <div class="table-negative">
                       <svg width="16" height="14" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
                           d="M14.935 13.2299L7.94602 0.269958C7.90327 0.185889 7.83809 0.115291 7.75769 0.065979C7.6773 0.0166666 7.58482 -0.00946045 7.49051 -0.00946045C7.3962 -0.00946045 7.30372 0.0166666 7.22333 0.065979C7.14294 0.115291 7.07775 0.185889 7.03501 0.269958L0.0450153 13.2299C0.00173546 13.31 -0.0202587 13.4 -0.0188579 13.491C-0.0174572 13.5821 0.00728706 13.6712 0.053011 13.7499C0.0986051 13.8285 0.163893 13.8939 0.242464 13.9395C0.321035 13.9851 0.410167 14.0093 0.501009 14.0099H14.479C14.5698 14.0093 14.6589 13.9851 14.7375 13.9395C14.8161 13.8939 14.8814 13.8285 14.927 13.7499C14.9727 13.6712 14.9975 13.5821 14.9989 13.491C15.0003 13.4 14.9783 13.31 14.935 13.2299ZM6.83499 5.40997V9.23993C6.82796 9.32958 6.83955 9.41975 6.86902 9.5047C6.89849 9.58965 6.94521 9.66756 7.00626 9.73358C7.0673 9.79961 7.14137 9.85233 7.22376 9.88837C7.30614 9.9244 7.39507 9.94305 7.48499 9.94305C7.57491 9.94305 7.66386 9.9244 7.74625 9.88837C7.82864 9.85233 7.9027 9.79961 7.96375 9.73358C8.02479 9.66756 8.07151 9.58965 8.10098 9.5047C8.13046 9.41975 8.14205 9.32958 8.13501 9.23993V5.40997C8.14515 5.31883 8.13594 5.22657 8.108 5.13922C8.08006 5.05187 8.03403 4.97135 7.97287 4.90302C7.91172 4.83468 7.83684 4.78004 7.75311 4.74261C7.66939 4.70519 7.57871 4.68585 7.487 4.68585C7.3953 4.68585 7.30461 4.70519 7.22089 4.74261C7.13717 4.78004 7.06229 4.83468 7.00113 4.90302C6.93998 4.97135 6.89394 5.05187 6.866 5.13922C6.83806 5.22657 6.82885 5.31883 6.83899 5.40997H6.83499ZM7.48599 10.5999C7.34698 10.5971 7.2103 10.6359 7.09336 10.7111C6.97641 10.7863 6.88451 10.8946 6.82938 11.0223C6.77424 11.1499 6.75838 11.2911 6.78378 11.4278C6.80919 11.5645 6.87473 11.6904 6.97205 11.7897C7.06936 11.889 7.19405 11.9571 7.3302 11.9853C7.46636 12.0135 7.60782 12.0005 7.73654 11.9479C7.86527 11.8954 7.97543 11.8056 8.05298 11.6902C8.13053 11.5748 8.17197 11.439 8.172 11.3C8.17319 11.2092 8.1565 11.1191 8.12287 11.0349C8.08923 10.9506 8.03932 10.8737 7.97598 10.8087C7.91265 10.7437 7.83714 10.6918 7.75376 10.6559C7.67037 10.6201 7.58074 10.6011 7.48999 10.5999H7.48599Z"
@@ -1111,34 +1188,45 @@
                           <rect width="15.031" height="14" fill="white" />
                         </clipPath>
                       </svg>
-                      <span class="vehicle-table-status">Осталось 365 дней</span>
+                      <span class="table-status">Осталось 365 дней</span>
                     </div>
                   </div>
                 </td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-action">
-                    <div class="vehicle-table-lock" title="Документ закрыт для редактирования">
+                <td class="table-body-col">
+                  <div class="table-action">
+                    <div class="table-lock" title="Документ закрыт для редактирования">
                       <svg width="11" height="13" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M1.56995 4.06006V4.87H0V13H11V4.87H9.43005V4.06006C9.44686 3.53341 9.35754 3.0087 9.1676 2.51721C8.97766 2.02572 8.69094 1.57745 8.32434 1.19897C7.95775 0.820497 7.51887 0.519481 7.03369 0.313965C6.54851 0.108449 6.02691 0.00256348 5.5 0.00256348C4.97309 0.00256348 4.45149 0.108449 3.96631 0.313965C3.48113 0.519481 3.04225 0.820497 2.67566 1.19897C2.30906 1.57745 2.02234 2.02572 1.8324 2.51721C1.64246 3.0087 1.55314 3.53341 1.56995 4.06006ZM9.43005 11.37H1.56995V6.5H9.43005V11.37ZM5.5 1.62C6.13586 1.63261 6.74095 1.89625 7.18311 2.35339C7.62526 2.81054 7.86856 3.42413 7.85999 4.06006V4.87H3.14001V4.06006C3.13144 3.42413 3.37474 2.81054 3.81689 2.35339C4.25905 1.89625 4.86414 1.63261 5.5 1.62ZM5.5 1.62L4.51001 7.91003H6.48999V9.95996H4.51001V7.91003L5.5 1.62Z" />
                       </svg>
                     </div>
-                    <a href="#" class="vehicle-table-menu">
+                    <a href="#table-btn" class="table-btn">
                       <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M3.01019 1.59399C2.99186 1.88596 2.88852 2.1662 2.71295 2.40021C2.53739 2.63421 2.29722 2.81176 2.02203 2.91101C1.74684 3.01027 1.44864 3.02689 1.16412 2.95883C0.879609 2.89077 0.621197 2.741 0.420715 2.52795C0.220234 2.31491 0.0864912 2.04789 0.0358276 1.75977C-0.0148361 1.47164 0.0197807 1.175 0.135559 0.906342C0.251337 0.637685 0.443209 0.408747 0.687439 0.247711C0.931669 0.0866749 1.21765 0.000575023 1.51019 0C1.71338 0.00607916 1.91332 0.0521447 2.09869 0.135559C2.28407 0.218973 2.45121 0.338109 2.59052 0.486145C2.72982 0.634181 2.83858 0.808197 2.91058 0.998291C2.98259 1.18839 3.01646 1.39082 3.01019 1.59399ZM3.01019 8.422C2.99494 8.71486 2.89421 8.99683 2.7204 9.23303C2.54658 9.46923 2.30724 9.64931 2.03217 9.75098C1.75709 9.85264 1.45832 9.87144 1.17267 9.80505C0.887018 9.73867 0.627036 9.59 0.424988 9.37744C0.222939 9.16489 0.0876626 8.89778 0.0358276 8.60913C-0.0160075 8.32049 0.0178939 8.02296 0.133362 7.75339C0.24883 7.48381 0.440783 7.25401 0.685486 7.09238C0.930189 6.93075 1.21693 6.84439 1.51019 6.84399C1.91832 6.85447 2.30558 7.02658 2.58685 7.32248C2.86813 7.61838 3.0204 8.01387 3.01019 8.422ZM3.01019 15.406C2.99186 15.698 2.88852 15.9782 2.71295 16.2122C2.53739 16.4462 2.29722 16.6238 2.02203 16.723C1.74684 16.8223 1.44864 16.8389 1.16412 16.7708C0.879609 16.7028 0.621197 16.553 0.420715 16.34C0.220234 16.1269 0.0864912 15.8599 0.0358276 15.5718C-0.0148361 15.2837 0.0197807 14.987 0.135559 14.7184C0.251337 14.4497 0.443209 14.2208 0.687439 14.0597C0.931669 13.8987 1.21765 13.8126 1.51019 13.812C1.92046 13.8246 2.30898 13.9995 2.59027 14.2984C2.87156 14.5973 3.02258 14.9957 3.01019 15.406Z">
                         </path>
                       </svg>
                     </a>
+                    <ul class="table-menu">
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Просмотреть</a>
+                      </li>
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Изменить</a>
+                      </li>
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Добавить в нарушители</a>
+                      </li>
+                    </ul>
                   </div>
                 </td>
               </tr>
-              <tr class="vehicle-table-body-line alert">
-                <td class="vehicle-table-body-col">128478</td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-inner">
-                    <a href="#" class="vehicle-table-file">Договор аренды ТС (спец. обучающей организацией).pdf</a>
-                    <div class="vehicle-table-negative">
+              <tr class="table-body-line alert">
+                <td class="table-body-col">128478</td>
+                <td class="table-body-col">
+                  <div>
+                    <a href="#" class="table-file">Договор аренды ТС (спец. обучающей организацией).pdf</a>
+                    <div class="table-negative">
                       <svg width="16" height="14" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
                           d="M14.935 13.2299L7.94602 0.269958C7.90327 0.185889 7.83809 0.115291 7.75769 0.065979C7.6773 0.0166666 7.58482 -0.00946045 7.49051 -0.00946045C7.3962 -0.00946045 7.30372 0.0166666 7.22333 0.065979C7.14294 0.115291 7.07775 0.185889 7.03501 0.269958L0.0450153 13.2299C0.00173546 13.31 -0.0202587 13.4 -0.0188579 13.491C-0.0174572 13.5821 0.00728706 13.6712 0.053011 13.7499C0.0986051 13.8285 0.163893 13.8939 0.242464 13.9395C0.321035 13.9851 0.410167 14.0093 0.501009 14.0099H14.479C14.5698 14.0093 14.6589 13.9851 14.7375 13.9395C14.8161 13.8939 14.8814 13.8285 14.927 13.7499C14.9727 13.6712 14.9975 13.5821 14.9989 13.491C15.0003 13.4 14.9783 13.31 14.935 13.2299ZM6.83499 5.40997V9.23993C6.82796 9.32958 6.83955 9.41975 6.86902 9.5047C6.89849 9.58965 6.94521 9.66756 7.00626 9.73358C7.0673 9.79961 7.14137 9.85233 7.22376 9.88837C7.30614 9.9244 7.39507 9.94305 7.48499 9.94305C7.57491 9.94305 7.66386 9.9244 7.74625 9.88837C7.82864 9.85233 7.9027 9.79961 7.96375 9.73358C8.02479 9.66756 8.07151 9.58965 8.10098 9.5047C8.13046 9.41975 8.14205 9.32958 8.13501 9.23993V5.40997C8.14515 5.31883 8.13594 5.22657 8.108 5.13922C8.08006 5.05187 8.03403 4.97135 7.97287 4.90302C7.91172 4.83468 7.83684 4.78004 7.75311 4.74261C7.66939 4.70519 7.57871 4.68585 7.487 4.68585C7.3953 4.68585 7.30461 4.70519 7.22089 4.74261C7.13717 4.78004 7.06229 4.83468 7.00113 4.90302C6.93998 4.97135 6.89394 5.05187 6.866 5.13922C6.83806 5.22657 6.82885 5.31883 6.83899 5.40997H6.83499ZM7.48599 10.5999C7.34698 10.5971 7.2103 10.6359 7.09336 10.7111C6.97641 10.7863 6.88451 10.8946 6.82938 11.0223C6.77424 11.1499 6.75838 11.2911 6.78378 11.4278C6.80919 11.5645 6.87473 11.6904 6.97205 11.7897C7.06936 11.889 7.19405 11.9571 7.3302 11.9853C7.46636 12.0135 7.60782 12.0005 7.73654 11.9479C7.86527 11.8954 7.97543 11.8056 8.05298 11.6902C8.13053 11.5748 8.17197 11.439 8.172 11.3C8.17319 11.2092 8.1565 11.1191 8.12287 11.0349C8.08923 10.9506 8.03932 10.8737 7.97598 10.8087C7.91265 10.7437 7.83714 10.6918 7.75376 10.6559C7.67037 10.6201 7.58074 10.6011 7.48999 10.5999H7.48599Z"
@@ -1147,82 +1235,104 @@
                           <rect width="15.031" height="14" fill="white" />
                         </clipPath>
                       </svg>
-                      <span class="vehicle-table-status">Не согласован</span>
+                      <span class="table-status">Не согласован</span>
                     </div>
                   </div>
                 </td>
-                <td class="vehicle-table-body-col">47</td>
-                <td class="vehicle-table-body-col">203003532</td>
-                <td class="vehicle-table-body-col">09.10.2018</td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-inner">
-                    <span class="vehicle-table-txt">03.03.2018</span>
+                <td class="table-body-col">47</td>
+                <td class="table-body-col">203003532</td>
+                <td class="table-body-col">09.10.2018</td>
+                <td class="table-body-col">
+                  <div>
+                    <span class="table-txt">03.03.2018</span>
                   </div>
                 </td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-action">
-                    <a href="#" class="vehicle-table-menu">
+                <td class="table-body-col">
+                  <div class="table-action">
+                    <a href="#table-btn" class="table-btn">
                       <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M3.01019 1.59399C2.99186 1.88596 2.88852 2.1662 2.71295 2.40021C2.53739 2.63421 2.29722 2.81176 2.02203 2.91101C1.74684 3.01027 1.44864 3.02689 1.16412 2.95883C0.879609 2.89077 0.621197 2.741 0.420715 2.52795C0.220234 2.31491 0.0864912 2.04789 0.0358276 1.75977C-0.0148361 1.47164 0.0197807 1.175 0.135559 0.906342C0.251337 0.637685 0.443209 0.408747 0.687439 0.247711C0.931669 0.0866749 1.21765 0.000575023 1.51019 0C1.71338 0.00607916 1.91332 0.0521447 2.09869 0.135559C2.28407 0.218973 2.45121 0.338109 2.59052 0.486145C2.72982 0.634181 2.83858 0.808197 2.91058 0.998291C2.98259 1.18839 3.01646 1.39082 3.01019 1.59399ZM3.01019 8.422C2.99494 8.71486 2.89421 8.99683 2.7204 9.23303C2.54658 9.46923 2.30724 9.64931 2.03217 9.75098C1.75709 9.85264 1.45832 9.87144 1.17267 9.80505C0.887018 9.73867 0.627036 9.59 0.424988 9.37744C0.222939 9.16489 0.0876626 8.89778 0.0358276 8.60913C-0.0160075 8.32049 0.0178939 8.02296 0.133362 7.75339C0.24883 7.48381 0.440783 7.25401 0.685486 7.09238C0.930189 6.93075 1.21693 6.84439 1.51019 6.84399C1.91832 6.85447 2.30558 7.02658 2.58685 7.32248C2.86813 7.61838 3.0204 8.01387 3.01019 8.422ZM3.01019 15.406C2.99186 15.698 2.88852 15.9782 2.71295 16.2122C2.53739 16.4462 2.29722 16.6238 2.02203 16.723C1.74684 16.8223 1.44864 16.8389 1.16412 16.7708C0.879609 16.7028 0.621197 16.553 0.420715 16.34C0.220234 16.1269 0.0864912 15.8599 0.0358276 15.5718C-0.0148361 15.2837 0.0197807 14.987 0.135559 14.7184C0.251337 14.4497 0.443209 14.2208 0.687439 14.0597C0.931669 13.8987 1.21765 13.8126 1.51019 13.812C1.92046 13.8246 2.30898 13.9995 2.59027 14.2984C2.87156 14.5973 3.02258 14.9957 3.01019 15.406Z">
                         </path>
                       </svg>
                     </a>
+                    <ul class="table-menu">
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Просмотреть</a>
+                      </li>
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Изменить</a>
+                      </li>
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Добавить в нарушители</a>
+                      </li>
+                    </ul>
                   </div>
                 </td>
               </tr>
-              <tr class="vehicle-table-body-line">
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-inner">
-                    <span class="vehicle-table-temp">КАСКО</span>
-                    <a href="#" class="vehicle-table-link">Добавить</a>
+              <tr class="table-body-line">
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">
+                  <div>
+                    <span class="table-temp">КАСКО</span>
+                    <a href="#" class="table-link">Добавить</a>
                   </div>
                 </td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">-</td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-inner">
-                    <span class="vehicle-table-txt">-</span>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">-</td>
+                <td class="table-body-col">
+                  <div>
+                    <span class="table-txt">-</span>
                   </div>
                 </td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-action">
-                    <a href="#" class="vehicle-table-menu">
+                <td class="table-body-col">
+                  <div class="table-action">
+                    <a href="#table-btn" class="table-btn">
                       <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M3.01019 1.59399C2.99186 1.88596 2.88852 2.1662 2.71295 2.40021C2.53739 2.63421 2.29722 2.81176 2.02203 2.91101C1.74684 3.01027 1.44864 3.02689 1.16412 2.95883C0.879609 2.89077 0.621197 2.741 0.420715 2.52795C0.220234 2.31491 0.0864912 2.04789 0.0358276 1.75977C-0.0148361 1.47164 0.0197807 1.175 0.135559 0.906342C0.251337 0.637685 0.443209 0.408747 0.687439 0.247711C0.931669 0.0866749 1.21765 0.000575023 1.51019 0C1.71338 0.00607916 1.91332 0.0521447 2.09869 0.135559C2.28407 0.218973 2.45121 0.338109 2.59052 0.486145C2.72982 0.634181 2.83858 0.808197 2.91058 0.998291C2.98259 1.18839 3.01646 1.39082 3.01019 1.59399ZM3.01019 8.422C2.99494 8.71486 2.89421 8.99683 2.7204 9.23303C2.54658 9.46923 2.30724 9.64931 2.03217 9.75098C1.75709 9.85264 1.45832 9.87144 1.17267 9.80505C0.887018 9.73867 0.627036 9.59 0.424988 9.37744C0.222939 9.16489 0.0876626 8.89778 0.0358276 8.60913C-0.0160075 8.32049 0.0178939 8.02296 0.133362 7.75339C0.24883 7.48381 0.440783 7.25401 0.685486 7.09238C0.930189 6.93075 1.21693 6.84439 1.51019 6.84399C1.91832 6.85447 2.30558 7.02658 2.58685 7.32248C2.86813 7.61838 3.0204 8.01387 3.01019 8.422ZM3.01019 15.406C2.99186 15.698 2.88852 15.9782 2.71295 16.2122C2.53739 16.4462 2.29722 16.6238 2.02203 16.723C1.74684 16.8223 1.44864 16.8389 1.16412 16.7708C0.879609 16.7028 0.621197 16.553 0.420715 16.34C0.220234 16.1269 0.0864912 15.8599 0.0358276 15.5718C-0.0148361 15.2837 0.0197807 14.987 0.135559 14.7184C0.251337 14.4497 0.443209 14.2208 0.687439 14.0597C0.931669 13.8987 1.21765 13.8126 1.51019 13.812C1.92046 13.8246 2.30898 13.9995 2.59027 14.2984C2.87156 14.5973 3.02258 14.9957 3.01019 15.406Z">
                         </path>
                       </svg>
                     </a>
+                    <ul class="table-menu">
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Просмотреть</a>
+                      </li>
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Изменить</a>
+                      </li>
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Добавить в нарушители</a>
+                      </li>
+                    </ul>
                   </div>
                 </td>
               </tr>
-              <tr class="vehicle-table-body-line">
-                <td class="vehicle-table-body-col">129038</td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-inner">
-                    <a href="#" class="vehicle-table-file">Сертификат “Защитное вождение” (рекомендованным
+              <tr class="table-body-line">
+                <td class="table-body-col">129038</td>
+                <td class="table-body-col">
+                  <div>
+                    <a href="#" class="table-file">Сертификат “Защитное вождение” (рекомендованным
                       провайдером).pdf</a>
-                    <div class="vehicle-table-good">
+                    <div class="table-good">
                       <svg width="14" height="10" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M13.5095 2.5177L6.72946 8.58765C6.41329 8.86337 6.00798 9.01538 5.58847 9.01538C5.16896 9.01538 4.76362 8.86337 4.44745 8.58765C4.299 8.45701 4.18009 8.29628 4.09863 8.11609C4.01717 7.9359 3.97504 7.74047 3.97504 7.54272C3.97504 7.34498 4.01717 7.14943 4.09863 6.96924C4.18009 6.78905 4.299 6.62832 4.44745 6.49768L11.2274 0.427734C11.5436 0.152008 11.949 0 12.3685 0C12.788 0 13.1933 0.152008 13.5095 0.427734C13.6579 0.55837 13.7768 0.719103 13.8583 0.899292C13.9397 1.07948 13.9819 1.27491 13.9819 1.47266C13.9819 1.6704 13.9397 1.86595 13.8583 2.04614C13.7768 2.22633 13.6579 2.38706 13.5095 2.5177ZM6.72946 8.58765C6.41329 8.86337 6.00798 9.01538 5.58847 9.01538C5.16896 9.01538 4.76362 8.86337 4.44745 8.58765L0.47345 5.1377C0.32471 5.00724 0.205548 4.84647 0.123901 4.66626C0.042255 4.48605 0 4.2905 0 4.09265C0 3.89481 0.042255 3.69926 0.123901 3.51904C0.205548 3.33883 0.32471 3.17819 0.47345 3.04773C0.787487 2.76758 1.19361 2.61267 1.61444 2.61267C2.03528 2.61267 2.44143 2.76758 2.75546 3.04773L6.72946 6.49768C6.87791 6.62832 6.99682 6.78905 7.07828 6.96924C7.15974 7.14943 7.20187 7.34498 7.20187 7.54272C7.20187 7.74047 7.15974 7.9359 7.07828 8.11609C6.99682 8.29628 6.87791 8.45701 6.72946 8.58765Z" />
                         <path
                           d="M13.5095 2.5177L6.72946 8.58765C6.41329 8.86337 6.00798 9.01538 5.58847 9.01538C5.16896 9.01538 4.76362 8.86337 4.44745 8.58765C4.299 8.45701 4.18009 8.29628 4.09863 8.11609C4.01717 7.9359 3.97504 7.74047 3.97504 7.54272C3.97504 7.34498 4.01717 7.14943 4.09863 6.96924C4.18009 6.78905 4.299 6.62832 4.44745 6.49768L11.2274 0.427734C11.5436 0.152008 11.949 0 12.3685 0C12.788 0 13.1933 0.152008 13.5095 0.427734C13.6579 0.55837 13.7768 0.719103 13.8583 0.899292C13.9397 1.07948 13.9819 1.27491 13.9819 1.47266C13.9819 1.6704 13.9397 1.86595 13.8583 2.04614C13.7768 2.22633 13.6579 2.38706 13.5095 2.5177Z" />
                       </svg>
-                      <span class="vehicle-table-status">Документ добавлен</span>
+                      <span class="table-status">Документ добавлен</span>
                     </div>
                   </div>
                 </td>
-                <td class="vehicle-table-body-col">17</td>
-                <td class="vehicle-table-body-col">MCX-17/10306/00525/P</td>
-                <td class="vehicle-table-body-col">09.10.2005</td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-inner">
-                    <span class="vehicle-table-txt">03.03.2018</span>
-                    <div class="vehicle-table-negative">
+                <td class="table-body-col">17</td>
+                <td class="table-body-col">MCX-17/10306/00525/P</td>
+                <td class="table-body-col">09.10.2005</td>
+                <td class="table-body-col">
+                  <div>
+                    <span class="table-txt">03.03.2018</span>
+                    <div class="table-negative">
                       <svg width="16" height="14" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd"
                           d="M14.935 13.2299L7.94602 0.269958C7.90327 0.185889 7.83809 0.115291 7.75769 0.065979C7.6773 0.0166666 7.58482 -0.00946045 7.49051 -0.00946045C7.3962 -0.00946045 7.30372 0.0166666 7.22333 0.065979C7.14294 0.115291 7.07775 0.185889 7.03501 0.269958L0.0450153 13.2299C0.00173546 13.31 -0.0202587 13.4 -0.0188579 13.491C-0.0174572 13.5821 0.00728706 13.6712 0.053011 13.7499C0.0986051 13.8285 0.163893 13.8939 0.242464 13.9395C0.321035 13.9851 0.410167 14.0093 0.501009 14.0099H14.479C14.5698 14.0093 14.6589 13.9851 14.7375 13.9395C14.8161 13.8939 14.8814 13.8285 14.927 13.7499C14.9727 13.6712 14.9975 13.5821 14.9989 13.491C15.0003 13.4 14.9783 13.31 14.935 13.2299ZM6.83499 5.40997V9.23993C6.82796 9.32958 6.83955 9.41975 6.86902 9.5047C6.89849 9.58965 6.94521 9.66756 7.00626 9.73358C7.0673 9.79961 7.14137 9.85233 7.22376 9.88837C7.30614 9.9244 7.39507 9.94305 7.48499 9.94305C7.57491 9.94305 7.66386 9.9244 7.74625 9.88837C7.82864 9.85233 7.9027 9.79961 7.96375 9.73358C8.02479 9.66756 8.07151 9.58965 8.10098 9.5047C8.13046 9.41975 8.14205 9.32958 8.13501 9.23993V5.40997C8.14515 5.31883 8.13594 5.22657 8.108 5.13922C8.08006 5.05187 8.03403 4.97135 7.97287 4.90302C7.91172 4.83468 7.83684 4.78004 7.75311 4.74261C7.66939 4.70519 7.57871 4.68585 7.487 4.68585C7.3953 4.68585 7.30461 4.70519 7.22089 4.74261C7.13717 4.78004 7.06229 4.83468 7.00113 4.90302C6.93998 4.97135 6.89394 5.05187 6.866 5.13922C6.83806 5.22657 6.82885 5.31883 6.83899 5.40997H6.83499ZM7.48599 10.5999C7.34698 10.5971 7.2103 10.6359 7.09336 10.7111C6.97641 10.7863 6.88451 10.8946 6.82938 11.0223C6.77424 11.1499 6.75838 11.2911 6.78378 11.4278C6.80919 11.5645 6.87473 11.6904 6.97205 11.7897C7.06936 11.889 7.19405 11.9571 7.3302 11.9853C7.46636 12.0135 7.60782 12.0005 7.73654 11.9479C7.86527 11.8954 7.97543 11.8056 8.05298 11.6902C8.13053 11.5748 8.17197 11.439 8.172 11.3C8.17319 11.2092 8.1565 11.1191 8.12287 11.0349C8.08923 10.9506 8.03932 10.8737 7.97598 10.8087C7.91265 10.7437 7.83714 10.6918 7.75376 10.6559C7.67037 10.6201 7.58074 10.6011 7.48999 10.5999H7.48599Z"
@@ -1231,25 +1341,36 @@
                           <rect width="15.031" height="14" fill="white" />
                         </clipPath>
                       </svg>
-                      <span class="vehicle-table-status">Осталось 365 дней</span>
+                      <span class="table-status">Осталось 365 дней</span>
                     </div>
                   </div>
                 </td>
-                <td class="vehicle-table-body-col">
-                  <div class="vehicle-table-action">
-                    <div class="vehicle-table-lock" title="Документ закрыт для редактирования">
+                <td class="table-body-col">
+                  <div class="table-action">
+                    <div class="table-lock" title="Документ закрыт для редактирования">
                       <svg width="11" height="13" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M1.56995 4.06006V4.87H0V13H11V4.87H9.43005V4.06006C9.44686 3.53341 9.35754 3.0087 9.1676 2.51721C8.97766 2.02572 8.69094 1.57745 8.32434 1.19897C7.95775 0.820497 7.51887 0.519481 7.03369 0.313965C6.54851 0.108449 6.02691 0.00256348 5.5 0.00256348C4.97309 0.00256348 4.45149 0.108449 3.96631 0.313965C3.48113 0.519481 3.04225 0.820497 2.67566 1.19897C2.30906 1.57745 2.02234 2.02572 1.8324 2.51721C1.64246 3.0087 1.55314 3.53341 1.56995 4.06006ZM9.43005 11.37H1.56995V6.5H9.43005V11.37ZM5.5 1.62C6.13586 1.63261 6.74095 1.89625 7.18311 2.35339C7.62526 2.81054 7.86856 3.42413 7.85999 4.06006V4.87H3.14001V4.06006C3.13144 3.42413 3.37474 2.81054 3.81689 2.35339C4.25905 1.89625 4.86414 1.63261 5.5 1.62ZM5.5 1.62L4.51001 7.91003H6.48999V9.95996H4.51001V7.91003L5.5 1.62Z" />
                       </svg>
                     </div>
-                    <a href="#" class="vehicle-table-menu">
+                    <a href="#table-btn" class="table-btn">
                       <svg width="3" height="17" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M3.01019 1.59399C2.99186 1.88596 2.88852 2.1662 2.71295 2.40021C2.53739 2.63421 2.29722 2.81176 2.02203 2.91101C1.74684 3.01027 1.44864 3.02689 1.16412 2.95883C0.879609 2.89077 0.621197 2.741 0.420715 2.52795C0.220234 2.31491 0.0864912 2.04789 0.0358276 1.75977C-0.0148361 1.47164 0.0197807 1.175 0.135559 0.906342C0.251337 0.637685 0.443209 0.408747 0.687439 0.247711C0.931669 0.0866749 1.21765 0.000575023 1.51019 0C1.71338 0.00607916 1.91332 0.0521447 2.09869 0.135559C2.28407 0.218973 2.45121 0.338109 2.59052 0.486145C2.72982 0.634181 2.83858 0.808197 2.91058 0.998291C2.98259 1.18839 3.01646 1.39082 3.01019 1.59399ZM3.01019 8.422C2.99494 8.71486 2.89421 8.99683 2.7204 9.23303C2.54658 9.46923 2.30724 9.64931 2.03217 9.75098C1.75709 9.85264 1.45832 9.87144 1.17267 9.80505C0.887018 9.73867 0.627036 9.59 0.424988 9.37744C0.222939 9.16489 0.0876626 8.89778 0.0358276 8.60913C-0.0160075 8.32049 0.0178939 8.02296 0.133362 7.75339C0.24883 7.48381 0.440783 7.25401 0.685486 7.09238C0.930189 6.93075 1.21693 6.84439 1.51019 6.84399C1.91832 6.85447 2.30558 7.02658 2.58685 7.32248C2.86813 7.61838 3.0204 8.01387 3.01019 8.422ZM3.01019 15.406C2.99186 15.698 2.88852 15.9782 2.71295 16.2122C2.53739 16.4462 2.29722 16.6238 2.02203 16.723C1.74684 16.8223 1.44864 16.8389 1.16412 16.7708C0.879609 16.7028 0.621197 16.553 0.420715 16.34C0.220234 16.1269 0.0864912 15.8599 0.0358276 15.5718C-0.0148361 15.2837 0.0197807 14.987 0.135559 14.7184C0.251337 14.4497 0.443209 14.2208 0.687439 14.0597C0.931669 13.8987 1.21765 13.8126 1.51019 13.812C1.92046 13.8246 2.30898 13.9995 2.59027 14.2984C2.87156 14.5973 3.02258 14.9957 3.01019 15.406Z">
                         </path>
                       </svg>
                     </a>
+                    <ul class="table-menu">
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Просмотреть</a>
+                      </li>
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Изменить</a>
+                      </li>
+                      <li class="table-menu-item">
+                        <a href="#" class="table-menu-link">Добавить в нарушители</a>
+                      </li>
+                    </ul>
                   </div>
                 </td>
               </tr>

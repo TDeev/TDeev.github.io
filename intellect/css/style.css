@@ -1057,7 +1057,6 @@ body {
 
 .table-body-col:last-child {
   padding: 15px 18px 15px 5px;
-  position: relative;
 }
 
 .table-person {
@@ -1192,16 +1191,17 @@ body {
 .table-menu {
   display: none;
   position: absolute;
-  z-index: 1;
-  right: 2px;
-  top: 45px;
+  right: 16px;
+  z-index: 1000;
+  margin: 15px 0 0 0;
   padding: 0;
-  margin: 0;
   list-style: none;
   min-width: 180px;
-  width: 100%;
   background-color: #ffffff;
   border: 1px solid #ebe9e9;
+  white-space: nowrap;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .table-menu::before {
@@ -1930,6 +1930,11 @@ body {
   border-radius: 0px 10px 10px 0px;
 }
 
+.employee-documents-list .table-menu {
+  right: 34px;
+  margin: 180px 0 0 0;
+}
+
 .employee.modal-background {
   display: none;
 }
@@ -2082,6 +2087,11 @@ body {
 .vehicle-documents-list .table-body-col:last-child {
   padding: 15px 15px 15px 5px;
   border-radius: 0px 10px 10px 0px;
+}
+
+.vehicle-documents-list .table-menu {
+  right: 34px;
+  margin: 180px 0 0 0;
 }
 
 .vehicle-table {

@@ -793,7 +793,6 @@ $input-color: #cccccc;
       }
       &:last-child {
         padding: 15px 18px 15px 5px;
-        position: relative;
       }
     }
   }
@@ -888,19 +887,20 @@ $input-color: #cccccc;
       }
     }
   }
+  //Менюшка
   &-menu {
     display: none;
     position: absolute;
-    z-index: 1;
-    right: 2px;
-    top: 45px;
+    right: 16px;
+    z-index: 1000;
+    margin: 15px 0 0 0;
     padding: 0;
-    margin: 0;
     list-style: none;
     min-width: 180px;
-    width: 100%;
     background-color: #ffffff;
     border: 1px solid #ebe9e9;
+    white-space: nowrap;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     &::before {
       position: absolute;
       right: 10px;
@@ -1062,6 +1062,10 @@ $input-color: #cccccc;
   &-photo {
     display: block;
     margin: 0 0 15px 0;
+  }
+  &-buttons {
+    display: flex;
+    flex-flow: row nowrap;
   }
 }
 
@@ -1449,6 +1453,11 @@ $input-color: #cccccc;
           }
         }
       }
+      //сдвиг выпадайки под текущий контент
+      .table-menu {
+        right: 34px;
+        margin: 180px 0 0 0;
+      }
     }
   }
   // Модальное окно
@@ -1593,6 +1602,11 @@ $input-color: #cccccc;
             border-radius: 0px 10px 10px 0px;
           }
         }
+      }
+      //сдвиг выпадайки под текущий контент
+      .table-menu {
+        right: 34px;
+        margin: 180px 0 0 0;
       }
     }
   }
