@@ -1161,15 +1161,15 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .table-lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   fill: #666666;
   margin: 0 24px 0 0;
 }
@@ -1192,7 +1192,7 @@ body {
   display: none;
   position: absolute;
   right: 16px;
-  z-index: 1000;
+  z-index: 100;
   margin: 15px 0 0 0;
   padding: 0;
   list-style: none;
@@ -1932,7 +1932,7 @@ body {
 
 .employee-documents-list .table-menu {
   right: 34px;
-  margin: 180px 0 0 0;
+  margin: 30px 0 0 0;
 }
 
 .employee.modal-background {
@@ -2091,7 +2091,7 @@ body {
 
 .vehicle-documents-list .table-menu {
   right: 34px;
-  margin: 180px 0 0 0;
+  margin: 30px 0 0 0;
 }
 
 .vehicle-table {
