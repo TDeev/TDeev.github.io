@@ -465,6 +465,9 @@
           </svg>
         </a>
         <span class="h1-like">Транспортное средство #24</span>
+        <form action="#modal">
+          <button class="btn btn--delete">Удалить</button>
+        </form>
         <form action="./vehicle_card_edit.html">
           <button class="btn btn--edit">Редактировать</button>
         </form>
@@ -1321,6 +1324,23 @@
         </div>
       </div>
     </section>
+    <div id="modal" class="employee modal-background">
+      <div class="modal">
+        <span class="modal-title">Вы хотите удалить транспортное средство?</span>
+        <div class="modal-content">
+          <span class="h1-like">#24</span>
+          <span class="modal-txt">Марка: КАМАЗ 44108RF</span>
+        </div>
+        <div class="modal-buttons">
+          <form action="./vehicle_card.html">
+            <button class="btn btn--reset">Нет</button>
+          </form>
+          <form action="./employees.html">
+            <button class="btn btn--delete">Да</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </main>
 
   <script src="./js/script.js">
@@ -1329,3 +1349,6 @@
 
 
 </html>
+<form action="#modal">
+  <button class="btn btn--delete">Удалить</button>
+</form>
