@@ -63,34 +63,30 @@ window.onresize = function () {
   }
 }
 
+// !Меню таблицы
+
 var tableBtn = document.querySelectorAll(".table-btn");
 
 for (let i = 0; i < tableBtn.length; i++) {
   tableBtn[i].onclick = function () {
-    tableBtn[i].classList.toggle("show");
+    tableBtn[i].classList.toggle("table-menu--open");
   }
 }
 
-window.onclick = function (event) {
-  if (!event.target.matches('.table-btn')) {
+// window.onclick = function (event) {
+//   if (!event.target.matches('.table-btn')) {
 
-    for (let i = 0; i < tableBtn.length; i++) {
-      if (tableBtn[i].classList.contains('show')) {
-        tableBtn[i].classList.remove('show');
-      }
-    }
-  }
-}
-
-
-
-// window.onclick = function () {
-//   for (let i = 0; i < tableBtn.length; i++) {
-//     if (tableBtn[1].classList.contains('show')) {
-//       tableBtn[1].classList.remove('show');
+//     for (let i = 0; i < tableBtn.length; i++) {
+//       if (tableBtn[i].classList.contains('table-menu--open')) {
+//         tableBtn[i].classList.remove('table-menu--open');
+//       }
 //     }
 //   }
 // }
+
+
+
+
 
 
 
