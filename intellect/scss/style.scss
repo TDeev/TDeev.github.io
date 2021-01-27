@@ -53,8 +53,8 @@ $input-color: #cccccc;
 //Заголовки
 .h1-like {
   display: block;
-  // font-size: 18px;
-  font-size: 1.28rem;
+  font-size: 18px;
+  // font-size: 1.28rem;
   font-weight: 600;
   line-height: 1.4;
   // line-height: 25px;
@@ -65,7 +65,7 @@ $input-color: #cccccc;
   display: block;
   font-weight: bold;
   font-size: 16px;
-  font-size: 1.14rem;
+  // font-size: 1.14rem;
   color: #4f4f4f;
   margin: 0 10px 0 0;
 }
@@ -360,6 +360,7 @@ $input-color: #cccccc;
     width: 100%;
     background-color: #ffffff;
     border: 1px solid #ebe9e9;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     &::before {
       position: absolute;
       right: 10px;
@@ -603,6 +604,9 @@ $input-color: #cccccc;
     min-height: 50px;
     padding: 0 18px 0 18px;
     border-bottom: 1px solid #cccccc;
+    &.content-header--noborder {
+      border: initial;
+    }
     //Стрелка назад
     &-arrow {
       display: flex;
@@ -723,15 +727,19 @@ $input-color: #cccccc;
     justify-content: space-between;
     &-inner {
       padding: 0 21px 0 21px;
-      flex: 1 1 auto;
+      flex: 1 1 50%;
     }
   }
-  .field {
-    &-label {
-      width: 125px;
-      &:nth-child(3) {
-        margin: 0 10px 0 10px;
-      }
+  .field > .field-label {
+    width: 125px;
+  }
+  &-date-inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    .field-label:nth-of-type(2) {
+      margin: 0px 10px 0 10px;
     }
   }
   &-buttons {
@@ -755,8 +763,15 @@ $input-color: #cccccc;
     }
     &-col {
       padding: 15px 5px 15px 5px;
-
       text-align: left;
+      &:first-child {
+        width: 80px;
+        padding: 15px 5px 15px 18px;
+      }
+      &:last-child {
+        width: 35px;
+        padding: 15px 18px 15px 5px;
+      }
     }
   }
   &-title {
@@ -827,15 +842,27 @@ $input-color: #cccccc;
     display: block;
   }
   &-amount {
-    display: inline-flex;
-    padding: 1px 4px;
-    border-radius: 2px;
-    color: white;
-    // font-size: 12px;
-    font-size: 0.85rem;
-    line-height: initial;
-    // text-align: center;
-    background-color: #eb6437;
+    &-red,
+    &-orange,
+    &-grey {
+      display: inline-flex;
+      padding: 1px 4px;
+      border-radius: 2px;
+      color: white;
+      // font-size: 12px;
+      font-size: 0.85rem;
+      line-height: initial;
+      // text-align: center;
+    }
+    &-red {
+      background-color: #eb6437;
+    }
+    &-orange {
+      background-color: #f9b537;
+    }
+    &-grey {
+      background-color: #cccccc;
+    }
   }
   &-file,
   &-link {
@@ -884,7 +911,7 @@ $input-color: #cccccc;
     padding: 0 0 0 5px;
     fill: #666666;
     &:focus {
-      & ~ .table-menu {
+      & + .table-menu {
         display: block;
       }
     }
@@ -898,7 +925,7 @@ $input-color: #cccccc;
     margin: 15px 0 0 0;
     padding: 0;
     list-style: none;
-    min-width: 180px;
+    min-width: 150px;
     background-color: #ffffff;
     border: 1px solid #ebe9e9;
     white-space: nowrap;
@@ -1036,6 +1063,7 @@ $input-color: #cccccc;
   flex-flow: column nowrap;
   align-items: center;
   &-background {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -1043,10 +1071,22 @@ $input-color: #cccccc;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 102;
-    display: flex;
+    // display: flex;
     justify-content: center;
     align-items: flex-start;
     padding: 15% 10px 10px 10px;
+    &:target {
+      display: flex;
+    }
+    .h1-like {
+      text-align: center;
+    }
+    .btn {
+      min-width: 67px;
+      &--delete {
+        margin: 0 0 0 20px;
+      }
+    }
   }
   &-title {
     font-size: 16px;
@@ -1086,9 +1126,6 @@ $input-color: #cccccc;
   &-list {
     overflow: auto;
     .table-header-col {
-      padding: 15px 5px 15px 5px;
-
-      text-align: left;
       //==============Ширина колонок====================
       &:first-child {
         width: 80px;
@@ -1143,8 +1180,8 @@ $input-color: #cccccc;
     .table-header-col {
       //==============Ширина колонок====================
       &:first-child {
-        width: 80px;
-        padding: 15px 5px 15px 18px;
+        // width: 80px;
+        // padding: 15px 5px 15px 18px;
       }
       &:nth-child(3),
       &:nth-child(4) {
@@ -1470,21 +1507,21 @@ $input-color: #cccccc;
     }
   }
   // Модальное окно
-  &.modal-background {
-    &:target {
-      display: flex;
-    }
-    display: none;
-    .h1-like {
-      text-align: center;
-    }
-    .btn {
-      min-width: 67px;
-      &--delete {
-        margin: 0 0 0 20px;
-      }
-    }
-  }
+  // &.modal-background {
+  //   &:target {
+  //     display: flex;
+  //   }
+  //   display: none;
+  //   .h1-like {
+  //     text-align: center;
+  //   }
+  //   .btn {
+  //     min-width: 67px;
+  //     &--delete {
+  //       margin: 0 0 0 20px;
+  //     }
+  //   }
+  // }
 }
 
 //*==========Карточка транспортного средства===========
@@ -1752,6 +1789,96 @@ $input-color: #cccccc;
       margin: 0 0 0 24px;
       fill: #666666;
     }
+  }
+}
+
+//*==================ГД-Надым======================
+.partners {
+  // Список
+  &-list {
+    overflow: auto;
+    .table-header-col {
+      //==============Ширина колонок====================
+      &:first-child {
+        width: initial;
+      }
+      &:nth-child(2) {
+        width: 240px;
+      }
+      &:nth-child(3) {
+        width: 220px;
+      }
+      &:last-child {
+        width: 35px;
+        padding: 15px 18px 15px 5px;
+      }
+      //==================================
+      &:nth-child(1) .table-sort {
+        fill: #07a6d7;
+      }
+    }
+    .table-body-line {
+      &:nth-child(2n + 1) {
+        background-color: #f5f5f5;
+      }
+    }
+  }
+}
+.partner {
+  // Список
+  &-list {
+    overflow: auto;
+    .table-header-col {
+      //==============Ширина колонок====================
+      &:first-child {
+      }
+      &:nth-child(2),
+      &:nth-child(3) {
+        // width: 500px;
+      }
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(6) {
+        width: 170px;
+      }
+      &:last-child {
+        width: 35px;
+        padding: 15px 18px 15px 5px;
+      }
+      //==================================
+      &:nth-child(2) .table-sort {
+        fill: #07a6d7;
+      }
+    }
+    .table-body-line {
+      &:nth-child(2n + 1) {
+        background-color: #f5f5f5;
+      }
+    }
+    .partner--alert {
+      font-weight: 600;
+      color: #eb5554;
+    }
+  }
+  &-date {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    &-label {
+      font-weight: 600;
+      margin: 0 20px 0 0;
+    }
+    // &-btn {
+    //   display: flex;
+    //   & > svg {
+    //     fill: #6a6a69;
+    //   }
+    //   &:hover {
+    //     & > svg {
+    //       fill: #009bcd;
+    //     }
+    //   }
+    // }
   }
 }
 

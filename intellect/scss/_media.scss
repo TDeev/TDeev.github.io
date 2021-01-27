@@ -107,6 +107,39 @@
       }
     }
   }
+  //!Партнеры
+  .partners {
+    &-list {
+      .table-header-col {
+        //==============Ширина колонок====================
+        &:nth-child(2) {
+          width: 160px;
+        }
+        &:nth-child(3) {
+          width: 120px;
+          & span {
+            width: 80px;
+          }
+        }
+      }
+    }
+  }
+  .partner {
+    &-list {
+      .table-header-col {
+        //==============Ширина колонок====================
+        &:nth-child(4) {
+          width: 130px;
+          span {
+            width: 80px;
+          }
+        }
+        &:nth-child(5) {
+          width: 130px;
+        }
+      }
+    }
+  }
 }
 
 // Экстрабольшие девайсы (большие десктопы, <= 1600px)
@@ -130,6 +163,26 @@
     .table-header-col:nth-child(3),
     .table-header-col:nth-child(4) {
       width: 15%;
+    }
+  }
+  //!Партнеры
+  .partner {
+    &-list {
+      .table-header-col {
+        //==============Ширина колонок====================
+        &:nth-child(4) {
+          width: 130px;
+          span {
+            width: 80px;
+          }
+        }
+        &:nth-child(5) {
+          width: 130px;
+        }
+        &:nth-child(6) {
+          width: 130px;
+        }
+      }
     }
   }
 }
