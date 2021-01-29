@@ -160,9 +160,32 @@
   }
   //!Справочники - Сотрудники
   .employees-list {
-    .table-header-col:nth-child(3),
-    .table-header-col:nth-child(4) {
-      width: 15%;
+    .table-header-col {
+      :nth-child(3),
+      :nth-child(4) {
+        width: 15%;
+      }
+      &:nth-child(6) {
+        width: 110px;
+      }
+      &:nth-child(7) {
+        width: 120px;
+      }
+    }
+  }
+  //!Справочники - Транспорт
+  .vehicles-list {
+    .table-header-col {
+      &:nth-child(3),
+      &:nth-child(4) {
+        width: 18%;
+      }
+      &:nth-child(6) {
+        width: 110px;
+      }
+      &:nth-child(7) {
+        width: 120px;
+      }
     }
   }
   //!Партнеры

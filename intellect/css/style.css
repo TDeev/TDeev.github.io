@@ -1133,10 +1133,7 @@ body {
   display: block;
 }
 
-.table-amount-red, .table-amount-orange, .table-amount-grey {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.table-amount-red, .table-amount-orange, .table-amount-grey, .table-amount-blue {
   padding: 1px 4px;
   border-radius: 2px;
   color: white;
@@ -1154,6 +1151,10 @@ body {
 
 .table-amount-grey {
   background-color: #cccccc;
+}
+
+.table-amount-blue {
+  background-color: #009bcd;
 }
 
 .table-file, .table-link {
@@ -1583,19 +1584,19 @@ body {
 }
 
 .employees-list .table-header-col:nth-child(3), .employees-list .table-header-col:nth-child(4) {
-  width: 19%;
+  width: 18%;
 }
 
 .employees-list .table-header-col:nth-child(5) {
-  width: 130px;
-}
-
-.employees-list .table-header-col:nth-child(5) span {
-  width: 92px;
+  width: 70px;
 }
 
 .employees-list .table-header-col:nth-child(6) {
-  width: 180px;
+  width: 120px;
+}
+
+.employees-list .table-header-col:nth-child(7) {
+  width: 160px;
 }
 
 .employees-list .table-header-col:last-child {
@@ -1611,15 +1612,42 @@ body {
   background-color: #f5f5f5;
 }
 
-.employees-list .table-body-line.alert {
-  background-color: #ffeaeb;
+.vehicles-list {
+  overflow: auto;
 }
 
-.employees-list .table-body-line.alert + .table-body-line > .table-body-col {
-  background-color: #ffeaeb;
-  color: #ff0000;
-  padding: 0 18px 10px 10px;
-  text-align: right;
+.vehicles-list .table-header-col:nth-child(3), .vehicles-list .table-header-col:nth-child(4) {
+  width: 22%;
+}
+
+.vehicles-list .table-header-col:nth-child(5) {
+  width: 70px;
+}
+
+.vehicles-list .table-header-col:nth-child(6) {
+  width: 120px;
+}
+
+.vehicles-list .table-header-col:nth-child(7) {
+  width: 160px;
+}
+
+.vehicles-list .table-header-col:last-child {
+  width: 35px;
+  padding: 15px 18px 15px 5px;
+}
+
+.vehicles-list .table-header-col:nth-child(2) .table-sort {
+  fill: #07a6d7;
+}
+
+.vehicles-list .table-body-line:nth-child(2n + 1) {
+  background-color: #f5f5f5;
+}
+
+.vehicles-list .table-url {
+  display: initial;
+  margin: 0 5px 0 0;
 }
 
 .employee-emergency {
@@ -2692,9 +2720,24 @@ body {
   .passes-list .table-header-col:nth-child(7) .table-title {
     width: 110px;
   }
-  .employees-list .table-header-col:nth-child(3),
-  .employees-list .table-header-col:nth-child(4) {
+  .employees-list .table-header-col :nth-child(3),
+  .employees-list .table-header-col :nth-child(4) {
     width: 15%;
+  }
+  .employees-list .table-header-col:nth-child(6) {
+    width: 110px;
+  }
+  .employees-list .table-header-col:nth-child(7) {
+    width: 120px;
+  }
+  .vehicles-list .table-header-col:nth-child(3), .vehicles-list .table-header-col:nth-child(4) {
+    width: 18%;
+  }
+  .vehicles-list .table-header-col:nth-child(6) {
+    width: 110px;
+  }
+  .vehicles-list .table-header-col:nth-child(7) {
+    width: 120px;
   }
   .partner-list .table-header-col:nth-child(4) {
     width: 130px;
