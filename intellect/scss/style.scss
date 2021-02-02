@@ -1484,7 +1484,7 @@ $input-color: #cccccc;
       }
     }
     .field-label {
-      width: 100px;
+      width: 135px;
     }
     .field-text,
     .field-date,
@@ -1499,15 +1499,14 @@ $input-color: #cccccc;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
+      padding: 10px 0 10px 0;
       .employee-system-title {
         flex: 1 1;
-        margin: 0;
+        margin: 10px 0 10px 0;
+        white-space: nowrap;
       }
       .field {
-        margin: 0;
-        &-label {
-          width: 150px;
-        }
+        margin: 10px 0 10px 0;
       }
     }
   }
@@ -1687,7 +1686,7 @@ $input-color: #cccccc;
       }
     }
     .field-label {
-      width: 100px;
+      width: 135px;
     }
     .field-text,
     .field-date,
@@ -1702,15 +1701,14 @@ $input-color: #cccccc;
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
+      padding: 10px 0 10px 0;
       .vehicle-system-title {
         flex: 1 1;
-        margin: 0;
+        white-space: nowrap;
+        margin: 10px 0 10px 0;
       }
       .field {
-        margin: 0;
-        &-label {
-          width: 150px;
-        }
+        margin: 10px 0 10px 0;
       }
     }
   }

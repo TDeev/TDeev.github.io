@@ -1962,7 +1962,7 @@ body {
 }
 
 .employee-system .field-label {
-  width: 100px;
+  width: 135px;
 }
 
 .employee-system .field-text,
@@ -1989,21 +1989,19 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 10px 0 10px 0;
 }
 
 .employee-system.employee-system--no-partner .employee-system-title {
   -webkit-box-flex: 1;
       -ms-flex: 1 1;
           flex: 1 1;
-  margin: 0;
+  margin: 10px 0 10px 0;
+  white-space: nowrap;
 }
 
 .employee-system.employee-system--no-partner .field {
-  margin: 0;
-}
-
-.employee-system.employee-system--no-partner .field-label {
-  width: 150px;
+  margin: 10px 0 10px 0;
 }
 
 .employee-documents {
@@ -2181,7 +2179,7 @@ body {
 }
 
 .vehicle-system .field-label {
-  width: 100px;
+  width: 135px;
 }
 
 .vehicle-system .field-text,
@@ -2208,21 +2206,19 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 10px 0 10px 0;
 }
 
 .vehicle-system.vehicle-system--no-partner .vehicle-system-title {
   -webkit-box-flex: 1;
       -ms-flex: 1 1;
           flex: 1 1;
-  margin: 0;
+  white-space: nowrap;
+  margin: 10px 0 10px 0;
 }
 
 .vehicle-system.vehicle-system--no-partner .field {
-  margin: 0;
-}
-
-.vehicle-system.vehicle-system--no-partner .field-label {
-  width: 150px;
+  margin: 10px 0 10px 0;
 }
 
 .vehicle-documents {
