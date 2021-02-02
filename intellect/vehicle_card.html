@@ -424,7 +424,7 @@
               </a>
             </li>
             <li class="navbar-list-item">
-              <a href="#" class="navbar-list-link">
+              <a href="./employees.html" class="navbar-list-link">
                 <div class="navbar-list-icon">
                   <svg width="17" height="12" xmlns="http://www.w3.org/2000/svg" class="navbar-list-icon-svg">
                     <path
@@ -575,6 +575,41 @@
           <div class="field">
             <label for="#" class="field-label">Владелец</label>
             <input type="text" value="ООО 'СтройТрансКом'" class="field-text" readonly>
+          </div>
+        </div>
+      </div>
+      <div class="vehicle-system vehicle-system--no-partner">
+        <span class="vehicle-system-title">Системная информация</span>
+        <div class="vehicle-system-inner">
+          <div class="field">
+            <label for="#" class="field-label">Пропуск (номер)</label>
+            <input type="text" value="7000001C" class="field-text" readonly>
+          </div>
+        </div>
+      </div>
+      <div class="vehicle-system">
+        <span class="vehicle-system-title">Системная информация</span>
+        <div class="vehicle-system-fields">
+          <div class="vehicle-system-inner">
+            <div class="field">
+              <label for="#" class="field-label">Пропуск (номер)</label>
+              <input type="text" value="7000001C" class="field-text" readonly>
+            </div>
+            <div class="field">
+              <label for="#" class="field-label">Комментарий курьера</label>
+              <textarea name="" id="" rows="10" readonly class="field-textarea">-</textarea>
+            </div>
+          </div>
+          <div class="vehicle-system-inner">
+            <div class="field">
+              <label for="#" class="field-label">Пропуск партнера</label>
+              <input type="text" value="Да" class="field-text" readonly>
+            </div>
+            <div class="field">
+              <label for="#" class="field-label">Исходящее письмо</label>
+              <textarea name="" id="" rows="10" readonly
+                class="field-textarea">Исходящее письмо №614 от 25.01.21</textarea>
+            </div>
           </div>
         </div>
       </div>
@@ -1374,7 +1409,7 @@
         </div>
       </div>
     </section>
-    <div id="modal" class="employee modal-background">
+    <div id="modal" class="modal-background">
       <div class="modal">
         <span class="modal-title">Вы хотите удалить транспортное средство?</span>
         <div class="modal-content">
@@ -1399,6 +1434,3 @@
 
 
 </html>
-<form action="#modal">
-  <button class="btn btn--delete">Удалить</button>
-</form>
