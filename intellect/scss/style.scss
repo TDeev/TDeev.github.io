@@ -1460,9 +1460,9 @@ $input-color: #cccccc;
     .field-text,
     .field-date,
     .field-textarea {
-      background: #ebebeb;
-      &.is-edit {
-        background: #ffffff;
+      background: #ffffff;
+      &.is-view {
+        background: #ebebeb;
       }
     }
   }
@@ -1496,9 +1496,9 @@ $input-color: #cccccc;
     .field-text,
     .field-date,
     .field-textarea {
-      background: #ebebeb;
-      &.is-edit {
-        background: #ffffff;
+      background: #ffffff;
+      &.is-view {
+        background: #ebebeb;
       }
     }
     &.employee-system--no-partner {

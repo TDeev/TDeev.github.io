@@ -1920,13 +1920,13 @@ body {
 .employee-passport .field-text,
 .employee-passport .field-date,
 .employee-passport .field-textarea {
-  background: #ebebeb;
+  background: #ffffff;
 }
 
-.employee-passport .field-text.is-edit,
-.employee-passport .field-date.is-edit,
-.employee-passport .field-textarea.is-edit {
-  background: #ffffff;
+.employee-passport .field-text.is-view,
+.employee-passport .field-date.is-view,
+.employee-passport .field-textarea.is-view {
+  background: #ebebeb;
 }
 
 .employee-system {
@@ -1973,13 +1973,13 @@ body {
 .employee-system .field-text,
 .employee-system .field-date,
 .employee-system .field-textarea {
-  background: #ebebeb;
+  background: #ffffff;
 }
 
-.employee-system .field-text.is-edit,
-.employee-system .field-date.is-edit,
-.employee-system .field-textarea.is-edit {
-  background: #ffffff;
+.employee-system .field-text.is-view,
+.employee-system .field-date.is-view,
+.employee-system .field-textarea.is-view {
+  background: #ebebeb;
 }
 
 .employee-system.employee-system--no-partner {
