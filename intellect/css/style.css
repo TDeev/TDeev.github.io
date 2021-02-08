@@ -157,14 +157,14 @@ body {
 .field-text {
   outline: none;
   width: 100%;
+  height: 36px;
   min-width: 160px;
-  height: 40px;
   padding: 0 10px 0 18px;
-  background: #f2f2f2;
   color: #4f4f4f;
-  border: none;
   border-radius: 20px;
-  cursor: default;
+  border: 1px solid #cccccc;
+  background: #ffffff;
+  cursor: initial;
 }
 
 .field-text::-webkit-input-placeholder {
@@ -175,11 +175,11 @@ body {
   color: #bdbdbd;
 }
 
-.field-text.is-edit {
-  height: 36px;
-  border: 1px solid #cccccc;
-  background: #ffffff;
-  cursor: initial;
+.field-text.is-view {
+  height: 40px;
+  border: none;
+  background: #f2f2f2;
+  cursor: default;
 }
 
 .field-textarea {
@@ -188,13 +188,13 @@ body {
   height: 62px;
   line-height: 20px;
   padding: 8px 10px 8px 18px;
-  background: #f2f2f2;
   color: #4f4f4f;
-  border: none;
   border-radius: 20px;
   overflow: hidden;
   resize: none;
-  cursor: default;
+  border: 1px solid #cccccc;
+  background: #ffffff;
+  cursor: initial;
 }
 
 .field-textarea::-webkit-input-placeholder {
@@ -205,22 +205,22 @@ body {
   color: #bdbdbd;
 }
 
-.field-textarea.is-edit {
-  border: 1px solid #cccccc;
-  background: #ffffff;
-  cursor: initial;
+.field-textarea.is-view {
+  border: none;
+  background: #f2f2f2;
+  cursor: default;
 }
 
 .field-date {
   outline: none;
   width: 160px;
-  height: 40px;
+  height: 36px;
   padding: 0 10px 0 18px;
-  background: #f2f2f2;
   color: #4f4f4f;
-  border: none;
   border-radius: 20px;
-  cursor: default;
+  border: 1px solid #cccccc;
+  background: #ffffff;
+  cursor: initial;
 }
 
 .field-date::-webkit-input-placeholder {
@@ -231,26 +231,52 @@ body {
   color: #bdbdbd;
 }
 
-.field-date.is-edit {
-  height: 36px;
-  border: 1px solid #cccccc;
-  background: #ffffff;
-  cursor: initial;
+.field-date.is-view {
+  height: 40px;
+  border: none;
+  background: #f2f2f2;
+  cursor: default;
 }
 
 .field-radio {
-  height: 18px;
-  width: 18px;
-  border: #bdbdbd;
   display: none;
 }
 
-.field-radio.is-edit + .field-radio-style-wrp .field-radio-style {
+.field-radio-style {
+  position: relative;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  margin: 0 15px 0 0;
+}
+
+.field-radio-style-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40px;
+}
+
+.field-radio-label {
+  margin: 0 27px 0 0;
+  color: #4f4f4f;
+}
+
+.field-radio + .field-radio-style-wrp .field-radio-style {
   border-color: #bdbdbd;
 }
 
-.field-radio.is-edit + .field-radio-style-wrp + .field-radio-label {
-  color: #4f4f4f;
+.field-radio.is-view + .field-radio-style-wrp .field-radio-style {
+  border-color: #bdbdbd;
+}
+
+.field-radio.is-view + .field-radio-style-wrp + .field-radio-label {
+  color: #e0e0e0;
 }
 
 .field-radio:checked + .field-radio-style-wrp .field-radio-style {
@@ -268,29 +294,8 @@ body {
   border-radius: 20px;
 }
 
-.field-radio-style-wrp {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 40px;
-}
-
-.field-radio-style {
-  position: relative;
-  display: block;
-  width: 18px;
-  height: 18px;
-  border: 1px solid #e0e0e0;
-  border-radius: 20px;
-  margin: 0 15px 0 0;
-}
-
-.field-radio-label {
-  margin: 0 27px 0 0;
-  color: inherit;
+.field-radio:checked + .field-radio-style-wrp + .field-radio-label {
+  color: #4f4f4f;
 }
 
 .btn {
