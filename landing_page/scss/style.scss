@@ -1,0 +1,265 @@
+// расширения
+// %border {
+//   border: 1px solid;
+//
+// }
+// @extend %border;
+
+// миксины
+// @mixin bordercol($col) {
+//   border: 1px solid $col;
+//
+// }
+// @include bordercol(black);
+
+@import "_fonts.scss";
+
+html,
+:root {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+  // line-height: 22px;
+  // color: #4f4f4f;
+}
+
+.h1-like {
+  display: block;
+  font-size: 60px;
+  line-height: 72px;
+}
+.h2-like {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+}
+
+.page-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+//!Шапка
+.header {
+  position: relative;
+  height: 100vh;
+  &-nav {
+    // position: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    padding: 0 30px 0 30px;
+  }
+  &-banner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 15% 0 15%;
+  }
+  &-scroll {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+    &-ico {
+      position: relative;
+      width: 28px;
+      height: 41px;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: 18.5px;
+      margin: 0 0 13px 0;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 9px;
+        left: 9px;
+        width: 6px;
+        height: 10px;
+        background: #ffffff;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+.banner {
+  &-title {
+    position: relative;
+    padding: 35px 50px 35px 50px;
+    color: #ffffff;
+    text-transform: uppercase;
+    max-width: 550px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100px;
+      height: 90px;
+      border-top: 2px solid #ffffff;
+      border-left: 2px solid #ffffff;
+    }
+  }
+  &-pagination {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    & > li + li {
+      margin: 35px 0 0 0;
+    }
+    & > li > a {
+      display: block;
+      width: 9px;
+      height: 9px;
+      background: #ffffff;
+      opacity: 0.5;
+      border-radius: 50%;
+      &:hover {
+        background: #f5c108;
+        opacity: initial;
+      }
+    }
+  }
+}
+.logo {
+  fill: #ffffff;
+}
+.navbar {
+  &-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    & > li + li {
+      margin: 0 0 0 55px;
+    }
+    & > li > a {
+      text-decoration: none;
+      color: #ffffff;
+      padding: 3px 0;
+      &:hover {
+        border-bottom: 2px solid #f5c108;
+      }
+    }
+  }
+}
+
+//!Основной контент
+.aboutus {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 80px 120px 90px 120px;
+  &-title {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    color: #005794;
+    & > .page-title {
+      margin: 25px 0 0 0;
+    }
+  }
+  .h2-like {
+    margin: 45px 0 0 0;
+  }
+  &-services {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 55px;
+    margin: 45px 0 0 0;
+    &-item {
+      flex: 1 1;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+    }
+    &-ico {
+      display: flex;
+      align-items: center;
+      height: 130px;
+    }
+    &-title {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      margin: 21px 0 0 0;
+    }
+  }
+  &-steps {
+    display: flex;
+    justify-content: space-between;
+    margin: 65px 0 0 0;
+    border: 1px solid #e0e0e0;
+    &-item {
+      flex: 1 1;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+      padding: 5px 20px 20px 20px;
+      text-decoration: none;
+      & + .aboutus-steps-item {
+        border-left: 1px solid #e0e0e0;
+      }
+      &:hover {
+        box-shadow: -2px 25px 30px rgba(0, 0, 0, 0.1);
+        background-image: url(../img/step_background.png);
+        & > .aboutus-steps-title {
+          color: #005794;
+        }
+      }
+    }
+    &-title {
+      font-weight: 900;
+      font-size: 36px;
+      line-height: 72px;
+      text-transform: uppercase;
+      color: #444444;
+    }
+    &-content {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 24px;
+      color: #000000;
+      margin: 5px 0 0 0;
+    }
+  }
+}
+
+//Подключение медиа запросов
+@import "_media.scss";
