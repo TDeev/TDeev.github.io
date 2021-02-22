@@ -182,7 +182,7 @@ body {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  height: 100vh;
+  min-height: 100vh;
   padding: 80px 120px 90px 120px;
   &-title {
     display: flex;
@@ -196,7 +196,7 @@ body {
   .h2-like {
     margin: 45px 0 0 0;
   }
-  &-services {
+  &-progress {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -204,9 +204,9 @@ body {
     gap: 55px;
     margin: 45px 0 0 0;
     &-item {
-      flex: 1 1 auto;
+      flex: 1 1;
       max-width: 400px;
-      min-width: 170px;
+      min-width: 220px;
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
@@ -230,9 +230,9 @@ body {
     justify-content: center;
     margin: 65px 0 0 0;
     &-item {
-      flex: 1 1 auto;
-      max-width: 270px;
-      min-width: 170px;
+      flex: 1 1;
+      // max-width: 270px;
+      min-width: 210px;
       display: flex;
       flex-flow: column nowrap;
       align-items: flex-start;
@@ -271,6 +271,301 @@ body {
       color: #000000;
       margin: 5px 0 0 0;
     }
+  }
+}
+.presentation {
+  position: relative;
+  height: 100vh;
+  &-video {
+    object-fit: cover;
+  }
+  &-btn {
+    display: block;
+    outline: none;
+    background: transparent;
+    border: none;
+    padding: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    cursor: pointer;
+  }
+}
+.services {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 635px;
+  margin: -1px 0 0 0;
+  &-item {
+    position: relative;
+    flex: 1 1;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    padding: 30px 30px 30px 30px;
+    text-decoration: none;
+    &:hover {
+      & > .services-arrow {
+        display: block;
+      }
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(to bottom, #000000 0%, #0072c2 100%);
+        opacity: 0.7;
+      }
+    }
+    &:nth-child(1) {
+      background-image: url(../img/services_1.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+    }
+    &:nth-child(2) {
+      background-image: url(../img/services_2.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+    }
+    &:nth-child(3) {
+      background-image: url(../img/services_3.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+    }
+    &:nth-child(4) {
+      background-image: url(../img/services_4.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+    }
+    &:nth-child(5) {
+      background-image: url(../img/services_5.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 0 0;
+    }
+  }
+  &-arrow {
+    display: none;
+    position: relative;
+    z-index: 1;
+  }
+  &-title {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 80px 0 0 0;
+  }
+}
+.work {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 80px 120px 90px 120px;
+  background: #002844;
+  color: #ffffff;
+  &-title {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    & > .page-title {
+      margin: 25px 0 0 0;
+    }
+  }
+  .h2-like {
+    margin: 45px 0 0 0;
+  }
+  &-form {
+    margin: 35px 0 0 0;
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 33px;
+    .input-txt,
+    .textarea {
+      width: 100%;
+    }
+    .input-number {
+      width: 145px;
+    }
+  }
+  &-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .radio-inner {
+      margin: 0 0 0 50px;
+    }
+    & + .work-field {
+      margin: 20px 0 0 0;
+    }
+    &:nth-child(4) > div:nth-child(2) {
+      margin: 0 0 0 auto;
+    }
+    a {
+      color: #ffffff;
+    }
+    .check-inner > label:nth-of-type(2) {
+      display: block;
+      width: 300px;
+    }
+  }
+}
+
+//Текстовое поле
+.input-txt {
+  border: 1px solid #ffffff;
+  background: transparent;
+  outline: none;
+  height: 63px;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  padding: 0 20px 0 20px;
+}
+//Числовое поле
+.input-number {
+  border: 1px solid #ffffff;
+  background: transparent;
+  outline: none;
+  height: 63px;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  padding: 0 20px 0 20px;
+}
+//Текст-ареа
+.textarea {
+  border: 1px solid #ffffff;
+  background: transparent;
+  outline: none;
+  height: 113px;
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  padding: 10px 20px 10px 20px;
+}
+//Радио
+.input-radio {
+  display: none;
+  &:checked {
+    & + .radio-style::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      display: block;
+      width: 17px;
+      height: 17px;
+      border-radius: 50%;
+      background: #f5c108;
+    }
+  }
+}
+.radio {
+  &-inner {
+    display: flex;
+    align-items: center;
+  }
+  &-style {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    margin: 0 15px 0 0;
+  }
+}
+//Чекбокс
+.input-check {
+  display: none;
+  &:checked {
+    & + .check-style::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      left: 5px;
+      display: block;
+      width: 36px;
+      height: 18px;
+      border-left: 4px solid #f5c108;
+      border-bottom: 4px solid #f5c108;
+      transform: rotate(-47deg);
+    }
+  }
+}
+.check {
+  &-inner {
+    display: flex;
+    align-items: center;
+  }
+  &-style {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ffffff;
+    margin: 0 20px 0 0;
+  }
+}
+//Кнопка
+.input-sub {
+  position: relative;
+  height: 63px;
+  width: 236px;
+  border: 3px solid transparent;
+  outline: none;
+  background: transparent;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  &:hover {
+    border: 3px solid #ffffff;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    display: block;
+    height: 63px;
+    width: 165px;
+    border-left: 3px solid #ffffff;
+    border-top: 3px solid #ffffff;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    right: -3px;
+    display: block;
+    height: 63px;
+    width: 165px;
+    border-right: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
   }
 }
 
