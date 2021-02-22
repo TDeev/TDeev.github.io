@@ -328,9 +328,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -340,8 +344,10 @@ body {
 
 .aboutus-services-item {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1;
-          flex: 1 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  max-width: 400px;
+  min-width: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,17 +382,22 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 65px 0 0 0;
-  border: 1px solid #e0e0e0;
 }
 
 .aboutus-steps-item {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1;
-          flex: 1 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  max-width: 270px;
+  min-width: 170px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -399,10 +410,11 @@ body {
           align-items: flex-start;
   padding: 5px 20px 20px 20px;
   text-decoration: none;
-}
-
-.aboutus-steps-item + .aboutus-steps-item {
-  border-left: 1px solid #e0e0e0;
+  border: 1px solid #e0e0e0;
+  margin: -1px 0 0 -1px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: right;
 }
 
 .aboutus-steps-item:hover {

@@ -198,12 +198,15 @@ body {
   }
   &-services {
     display: flex;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: center;
     align-items: flex-start;
     gap: 55px;
     margin: 45px 0 0 0;
     &-item {
-      flex: 1 1;
+      flex: 1 1 auto;
+      max-width: 400px;
+      min-width: 170px;
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
@@ -223,19 +226,29 @@ body {
   }
   &-steps {
     display: flex;
-    justify-content: space-between;
+    flex-flow: row wrap;
+    justify-content: center;
     margin: 65px 0 0 0;
-    border: 1px solid #e0e0e0;
     &-item {
-      flex: 1 1;
+      flex: 1 1 auto;
+      max-width: 270px;
+      min-width: 170px;
       display: flex;
       flex-flow: column nowrap;
       align-items: flex-start;
       padding: 5px 20px 20px 20px;
       text-decoration: none;
-      & + .aboutus-steps-item {
-        border-left: 1px solid #e0e0e0;
-      }
+      border: 1px solid #e0e0e0;
+      margin: -1px 0 0 -1px;
+      // border-top: 1px solid #e0e0e0;
+      // border-right: 1px solid #e0e0e0;
+      // border-bottom: 1px solid #e0e0e0;
+      background-repeat: no-repeat;
+      background-position-y: center;
+      background-position-x: right;
+      // & + .aboutus-steps-item {
+      //   border-left: 1px solid #e0e0e0;
+      // }
       &:hover {
         box-shadow: -2px 25px 30px rgba(0, 0, 0, 0.1);
         background-image: url(../img/step_background.png);
