@@ -291,7 +291,7 @@ body {
 }
 
 .header-nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -306,6 +306,18 @@ body {
           align-items: center;
   height: 150px;
   padding: 0 30px 0 30px;
+  color: #ffffff;
+  fill: #ffffff;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  z-index: 10;
+}
+
+.header-nav.header-nav--top {
+  height: 120px;
+  background-color: #002844;
+  -webkit-box-shadow: 0 5px 7px 0 rgba(24, 33, 47, 0.2);
+          box-shadow: 0 5px 7px 0 rgba(24, 33, 47, 0.2);
 }
 
 .header-banner {
@@ -418,7 +430,7 @@ body {
 }
 
 .logo {
-  fill: #ffffff;
+  fill: inherit;
 }
 
 .navbar-list {
@@ -428,6 +440,9 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .navbar-list > li + li {
@@ -436,7 +451,7 @@ body {
 
 .navbar-list > li > a {
   text-decoration: none;
-  color: #ffffff;
+  color: inherit;
   padding: 3px 0;
 }
 
@@ -619,6 +634,10 @@ body {
   top: 40%;
   left: 50%;
   cursor: pointer;
+}
+
+.presentation-btn.presentation-btn--hiden {
+  display: none;
 }
 
 .services {
@@ -896,6 +915,7 @@ body {
           flex-flow: row nowrap;
   padding: 65px 30px 60px 30px;
   color: #ffffff;
+  fill: #ffffff;
   background-color: #000000;
   min-height: 392px;
 }
