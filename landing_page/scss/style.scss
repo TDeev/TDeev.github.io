@@ -43,7 +43,7 @@ body {
   line-height: 72px;
 }
 .h2-like {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 36px;
   line-height: 49px;
   text-align: center;
@@ -174,6 +174,8 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
+  //!
+  transition: 0.2s linear;
   &:hover {
     border: 3px solid #ffffff;
   }
@@ -203,11 +205,11 @@ body {
 
 //!Шапка
 .header {
-  position: relative;
+  // position: relative;
   height: 100vh;
   &-nav {
-    position: fixed;
-    // position: absolute;
+    // position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -218,7 +220,7 @@ body {
     padding: 0 30px 0 30px;
     color: #ffffff;
     fill: #ffffff;
-    transition: 0.2s linear;
+    // transition: 0.2s linear;
     z-index: 10;
     &.header-nav--top {
       height: 120px;
@@ -260,12 +262,13 @@ body {
         content: "";
         display: block;
         position: absolute;
-        top: 9px;
+        top: 7px;
         left: 9px;
         width: 6px;
         height: 10px;
         background: #ffffff;
         border-radius: 10px;
+        animation: wheel 1.5s linear infinite;
       }
     }
   }
@@ -303,6 +306,8 @@ body {
       background: #ffffff;
       opacity: 0.5;
       border-radius: 50%;
+      //!
+      transition: 0.1s linear;
       &:hover {
         background: #f5c108;
         opacity: initial;
@@ -323,7 +328,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 18px;
     line-height: 25px;
     & > li + li {
@@ -333,6 +338,9 @@ body {
       text-decoration: none;
       color: inherit;
       padding: 3px 0;
+      //!
+      transition: 0.1s linear;
+      border-bottom: 2px solid transparent;
       &:hover {
         border-bottom: 2px solid #f5c108;
       }
@@ -412,6 +420,8 @@ body {
       // & + .aboutus-steps-item {
       //   border-left: 1px solid #e0e0e0;
       // }
+      background-image: url(../img/step_background_1.png);
+      transition: 0.2s linear;
       &:hover {
         box-shadow: -2px 25px 30px rgba(0, 0, 0, 0.1);
         background-image: url(../img/step_background.png);
@@ -426,6 +436,7 @@ body {
       line-height: 72px;
       text-transform: uppercase;
       color: #444444;
+      transition: color 0.2s linear;
     }
     &-content {
       font-weight: 300;
@@ -473,19 +484,33 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      //!
+      transition: 0.2s linear;
+      background-image: linear-gradient(to bottom, #000000 0%, #0072c2 100%);
+      opacity: 0;
+    }
     &:hover {
       & > .services-arrow {
-        display: block;
+        // display: block;
+        opacity: 1;
       }
       &::before {
         content: "";
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-image: linear-gradient(to bottom, #000000 0%, #0072c2 100%);
+        // display: block;
+        // position: absolute;
+        // top: 0;
+        // bottom: 0;
+        // left: 0;
+        // right: 0;
+        // background-image: linear-gradient(to bottom, #000000 0%, #0072c2 100%);
         opacity: 0.7;
       }
     }
@@ -506,7 +531,10 @@ body {
     }
   }
   &-arrow {
-    display: none;
+    // display: none;
+    //!
+    transition: 0.2s linear;
+    opacity: 0;
     position: relative;
     z-index: 1;
   }
@@ -514,7 +542,7 @@ body {
     position: relative;
     z-index: 1;
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
     line-height: 32px;
     margin: 80px 0 0 0;
@@ -619,6 +647,8 @@ body {
       background: #ffffff;
       opacity: 0.5;
       border-radius: 50%;
+      //!
+      transition: 0.1s linear;
       &:hover {
         background: #f5c108;
         opacity: initial;
@@ -670,6 +700,9 @@ body {
       line-height: 25px;
       color: #ffffff;
       padding: 3px 0;
+      border-bottom: 2px solid transparent;
+      //!
+      transition: 0.1s linear;
       &:hover {
         border-bottom: 2px solid #f5c108;
       }
@@ -695,6 +728,14 @@ body {
     &:first-child {
       margin: 0;
     }
+  }
+}
+
+//Анимация стрелки вниз
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 22px;
   }
 }
 

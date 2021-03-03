@@ -118,7 +118,7 @@ body {
 }
 
 .h2-like {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 36px;
   line-height: 49px;
   text-align: center;
@@ -255,6 +255,8 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 .input-sub:hover {
@@ -286,12 +288,11 @@ body {
 }
 
 .header {
-  position: relative;
   height: 100vh;
 }
 
 .header-nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -308,8 +309,6 @@ body {
   padding: 0 30px 0 30px;
   color: #ffffff;
   fill: #ffffff;
-  -webkit-transition: 0.2s linear;
-  transition: 0.2s linear;
   z-index: 10;
 }
 
@@ -372,12 +371,14 @@ body {
   content: "";
   display: block;
   position: absolute;
-  top: 9px;
+  top: 7px;
   left: 9px;
   width: 6px;
   height: 10px;
   background: #ffffff;
   border-radius: 10px;
+  -webkit-animation: wheel 1.5s linear infinite;
+          animation: wheel 1.5s linear infinite;
 }
 
 .banner-title {
@@ -417,6 +418,8 @@ body {
   background: #ffffff;
   opacity: 0.5;
   border-radius: 50%;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
 }
 
 .banner-pagination > li > a:hover {
@@ -440,7 +443,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 18px;
   line-height: 25px;
 }
@@ -453,6 +456,9 @@ body {
   text-decoration: none;
   color: inherit;
   padding: 3px 0;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+  border-bottom: 2px solid transparent;
 }
 
 .navbar-list > li > a:hover {
@@ -586,6 +592,9 @@ body {
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: right;
+  background-image: url(../img/step_background_1.png);
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 .aboutus-steps-item:hover {
@@ -604,6 +613,8 @@ body {
   line-height: 72px;
   text-transform: uppercase;
   color: #444444;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
 }
 
 .aboutus-steps-content {
@@ -674,11 +685,7 @@ body {
   background-position: 0 0;
 }
 
-.services-item:hover > .services-arrow {
-  display: block;
-}
-
-.services-item:hover::before {
+.services-item::before {
   content: "";
   display: block;
   position: absolute;
@@ -686,8 +693,19 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#0072c2));
   background-image: linear-gradient(to bottom, #000000 0%, #0072c2 100%);
+  opacity: 0;
+}
+
+.services-item:hover > .services-arrow {
+  opacity: 1;
+}
+
+.services-item:hover::before {
+  content: "";
   opacity: 0.7;
 }
 
@@ -712,7 +730,9 @@ body {
 }
 
 .services-arrow {
-  display: none;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+  opacity: 0;
   position: relative;
   z-index: 1;
 }
@@ -721,7 +741,7 @@ body {
   position: relative;
   z-index: 1;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 24px;
   line-height: 32px;
   margin: 80px 0 0 0;
@@ -893,6 +913,8 @@ body {
   background: #ffffff;
   opacity: 0.5;
   border-radius: 50%;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
 }
 
 .vacancies-pagination > li > a:hover {
@@ -965,6 +987,9 @@ body {
   line-height: 25px;
   color: #ffffff;
   padding: 3px 0;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
 }
 
 .footer-nav > li > a:hover {
@@ -996,4 +1021,18 @@ body {
 
 .footer-title:first-child {
   margin: 0;
+}
+
+@-webkit-keyframes wheel {
+  to {
+    opacity: 0;
+    top: 22px;
+  }
+}
+
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 22px;
+  }
 }

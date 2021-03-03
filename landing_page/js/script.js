@@ -1,15 +1,15 @@
 //*Шапка
 // let header = document.getElementsByClassName('header-nav');
-let header = document.querySelector('.header-nav');
+// let header = document.querySelector('.header-nav');
 
-window.onscroll = function () {
-  if (window.pageYOffset == 0) {
-    header.classList.remove('header-nav--top');
-  }
-  else {
-    header.classList.add('header-nav--top');
-  }
-}
+// window.onscroll = function () {
+//   if (window.pageYOffset == 0) {
+//     header.classList.remove('header-nav--top');
+//   }
+//   else {
+//     header.classList.add('header-nav--top');
+//   }
+// }
 
 
 //*Видео
