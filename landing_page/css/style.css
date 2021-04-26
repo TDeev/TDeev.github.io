@@ -1025,6 +1025,7 @@ body {
 }
 
 .footer-company {
+  padding: 0 10px 0 0;
   -webkit-box-flex: 1.75;
       -ms-flex: 1.75 1;
           flex: 1.75 1;
@@ -1050,6 +1051,7 @@ body {
 }
 
 .footer-nav {
+  padding: 0 10px 0 0;
   -webkit-box-flex: 1.25;
       -ms-flex: 1.25 1;
           flex: 1.25 1;
@@ -1152,16 +1154,20 @@ body {
   .vacancies {
     padding: 80px 80px 90px 80px;
   }
+  .footer {
+    padding: 40px 30px 40px 30px;
+    min-height: initial;
+  }
 }
 
 @media (max-width: 992px) {
+  .banner-pagination {
+    display: none;
+  }
   .header-banner {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .banner-pagination {
-    display: none;
   }
   .services-arrow {
     display: none;
@@ -1172,6 +1178,28 @@ body {
   }
   .vacancies-pagination {
     display: none;
+  }
+  .footer {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer-company {
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
+  }
+  .footer-nav {
+    display: none;
+  }
+  .footer-txt {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .footer-contact {
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
   }
 }
 
@@ -1230,6 +1258,18 @@ body {
   .header-nav .navbar-list > li:first-child {
     border-top: 1px solid transparent;
   }
+  .header-scroll {
+    bottom: 5px;
+  }
+  .header-scroll-ico {
+    margin: 0;
+  }
+  .aboutus {
+    padding: 40px 20px 40px 20px;
+  }
+  .presentation {
+    height: calc(100vh - 48px);
+  }
   .services {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1261,6 +1301,10 @@ body {
     -webkit-transform: initial;
             transform: initial;
   }
+  .work {
+    min-height: initial;
+    padding: 40px 20px 60px 20px;
+  }
   .work-field:last-child {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1271,5 +1315,55 @@ body {
   }
   .work-field > * {
     margin: 20px 0 0 0;
+  }
+  .vacancies {
+    min-height: initial;
+    padding: 40px 20px 60px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner-title {
+    padding: 25px;
+  }
+  .h1-like {
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 62px;
+  }
+  .h2-like {
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 42px;
+  }
+  .services-title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .aboutus-steps-title {
+    font-weight: 500;
+  }
+  .input-sub {
+    height: 55px;
+    width: 200px;
+  }
+  .input-sub::before, .input-sub::after {
+    height: 55px;
+    width: 150px;
+  }
+  .work-field {
+    font-size: 20px;
+  }
+  .work-field:last-child .input-sub {
+    margin: 30px 0 0 0;
+  }
+  .check-inner .check-style {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 35px;
+            flex: 0 0 35px;
+  }
+  .check-inner label {
+    width: initial;
   }
 }
