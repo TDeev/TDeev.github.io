@@ -1325,6 +1325,7 @@ body {
 @media (max-width: 576px) {
   .banner-title {
     padding: 25px;
+    margin: 0 0 100px 0;
   }
   .h1-like {
     font-weight: 300;
