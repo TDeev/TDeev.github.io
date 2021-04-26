@@ -1,19 +1,145 @@
-// Малые девайсы («ландшафтные телефоны», <= 576px)
-@media (max-width: 576px) {
-}
-
-// Средние девайсы («таблетки», <= 768px)
-@media (max-width: 768px) {
-}
-
-// Большие девайсы (десктопы, <= 992px)
-@media (max-width: 992px) {
+// Экстрабольшие девайсы (большие десктопы, <= 1600px)
+@media (max-width: 1600px) {
 }
 
 // Экстрабольшие девайсы (большие десктопы, <= 1200px)
 @media (max-width: 1200px) {
+  .aboutus {
+    padding: 80px 80px 90px 80px;
+  }
+  .services {
+    height: 635px;
+    &-item {
+      flex-flow: row-reverse nowrap;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    &-title {
+      margin: 0;
+      writing-mode: tb;
+      transform: rotate(180deg);
+    }
+  }
+  .work {
+    padding: 80px 80px 90px 80px;
+  }
+  .vacancies {
+    padding: 80px 80px 90px 80px;
+  }
 }
 
-// Экстрабольшие девайсы (большие десктопы, <= 1600px)
-@media (max-width: 1600px) {
+// Большие девайсы (десктопы, <= 992px)
+@media (max-width: 992px) {
+  //банер
+  .header-banner {
+    justify-content: center;
+  }
+  .banner-pagination {
+    display: none;
+  }
+  //раздел сервисы
+  .services {
+    &-arrow {
+      display: none;
+    }
+  }
+  //форма обратной связи
+  .work {
+    &-field {
+      flex-wrap: wrap;
+    }
+  }
+  //вакансии
+  .vacancies-pagination {
+    display: none;
+  }
+}
+
+// Средние девайсы («таблетки», <= 768px)
+@media (max-width: 768px) {
+  .header {
+    &-mobile {
+      display: flex;
+      position: fixed;
+      z-index: 1000;
+      &-chk:checked {
+        & ~ .header-mobile {
+          background: #0c0c0c;
+          // border-bottom: 1px solid #3f3f42;
+        }
+        & ~ .header-nav {
+          visibility: visible;
+          height: calc(100vh - 48px);
+        }
+      }
+    }
+    &-nav {
+      position: fixed;
+      // transition: visibility 1s linear 1s;
+      transition: 0.2s ease-in-out;
+      visibility: hidden;
+      align-items: flex-start;
+      margin-top: 48px;
+      background: #0c0c0c;
+      height: 0;
+      padding: 40px 60px 8px;
+      .logo {
+        display: none;
+      }
+      .navbar {
+        width: 100%;
+        &-list {
+          flex-flow: column nowrap;
+          & > li {
+            margin: 0;
+            height: 44px;
+            width: 100%;
+            border-top: 1px solid #3f3f42;
+            display: flex;
+            align-items: center;
+            &:first-child {
+              border-top: 1px solid transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+  .services {
+    flex-flow: column nowrap;
+    height: initial;
+    &-item {
+      height: 250px;
+      flex-flow: initial;
+      justify-content: initial;
+      align-items: flex-end;
+      flex: initial;
+    }
+    &-title {
+      margin: 0;
+      writing-mode: initial;
+      transform: initial;
+    }
+  }
+  .work {
+    &-field {
+      &:last-child {
+        justify-content: center;
+      }
+      & + .work-field {
+        margin: 0;
+      }
+      & > * {
+        margin: 20px 0 0 0;
+      }
+
+      // &:nth-child(4) > div:nth-child(2) {
+      //   margin: 20px 0 0 0;
+      // }
+    }
+  }
+}
+
+// Малые девайсы («ландшафтные телефоны», <= 576px)
+@media (max-width: 576px) {
 }

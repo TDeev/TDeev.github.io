@@ -291,6 +291,82 @@ body {
   height: 100vh;
 }
 
+.header-mobile {
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 0 16px;
+  height: 48px;
+  background: #303030;
+}
+
+.header-mobile-chk {
+  display: none;
+}
+
+.header-mobile-chk:checked ~ .header-mobile .header-mobile-label > div:first-child {
+  top: 15px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.header-mobile-chk:checked ~ .header-mobile .header-mobile-label > div:last-child {
+  bottom: 14px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.header-mobile-label {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.header-mobile-label div {
+  display: block;
+  width: 17px;
+  height: 1px;
+  background: #fff;
+  border-radius: 0.5px;
+  position: absolute;
+  left: 7px;
+}
+
+.header-mobile-label div:first-child {
+  top: 11px;
+  -webkit-transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.header-mobile-label div:last-child {
+  bottom: 11px;
+  -webkit-transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.header-mobile-logo {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+}
+
 .header-nav {
   position: absolute;
   top: 0;
@@ -377,8 +453,8 @@ body {
   height: 10px;
   background: #ffffff;
   border-radius: 10px;
-  -webkit-animation: wheel 1.5s linear infinite;
-          animation: wheel 1.5s linear infinite;
+  -webkit-animation: wheel 1.2s linear infinite;
+          animation: wheel 1.2s linear infinite;
 }
 
 .banner-title {
@@ -456,8 +532,8 @@ body {
   text-decoration: none;
   color: inherit;
   padding: 3px 0;
-  -webkit-transition: 0.1s linear;
-  transition: 0.1s linear;
+  -webkit-transition: border-bottom 0.1s linear;
+  transition: border-bottom 0.1s linear;
   border-bottom: 2px solid transparent;
 }
 
@@ -825,16 +901,12 @@ body {
           justify-content: space-between;
 }
 
-.work-field .radio-inner {
+.work-field .radio-inner:last-child {
   margin: 0 0 0 50px;
 }
 
 .work-field + .work-field {
   margin: 20px 0 0 0;
-}
-
-.work-field:nth-child(4) > div:nth-child(2) {
-  margin: 0 0 0 auto;
 }
 
 .work-field a {
@@ -844,6 +916,16 @@ body {
 .work-field .check-inner > label:nth-of-type(2) {
   display: block;
   width: 300px;
+}
+
+.work-field-radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
 .vacancies {
@@ -1034,5 +1116,160 @@ body {
   to {
     opacity: 0;
     top: 22px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .aboutus {
+    padding: 80px 80px 90px 80px;
+  }
+  .services {
+    height: 635px;
+  }
+  .services-item {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse nowrap;
+            flex-flow: row-reverse nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .services-title {
+    margin: 0;
+    -webkit-writing-mode: tb;
+        -ms-writing-mode: tb;
+            writing-mode: tb;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .work {
+    padding: 80px 80px 90px 80px;
+  }
+  .vacancies {
+    padding: 80px 80px 90px 80px;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-banner {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .banner-pagination {
+    display: none;
+  }
+  .services-arrow {
+    display: none;
+  }
+  .work-field {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .vacancies-pagination {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+  }
+  .header-mobile-chk:checked ~ .header-mobile {
+    background: #0c0c0c;
+  }
+  .header-mobile-chk:checked ~ .header-nav {
+    visibility: visible;
+    height: calc(100vh - 48px);
+  }
+  .header-nav {
+    position: fixed;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    visibility: hidden;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 48px;
+    background: #0c0c0c;
+    height: 0;
+    padding: 40px 60px 8px;
+  }
+  .header-nav .logo {
+    display: none;
+  }
+  .header-nav .navbar {
+    width: 100%;
+  }
+  .header-nav .navbar-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  .header-nav .navbar-list > li {
+    margin: 0;
+    height: 44px;
+    width: 100%;
+    border-top: 1px solid #3f3f42;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-nav .navbar-list > li:first-child {
+    border-top: 1px solid transparent;
+  }
+  .services {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    height: initial;
+  }
+  .services-item {
+    height: 250px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: initial;
+            flex-flow: initial;
+    -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+            justify-content: initial;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-flex: initial;
+        -ms-flex: initial;
+            flex: initial;
+  }
+  .services-title {
+    margin: 0;
+    -webkit-writing-mode: initial;
+        -ms-writing-mode: initial;
+            writing-mode: initial;
+    -webkit-transform: initial;
+            transform: initial;
+  }
+  .work-field:last-child {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .work-field + .work-field {
+    margin: 0;
+  }
+  .work-field > * {
+    margin: 20px 0 0 0;
   }
 }
