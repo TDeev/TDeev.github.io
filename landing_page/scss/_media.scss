@@ -52,6 +52,9 @@
     &-arrow {
       display: none;
     }
+    &-item {
+      justify-content: flex-end;
+    }
   }
   //форма обратной связи
   .work {

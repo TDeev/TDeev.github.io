@@ -591,8 +591,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 55px;
-  margin: 45px 0 0 0;
+  margin: 25px -20px -20px -20px;
 }
 
 .aboutus-progress-item {
@@ -611,6 +610,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 25px;
 }
 
 .aboutus-progress-ico {
@@ -1170,6 +1170,11 @@ body {
   }
   .services-arrow {
     display: none;
+  }
+  .services-item {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .work-field {
     -ms-flex-wrap: wrap;
