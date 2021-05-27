@@ -129,6 +129,13 @@ body {
   margin: 0 10px 0 0;
 }
 
+.h2-title {
+  display: block;
+  font-size: 16px;
+  padding: 0 20px 0 20px;
+  margin: 0 0 25px 0;
+}
+
 .field {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,6 +159,7 @@ body {
           flex: 0 0 auto;
   font-weight: 600;
   margin: 0 10px 0 0;
+  color: #4f4f4f;
 }
 
 .field-text {
@@ -179,6 +187,13 @@ body {
   height: 40px;
   border: none;
   background: #f2f2f2;
+  cursor: default;
+}
+
+.field-text.is-disable {
+  height: 40px;
+  border: none;
+  background: transparent;
   cursor: default;
 }
 
@@ -296,6 +311,74 @@ body {
 
 .field-radio:checked + .field-radio-style-wrp + .field-radio-label {
   color: #4f4f4f;
+}
+
+.field-checkbox {
+  display: none;
+}
+
+.field-checkbox-style {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #cccccc;
+}
+
+.field-checkbox:checked ~ .field-checkbox-style {
+  background: #009bcd;
+  border: 1px solid #009bcd;
+}
+
+.field-checkbox:checked ~ .field-checkbox-style::before {
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  display: block;
+  width: 11px;
+  height: 6px;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  content: "";
+}
+
+.field .tegs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  width: 100%;
+  background: #ebebeb;
+  border-radius: 20px;
+  padding: 10px 10px 10px 10px;
+}
+
+.field .tegs-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #dddee0;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+  margin: 5px 5px 5px 5px;
+}
+
+.field .tegs-title {
+  font-size: 12px;
+}
+
+.field .tegs-action {
+  margin: 0 0 0 5px;
 }
 
 .btn {
@@ -2706,6 +2789,184 @@ body {
 
 .warning-list > li {
   padding: 0 0 10px 10px;
+}
+
+.header-sync {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: #009bcd;
+  border-radius: 50%;
+  text-decoration: none;
+  color: #4f4f4f;
+}
+
+.header-sync-notif {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 42px;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-column-gap: 5px;
+  padding: 10px 15px 10px 15px;
+  border: 1px solid #f2f2f2;
+  border-radius: 10px;
+  background-color: #fffce6;
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-sync-notif > span {
+  white-space: nowrap;
+}
+
+.header-sync:hover {
+  background-color: #0685ac;
+}
+
+.header-sync:hover > .header-sync-notif {
+  display: -ms-grid;
+  display: grid;
+}
+
+.kpp-settings-sync {
+  margin: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+.kpp-settings-sync .field-label {
+  width: 25%;
+}
+
+.kpp-settings-sync .field:nth-child(3),
+.kpp-settings-sync .field:nth-child(9) {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.kpp-settings-main {
+  margin: 20px 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
+  border-radius: 10px;
+}
+
+.kpp-settings-main .field-label {
+  width: 50%;
+  margin: 0 20px 0 0;
+}
+
+.kpp-settings-main .field:nth-child(2),
+.kpp-settings-main .field:nth-child(4),
+.kpp-settings-main .field:nth-child(5),
+.kpp-settings-main .field:nth-child(6) {
+  height: 36px;
+}
+
+.kpp-settings-fs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  margin: 20px 20px 20px 20px;
+}
+
+.kpp-settings-fs > div {
+  padding: 20px 20px 20px 20px;
+  background: #f5f5f5;
+  border-radius: 10px;
+}
+
+.kpp-settings-fs .field-label {
+  width: 25%;
+}
+
+.kpp-settings-fs .is-view {
+  background: #ebebeb;
+}
+
+.kpp-add-fs {
+  font-size: 12px;
+  color: #009bcd;
+  font-weight: 600;
+  margin: 0 20px 0 auto;
+}
+
+.kpp-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 16px;
+  margin: 0 0 25px 0;
+}
+
+.kpp-title-delete {
+  font-size: 12px;
+  color: #eb5554;
+  font-weight: 600;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.kpp-short {
+  width: 240px;
+}
+
+.kpp-ip-ok {
+  position: relative;
+}
+
+.kpp-ip-ok::after {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #78c941;
+  border-radius: 50%;
+}
+
+.kpp-ip-error {
+  position: relative;
+}
+
+.kpp-ip-error::after {
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #eb5554;
+  border-radius: 50%;
+}
+
+.kpp-logs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
 }
 
 .navbar--close .header {
