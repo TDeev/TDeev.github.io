@@ -2857,8 +2857,9 @@ body {
 }
 
 .kpp-settings-sync .field-label {
+  max-width: 214px;
+  width: 100%;
   margin: 0 20px 0 0;
-  width: 25%;
 }
 
 .kpp-settings-sync .field:nth-child(3),
@@ -2911,7 +2912,7 @@ body {
   border-radius: 10px;
 }
 
-.kpp-settings-fs > div:last-child {
+.kpp-settings-fs > div > div:last-child {
   margin: 0;
 }
 
@@ -2971,7 +2972,7 @@ body {
 }
 
 .kpp-fs-notif-ico {
-  margin: 0 10px 0 0;
+  margin: 3px 10px 0 0;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
