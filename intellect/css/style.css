@@ -434,6 +434,16 @@ body {
   border-color: #b8b8b8;
 }
 
+.btn.btn--disabled {
+  background: #eeeeee;
+  color: #d9d9d9;
+  border: 1px solid transparent;
+}
+
+.btn.btn--disabled:hover {
+  cursor: default;
+}
+
 .header {
   position: fixed;
   z-index: 100;
@@ -2847,14 +2857,19 @@ body {
 }
 
 .kpp-settings-sync .field-label {
+  margin: 0 20px 0 0;
   width: 25%;
 }
 
 .kpp-settings-sync .field:nth-child(3),
 .kpp-settings-sync .field:nth-child(9) {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.kpp-settings-sync .field:last-child {
+  margin: 0;
 }
 
 .kpp-settings-main {
@@ -2875,6 +2890,10 @@ body {
   height: 36px;
 }
 
+.kpp-settings-main .field:last-child {
+  margin: 0;
+}
+
 .kpp-settings-fs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2892,19 +2911,87 @@ body {
   border-radius: 10px;
 }
 
+.kpp-settings-fs > div:last-child {
+  margin: 0;
+}
+
 .kpp-settings-fs .field-label {
-  width: 25%;
+  max-width: 214px;
+  width: 100%;
 }
 
 .kpp-settings-fs .is-view {
   background: #ebebeb;
 }
 
-.kpp-add-fs {
+.kpp-fs-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.kpp-fs-inner > div:first-child {
+  max-width: 465px;
+  width: 100%;
+}
+
+.kpp-fs-add {
   font-size: 12px;
   color: #009bcd;
   font-weight: 600;
   margin: 0 20px 0 auto;
+}
+
+.kpp-fs-delete {
+  font-size: 12px;
+  color: #eb5554;
+  font-weight: 600;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.kpp-fs-notif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  background: #fffce6;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 440px;
+  padding: 10px;
+  margin: 0 0 15px 10px;
+}
+
+.kpp-fs-notif-ico {
+  margin: 0 10px 0 0;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.kpp-fs-notif-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.kpp-fs-notif .btn {
+  margin: 10px 0 0 0;
 }
 
 .kpp-title {
@@ -2918,20 +3005,20 @@ body {
   margin: 0 0 25px 0;
 }
 
-.kpp-title-delete {
-  font-size: 12px;
-  color: #eb5554;
-  font-weight: 600;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-}
-
 .kpp-short {
-  width: 240px;
+  max-width: 240px;
+  width: 100%;
 }
 
 .kpp-ip-ok {
+  max-width: 240px;
+  min-width: 160px;
+  width: 100%;
   position: relative;
+}
+
+.kpp-ip-ok .field-text {
+  padding: 0 30px 0 18px;
 }
 
 .kpp-ip-ok::after {
@@ -2947,7 +3034,14 @@ body {
 }
 
 .kpp-ip-error {
+  max-width: 240px;
+  min-width: 160px;
+  width: 100%;
   position: relative;
+}
+
+.kpp-ip-error .field-text {
+  padding: 0 30px 0 18px;
 }
 
 .kpp-ip-error::after {
@@ -2962,11 +3056,19 @@ body {
   border-radius: 50%;
 }
 
+.kpp-ip-off {
+  max-width: 240px;
+  min-width: 160px;
+  width: 100%;
+  position: relative;
+}
+
 .kpp-logs {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+  padding: 0 0 0 18px;
 }
 
 .navbar--close .header {

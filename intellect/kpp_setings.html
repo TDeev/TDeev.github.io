@@ -415,16 +415,16 @@
         </div>
         <div class="field">
           <label for="#" class="field-label">Верталётная площадка</label>
-          <input type="text" value="Да" placeholder="Введите значение" class="field-text is-disable">
+          <input type="text" value="Да" placeholder="Введите значение" class="field-text is-disable" readonly>
         </div>
         <div class="field">
           <label for="#" class="field-label">Наименование портала</label>
           <input type="text" value="Месояха Нефтегаз" placeholder="Введите значение" class="field-text ">
         </div>
         <div class="field">
-          <label for="#" class="field-label">IP-арес</label>
+          <label for="#" class="field-label">URL-арес портала</label>
           <div class="kpp-ip-ok">
-            <input type="text" value="192.168.1.1" placeholder="Введите значение" class="field-text kpp-short">
+            <input type="text" value="www.i-propusk.ru" placeholder="Введите значение" class="field-text kpp-short">
           </div>
 
           <input type="submit" value="Проверить" class="btn btn--submit">
@@ -458,7 +458,7 @@
         </div>
         <div class="field">
           <label for="#" class="field-label">Интервал запуска синхронизации БД (в минутах)</label>
-          <input type="text" value="" placeholder="Введите значение" class="field-text kpp-short is-view">
+          <input type="text" value="" placeholder="Введите значение" class="field-text kpp-short is-view" readonly>
         </div>
         <div class="field">
           <label for="checkbox-2" class="field-label">Отобразить блок online синхронизации</label>
@@ -478,61 +478,221 @@
       </div>
       <div class="kpp-settings-fs">
         <div>
-          <span class="kpp-title">Входная группа №1 (FaceStation)</span>
-          <div class="field">
-            <label for="#" class="field-label">IP адрес на вход</label>
-            <div class="kpp-ip-ok">
-              <input type="text" value="192.168.1.1" placeholder="Введите значение" class="field-text kpp-short">
+          <div class="kpp-title">
+            <span>Входная группа №1 (FaceStation)</span>
+          </div>
+          <div class="kpp-fs-inner">
+            <div>
+              <div class="field">
+                <label for="#" class="field-label">IP адрес на вход</label>
+                <div class="kpp-ip-ok">
+                  <input type="text" value="192.168.1.1" placeholder="Введите значение" class="field-text kpp-short">
+                </div>
+                <!-- <input type="submit" value="Проверить" class="btn btn--submit"> -->
+              </div>
+              <div class="field">
+                <label for="#" class="field-label">Порт на вход</label>
+                <input type="text" value="80" placeholder="Введите значение" class="field-text kpp-short">
+              </div>
             </div>
-            <!-- <input type="submit" value="Проверить" class="btn btn--submit"> -->
-          </div>
-          <div class="field">
-            <label for="#" class="field-label">Порт на вход</label>
-            <input type="text" value="80" placeholder="Введите значение" class="field-text kpp-short">
-          </div>
-          <div class="field">
-            <label for="#" class="field-label">IP адрес на выход</label>
-            <div class="kpp-ip-ok">
-              <input type="text" value="192.168.1.4" placeholder="Введите значение" class="field-text kpp-short">
+            <div>
+              <input type="submit" value="Проверить" class="btn btn--disabled">
             </div>
-            <!-- <input type="submit" value="Проверить" class="btn btn--submit"> -->
+          </div>
+          <div class="kpp-fs-inner">
+            <div>
+              <div class="field">
+                <label for="#" class="field-label">IP адрес на выход</label>
+                <div class="kpp-ip-ok">
+                  <input type="text" value="192.168.1.4" placeholder="Введите значение" class="field-text kpp-short">
+                </div>
+                <!-- <input type="submit" value="Проверить" class="btn btn--submit"> -->
+              </div>
+              <div class="field">
+                <label for="#" class="field-label">Порт на выход</label>
+                <input type="text" value="5757" placeholder="Введите значение" class="field-text kpp-short">
+              </div>
+            </div>
+            <div>
+              <input type="submit" value="Проверить" class="btn btn--disabled">
+            </div>
           </div>
           <div class="field">
-            <label for="#" class="field-label">Порт на выход</label>
-            <input type="text" value="5757" placeholder="Введите значение" class="field-text kpp-short">
+            <label for="#" class="field-label">Комментарий</label>
+            <input type="text" value="Внутреняя дверь, между КПП1 и главными воротами" placeholder="Введите значение"
+              class="field-text ">
+            <!-- <textarea placeholder="Введите значение" name="" id="" rows="10"
+                  class="field-textarea">Внутреняя дверь, между КПП1 и главными воротами</textarea> -->
           </div>
         </div>
       </div>
       <div class="kpp-settings-fs">
         <div>
           <div class="kpp-title">
-            <span>Входная группа №2 (FaceStation)</span>
-            <a href="#" class="kpp-title-delete">Удалить</a>
+            <span>Входная группа №1 (FaceStation)</span>
+            <a href="#" class="kpp-fs-delete">Удалить</a>
           </div>
-          <div class="field">
-            <label for="#" class="field-label">IP адрес на вход</label>
-            <div class="kpp-ip-error">
-              <input type="text" value="192.168.1.9" placeholder="Введите значение" class="field-text kpp-short">
+          <div class="kpp-fs-inner">
+            <div>
+              <div class="field">
+                <label for="#" class="field-label">IP адрес на вход</label>
+                <div class="kpp-ip-ok">
+                  <input type="text" value="192.168.1.1" placeholder="Введите значение" class="field-text kpp-short">
+                </div>
+                <!-- <input type="submit" value="Проверить" class="btn btn--submit"> -->
+              </div>
+              <div class="field">
+                <label for="#" class="field-label">Порт на вход</label>
+                <input type="text" value="80" placeholder="Введите значение" class="field-text kpp-short">
+              </div>
             </div>
-            <input type="submit" value="Проверить" class="btn btn--submit">
-          </div>
-          <div class="field">
-            <label for="#" class="field-label">Порт на вход</label>
-            <input type="text" value="8888" placeholder="Введите значение" class="field-text kpp-short">
-          </div>
-          <div class="field">
-            <label for="#" class="field-label">IP адрес на выход</label>
-            <div class="kpp-ip-off">
-              <input type="text" value="" placeholder="Введите значение" class="field-text is-view kpp-short" readonly>
+            <div>
+              <input type="submit" value="Проверить" class="btn btn--disabled">
             </div>
-            <!-- <input type="submit" value="Проверить" class="btn btn--submit"> -->
+          </div>
+          <div class="kpp-fs-inner">
+            <div>
+              <div class="field">
+                <label for="#" class="field-label">IP адрес на выход</label>
+                <div class="kpp-ip-error">
+                  <input type="text" value="192.168.1.4" placeholder="Введите значение" class="field-text kpp-short">
+                </div>
+                <!-- <input type="submit" value="Проверить" class="btn btn--submit"> -->
+              </div>
+              <div class="field">
+                <label for="#" class="field-label">Порт на выход</label>
+                <input type="text" value="5757" placeholder="Введите значение" class="field-text kpp-short">
+              </div>
+            </div>
+            <div class="kpp-fs-notif">
+              <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" class="kpp-fs-notif-ico">
+                <path
+                  d="M7.5 0C3.35788 0 0 3.35785 0 7.5C0 11.6421 3.35788 15 7.5 15C11.6421 15 15 11.6421 15 7.5C15 3.35788 11.6421 0 7.5 0ZM11.4347 3.56528C13.414 5.54456 13.5517 8.56975 12.06 10.6914L4.30857 2.94C6.43167 1.44738 9.45653 1.58713 11.4347 3.56528ZM3.56528 11.4347C1.58601 9.45544 1.44835 6.43025 2.93997 4.3086L10.6914 12.06C8.56836 13.5526 5.54347 13.4129 3.56528 11.4347Z"
+                  fill="#EB5554" />
+              </svg>
+              <div class="kpp-fs-notif-inner">
+                <span class="kpp-fs-notif-txt">
+                  Устройсво было заблокировано 23.04.21.
+                  Для востановления работы необходимо нажать на кнопку “Обновить”.
+                </span>
+                <input type="submit" value="Обновить" class="btn btn--submit">
+              </div>
+            </div>
+            <!-- <div>
+              <input type="submit" value="Проверить" class="btn btn--disabled">
+            </div> -->
           </div>
           <div class="field">
-            <label for="#" class="field-label">Порт на выход</label>
-            <input type="text" value="" placeholder="Введите значение" class="field-text is-view kpp-short" readonly>
+            <label for="#" class="field-label">Комментарий</label>
+            <input type="text" value="Внутреняя дверь, между КПП1 и главными воротами" placeholder="Введите значение"
+              class="field-text ">
+            <!-- <textarea placeholder="Введите значение" name="" id="" rows="10"
+                  class="field-textarea">Внутреняя дверь, между КПП1 и главными воротами</textarea> -->
           </div>
         </div>
-        <a href="#" class="kpp-add-fs">Добавить группу</a>
+      </div>
+      <div class="kpp-settings-fs">
+        <div>
+          <div class="kpp-title">
+            <span>Входная группа №3 (FaceStation)</span>
+            <a href="#" class="kpp-fs-delete">Удалить</a>
+          </div>
+          <div class="kpp-fs-inner">
+            <div>
+              <div class="field">
+                <label for="#" class="field-label">IP адрес на вход</label>
+                <div class="kpp-ip-error">
+                  <input type="text" value="192.168.1.9" placeholder="Введите значение" class="field-text kpp-short">
+                </div>
+                <!-- <input type="submit" value="Проверить" class="btn btn--submit"> -->
+              </div>
+              <div class="field">
+                <label for="#" class="field-label">Порт на вход</label>
+                <input type="text" value="8888" placeholder="Введите значение" class="field-text kpp-short">
+              </div>
+            </div>
+            <div>
+              <input type="submit" value="Проверить" class="btn btn--submit">
+            </div>
+          </div>
+          <div class="kpp-fs-inner">
+            <div>
+              <div class="field">
+                <label for="#" class="field-label">IP адрес на выход</label>
+                <div class="kpp-ip-off">
+                  <input type="text" value="" placeholder="Введите значение" class="field-text kpp-short">
+                </div>
+                <!-- <input type="submit" value="Проверить" class="btn btn--submit"> -->
+              </div>
+              <div class="field">
+                <label for="#" class="field-label">Порт на выход</label>
+                <input type="text" value="" placeholder="Введите значение" class="field-text  kpp-short">
+              </div>
+            </div>
+            <div>
+              <input type="submit" value="Проверить" class="btn btn--disabled">
+            </div>
+          </div>
+          <div class="field">
+            <label for="#" class="field-label">Комментарий</label>
+            <input type="text" value="Внешняя дверь, после КПП1" placeholder="Введите значение" class="field-text ">
+            <!-- <textarea placeholder="Введите значение" name="" id="" rows="10"
+              class="field-textarea">Внешняя дверь, после КПП1</textarea> -->
+          </div>
+        </div>
+        <!-- <a href="#" class="kpp-add-fs">Добавить группу</a> -->
+      </div>
+      <div class="kpp-settings-fs">
+        <div>
+          <div class="kpp-title">
+            <span>Входная группа №4 (FaceStation)</span>
+            <a href="#" class="kpp-fs-delete">Удалить</a>
+          </div>
+          <div class="kpp-fs-inner">
+            <div>
+              <div class="field">
+                <label for="#" class="field-label">IP адрес на вход</label>
+                <div class="kpp-ip-off">
+                  <input type="text" value="" placeholder="Введите значение" class="field-text kpp-short">
+                </div>
+                <!-- <input type="submit" value="Проверить" class="btn btn--submit"> -->
+              </div>
+              <div class="field">
+                <label for="#" class="field-label">Порт на вход</label>
+                <input type="text" value="" placeholder="Введите значение" class="field-text kpp-short">
+              </div>
+            </div>
+            <div>
+              <input type="submit" value="Проверить" class="btn btn--disabled">
+            </div>
+          </div>
+          <div class="kpp-fs-inner">
+            <div>
+              <div class="field">
+                <label for="#" class="field-label">IP адрес на выход</label>
+                <div class="kpp-ip-off">
+                  <input type="text" value="" placeholder="Введите значение" class="field-text is-view kpp-short"
+                    readonly>
+                </div>
+                <!-- <input type="submit" value="Проверить" class="btn btn--submit"> -->
+              </div>
+              <div class="field">
+                <label for="#" class="field-label">Порт на выход</label>
+                <input type="text" value="" placeholder="Введите значение" class="field-text is-view kpp-short"
+                  readonly>
+              </div>
+            </div>
+            <div>
+              <input type="submit" value="Проверить" class="btn btn--disabled">
+            </div>
+          </div>
+          <div class="field">
+            <label for="#" class="field-label">Комментарий</label>
+            <input type="text" value="" placeholder="Введите значение" class="field-text ">
+            <!-- <textarea placeholder="Введите значение" name="" id="" rows="10" class="field-textarea"></textarea> -->
+          </div>
+        </div>
+        <a href="#" class="kpp-fs-add">Добавить группу</a>
       </div>
       <div class="content-edit">
         <form action="#">
