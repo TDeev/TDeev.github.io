@@ -2880,9 +2880,8 @@ body {
 }
 
 .kpp-settings-main .field-label {
+  width: 45%;
   margin: 0 20px 0 0;
-  max-width: 600px;
-  width: 100%;
 }
 
 .kpp-settings-main .field:nth-child(2),
