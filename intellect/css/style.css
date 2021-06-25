@@ -381,6 +381,76 @@ body {
   margin: 0 0 0 5px;
 }
 
+.field .dragdrop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 100%;
+}
+
+.field .dragdrop-file {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  font-size: 12px;
+  margin: 0 0 10px 0;
+}
+
+.field .dragdrop-file > svg {
+  margin: 0 10px 0 0;
+}
+
+.field .dragdrop-file-link {
+  color: #009bcd;
+}
+
+.field .dragdrop-file-link:hover {
+  color: #0685ac;
+}
+
+.field .dragdrop-loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 23px 23px 23px 23px;
+  border: 1px dashed #cccccc;
+  border-radius: 20px;
+  color: #cccccc;
+}
+
+.field .dragdrop-loading:hover {
+  border-color: #4f4f4f;
+}
+
+.field .dragdrop-loading > svg {
+  margin: 0 10px 0 0;
+}
+
+.field .dragdrop-loading-link {
+  color: #cccccc;
+}
+
+.field .dragdrop-loading-link:hover {
+  color: #4f4f4f;
+}
+
 .btn {
   outline: none;
   cursor: pointer;
@@ -1257,7 +1327,11 @@ body {
 
 .table-file, .table-link {
   display: block;
-  color: #26b1dc;
+  color: #009bcd;
+}
+
+.table-file:hover, .table-link:hover {
+  color: #0685ac;
 }
 
 .table-temp {
@@ -2239,18 +2313,69 @@ body {
   width: 160px;
 }
 
-.vehicle-system {
+.vehicle-owner {
   margin: 0 20px 25px 20px;
-  padding: 20px 0 20px 0;
+  padding: 20px 0 5px 0;
   background: #f5f5f5;
   border-radius: 10px;
 }
 
-.vehicle-system-title {
-  display: block;
-  font-size: 16px;
-  padding: 0 20px 0 20px;
-  margin: 0 0 25px 0;
+.vehicle-owner-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.vehicle-owner-inner {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
+  margin: 0 20px 0 20px;
+}
+
+.vehicle-owner-inner:nth-child(3) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+}
+
+.vehicle-owner-inner:nth-child(3) .field {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.vehicle-owner-inner:nth-child(3) .field.is-load {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vehicle-owner .field-label {
+  width: 135px;
+}
+
+.vehicle-owner .field-text,
+.vehicle-owner .field-date,
+.vehicle-owner .field-textarea {
+  background: #ebebeb;
+}
+
+.vehicle-owner .field-text.is-edit,
+.vehicle-owner .field-date.is-edit,
+.vehicle-owner .field-textarea.is-edit {
+  background: #ffffff;
+}
+
+.vehicle-system {
+  margin: 0 20px 25px 20px;
+  padding: 20px 0 5px 0;
+  background: #f5f5f5;
+  border-radius: 10px;
 }
 
 .vehicle-system-fields {
@@ -2307,7 +2432,7 @@ body {
   padding: 10px 0 10px 0;
 }
 
-.vehicle-system.vehicle-system--no-partner .vehicle-system-title {
+.vehicle-system.vehicle-system--no-partner .h2-title {
   -webkit-box-flex: 1;
       -ms-flex: 1 1;
           flex: 1 1;
@@ -2530,7 +2655,11 @@ body {
 }
 
 .vehicle-table-file, .vehicle-table-link {
-  color: #26b1dc;
+  color: #009bcd;
+}
+
+.vehicle-table-file:hover, .vehicle-table-link:hover {
+  color: #0685ac;
 }
 
 .vehicle-table-temp {
