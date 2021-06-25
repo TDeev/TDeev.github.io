@@ -187,14 +187,14 @@ body {
   height: 40px;
   border: none;
   background: #f2f2f2;
-  cursor: default;
+  cursor: text;
 }
 
 .field-text.is-disable {
   height: 40px;
   border: none;
   background: transparent;
-  cursor: default;
+  cursor: text;
 }
 
 .field-textarea {
@@ -223,7 +223,7 @@ body {
 .field-textarea.is-view {
   border: none;
   background: #f2f2f2;
-  cursor: default;
+  cursor: text;
 }
 
 .field-date {
