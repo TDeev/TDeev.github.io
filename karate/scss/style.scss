@@ -11,12 +11,14 @@
 }
 // @include bordercol(black);
 
-@import "_fonts.scss";
+// @import "_fonts.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 
 html,
 :root {
   box-sizing: border-box;
-  font-family: "Roboto Condensed", "arial", sans-serif;
+  // font-family: "Roboto Condensed", "arial", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
