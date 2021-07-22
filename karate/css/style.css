@@ -8,6 +8,7 @@ html,
   font-style: normal;
   font-size: 14px;
   line-height: 1.6;
+  height: 100%;
 }
 
 *,
@@ -21,6 +22,7 @@ body {
   margin: 0;
   padding: 0;
   color: #ffffff;
+  height: 100%;
 }
 
 .h1-like {
@@ -80,6 +82,7 @@ body {
 
 .main {
   height: 100vh;
+  height: 100%;
   padding: 250px 30px 10px 30px;
   background-image: url(../img/background.png);
   background-size: cover;
@@ -185,6 +188,17 @@ body {
   fill: #2b2a29;
 }
 
+.action-item:hover:nth-child(1) > svg:nth-child(1) {
+  stroke: #eb5554;
+  stroke-width: 2;
+}
+
+.action-item:hover:nth-child(2) > svg + svg,
+.action-item:hover:nth-child(3) > svg + svg {
+  stroke: #eb5554;
+  stroke-width: 2;
+}
+
 .footer-copy {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
@@ -226,7 +240,7 @@ body {
 }
 
 .footer-phone > a:hover {
-  border-bottom: 2px solid #ffffff;
+  border-bottom: 2px solid #eb5554;
 }
 
 .footer-phone:nth-of-type(2)::before {
@@ -307,9 +321,6 @@ body {
   .social-actions {
     grid-gap: 15px;
     margin: 10px 0 0 0;
-  }
-  .footer-contacts {
-    margin: 0 0 75px 0;
   }
   .footer-contacts > .h3-like {
     font-size: 16px;

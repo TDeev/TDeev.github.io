@@ -23,6 +23,8 @@ html,
   font-style: normal;
   font-size: 14px;
   line-height: 1.6;
+  //!!!
+  height: 100%;
 }
 *,
 ::before,
@@ -57,6 +59,8 @@ body {
   // line-height: 1.6;
   // line-height: 22px;
   color: $white;
+  //!!!
+  height: 100%;
 }
 
 //!Общие элементы
@@ -112,7 +116,10 @@ body {
   }
 }
 .main {
+  //!!!
   height: 100vh;
+  height: 100%;
+  //!!!
   padding: 250px 30px 10px 30px;
   background-image: url(../img/background.png);
   background-size: cover;
@@ -176,10 +183,23 @@ body {
   }
   &:hover {
     fill: $black;
-    & > svg + svg {
-      // fill: $red-dark;
-      // transform: scale(1.2);
+
+    &:nth-child(1) > svg:nth-child(1) {
+      stroke: $red;
+      stroke-width: 2;
     }
+    &:nth-child(2) > svg + svg,
+    &:nth-child(3) > svg + svg {
+      stroke: $red;
+      stroke-width: 2;
+    }
+
+    // & > svg + svg {
+    //   stroke: $red;
+    //   stroke-width: 2;
+    //   // fill: $red-dark;
+    //   // transform: scale(1.2);
+    // }
   }
 }
 .footer {
@@ -210,9 +230,8 @@ body {
 
       &:hover {
         // color: $black;
-
-        border-bottom: 2px solid $white;
-        // text-decoration: underline;
+        border-bottom: 2px solid $red;
+        // border-bottom: 2px solid $white;
       }
     }
     &:nth-of-type(2) {
