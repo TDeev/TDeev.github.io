@@ -96,7 +96,8 @@ body {
 //Ссылки
 
 .head {
-  position: fixed;
+  // position: fixed;
+  position: absolute;
   width: 100%;
   padding: 30px 30px 30px 30px;
   &-wrap {
