@@ -64,8 +64,8 @@ body {
 .head-wrap {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 120px 1fr minmax(80px, 100px);
-      grid-template-columns: 120px 1fr minmax(80px, 100px);
+  -ms-grid-columns: 120px 1fr 120px;
+      grid-template-columns: 120px 1fr 120px;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -84,7 +84,7 @@ body {
   height: 100vh;
   height: 100%;
   padding: 250px 30px 10px 30px;
-  background-image: url(../img/background.png);
+  background-image: url(../img/background_3.png);
   background-size: cover;
   background-position-x: center;
   background-position-y: bottom;
@@ -236,11 +236,30 @@ body {
   -webkit-transition: border-bottom 0.1s linear;
   transition: border-bottom 0.1s linear;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
+}
+
+.footer-phone > a::after {
+  position: absolute;
+  content: "";
+  left: -1px;
+  bottom: 4px;
+  width: 192px;
+  height: 2px;
+  background-color: #ffffff;
 }
 
 .footer-phone > a:hover {
-  border-bottom: 2px solid #eb5554;
+  color: #ffffff;
+}
+
+.footer-phone > a:hover::after {
+  position: absolute;
+  content: "";
+  left: -1px;
+  bottom: 4px;
+  width: 192px;
+  height: 2px;
+  background-color: #ffffff;
 }
 
 .footer-phone:nth-of-type(2)::before {
