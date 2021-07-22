@@ -312,7 +312,7 @@ body {
         grid-template-columns: 1fr;
   }
   .main {
-    padding: 170px 10px 10px 10px;
+    padding: 160px 10px 10px 10px;
   }
   .main-social > .h1-like {
     font-size: 28px;
