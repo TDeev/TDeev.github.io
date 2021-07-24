@@ -201,8 +201,14 @@ body {
 
 .footer-copy {
   -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
       align-self: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
 }
 
 .footer-contacts {
@@ -229,6 +235,19 @@ body {
   line-height: 36px;
 }
 
+.footer-phone:nth-of-type(2) > a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 32px;
+  height: 34px;
+  background-image: url(../img/phone.svg);
+  background-repeat: no-repeat;
+  -webkit-transition: background-image 0.1s linear;
+  transition: background-image 0.1s linear;
+}
+
 .footer-phone > a {
   color: #ffffff;
   font-size: 26px;
@@ -248,28 +267,14 @@ body {
   background-color: #ffffff;
 }
 
-.footer-phone > a:hover {
-  color: #ffffff;
-}
-
-.footer-phone > a:hover::after {
+.footer-phone:hover > a::after {
   position: absolute;
   content: "";
   left: -1px;
   bottom: 4px;
   width: 192px;
   height: 2px;
-  background-color: #ffffff;
-}
-
-.footer-phone:nth-of-type(2)::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -50px;
-  width: 32px;
-  height: 32px;
-  background-image: url(../img/phone.svg);
+  background-color: #eb5554;
 }
 
 @media (max-width: 1200px) {

@@ -207,6 +207,8 @@ body {
 .footer {
   &-copy {
     align-self: end;
+    display: flex;
+    flex-flow: row nowrap;
   }
   &-contacts {
     justify-self: end;
@@ -222,13 +224,27 @@ body {
     color: $white;
     font-size: 26px;
     line-height: 36px;
+    &:nth-of-type(2) {
+      & > a {
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -50px;
+          width: 32px;
+          height: 34px;
+          background-image: url(../img/phone.svg);
+          background-repeat: no-repeat;
+          transition: background-image 0.1s linear;
+        }
+      }
+    }
     & > a {
       color: $white;
       font-size: 26px;
       line-height: 36px;
       transition: border-bottom 0.1s linear;
       text-decoration: none;
-      // border-bottom: 2px solid $white;
       &::after {
         position: absolute;
         content: "";
@@ -238,9 +254,30 @@ body {
         height: 2px;
         background-color: $white;
       }
-      &:hover {
-        color: $white;
-        // border-bottom: 2px solid $red;
+      // &:hover {
+      //   // color: $black;
+      //   &::after {
+      //     position: absolute;
+      //     content: "";
+      //     left: -1px;
+      //     bottom: 4px;
+      //     width: 192px;
+      //     height: 2px;
+      //     background-color: $red-dark;
+      //   }
+      //   &::before {
+      //     background-image: url(../img/phone_hover.svg);
+      //   }
+      //   & ~ a::before {
+      //     background-image: url(../img/phone_hover.svg);
+      //   }
+      // }
+    }
+    &:hover {
+      // & + .footer-phone > a::before {
+      //   background-image: url(../img/phone_hover.svg);
+      // }
+      & > a {
         &::after {
           position: absolute;
           content: "";
@@ -248,19 +285,11 @@ body {
           bottom: 4px;
           width: 192px;
           height: 2px;
-          background-color: $white;
+          background-color: $red-dark;
         }
-      }
-    }
-    &:nth-of-type(2) {
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: -50px;
-        width: 32px;
-        height: 32px;
-        background-image: url(../img/phone.svg);
+        // &::before {
+        //   background-image: url(../img/phone_hover.svg);
+        // }
       }
     }
   }
