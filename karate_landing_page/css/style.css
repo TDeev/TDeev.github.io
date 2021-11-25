@@ -817,15 +817,27 @@ body {
 .footer-address__phone a {
   display: block;
   color: #a3a3a3;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .footer-address__phone a:last-child {
   margin: 10px 0 0 0;
 }
 
+.footer-address__phone a:hover {
+  color: #d34c4c;
+}
+
 .footer-address__mail a {
   display: block;
   color: #a3a3a3;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.footer-address__mail a:hover {
+  color: #d34c4c;
 }
 
 .footer__social {
