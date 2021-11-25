@@ -1,0 +1,99 @@
+// Экстрабольшие девайсы (большие десктопы, <= 1600px)
+@media (max-width: 1600px) {
+}
+
+// Экстрабольшие девайсы (большие десктопы, <= 1200px)
+@media (max-width: 1200px) {
+  //Социальные сети
+  .social {
+    &__container {
+    }
+    &__items {
+      justify-content: center;
+    }
+    &__item {
+      margin: 10px 10px 10px 10px;
+    }
+  }
+}
+
+// Большие девайсы (десктопы, <= 992px)
+@media (max-width: 992px) {
+  // ?Тренируйся с нами и стань чемпионом
+  .services {
+    &__items {
+      justify-content: center;
+    }
+  }
+  // ?Карате больше чем просто спорт
+  .quality {
+    &__items {
+      justify-content: center;
+    }
+  }
+}
+
+// Средние девайсы («таблетки», <= 768px)
+@media (max-width: 768px) {
+  // ?О федерации
+  .federation {
+    &__container {
+      flex-flow: column nowrap;
+      align-items: center;
+    }
+    &__img {
+      max-width: 500px;
+    }
+    &__content {
+      align-items: center;
+      padding: 30px 0 50px 0;
+    }
+    &__title {
+      align-self: flex-start;
+      margin: 40px 0 0 0;
+    }
+    &__subtitle {
+      align-self: flex-start;
+    }
+    &__txt {
+    }
+  }
+  // Карта
+  .map {
+    &__info {
+      width: 220px;
+    }
+  }
+  // ?Основатели первых курсов самообороны для женщин
+  .self-defence {
+    height: 720px;
+    & > div {
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 45%, #000000 100%);
+    }
+  }
+  // ?Подвал
+  .footer {
+    &-social {
+      display: none;
+    }
+  }
+}
+
+// Малые девайсы («ландшафтные телефоны», <= 576px)
+@media (max-width: 576px) {
+  // ?Подвал
+  .footer {
+    &__container {
+      flex-flow: column nowrap;
+    }
+    &__logo {
+      order: 1;
+      flex-flow: row nowrap;
+      max-width: initial;
+      align-items: center;
+    }
+    &__address {
+      margin: 0 0 20px 20px;
+    }
+  }
+}
