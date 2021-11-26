@@ -35,6 +35,15 @@
 
 // Средние девайсы («таблетки», <= 768px)
 @media (max-width: 768px) {
+  //? Шапка
+  .header {
+    &__button {
+      display: none;
+    }
+    &__phones {
+      margin: 0 0 0 auto;
+    }
+  }
   // ?О федерации
   .federation {
     &__container {
@@ -61,7 +70,7 @@
   // Карта
   .map {
     &__info {
-      width: 220px;
+      max-width: 220px;
     }
   }
   // ?Основатели первых курсов самообороны для женщин
@@ -81,6 +90,27 @@
 
 // Малые девайсы («ландшафтные телефоны», <= 576px)
 @media (max-width: 576px) {
+  //? Шапка
+  .header {
+    &__button {
+      display: none;
+    }
+    &__phones {
+      margin: 0 0 0 auto;
+    }
+  }
+  // Карта
+  .map {
+    &__container {
+      padding: 10px 15px 15px 15px;
+      position: absolute;
+      bottom: 40px;
+    }
+    &__info {
+      max-width: initial;
+      width: 100%;
+    }
+  }
   // ?Подвал
   .footer {
     &__container {
@@ -91,6 +121,10 @@
       flex-flow: row nowrap;
       max-width: initial;
       align-items: center;
+      & > img {
+        height: 80px;
+        margin: 0 10px 0 0;
+      }
     }
     &__address {
       margin: 0 0 20px 20px;
