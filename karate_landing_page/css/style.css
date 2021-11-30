@@ -103,6 +103,85 @@ body {
   margin: 0 30px 0 0;
 }
 
+.hamburger__input {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.hamburger__items {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hamburger__item {
+  padding: 0;
+  width: 30px;
+  height: 4px;
+  background-color: #a83232;
+  display: block;
+  border-radius: 4px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+}
+
+.hamburger-item__1 {
+  top: 0;
+  -webkit-transform-origin: 5%;
+          transform-origin: 5%;
+}
+
+.hamburger-item__2 {
+  top: 13.5px;
+}
+
+.hamburger-item__3 {
+  top: 13.5px;
+  right: 0;
+}
+
+.hamburger-item__4 {
+  bottom: 0;
+  -webkit-transform-origin: 5%;
+          transform-origin: 5%;
+}
+
+.hamburger .hamburger__input:checked + label > .hamburger__items > .hamburger-item__1 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  height: 3px;
+  width: 42px;
+}
+
+.hamburger .hamburger__input:checked + label > .hamburger__items > .hamburger-item__3 {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  height: 3px;
+  background-color: transparent;
+}
+
+.hamburger .hamburger__input:checked + label > .hamburger__items > .hamburger-item__2 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  height: 3px;
+  background-color: transparent;
+}
+
+.hamburger .hamburger__input:checked + label > .hamburger__items > .hamburger-item__4 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  height: 3px;
+  width: 42px;
+}
+
 .header {
   position: fixed;
   z-index: 1;
@@ -163,6 +242,17 @@ body {
   color: #373f41;
   font-size: 22px;
   white-space: nowrap;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.header__phones > a:hover {
+  color: #d34c4c;
+}
+
+.header__hamburger {
+  display: none;
+  margin: 0 0 0 auto;
 }
 
 .banner {
@@ -203,6 +293,10 @@ body {
   font-size: 32px;
 }
 
+.grouptype {
+  margin: 0 20px 0 20px;
+}
+
 .grouptype__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,10 +315,6 @@ body {
   padding: 30px 30px 10px 30px;
 }
 
-.grouptype__title {
-  margin: 0 0 25px 0;
-}
-
 .grouptype__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,6 +327,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
+  margin: 25px 0 0 0;
 }
 
 .grouptype__item {
@@ -346,7 +437,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 40px 0 0 0;
+  margin: 50px 0 0 0;
 }
 
 .coach__item {
@@ -406,7 +497,7 @@ body {
 }
 
 .youtube__container > div:nth-of-type(1) {
-  margin: 0 -20px -10px -20px;
+  margin: 0 -15px -15px -15px;
 }
 
 .youtube__items {
@@ -420,7 +511,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 40px 0 0 0;
+  margin: 45px 0 0 0;
 }
 
 .youtube__item {
@@ -428,8 +519,8 @@ body {
       -ms-flex: 1 1 46%;
           flex: 1 1 46%;
   max-width: 595px;
-  min-width: 320px;
-  margin: 10px 20px 10px 20px;
+  min-width: 300px;
+  margin: 15px 20px 15px 20px;
 }
 
 .youtube-item {
@@ -508,7 +599,7 @@ body {
 .federation__title {
   font-size: 28px;
   text-transform: uppercase;
-  margin: 60px 0 0 0;
+  margin: 50px 0 0 0;
 }
 
 .federation__subtitle {
@@ -532,7 +623,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 50px 0 0 0;
+  max-width: 1140px;
+  margin: 30px auto -10px auto;
 }
 
 .social__item {
@@ -541,6 +633,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1;
           flex: 1 1;
+  margin: 10px 10px 10px 10px;
 }
 
 .social-item {
@@ -571,7 +664,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80px;
+  height: 60px;
 }
 
 .social-item__title {
@@ -631,7 +724,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 1080px;
-  margin: 20px auto -30px auto;
+  margin: 30px auto -30px auto;
 }
 
 .quality__item {
@@ -880,7 +973,8 @@ body {
   margin: 10px 0 0 0;
 }
 
-.footer-social__action > div {
+.footer-social__action > div,
+.footer-social__action a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -888,6 +982,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 30px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  fill: #a83232;
+}
+
+.footer-social__action > div:hover,
+.footer-social__action a:hover {
+  fill: #d34c4c;
 }
 
 .not_found {
@@ -1001,9 +1103,6 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .social__item {
-    margin: 10px 10px 10px 10px;
-  }
 }
 
 @media (max-width: 992px) {
@@ -1024,7 +1123,10 @@ body {
     display: none;
   }
   .header__phones {
-    margin: 0 0 0 auto;
+    display: none;
+  }
+  .header__hamburger {
+    display: initial;
   }
   .federation__container {
     -webkit-box-orient: vertical;
@@ -1047,7 +1149,7 @@ body {
   .federation__title {
     -ms-flex-item-align: start;
         align-self: flex-start;
-    margin: 40px 0 0 0;
+    margin: 30px 0 0 0;
   }
   .federation__subtitle {
     -ms-flex-item-align: start;
@@ -1069,20 +1171,77 @@ body {
 }
 
 @media (max-width: 576px) {
+  .container {
+    padding: 0 15px 0 15px;
+  }
+  .container-box {
+    padding: 40px 15px 40px 15px;
+  }
+  .free-lesson {
+    margin: 40px 0 0 0;
+  }
+  .header__logo > img {
+    height: 50px;
+  }
   .header__button {
     display: none;
   }
   .header__phones {
     margin: 0 0 0 auto;
   }
+  .banner {
+    margin: 50px 0 0 0;
+  }
+  .grouptype__container {
+    padding: 20px 30px 10px 30px;
+  }
+  .grouptype__items {
+    margin: 10px 0 0 0;
+  }
+  .services__items {
+    margin: 40px auto -10px auto;
+  }
+  .services__item {
+    max-width: 200px;
+  }
+  .coach__items {
+    margin: 40px 0 0 0;
+  }
+  .youtube__container > div:nth-of-type(1) {
+    margin: 0 -15px -15px -15px;
+  }
+  .youtube__items {
+    margin: 30px 0 0 0;
+  }
+  .youtube__item {
+    margin: 15px 20px 15px 20px;
+  }
+  .youtube-item__title {
+    margin: 10px 0 0 0;
+  }
+  .social__items {
+    margin: 30px auto -10px auto;
+  }
+  .social-item__title {
+    margin: 10px 0 0 0;
+  }
   .map__container {
     padding: 10px 15px 15px 15px;
     position: absolute;
-    bottom: 40px;
+    bottom: 0;
   }
   .map__info {
     max-width: initial;
     width: 100%;
+  }
+  .quality__items {
+    margin: 35px auto -10px auto;
+  }
+  .quality__item {
+    margin: 15px 10px 15px 10px;
+  }
+  .quality-item__title {
+    margin: 10px 0 0 0;
   }
   .footer__container {
     -webkit-box-orient: vertical;

@@ -39,6 +39,7 @@ $grey-dark: #4f4f4f;
 $grey: #a3a3a3;
 $grey-lite: #f2f2f2;
 $red-dark: #d34c4c;
+$red-black: #a83232;
 $red: #eb5554;
 $orange: #f9b537;
 $orange-lite: #fffce6;
@@ -123,6 +124,79 @@ body {
   }
 }
 
+//!Кастомные элементы
+.hamburger {
+  &__input {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+
+  &__items {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__item {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: $red-black;
+    display: block;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+  }
+
+  &-item {
+    &__1 {
+      top: 0;
+      transform-origin: 5%;
+    }
+    &__2 {
+      top: 13.5px;
+    }
+    &__3 {
+      top: 13.5px;
+      right: 0;
+    }
+    &__4 {
+      bottom: 0;
+      transform-origin: 5%;
+    }
+  }
+
+  .hamburger__input:checked + label > .hamburger__items {
+    & > .hamburger-item__1 {
+      transform: rotate(45deg);
+      height: 3px;
+      width: 42px;
+    }
+    & > .hamburger-item__3 {
+      transform: rotate(45deg);
+      height: 3px;
+      background-color: transparent;
+    }
+    & > .hamburger-item__2 {
+      transform: rotate(-45deg);
+      height: 3px;
+      background-color: transparent;
+    }
+    & > .hamburger-item__4 {
+      transform: rotate(-45deg);
+      height: 3px;
+      width: 42px;
+    }
+  }
+}
+
 //!Страницы
 // *Основаная. Лендинг
 
@@ -169,7 +243,15 @@ body {
       color: $black-txt;
       font-size: 22px;
       white-space: nowrap;
+      transition: all 0.2s linear;
+      &:hover {
+        color: $red-dark;
+      }
     }
+  }
+  &__hamburger {
+    display: none;
+    margin: 0 0 0 auto;
   }
 }
 
@@ -207,6 +289,7 @@ body {
 
 // ?Возрастные группы
 .grouptype {
+  margin: 0 20px 0 20px;
   &__container {
     display: flex;
     flex-flow: column nowrap;
@@ -217,14 +300,12 @@ body {
     background-color: rgba(255, 255, 255, 0.95);
     padding: 30px 30px 10px 30px;
   }
-  &__title {
-    margin: 0 0 25px 0;
-  }
   &__items {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     width: 100%;
+    margin: 25px 0 0 0;
   }
   &__item {
     flex: 1 1 0%;
@@ -302,7 +383,7 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin: 40px 0 0 0;
+    margin: 50px 0 0 0;
   }
   &__item {
     //flex: 1 1 auto;
@@ -353,7 +434,7 @@ body {
 .youtube {
   &__container {
     & > div:nth-of-type(1) {
-      margin: 0 -20px -10px -20px;
+      margin: 0 -15px -15px -15px;
     }
   }
   &__items {
@@ -368,13 +449,13 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    margin: 40px 0 0 0;
+    margin: 45px 0 0 0;
   }
   &__item {
     flex: 1 1 46%;
     max-width: 595px;
-    min-width: 320px;
-    margin: 10px 20px 10px 20px;
+    min-width: 300px;
+    margin: 15px 20px 15px 20px;
   }
 
   &-item {
@@ -425,7 +506,7 @@ body {
   &__title {
     font-size: 28px;
     text-transform: uppercase;
-    margin: 60px 0 0 0;
+    margin: 50px 0 0 0;
   }
   &__subtitle {
     font-size: 16px;
@@ -446,12 +527,14 @@ body {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin: 50px 0 0 0;
+    max-width: 1140px;
+    margin: 30px auto -10px auto;
   }
   &__item {
     max-width: 320px;
     min-width: 180px;
     flex: 1 1;
+    margin: 10px 10px 10px 10px;
   }
   &-item {
     display: flex;
@@ -466,7 +549,7 @@ body {
     &__ico {
       display: flex;
       align-items: center;
-      height: 80px;
+      height: 60px;
     }
     &__title {
       text-align: center;
@@ -519,7 +602,7 @@ body {
     flex-flow: row wrap;
     justify-content: space-between;
     max-width: 1080px;
-    margin: 20px auto -30px auto;
+    margin: 30px auto -30px auto;
   }
   &__item {
     flex: 0 1 100%;
@@ -678,10 +761,16 @@ body {
       flex-flow: row nowrap;
       justify-content: space-between;
       margin: 10px 0 0 0;
-      & > div {
+      & > div,
+      a {
         display: flex;
         align-items: center;
         height: 30px;
+        transition: all 0.2s linear;
+        fill: #a83232;
+        &:hover {
+          fill: $red-dark;
+        }
       }
     }
   }

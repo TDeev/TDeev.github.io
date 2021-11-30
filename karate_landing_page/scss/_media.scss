@@ -6,13 +6,8 @@
 @media (max-width: 1200px) {
   //Социальные сети
   .social {
-    &__container {
-    }
     &__items {
       justify-content: center;
-    }
-    &__item {
-      margin: 10px 10px 10px 10px;
     }
   }
 }
@@ -41,7 +36,10 @@
       display: none;
     }
     &__phones {
-      margin: 0 0 0 auto;
+      display: none;
+    }
+    &__hamburger {
+      display: initial;
     }
   }
   // ?О федерации
@@ -59,12 +57,10 @@
     }
     &__title {
       align-self: flex-start;
-      margin: 40px 0 0 0;
+      margin: 30px 0 0 0;
     }
     &__subtitle {
       align-self: flex-start;
-    }
-    &__txt {
     }
   }
   // Карта
@@ -90,8 +86,25 @@
 
 // Малые девайсы («ландшафтные телефоны», <= 576px)
 @media (max-width: 576px) {
+  // контейнеры
+  .container {
+    padding: 0 15px 0 15px;
+  }
+  .container-box {
+    padding: 40px 15px 40px 15px;
+  }
+  //Блок с кнопкой
+  .free-lesson {
+    margin: 40px 0 0 0;
+  }
+
   //? Шапка
   .header {
+    &__logo {
+      & > img {
+        height: 50px;
+      }
+    }
     &__button {
       display: none;
     }
@@ -99,18 +112,92 @@
       margin: 0 0 0 auto;
     }
   }
+  // ?Баннер
+  .banner {
+    margin: 50px 0 0 0;
+  }
+
+  // ?Возрастные группы
+  .grouptype {
+    &__container {
+      padding: 20px 30px 10px 30px;
+    }
+    &__items {
+      margin: 10px 0 0 0;
+    }
+  }
+  // ?Тренируйся с нами и стань чемпионом
+  .services {
+    &__items {
+      margin: 40px auto -10px auto;
+    }
+    &__item {
+      max-width: 200px;
+    }
+  }
+  // ?Квалифицированные и опытные тренера
+  .coach {
+    &__items {
+      margin: 40px 0 0 0;
+    }
+  }
+  // ?Смотрите наши видео на youtube
+  .youtube {
+    &__container {
+      & > div:nth-of-type(1) {
+        margin: 0 -15px -15px -15px;
+      }
+    }
+    &__items {
+      margin: 30px 0 0 0;
+    }
+    &__item {
+      margin: 15px 20px 15px 20px;
+    }
+    &-item__title {
+      margin: 10px 0 0 0;
+    }
+  }
+  // ?Мы в социальных сетях и на карте Ташкента
+  //Социальные сети
+  .social {
+    &__items {
+      margin: 30px auto -10px auto;
+    }
+    &-item__title {
+      margin: 10px 0 0 0;
+    }
+  }
   // Карта
   .map {
     &__container {
       padding: 10px 15px 15px 15px;
       position: absolute;
-      bottom: 40px;
+      bottom: 0;
     }
     &__info {
       max-width: initial;
       width: 100%;
     }
   }
+
+  // ?Карате больше чем просто спорт
+  .quality {
+    &__container {
+    }
+    &__items {
+      margin: 35px auto -10px auto;
+    }
+    &__item {
+      margin: 15px 10px 15px 10px;
+    }
+    &-item {
+      &__title {
+        margin: 10px 0 0 0;
+      }
+    }
+  }
+
   // ?Подвал
   .footer {
     &__container {
