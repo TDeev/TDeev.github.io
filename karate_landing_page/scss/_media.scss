@@ -14,6 +14,12 @@
 
 // Большие девайсы (десктопы, <= 992px)
 @media (max-width: 992px) {
+  // ?Возрастные группы
+  .grouptype {
+    &__container {
+      padding: 30px 10px 10px 10px;
+    }
+  }
   // ?Тренируйся с нами и стань чемпионом
   .services {
     &__items {
@@ -120,7 +126,7 @@
   // ?Возрастные группы
   .grouptype {
     &__container {
-      padding: 20px 30px 10px 30px;
+      padding: 20px 10px 10px 10px;
     }
     &__items {
       margin: 10px 0 0 0;
@@ -139,6 +145,21 @@
   .coach {
     &__items {
       margin: 40px 0 0 0;
+    }
+    &-item {
+      padding: 25px 10px 25px 10px;
+      &__img {
+        margin: 0 0 20px 0;
+      }
+      //&__title {
+      //  margin: 0 0 5px 0;
+      //}
+      //& > span:nth-last-of-type(2) {
+      //  margin: auto 0 5px 0;
+      //}
+      //& > span:nth-of-type(2) {
+      //  margin: 0 0 10px 0;
+      //}
     }
   }
   // ?Смотрите наши видео на youtube
@@ -183,12 +204,11 @@
 
   // ?Карате больше чем просто спорт
   .quality {
-    &__container {
-    }
     &__items {
-      margin: 35px auto -10px auto;
+      margin: 35px auto -15px auto;
     }
     &__item {
+      max-width: 460px;
       margin: 15px 10px 15px 10px;
     }
     &-item {
