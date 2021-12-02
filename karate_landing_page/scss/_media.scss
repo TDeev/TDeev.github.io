@@ -48,6 +48,12 @@
       display: initial;
     }
   }
+  // ?Смотрите наши видео на youtube
+  .youtube {
+    &-item__title {
+      margin: 15px 0 0 0;
+    }
+  }
   // ?О федерации
   .federation {
     &__container {
@@ -59,7 +65,7 @@
     }
     &__content {
       align-items: center;
-      padding: 30px 0 50px 0;
+      padding: 40px 0 50px 0;
     }
     &__title {
       align-self: flex-start;
@@ -73,6 +79,17 @@
   .map {
     &__info {
       max-width: 220px;
+    }
+  }
+  // ?Карате больше чем просто спорт
+  .quality {
+    &__items {
+      margin: 25px auto -15px auto;
+    }
+    &__item {
+      margin: 15px 15px 15px 15px;
+    }
+    &-item {
     }
   }
   // ?Основатели первых курсов самообороны для женщин
@@ -92,12 +109,8 @@
 
 // Малые девайсы («ландшафтные телефоны», <= 576px)
 @media (max-width: 576px) {
-  // контейнеры
-  .container {
-    padding: 0 15px 0 15px;
-  }
   .container-box {
-    padding: 40px 15px 40px 15px;
+    padding: 50px 15px 40px 15px;
   }
   //Блок с кнопкой
   .free-lesson {
@@ -106,9 +119,20 @@
 
   //? Шапка
   .header {
+    &__container {
+      margin: 5px 0 5px 0;
+    }
     &__logo {
+      margin: 0 10px 0 0;
       & > img {
-        height: 50px;
+        height: 35px;
+      }
+    }
+    &__title {
+      //display: flex;
+      //align-items: center;
+      & > span:last-child {
+        display: none;
       }
     }
     &__button {
@@ -120,22 +144,23 @@
   }
   // ?Баннер
   .banner {
-    margin: 50px 0 0 0;
+    min-height: 640px;
+    padding: 50px 0 0 0;
+    margin: 65px 0 0 0;
+    &__title {
+      font-size: 58px;
+    }
   }
-
   // ?Возрастные группы
   .grouptype {
     &__container {
       padding: 20px 10px 10px 10px;
     }
-    &__items {
-      margin: 10px 0 0 0;
-    }
   }
   // ?Тренируйся с нами и стань чемпионом
   .services {
     &__items {
-      margin: 40px auto -10px auto;
+      margin: 20px auto -10px auto;
     }
     &__item {
       max-width: 200px;
@@ -144,7 +169,7 @@
   // ?Квалифицированные и опытные тренера
   .coach {
     &__items {
-      margin: 40px 0 0 0;
+      margin: 20px 0 0 0;
     }
     &-item {
       padding: 25px 10px 25px 10px;
@@ -166,14 +191,14 @@
   .youtube {
     &__container {
       & > div:nth-of-type(1) {
-        margin: 0 -15px -15px -15px;
+        margin: 0 -15px -10px -15px;
       }
     }
     &__items {
-      margin: 30px 0 0 0;
+      margin: 20px 0 0 0;
     }
     &__item {
-      margin: 15px 20px 15px 20px;
+      margin: 10px 20px 10px 20px;
     }
     &-item__title {
       margin: 10px 0 0 0;
@@ -201,15 +226,14 @@
       width: 100%;
     }
   }
-
   // ?Карате больше чем просто спорт
   .quality {
     &__items {
-      margin: 35px auto -15px auto;
+      margin: 20px auto -10px auto;
     }
     &__item {
-      max-width: 460px;
-      margin: 15px 10px 15px 10px;
+      max-width: 440px;
+      margin: 10px 10px 10px 10px;
     }
     &-item {
       &__title {
@@ -217,7 +241,6 @@
       }
     }
   }
-
   // ?Подвал
   .footer {
     &__container {

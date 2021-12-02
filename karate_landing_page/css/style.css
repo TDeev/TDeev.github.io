@@ -25,6 +25,7 @@ body {
   padding: 0;
   color: #373f41;
   background-color: #fafafa;
+  background-color: #f8f9f9;
 }
 
 .container {
@@ -36,7 +37,7 @@ body {
 
 .container-box {
   max-width: 1260px;
-  padding: 50px 15px 50px 15px;
+  padding: 60px 15px 50px 15px;
   width: 100%;
   margin: 0 auto;
 }
@@ -96,7 +97,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 50px 0 0 0;
+  margin: 40px 0 0 0;
 }
 
 .free-lesson__txt {
@@ -189,7 +190,7 @@ body {
   left: 0;
   right: 0;
   padding: 10px 0 10px 0;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.95);
   -webkit-box-shadow: 0 5px 7px 0 rgba(24, 33, 47, 0.2);
           box-shadow: 0 5px 7px 0 rgba(24, 33, 47, 0.2);
 }
@@ -225,11 +226,11 @@ body {
 .header__title > span:first-child {
   font-size: 22px;
   font-weight: 600;
-  margin: 0 0 5px 0;
 }
 
 .header__title > span:last-child {
   font-size: 18px;
+  margin: 5px 0 0 0;
 }
 
 .header__button {
@@ -280,12 +281,12 @@ body {
 }
 
 .banner__container > *:not(:last-child) {
-  margin: 0 0 15px 0;
+  margin: 0 0 20px 0;
 }
 
 .banner .banner__title {
   font-weight: bold;
-  font-size: 44px;
+  font-size: 62px;
   margin: 0;
 }
 
@@ -311,8 +312,8 @@ body {
   max-width: 1244px;
   width: 100%;
   margin: -181px auto 0;
-  background-color: rgba(255, 255, 255, 0.95);
   padding: 30px 30px 10px 30px;
+  background-color: #ffffff;
 }
 
 .grouptype__items {
@@ -327,7 +328,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin: 25px 0 0 0;
+  margin: 10px 0 0 0;
 }
 
 .grouptype__item {
@@ -377,7 +378,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 1020px;
-  margin: 50px auto -10px auto;
+  margin: 30px auto -10px auto;
 }
 
 .services__item {
@@ -437,7 +438,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 50px 0 0 0;
+  margin: 30px 0 0 0;
 }
 
 .coach__item {
@@ -445,6 +446,9 @@ body {
   min-width: 280px;
   width: 30%;
   margin: 10px 10px 10px 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
 }
 
 .coach-item {
@@ -460,9 +464,20 @@ body {
           align-items: center;
   padding: 35px 10px 35px 10px;
   background: #ffffff;
-  -webkit-box-shadow: -2px 5px 15px 0 rgba(0, 0, 0, 0.1);
-          box-shadow: -2px 5px 15px 0 rgba(0, 0, 0, 0.1);
   border-radius: 20px;
+  -webkit-box-shadow: rgba(38, 38, 38, 0.04) 0px 1px 2px, rgba(38, 38, 38, 0.16) 0px 4px 8px;
+          box-shadow: rgba(38, 38, 38, 0.04) 0px 1px 2px, rgba(38, 38, 38, 0.16) 0px 4px 8px;
+  -webkit-transition: -webkit-box-shadow 0.3s ease 0s;
+  transition: -webkit-box-shadow 0.3s ease 0s;
+  transition: box-shadow 0.3s ease 0s;
+  transition: box-shadow 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
+  border: 1px solid rgba(38, 38, 38, 0.08);
+}
+
+.coach-item:hover {
+  border-color: rgba(38, 38, 38, 0.16);
+  -webkit-box-shadow: rgba(38, 38, 38, 0.04) 0px 1px 2px, rgba(38, 38, 38, 0.16) 0px 8px 16px;
+          box-shadow: rgba(38, 38, 38, 0.04) 0px 1px 2px, rgba(38, 38, 38, 0.16) 0px 8px 16px;
 }
 
 .coach-item__img {
@@ -511,7 +526,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 45px 0 0 0;
+  margin: 25px 0 0 0;
 }
 
 .youtube__item {
@@ -593,18 +608,18 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 50px 0 50px 10px;
+  padding: 60px 0 50px 10px;
 }
 
 .federation__title {
   font-size: 28px;
   text-transform: uppercase;
-  margin: 50px 0 0 0;
+  margin: 40px 0 0 0;
 }
 
 .federation__subtitle {
   font-size: 16px;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 
 .federation__txt {
@@ -724,7 +739,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   max-width: 1080px;
-  margin: 30px auto -30px auto;
+  margin: 10px auto -30px auto;
 }
 
 .quality__item {
@@ -1131,6 +1146,9 @@ body {
   .header__hamburger {
     display: initial;
   }
+  .youtube-item__title {
+    margin: 15px 0 0 0;
+  }
   .federation__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1147,7 +1165,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 30px 0 50px 0;
+    padding: 40px 0 50px 0;
   }
   .federation__title {
     -ms-flex-item-align: start;
@@ -1160,6 +1178,12 @@ body {
   }
   .map__info {
     max-width: 220px;
+  }
+  .quality__items {
+    margin: 25px auto -15px auto;
+  }
+  .quality__item {
+    margin: 15px 15px 15px 15px;
   }
   .self-defence {
     height: 720px;
@@ -1174,17 +1198,23 @@ body {
 }
 
 @media (max-width: 576px) {
-  .container {
-    padding: 0 15px 0 15px;
-  }
   .container-box {
-    padding: 40px 15px 40px 15px;
+    padding: 50px 15px 40px 15px;
   }
   .free-lesson {
     margin: 40px 0 0 0;
   }
+  .header__container {
+    margin: 5px 0 5px 0;
+  }
+  .header__logo {
+    margin: 0 10px 0 0;
+  }
   .header__logo > img {
-    height: 50px;
+    height: 35px;
+  }
+  .header__title > span:last-child {
+    display: none;
   }
   .header__button {
     display: none;
@@ -1193,22 +1223,24 @@ body {
     margin: 0 0 0 auto;
   }
   .banner {
-    margin: 50px 0 0 0;
+    min-height: 640px;
+    padding: 50px 0 0 0;
+    margin: 65px 0 0 0;
+  }
+  .banner__title {
+    font-size: 58px;
   }
   .grouptype__container {
     padding: 20px 10px 10px 10px;
   }
-  .grouptype__items {
-    margin: 10px 0 0 0;
-  }
   .services__items {
-    margin: 40px auto -10px auto;
+    margin: 20px auto -10px auto;
   }
   .services__item {
     max-width: 200px;
   }
   .coach__items {
-    margin: 40px 0 0 0;
+    margin: 20px 0 0 0;
   }
   .coach-item {
     padding: 25px 10px 25px 10px;
@@ -1217,13 +1249,13 @@ body {
     margin: 0 0 20px 0;
   }
   .youtube__container > div:nth-of-type(1) {
-    margin: 0 -15px -15px -15px;
+    margin: 0 -15px -10px -15px;
   }
   .youtube__items {
-    margin: 30px 0 0 0;
+    margin: 20px 0 0 0;
   }
   .youtube__item {
-    margin: 15px 20px 15px 20px;
+    margin: 10px 20px 10px 20px;
   }
   .youtube-item__title {
     margin: 10px 0 0 0;
@@ -1244,11 +1276,11 @@ body {
     width: 100%;
   }
   .quality__items {
-    margin: 35px auto -15px auto;
+    margin: 20px auto -10px auto;
   }
   .quality__item {
-    max-width: 460px;
-    margin: 15px 10px 15px 10px;
+    max-width: 440px;
+    margin: 10px 10px 10px 10px;
   }
   .quality-item__title {
     margin: 10px 0 0 0;
