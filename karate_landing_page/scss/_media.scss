@@ -109,6 +109,9 @@
 
 // Малые девайсы («ландшафтные телефоны», <= 576px)
 @media (max-width: 576px) {
+  body {
+    background-color: #ededed;
+  }
   .container-box {
     padding: 50px 15px 40px 15px;
   }
