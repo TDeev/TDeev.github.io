@@ -265,9 +265,12 @@ body {
   &__mobile-ico {
     display: none;
     margin: 0 0 0 auto;
-    fill: $red-black;
+    fill: $black-txt;
     & ~ .header__mobile-ico {
       margin: 0 0 0 20px;
+    }
+    &:hover {
+      fill: $red-black;
     }
   }
 }

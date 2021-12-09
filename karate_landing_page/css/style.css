@@ -247,11 +247,15 @@ body {
 .header__mobile-ico {
   display: none;
   margin: 0 0 0 auto;
-  fill: #a83232;
+  fill: #373f41;
 }
 
 .header__mobile-ico ~ .header__mobile-ico {
   margin: 0 0 0 20px;
+}
+
+.header__mobile-ico:hover {
+  fill: #a83232;
 }
 
 .banner {
