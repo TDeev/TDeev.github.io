@@ -202,6 +202,8 @@ body {
 //Кнопка вверх
 .back_to_top {
   display: none;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   z-index: 99;
   width: 48px;
@@ -209,13 +211,16 @@ body {
   right: 24px;
   bottom: 24px;
   border-radius: 10px;
+  background-color: rgba(163, 163, 163, 0.9);
   cursor: pointer;
-  fill: $red;
+  //fill: $red;
+  fill: none;
+  stroke: $white;
   &:hover {
-    fill: $red-dark;
+    background-color: $grey-dark;
   }
   &.back_to_top-show {
-    display: block;
+    display: flex;
   }
 }
 
@@ -248,6 +253,7 @@ body {
     margin: 0 10px 0 0;
     & > span {
       display: block;
+      color: $black;
       &:first-child {
         font-size: 22px;
         font-weight: 600;
@@ -285,7 +291,7 @@ body {
   &__mobile-ico {
     display: none;
     margin: 0 0 0 auto;
-    fill: $black-txt;
+    fill: $grey;
     & ~ .header__mobile-ico {
       margin: 0 0 0 20px;
     }

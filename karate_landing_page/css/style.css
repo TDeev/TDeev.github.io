@@ -178,6 +178,12 @@ body {
 
 .back_to_top {
   display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: fixed;
   z-index: 99;
   width: 48px;
@@ -185,16 +191,20 @@ body {
   right: 24px;
   bottom: 24px;
   border-radius: 10px;
+  background-color: rgba(163, 163, 163, 0.9);
   cursor: pointer;
-  fill: #d34c4c;
+  fill: none;
+  stroke: #ffffff;
 }
 
 .back_to_top:hover {
-  fill: #a83232;
+  background-color: #4f4f4f;
 }
 
 .back_to_top.back_to_top-show {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header {
@@ -235,6 +245,7 @@ body {
 
 .header__title > span {
   display: block;
+  color: #2a2928;
 }
 
 .header__title > span:first-child {
@@ -268,7 +279,7 @@ body {
 .header__mobile-ico {
   display: none;
   margin: 0 0 0 auto;
-  fill: #373f41;
+  fill: #a3a3a3;
 }
 
 .header__mobile-ico ~ .header__mobile-ico {
