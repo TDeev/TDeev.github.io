@@ -67,7 +67,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
-  background-color: #eb5554;
+  background-color: #d34c4c;
   padding: 10px 20px 10px 20px;
   color: #ffffff;
   border: none;
@@ -79,7 +79,7 @@ body {
 }
 
 .button:hover {
-  background-color: #d34c4c;
+  background-color: #a83232;
   cursor: pointer;
 }
 
@@ -105,14 +105,7 @@ body {
 }
 
 .hamburger__input {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
+  display: none;
 }
 
 .hamburger__items {
@@ -155,28 +148,28 @@ body {
           transform-origin: 5%;
 }
 
-.hamburger .hamburger__input:checked + label > .hamburger__items > .hamburger-item__1 {
+.hamburger__input:checked + .header__container > .header__hamburger > label > .hamburger__items > .hamburger-item__1 {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   height: 3px;
   width: 42px;
 }
 
-.hamburger .hamburger__input:checked + label > .hamburger__items > .hamburger-item__3 {
+.hamburger__input:checked + .header__container > .header__hamburger > label > .hamburger__items > .hamburger-item__3 {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   height: 3px;
   background-color: transparent;
 }
 
-.hamburger .hamburger__input:checked + label > .hamburger__items > .hamburger-item__2 {
+.hamburger__input:checked + .header__container > .header__hamburger > label > .hamburger__items > .hamburger-item__2 {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   height: 3px;
   background-color: transparent;
 }
 
-.hamburger .hamburger__input:checked + label > .hamburger__items > .hamburger-item__4 {
+.hamburger__input:checked + .header__container > .header__hamburger > label > .hamburger__items > .hamburger-item__4 {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   height: 3px;
@@ -189,7 +182,6 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  padding: 10px 0 10px 0;
   background-color: rgba(255, 255, 255, 0.95);
   -webkit-box-shadow: 0 5px 7px 0 rgba(24, 33, 47, 0.2);
           box-shadow: 0 5px 7px 0 rgba(24, 33, 47, 0.2);
@@ -206,6 +198,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100px;
 }
 
 .header__logo {
@@ -248,12 +241,17 @@ body {
 }
 
 .header__phones > a:hover {
-  color: #d34c4c;
+  color: #a83232;
 }
 
-.header__hamburger {
+.header__mobile-ico {
   display: none;
   margin: 0 0 0 auto;
+  fill: #a83232;
+}
+
+.header__mobile-ico ~ .header__mobile-ico {
+  margin: 0 0 0 20px;
 }
 
 .banner {
@@ -442,13 +440,13 @@ body {
 }
 
 .coach__item {
-  max-width: 340px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  max-width: 320px;
   min-width: 280px;
   width: 30%;
   margin: 10px 10px 10px 10px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 30%;
-          flex: 1 1 30%;
 }
 
 .coach-item {
@@ -498,7 +496,7 @@ body {
 }
 
 .coach-item__txt {
-  max-width: 220px;
+  max-width: 280px;
   display: block;
   text-align: center;
 }
@@ -618,7 +616,6 @@ body {
 }
 
 .federation__subtitle {
-  font-size: 16px;
   margin: 0 0 10px 0;
 }
 
@@ -669,7 +666,7 @@ body {
 }
 
 .social-item:hover {
-  color: #d34c4c;
+  color: #a83232;
 }
 
 .social-item__ico {
@@ -943,7 +940,7 @@ body {
 }
 
 .footer-address__phone a:hover {
-  color: #d34c4c;
+  color: #a83232;
 }
 
 .footer-address__mail a {
@@ -954,7 +951,7 @@ body {
 }
 
 .footer-address__mail a:hover {
-  color: #d34c4c;
+  color: #a83232;
 }
 
 .footer__social {
@@ -1004,7 +1001,7 @@ body {
 
 .footer-social__action > div:hover,
 .footer-social__action a:hover {
-  fill: #d34c4c;
+  fill: #a83232;
 }
 
 .not_found {
@@ -1038,7 +1035,7 @@ body {
   margin: 0;
   font-weight: normal;
   font-size: 180px;
-  color: #eb5554;
+  color: #d34c4c;
 }
 
 .not_found__text {
@@ -1054,13 +1051,13 @@ body {
 }
 
 .not_found__subtitle > a {
-  color: #eb5554;
+  color: #d34c4c;
   -webkit-transition: color 0.1s linear;
   transition: color 0.1s linear;
 }
 
 .not_found__subtitle > a:hover {
-  color: #d34c4c;
+  color: #a83232;
 }
 
 .not_found__social {
@@ -1088,22 +1085,22 @@ body {
           align-items: center;
   width: 30px;
   height: 30px;
-  border: 1px solid #eb5554;
+  border: 1px solid #d34c4c;
   border-radius: 50%;
   -webkit-transition: 0.1s linear;
   transition: 0.1s linear;
 }
 
 .not_found__social .social_item > svg {
-  fill: #eb5554;
+  fill: #d34c4c;
 }
 
 .not_found__social .social_item:hover {
-  border-color: #d34c4c;
+  border-color: #a83232;
 }
 
 .not_found__social .social_item:hover > svg {
-  fill: #d34c4c;
+  fill: #a83232;
 }
 
 .not_found__copy {
@@ -1142,9 +1139,6 @@ body {
   }
   .header__phones {
     display: none;
-  }
-  .header__hamburger {
-    display: initial;
   }
   .youtube-item__title {
     margin: 15px 0 0 0;
@@ -1208,7 +1202,7 @@ body {
     margin: 40px 0 0 0;
   }
   .header__container {
-    margin: 5px 0 5px 0;
+    height: 48px;
   }
   .header__logo {
     margin: 0 10px 0 0;
@@ -1225,13 +1219,21 @@ body {
   .header__phones {
     margin: 0 0 0 auto;
   }
+  .header__mobile-ico {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .banner {
     min-height: 640px;
     padding: 50px 0 0 0;
-    margin: 65px 0 0 0;
+    margin: 48px 0 0 0;
   }
   .banner__title {
     font-size: 58px;
+  }
+  .grouptype {
+    margin: 0 15px 0 15px;
   }
   .grouptype__container {
     padding: 20px 10px 10px 10px;
@@ -1240,10 +1242,31 @@ body {
     margin: 20px auto -10px auto;
   }
   .services__item {
-    max-width: 200px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    max-width: initial;
+    margin: 10px 30px 10px 40px;
+  }
+  .services-item__ico {
+    min-width: 60px;
+  }
+  .services-item__title {
+    text-align: initial;
+    margin: 0 0 0 20px;
   }
   .coach__items {
     margin: 20px 0 0 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    overflow: auto;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: 0 0 5px 0;
   }
   .coach-item {
     padding: 25px 10px 25px 10px;
@@ -1266,8 +1289,11 @@ body {
   .social__items {
     margin: 30px auto -10px auto;
   }
+  .social-item {
+    min-width: initial;
+  }
   .social-item__title {
-    margin: 10px 0 0 0;
+    display: none;
   }
   .map__container {
     padding: 10px 15px 15px 15px;

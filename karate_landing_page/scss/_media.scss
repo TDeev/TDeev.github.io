@@ -44,9 +44,9 @@
     &__phones {
       display: none;
     }
-    &__hamburger {
-      display: initial;
-    }
+    //&__hamburger {
+    //  display: initial;
+    //}
   }
   // ?Смотрите наши видео на youtube
   .youtube {
@@ -123,7 +123,8 @@
   //? Шапка
   .header {
     &__container {
-      margin: 5px 0 5px 0;
+      //margin: 5px 0 5px 0;
+      height: 48px;
     }
     &__logo {
       margin: 0 10px 0 0;
@@ -144,18 +145,22 @@
     &__phones {
       margin: 0 0 0 auto;
     }
+    &__mobile-ico {
+      display: flex;
+    }
   }
   // ?Баннер
   .banner {
     min-height: 640px;
     padding: 50px 0 0 0;
-    margin: 65px 0 0 0;
+    margin: 48px 0 0 0;
     &__title {
       font-size: 58px;
     }
   }
   // ?Возрастные группы
   .grouptype {
+    margin: 0 15px 0 15px;
     &__container {
       padding: 20px 10px 10px 10px;
     }
@@ -166,13 +171,29 @@
       margin: 20px auto -10px auto;
     }
     &__item {
-      max-width: 200px;
+      flex-flow: row nowrap;
+      max-width: initial;
+      margin: 10px 30px 10px 40px;
+      //max-width: 200px;
+    }
+    &-item {
+      &__ico {
+        min-width: 60px;
+      }
+      &__title {
+        text-align: initial;
+        margin: 0 0 0 20px;
+      }
     }
   }
   // ?Квалифицированные и опытные тренера
   .coach {
     &__items {
       margin: 20px 0 0 0;
+      flex-flow: row nowrap;
+      overflow: auto;
+      justify-content: flex-start;
+      padding: 0 0 5px 0;
     }
     &-item {
       padding: 25px 10px 25px 10px;
@@ -213,8 +234,12 @@
     &__items {
       margin: 30px auto -10px auto;
     }
-    &-item__title {
-      margin: 10px 0 0 0;
+    &-item {
+      min-width: initial;
+      &__title {
+        //margin: 10px 0 0 0;
+        display: none;
+      }
     }
   }
   // Карта
