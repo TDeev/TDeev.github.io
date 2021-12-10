@@ -10,10 +10,10 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
       var coords = document.documentElement.clientHeight;
 
       if (scrolled > coords) {
-         goTopBtn.classList.add('back_to_top-show');
+         goTopBtn.classList.add('top-button--show');
       }
       if (scrolled < coords) {
-         goTopBtn.classList.remove('back_to_top-show');
+         goTopBtn.classList.remove('top-button--show');
       }
    }
 
@@ -24,7 +24,7 @@ document.getElementById("year").innerHTML = new Date().getFullYear();
       }
    }
 
-   var goTopBtn = document.querySelector('.back_to_top');
+   var goTopBtn = document.querySelector('.top-button');
 
    window.addEventListener('scroll', trackScroll);
    goTopBtn.addEventListener('click', backToTop);

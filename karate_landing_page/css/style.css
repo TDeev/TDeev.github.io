@@ -176,7 +176,7 @@ body {
   width: 42px;
 }
 
-.back_to_top {
+.top-button {
   display: none;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -191,7 +191,7 @@ body {
   right: 24px;
   bottom: 24px;
   border-radius: 10px;
-  background-color: rgba(163, 163, 163, 0.9);
+  background-color: rgba(79, 79, 79, 0.9);
   -webkit-box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.15);
           box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.15);
   cursor: pointer;
@@ -199,11 +199,11 @@ body {
   stroke: #ffffff;
 }
 
-.back_to_top:hover {
+.top-button:hover {
   background-color: #4f4f4f;
 }
 
-.back_to_top.back_to_top-show {
+.top-button.top-button--show {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,7 +281,7 @@ body {
 .header__mobile-ico {
   display: none;
   margin: 0 0 0 auto;
-  fill: #a3a3a3;
+  fill: #4f4f4f;
 }
 
 .header__mobile-ico ~ .header__mobile-ico {
