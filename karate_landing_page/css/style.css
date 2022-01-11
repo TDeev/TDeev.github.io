@@ -522,7 +522,7 @@ body {
   height: 150px;
   background: #373f41;
   border-radius: 1000px;
-  margin: 0 0 30px 0;
+  margin: 0 0 20px 0;
 }
 
 .coach-item__title {
@@ -530,21 +530,23 @@ body {
   font-weight: bold;
   font-size: 18px;
   text-align: center;
-  margin: 0 0 10px 0;
+  margin: 10px 0 10px 0;
 }
 
 .coach-item__txt {
   max-width: 280px;
   display: block;
   text-align: center;
+  margin: 0 0 10px 0;
 }
 
-.coach-item > span:nth-of-type(2) {
-  margin: 0 0 20px 0;
+.coach-item > span:nth-last-of-type(1) {
+  margin: 0;
 }
 
-.coach-item > span:nth-last-of-type(2) {
-  margin: auto 0 10px 0;
+.coach-item > div {
+  min-height: 140px;
+  margin: auto 0 0 0;
 }
 
 .youtube__container > div:nth-of-type(1) {
@@ -660,6 +662,88 @@ body {
 .federation__txt {
   font-size: 18px;
   margin: 20px 0 0 0;
+}
+
+.achievements {
+  background-color: #ffffff;
+}
+
+.achievements__container > div {
+  margin: 0 -10px 0 -10px;
+}
+
+.achievements__txt {
+  font-size: 18px;
+  margin: 20px 0 0 0;
+}
+
+.achievements__txt:first-of-type {
+  margin: 40px 0 0 0;
+}
+
+.achievements__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 30px 0 30px 0;
+}
+
+.achievements__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  max-width: 320px;
+  min-width: 280px;
+  width: 30%;
+  margin: 10px 10px 10px 10px;
+}
+
+.achievements-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 25px 20px 25px;
+  background: #ffffff;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(38, 38, 38, 0.04) 0px 1px 2px, rgba(38, 38, 38, 0.16) 0px 4px 8px;
+          box-shadow: rgba(38, 38, 38, 0.04) 0px 1px 2px, rgba(38, 38, 38, 0.16) 0px 4px 8px;
+  -webkit-transition: -webkit-box-shadow 0.3s ease 0s;
+  transition: -webkit-box-shadow 0.3s ease 0s;
+  transition: box-shadow 0.3s ease 0s;
+  transition: box-shadow 0.3s ease 0s, -webkit-box-shadow 0.3s ease 0s;
+  border: 1px solid rgba(38, 38, 38, 0.08);
+}
+
+.achievements-item:hover {
+  border-color: rgba(38, 38, 38, 0.16);
+  -webkit-box-shadow: rgba(38, 38, 38, 0.04) 0px 1px 2px, rgba(38, 38, 38, 0.16) 0px 8px 16px;
+          box-shadow: rgba(38, 38, 38, 0.04) 0px 1px 2px, rgba(38, 38, 38, 0.16) 0px 8px 16px;
+}
+
+.achievements-item__txt {
+  font-size: 18px;
+}
+
+.achievements-item__alert {
+  font-weight: bold;
+  color: #d34c4c;
 }
 
 .social__items {
@@ -1207,6 +1291,10 @@ body {
   .federation__subtitle {
     -ms-flex-item-align: start;
         align-self: flex-start;
+  }
+  .achievements__item {
+    max-width: 420px;
+    padding: 15px 20px 15px 20px;
   }
   .map__info {
     max-width: 220px;

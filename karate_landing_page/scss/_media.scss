@@ -44,9 +44,6 @@
     &__phones {
       display: none;
     }
-    //&__hamburger {
-    //  display: initial;
-    //}
   }
   // ?Смотрите наши видео на youtube
   .youtube {
@@ -73,6 +70,13 @@
     }
     &__subtitle {
       align-self: flex-start;
+    }
+  }
+  //? Достижения
+  .achievements {
+    &__item {
+      max-width: 420px;
+      padding: 15px 20px 15px 20px;
     }
   }
   // Карта

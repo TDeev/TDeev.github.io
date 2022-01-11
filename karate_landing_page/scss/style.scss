@@ -461,25 +461,30 @@ body {
       height: 150px;
       background: $black-txt;
       border-radius: 1000px;
-      margin: 0 0 30px 0;
+      margin: 0 0 20px 0;
     }
     &__title {
       display: block;
       font-weight: bold;
       font-size: 18px;
       text-align: center;
-      margin: 0 0 10px 0;
+      margin: 10px 0 10px 0;
     }
     &__txt {
       max-width: 280px;
       display: block;
       text-align: center;
+      margin: 0 0 10px 0;
     }
-    > span:nth-of-type(2) {
-      margin: 0 0 20px 0;
+    //> span:nth-of-type(2) {
+    //  margin: 0 0 20px 0;
+    //}
+    > span:nth-last-of-type(1) {
+      margin: 0;
     }
-    > span:nth-last-of-type(2) {
-      margin: auto 0 10px 0;
+    > div {
+      min-height: 140px;
+      margin: auto 0 0 0;
     }
   }
 }
@@ -570,6 +575,58 @@ body {
   }
 }
 
+//? Достижения
+.achievements {
+  background-color: $white;
+  &__container {
+    > div {
+      margin: 0 -10px 0 -10px;
+    }
+  }
+  &__txt {
+    font-size: 18px;
+    margin: 20px 0 0 0;
+    &:first-of-type {
+      margin: 40px 0 0 0;
+    }
+  }
+  &__items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 30px 0 30px 0;
+  }
+  &__item {
+    flex: 1 1 auto;
+    max-width: 320px;
+    min-width: 280px;
+    width: 30%;
+    margin: 10px 10px 10px 10px;
+  }
+  &-item {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 20px 25px 20px 25px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: rgba(38, 38, 38, 0.04) 0px 1px 2px, rgba(38, 38, 38, 0.16) 0px 4px 8px;
+    transition: box-shadow 0.3s ease 0s;
+    border: 1px solid rgba(38, 38, 38, 0.08);
+    &:hover {
+      border-color: rgba(38, 38, 38, 0.16);
+      box-shadow: rgba(38, 38, 38, 0.04) 0px 1px 2px, rgba(38, 38, 38, 0.16) 0px 8px 16px;
+    }
+    &__txt {
+      font-size: 18px;
+    }
+    &__alert {
+      font-weight: bold;
+      color: $red;
+    }
+  }
+}
 // ?Мы в социальных сетях и на карте Ташкента
 //Социальные сети
 .social {
