@@ -17,7 +17,7 @@
   // ?Возрастные группы
   .grouptype {
     &__container {
-      padding: 30px 10px 10px 10px;
+      padding: 10px 40px 10px 40px;
     }
   }
   // ?Тренируйся с нами и стань чемпионом
@@ -43,6 +43,15 @@
     }
     &__phones {
       display: none;
+    }
+  }
+  // ?Возрастные группы
+  .grouptype {
+    &__container {
+      //max-width: 440px;
+    }
+    .grouptype__item + .grouptype__item {
+      //margin: 30px 0 0 0;
     }
   }
   // ?Смотрите наши видео на youtube
@@ -164,10 +173,10 @@
   }
   // ?Возрастные группы
   .grouptype {
-    margin: 0 15px 0 15px;
-    &__container {
-      padding: 20px 10px 10px 10px;
-    }
+    //margin: 0 15px 0 15px;
+    //&__container {
+    //  padding: 20px 10px 10px 10px;
+    //}
   }
   // ?Тренируйся с нами и стань чемпионом
   .services {
