@@ -293,7 +293,7 @@ body {
 }
 
 .banner {
-  min-height: 688px;
+  min-height: 680px;
   background-image: url(../img/Banner.png);
   background-repeat: no-repeat;
   background-position: center 15%;
@@ -1357,6 +1357,15 @@ body {
   }
   .banner__title {
     font-size: 58px;
+  }
+  .grouptype__container {
+    padding: 10px 20px 10px 20px;
+  }
+  .grouptype__item {
+    max-width: initial;
+  }
+  .grouptype__item + .grouptype__item {
+    margin: 20px 15px 10px 15px;
   }
   .services__items {
     margin: 20px auto -10px auto;

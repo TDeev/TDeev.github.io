@@ -173,10 +173,15 @@
   }
   // ?Возрастные группы
   .grouptype {
-    //margin: 0 15px 0 15px;
-    //&__container {
-    //  padding: 20px 10px 10px 10px;
-    //}
+    &__container {
+      padding: 10px 20px 10px 20px;
+    }
+    &__item {
+      max-width: initial;
+      & + .grouptype__item {
+        margin: 20px 15px 10px 15px;
+      }
+    }
   }
   // ?Тренируйся с нами и стань чемпионом
   .services {
