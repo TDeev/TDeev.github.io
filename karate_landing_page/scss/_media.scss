@@ -20,6 +20,12 @@
       padding: 10px 40px 10px 40px;
     }
   }
+  // Карта
+  .map {
+    &__info {
+      max-width: 240px;
+    }
+  }
   // ?Тренируйся с нами и стань чемпионом
   .services {
     &__items {
@@ -91,7 +97,8 @@
   // Карта
   .map {
     &__info {
-      max-width: 220px;
+      //max-width: 220px;
+      display: none;
     }
   }
   // ?Карате больше чем просто спорт
