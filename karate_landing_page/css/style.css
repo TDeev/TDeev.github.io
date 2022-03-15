@@ -296,7 +296,7 @@ body {
   min-height: 680px;
   background-image: url(../img/Banner.JPG);
   background-repeat: no-repeat;
-  background-position: center 30%;
+  background-position: center 45%;
   background-size: cover;
   color: #ffffff;
   padding: 70px 0 0 0;
@@ -920,8 +920,8 @@ body {
 
 .self-defence > div {
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(51.04%, rgba(0, 0, 0, 0)), to(#000000));
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 51.04%, #000000 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(0, 0, 0, 0)), to(#000000));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 60%, #000000 100%);
 }
 
 .self-defence__container {
