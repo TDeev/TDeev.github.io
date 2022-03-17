@@ -325,9 +325,6 @@ body {
     font-size: 32px;
     filter: drop-shadow(0px 0px 35px #000000);
   }
-  &__button {
-    //margin: 20px 0 0 0;
-  }
 }
 
 // ?Возрастные группы
@@ -429,9 +426,6 @@ body {
 // ?Тренируйся с нами и стань чемпионом
 .services {
   &__container {
-    //display: flex;
-    //flex-flow: column nowrap;
-    //align-items: center;
   }
   &__items {
     display: flex;
